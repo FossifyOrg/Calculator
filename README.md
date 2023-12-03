@@ -26,20 +26,8 @@ Features:
 - Customizable text color to make it look more cool and according to your needs.
 - Buttons sized according to the average finger tapping on screen to make calculations more comfortable.
 
-Check out the full suite of Simple Tools here:  
-https://www.simplemobiletools.com
-
-Facebook:  
-https://www.facebook.com/simplemobiletools
-
-Reddit:  
-https://www.reddit.com/r/SimpleMobileTools
-
-Telegram:  
-https://t.me/SimpleMobileTools
-
-<a href='https://play.google.com/store/apps/details?id=com.simplemobiletools.calculator'><img src='https://simplemobiletools.com/images/button-google-play.svg' alt='Get it on Google Play' height=45/></a>
-<a href='https://f-droid.org/packages/com.simplemobiletools.calculator'><img src='https://simplemobiletools.com/images/button-fdroid.svg' alt='Get it on F-Droid' height=45 ></a>
+Check out the full suite of apps here:
+https://github.com/FossifyX
 
 <div style="display:flex;">
 <img alt="App image" src="fastlane/metadata/android/en-US/images/phoneScreenshots/1_en-US.jpeg" width="30%">
