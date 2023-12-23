@@ -101,6 +101,6 @@
     <string name="faq_1_text">Hvis du trykker på det, fjernes et tegn ad gangen. Langt tryk vil nulstille alle felter på én gang.</string>
     <!--
         Haven't found some strings? There's more at
-        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
+        https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res
     -->
 </resources>

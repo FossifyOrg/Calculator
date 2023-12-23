@@ -101,6 +101,6 @@
     <string name="faq_1_text">النقر على ذلك سوف يزيل حرف واحد في وقت واحد. الضغط لفترة طويلة سوف إعادة تعيين جميع الحقول في وقت واحد.</string>
     <!--
         Haven't found some strings? There's more at
-        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
+        https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res
     -->
 </resources>

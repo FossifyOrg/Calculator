@@ -101,6 +101,6 @@
     <string name="faq_1_text">ടാപ്പ് ചെയ്യുമ്പോൾ ഒരു സമയം ഒരു പ്രതീകത്തെ നീക്കംചെയ്യും. ദീർഘനേരം അമർത്തിയാൽ എല്ലാ ഫീൽഡുകളും പുനഃസജ്ജമാക്കും.</string>
     <!--
         Haven't found some strings? There's more at
-        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
+        https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res
     -->
 </resources>

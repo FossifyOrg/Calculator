@@ -101,6 +101,6 @@
     <string name="faq_1_text">按一次會刪除一個字元。長按會馬上重設全部欄位。</string>
     <!--
         Haven't found some strings? There's more at
-        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
+        https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res
     -->
 </resources>

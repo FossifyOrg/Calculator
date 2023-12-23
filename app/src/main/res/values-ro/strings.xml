@@ -101,6 +101,6 @@
     <string name="faq_1_text">Apăsând pe el, veți elimina câte un caracter pe rând. Apăsarea lungă va reseta toate câmpurile deodată.</string>
     <!--
         Haven't found some strings? There's more at
-        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
+        https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res
     -->
 </resources>
