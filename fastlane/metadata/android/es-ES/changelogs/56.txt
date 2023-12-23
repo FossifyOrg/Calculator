@@ -1,3 +1,0 @@
-* Corregidos algunos problemas relacionados con el diseño RTL
- * Adición de un botón Get Simple Phone en la sección Acerca de.
- * Añadidas algunas mejoras de traducción y UX

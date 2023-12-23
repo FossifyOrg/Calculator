@@ -23,13 +23,10 @@ Features:
 - Buttons sized according to the average finger tapping on screen to make calculations more comfortable.
 
 Check out the full suite of Simple Tools here:
-https://www.simplemobiletools.com
-
-Facebook:
-https://www.facebook.com/simplemobiletools
+https://www.fossify.org
 
 Reddit:
-https://www.reddit.com/r/SimpleMobileTools
+https://www.reddit.com/r/Fossify
 
 Telegram:
-https://t.me/SimpleMobileTools
+https://t.me/Fossify
