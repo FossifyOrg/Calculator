@@ -23,7 +23,7 @@
     <string name="unit_length_millimeter">Millimeter</string>
     <string name="unit_length_micrometer">Mikrometer</string>
     <string name="unit_length_nanometer">Nanometer</string>
-    <string name="unit_length_angstrom">Angstrom</string>
+    <string name="unit_length_angstrom">Ångström</string>
     <string name="unit_length_mile">Mil</string>
     <string name="unit_length_yard">Yard</string>
     <string name="unit_length_foot">Fot</string>
@@ -39,7 +39,7 @@
     <string name="unit_area_square_centimeter">Kvadratcentimeter</string>
     <string name="unit_area_square_millimeter">Kvadratmillimeter</string>
     <string name="unit_area_square_mile">Kvadratmil</string>
-    <string name="unit_area_square_yard">Square Yard</string>
+    <string name="unit_area_square_yard">Kvadratyard</string>
     <string name="unit_area_square_foot">Kvadratfot</string>
     <string name="unit_area_square_inch">Kvadrattum</string>
     <string name="unit_area_acre">Tunnland</string>
@@ -47,7 +47,7 @@
     <string name="unit_volume">Volym</string>
     <string name="unit_volume_cubic_meter">Kubikmeter</string>
     <string name="unit_volume_cubic_decimeter">Kubikdecimeter</string>
-    <string name="unit_volume_cubic_centimeter">kubikcentimeter</string>
+    <string name="unit_volume_cubic_centimeter">Kubikcentimeter</string>
     <string name="unit_volume_cubic_millimeter">Kubikmillimeter</string>
     <string name="unit_volume_liter">Liter</string>
     <string name="unit_volume_centiliter">Centiliter</string>
