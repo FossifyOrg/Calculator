@@ -1,2 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="unit_length_mile">Milha</string>
+    <string name="unit_length_parsec">Parsec</string>
+    <string name="unit_length_inch">Polegada</string>
+    <string name="unit_area_square_centimeter">Centímetro Quadrado</string>
+    <string name="unit_length_foot">Pé</string>
+    <string name="unit_volume_cubic_meter">Metro Cúbico</string>
+    <string name="formula_divide_by_zero_error">Erro: divisão por zero</string>
+    <string name="unit_volume_cubic_centimeter">Centímetro Cúbico</string>
+    <string name="unit_area_square_kilometer">Quilómetro Quadrado</string>
+    <string name="unit_length_centimeter">Centímetro</string>
+    <string name="unit_area_hectare">Hectare</string>
+    <string name="unit_area_square_inch">Polegada Quadrada</string>
+    <string name="unit_area_square_meter">Metro Quadrado</string>
+    <string name="unit_volume">Volume</string>
+    <string name="unit_area_acre">Acre</string>
+    <string name="unit_volume_cubic_millimeter">Milímetro Cúbico</string>
+    <string name="unit_length_meter">Metro</string>
+    <string name="app_launcher_name">Calculadora</string>
+    <string name="unit_length_micrometer">Micrómetro</string>
+    <string name="unit_length_nanometer">Nanómetro</string>
+    <string name="unit_area_square_yard">Jarda Quadrada</string>
+    <string name="unit_area_square_mile">Milha Quadrada</string>
+    <string name="scientific_calculator">Calculadora científica</string>
+    <string name="unit_converter">Conversor de unidades</string>
+    <string name="unit_length_millimeter">Milímetro</string>
+    <string name="unit_length_fathom">Braça</string>
+    <string name="history">Histórico</string>
+    <string name="unit_length_nautical_mile">Milha náutica</string>
+    <string name="unit_area_square_millimeter">Milímetro Quadrado</string>
+    <string name="unit_volume_liter">Litro</string>
+    <string name="unit_volume_cubic_decimeter">Decímetro Cúbico</string>
+    <string name="unit_length_angstrom">Angström</string>
+    <string name="unit_length_yard">Jarda</string>
+    <string name="unit_length_light_year">Ano-luz</string>
+    <string name="unit_area_square_foot">Pé Quadrado</string>
+    <string name="app_name">Calculadora Simples</string>
+    <string name="unit_area">Área</string>
+    <string name="unit_length_astronomical_unit">Unidade Astronómica</string>
+    <string name="swap_units">Mudar de unidades</string>
+</resources>
