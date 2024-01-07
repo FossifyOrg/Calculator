@@ -42,9 +42,9 @@
     <string name="unit_area_square_yard">Yard kare</string>
     <string name="unit_area_square_foot">Foot kare</string>
     <string name="unit_area_square_inch">İnç kare</string>
-    <string name="unit_area_acre">Acre</string>
+    <string name="unit_area_acre">Dönüm</string>
     <string name="unit_area_hectare">Hektar</string>
-    <string name="unit_volume">Volume</string>
+    <string name="unit_volume">Hacim</string>
     <string name="unit_volume_cubic_meter">Metreküp</string>
     <string name="unit_volume_cubic_decimeter">Desimetreküp</string>
     <string name="unit_volume_cubic_centimeter">Santimetreküp</string>
@@ -90,7 +90,7 @@
     <string name="unit_temperature_kelvin">Kelvin</string>
     <string name="unit_time">Zaman</string>
     <string name="unit_time_hour">Saat</string>
-    <string name="unit_time_minute">Minute</string>
+    <string name="unit_time_minute">Dakika</string>
     <string name="unit_time_second">Saniye</string>
     <string name="unit_time_millisecond">Mikrosaniye</string>
     <string name="unit_time_day">Day</string>
