@@ -1,1 +1,1 @@
-Calculadora simple
+Simple Calculator
