@@ -5,17 +5,13 @@
     <string name="scientific_calculator">Bilimsel Hesap Makinesi</string>
     <string name="unit_converter">Birim dönüştürücü</string>
     <string name="swap_units">Birimleri değiştir</string>
-    <!-- Calculator field -->
     <string name="formula_divide_by_zero_error">Hata: sıfıra bölme</string>
-    <!-- History -->
     <string name="history">Geçmiş</string>
     <string name="history_empty">Geçmiş boş</string>
     <string name="clear_history">Temizle</string>
     <string name="history_cleared">Geçmiş temizlendi</string>
-    <!-- Settings -->
     <string name="vibrate_on_button_press">Düğmeye basıldığında titret</string>
     <string name="use_comma_as_decimal_mark">Ondalık işareti olarak virgül kullan</string>
-    <!-- Unit converter -->
     <string name="unit_length">Uzunluk</string>
     <string name="unit_length_kilometer">Kilometre</string>
     <string name="unit_length_meter">Metre</string>
@@ -24,16 +20,12 @@
     <string name="unit_length_micrometer">Mikrometre</string>
     <string name="unit_length_nanometer">Nanometre</string>
     <string name="unit_length_angstrom">Angström</string>
-    <string name="unit_length_mile">Mile</string>
-    <string name="unit_length_yard">Yard</string>
-    <string name="unit_length_foot">Foot</string>
     <string name="unit_length_inch">İnç</string>
     <string name="unit_length_fathom">Kulaç</string>
     <string name="unit_length_nautical_mile">Deniz Mili</string>
     <string name="unit_length_astronomical_unit">Astronomik Birim</string>
     <string name="unit_length_parsec">Parsek</string>
     <string name="unit_length_light_year">Işık Yılı</string>
-    <string name="unit_area">Area</string>
     <string name="unit_area_square_kilometer">Kilometrekare</string>
     <string name="unit_area_square_meter">Metrekare</string>
     <string name="unit_area_square_centimeter">Santimetrekare</string>
@@ -42,9 +34,7 @@
     <string name="unit_area_square_yard">Yard kare</string>
     <string name="unit_area_square_foot">Foot kare</string>
     <string name="unit_area_square_inch">İnç kare</string>
-    <string name="unit_area_acre">Acre</string>
     <string name="unit_area_hectare">Hektar</string>
-    <string name="unit_volume">Volume</string>
     <string name="unit_volume_cubic_meter">Metreküp</string>
     <string name="unit_volume_cubic_decimeter">Desimetreküp</string>
     <string name="unit_volume_cubic_centimeter">Santimetreküp</string>
@@ -69,16 +59,10 @@
     <string name="unit_volume_gill_imperial">Gill (İngiliz)</string>
     <string name="unit_volume_fluid_ounce_imperial">Sıvı Ons (İngiliz)</string>
     <string name="unit_mass">Kütle</string>
-    <string name="unit_mass_gram">Gram</string>
-    <string name="unit_mass_kilogram">Kilogram</string>
     <string name="unit_mass_milligram">Miligram</string>
     <string name="unit_mass_microgram">Mikrogram</string>
     <string name="unit_mass_tonne">Ton</string>
-    <string name="unit_mass_pound">Pound</string>
     <string name="unit_mass_ounce">Ons</string>
-    <string name="unit_mass_grain">Grain</string>
-    <string name="unit_mass_dram">Dram</string>
-    <string name="unit_mass_stone">Stone</string>
     <string name="unit_mass_long_ton">Uzun Ton</string>
     <string name="unit_mass_short_ton">Kısa Ton</string>
     <string name="unit_mass_carat">Karat</string>
@@ -86,21 +70,12 @@
     <string name="unit_temperature">Sıcaklık</string>
     <string name="unit_temperature_celsius">Santigrat</string>
     <string name="unit_temperature_fahrenheit">Fahrenhayt</string>
-    <string name="unit_temperature_rankine">Rankine</string>
-    <string name="unit_temperature_kelvin">Kelvin</string>
     <string name="unit_time">Zaman</string>
     <string name="unit_time_hour">Saat</string>
-    <string name="unit_time_minute">Minute</string>
     <string name="unit_time_second">Saniye</string>
     <string name="unit_time_millisecond">Mikrosaniye</string>
-    <string name="unit_time_day">Day</string>
     <string name="unit_time_week">Hafta</string>
     <string name="unit_time_year">Yıl</string>
-    <!-- FAQ -->
     <string name="faq_1_title">C (Temizle) düğmesi nasıl çalışır?</string>
     <string name="faq_1_text">Üzerine dokunmak, bir seferde bir karakteri kaldıracaktır. Uzun basma, tüm alanları bir kerede sıfırlayacaktır.</string>
-    <!--
-        Haven't found some strings? There's more at
-        https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res
-    -->
 </resources>

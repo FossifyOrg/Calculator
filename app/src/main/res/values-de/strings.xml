@@ -5,33 +5,23 @@
     <string name="scientific_calculator">Wissenschaftlicher Rechner</string>
     <string name="unit_converter">Einheitenumrechner</string>
     <string name="swap_units">Einheiten tauschen</string>
-    <!-- Calculator field -->
     <string name="formula_divide_by_zero_error">Fehler: Division durch Null</string>
-    <!-- History -->
     <string name="history">Verlauf</string>
     <string name="history_empty">Verlauf ist leer</string>
     <string name="clear_history">Leeren</string>
     <string name="history_cleared">Verlauf ist gelöscht worden</string>
-    <!-- Settings -->
     <string name="vibrate_on_button_press">Bei Tastendruck vibrieren</string>
     <string name="use_comma_as_decimal_mark">Komma als Dezimaltrennzeichen verwenden</string>
-    <!-- Unit converter -->
     <string name="unit_length">Länge</string>
-    <string name="unit_length_kilometer">Kilometer</string>
-    <string name="unit_length_meter">Meter</string>
     <string name="unit_length_centimeter">Zentimeter</string>
-    <string name="unit_length_millimeter">Millimeter</string>
     <string name="unit_length_micrometer">Mikrometer</string>
-    <string name="unit_length_nanometer">Nanometer</string>
     <string name="unit_length_angstrom">Ångström</string>
     <string name="unit_length_mile">Meile</string>
-    <string name="unit_length_yard">Yard</string>
     <string name="unit_length_foot">Fuß</string>
     <string name="unit_length_inch">Zoll</string>
     <string name="unit_length_fathom">Nautischer Faden</string>
     <string name="unit_length_nautical_mile">Nautische Meile</string>
     <string name="unit_length_astronomical_unit">Astronomische Einheit</string>
-    <string name="unit_length_parsec">Parsec</string>
     <string name="unit_length_light_year">Lichtjahr</string>
     <string name="unit_area">Fläche</string>
     <string name="unit_area_square_kilometer">Quadratkilometer</string>
@@ -42,43 +32,28 @@
     <string name="unit_area_square_yard">Quadratyard</string>
     <string name="unit_area_square_foot">Quadratfuß</string>
     <string name="unit_area_square_inch">Quadratzoll</string>
-    <string name="unit_area_acre">Acre</string>
     <string name="unit_area_hectare">Hektar</string>
     <string name="unit_volume">Volumen</string>
     <string name="unit_volume_cubic_meter">Kubikmeter</string>
     <string name="unit_volume_cubic_decimeter">Kubikdezimeter</string>
     <string name="unit_volume_cubic_centimeter">Kubikzentimeter</string>
     <string name="unit_volume_cubic_millimeter">Kubikmillimeter</string>
-    <string name="unit_volume_liter">Liter</string>
     <string name="unit_volume_centiliter">Zentiliter</string>
     <string name="unit_volume_deciliter">Deziliter</string>
-    <string name="unit_volume_milliliter">Milliliter</string>
     <string name="unit_volume_acre_foot">Acre-foot</string>
     <string name="unit_volume_cubic_foot">Kubikfuß</string>
     <string name="unit_volume_cubic_inch">Kubikzoll</string>
-    <string name="unit_volume_barrel_us">Barrel (US)</string>
     <string name="unit_volume_gallon_us">Gallone (US)</string>
-    <string name="unit_volume_quart_us">Quart (US)</string>
-    <string name="unit_volume_pint_us">Pint (US)</string>
-    <string name="unit_volume_gill_us">Gill (US)</string>
     <string name="unit_volume_fluid_ounce_us">Flüssigunze (US)</string>
-    <string name="unit_volume_barrel_imperial">Barrel (Imperial)</string>
     <string name="unit_volume_gallon_imperial">Gallone (Imperial)</string>
-    <string name="unit_volume_quart_imperial">Quart (Imperial)</string>
-    <string name="unit_volume_pint_imperial">Pint (Imperial)</string>
-    <string name="unit_volume_gill_imperial">Gill (Imperial)</string>
     <string name="unit_volume_fluid_ounce_imperial">Flüssigunze (Imperial)</string>
     <string name="unit_mass">Masse</string>
     <string name="unit_mass_gram">Gramm</string>
     <string name="unit_mass_kilogram">Kilogramm</string>
     <string name="unit_mass_milligram">Milligramm</string>
     <string name="unit_mass_microgram">Mikrogramm</string>
-    <string name="unit_mass_tonne">Tonne</string>
     <string name="unit_mass_pound">Pfund</string>
     <string name="unit_mass_ounce">Unze</string>
-    <string name="unit_mass_grain">Grain</string>
-    <string name="unit_mass_dram">Dram</string>
-    <string name="unit_mass_stone">Stone</string>
     <string name="unit_mass_long_ton">Britische Tonne</string>
     <string name="unit_mass_short_ton">Amerikanische Tonne</string>
     <string name="unit_mass_carat">Karat</string>
@@ -87,20 +62,13 @@
     <string name="unit_temperature_celsius">Grad Celsius</string>
     <string name="unit_temperature_fahrenheit">Grad Fahrenheit</string>
     <string name="unit_temperature_rankine">Grad Rankine</string>
-    <string name="unit_temperature_kelvin">Kelvin</string>
     <string name="unit_time">Zeit</string>
     <string name="unit_time_hour">Stunde</string>
-    <string name="unit_time_minute">Minute</string>
     <string name="unit_time_second">Sekunde</string>
     <string name="unit_time_millisecond">Mikrosekunde</string>
     <string name="unit_time_day">Tag</string>
     <string name="unit_time_week">Woche</string>
     <string name="unit_time_year">Jahr</string>
-    <!-- FAQ -->
     <string name="faq_1_title">Wie funktioniert die C-Taste (Löschen)\?</string>
     <string name="faq_1_text">Bei einmaliger Berührung wird ein Zeichen entfernt. Bei langer Berührung werden alle Felder zurück gesetzt.</string>
-    <!--
-        Haven't found some strings? There's more at
-        https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res
-    -->
 </resources>

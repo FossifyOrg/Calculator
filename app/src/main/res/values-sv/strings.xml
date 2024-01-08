@@ -1,39 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Simple Calculator</string>
     <string name="app_launcher_name">Kalkylator</string>
     <string name="scientific_calculator">Avancerad kalkylator</string>
     <string name="unit_converter">Enhetskonverterare</string>
     <string name="swap_units">Byt enheter</string>
-    <!-- Calculator field -->
     <string name="formula_divide_by_zero_error">Fel: delning med noll</string>
-    <!-- History -->
     <string name="history">Historik</string>
     <string name="history_empty">Historiken är tom</string>
     <string name="clear_history">Rensa</string>
     <string name="history_cleared">Historiken har rensats</string>
-    <!-- Settings -->
     <string name="vibrate_on_button_press">Vibrera när jag trycker på knapparna</string>
     <string name="use_comma_as_decimal_mark">Använd komma som decimaltecken</string>
-    <!-- Unit converter -->
     <string name="unit_length">Längd</string>
-    <string name="unit_length_kilometer">Kilometer</string>
-    <string name="unit_length_meter">Meter</string>
-    <string name="unit_length_centimeter">Centimeter</string>
-    <string name="unit_length_millimeter">Millimeter</string>
     <string name="unit_length_micrometer">Mikrometer</string>
-    <string name="unit_length_nanometer">Nanometer</string>
     <string name="unit_length_angstrom">Ångström</string>
     <string name="unit_length_mile">Mil</string>
-    <string name="unit_length_yard">Yard</string>
     <string name="unit_length_foot">Fot</string>
     <string name="unit_length_inch">Tum</string>
     <string name="unit_length_fathom">Famn</string>
     <string name="unit_length_nautical_mile">Sjömil</string>
     <string name="unit_length_astronomical_unit">Astronomisk Enhet</string>
-    <string name="unit_length_parsec">Parsec</string>
     <string name="unit_length_light_year">Ljusår</string>
-    <string name="unit_area">Area</string>
     <string name="unit_area_square_kilometer">Kvadratkilometer</string>
     <string name="unit_area_square_meter">Kvadratmeter</string>
     <string name="unit_area_square_centimeter">Kvadratcentimeter</string>
@@ -49,45 +36,16 @@
     <string name="unit_volume_cubic_decimeter">Kubikdecimeter</string>
     <string name="unit_volume_cubic_centimeter">Kubikcentimeter</string>
     <string name="unit_volume_cubic_millimeter">Kubikmillimeter</string>
-    <string name="unit_volume_liter">Liter</string>
-    <string name="unit_volume_centiliter">Centiliter</string>
-    <string name="unit_volume_deciliter">Deciliter</string>
-    <string name="unit_volume_milliliter">Milliliter</string>
-    <string name="unit_volume_acre_foot">Acre Foot</string>
     <string name="unit_volume_cubic_foot">Kubikfot</string>
     <string name="unit_volume_cubic_inch">Kubiktum</string>
     <string name="unit_volume_barrel_us">Fat (US)</string>
-    <string name="unit_volume_gallon_us">Gallon (US)</string>
-    <string name="unit_volume_quart_us">Quart (US)</string>
-    <string name="unit_volume_pint_us">Pint (US)</string>
-    <string name="unit_volume_gill_us">Gill (US)</string>
-    <string name="unit_volume_fluid_ounce_us">Fluid Ounce (US)</string>
-    <string name="unit_volume_barrel_imperial">Barrel (Imperial)</string>
-    <string name="unit_volume_gallon_imperial">Gallon (Imperial)</string>
-    <string name="unit_volume_quart_imperial">Quart (Imperial)</string>
-    <string name="unit_volume_pint_imperial">Pint (Imperial)</string>
-    <string name="unit_volume_gill_imperial">Gill (Imperial)</string>
-    <string name="unit_volume_fluid_ounce_imperial">Fluid Ounce (Imperial)</string>
     <string name="unit_mass">Massa</string>
-    <string name="unit_mass_gram">Gram</string>
-    <string name="unit_mass_kilogram">Kilogram</string>
-    <string name="unit_mass_milligram">Milligram</string>
     <string name="unit_mass_microgram">Mikrogram</string>
     <string name="unit_mass_tonne">Ton</string>
-    <string name="unit_mass_pound">Pound</string>
     <string name="unit_mass_ounce">Uns</string>
-    <string name="unit_mass_grain">Grain</string>
-    <string name="unit_mass_dram">Dram</string>
-    <string name="unit_mass_stone">Stone</string>
-    <string name="unit_mass_long_ton">Long Ton</string>
-    <string name="unit_mass_short_ton">Short Ton</string>
     <string name="unit_mass_carat">Karat</string>
     <string name="unit_mass_carat_metric">Karat (Metrisk)</string>
     <string name="unit_temperature">Temperatur</string>
-    <string name="unit_temperature_celsius">Celsius</string>
-    <string name="unit_temperature_fahrenheit">Fahrenheit</string>
-    <string name="unit_temperature_rankine">Rankine</string>
-    <string name="unit_temperature_kelvin">Kelvin</string>
     <string name="unit_time">Tid</string>
     <string name="unit_time_hour">Timme</string>
     <string name="unit_time_minute">Minut</string>
@@ -96,11 +54,6 @@
     <string name="unit_time_day">Dag</string>
     <string name="unit_time_week">Vecka</string>
     <string name="unit_time_year">År</string>
-    <!-- FAQ -->
     <string name="faq_1_title">Hur funkar C (Rensa) knappen\?</string>
     <string name="faq_1_text">Om du trycker på den tar du bort ett tecken i taget. Om du trycker länge på den återställs alla fält på en gång.</string>
-    <!--
-        Haven't found some strings? There's more at
-        https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res
-    -->
 </resources>

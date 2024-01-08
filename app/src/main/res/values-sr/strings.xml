@@ -5,17 +5,13 @@
     <string name="scientific_calculator">Научни калкулатор</string>
     <string name="unit_converter">Претварач јединица</string>
     <string name="swap_units">Замени јединице</string>
-    <!-- Calculator field -->
     <string name="formula_divide_by_zero_error">Грешка: дељење нулом</string>
-    <!-- History -->
     <string name="history">Историја</string>
     <string name="history_empty">Историја је празна</string>
     <string name="clear_history">Очисти</string>
     <string name="history_cleared">Историја је очишћена</string>
-    <!-- Settings -->
     <string name="vibrate_on_button_press">Вибрација при притиску на дугме</string>
     <string name="use_comma_as_decimal_mark">Коришћење зареза као децималног знака</string>
-    <!-- Unit converter -->
     <string name="unit_length">Дужина</string>
     <string name="unit_length_kilometer">Километар</string>
     <string name="unit_length_meter">Метар</string>
@@ -96,7 +92,6 @@
     <string name="unit_time_day">Дан</string>
     <string name="unit_time_week">Недеља</string>
     <string name="unit_time_year">Година</string>
-    <!-- FAQ -->
     <string name="faq_1_title">Како функционише дугме C (Очисти)\?</string>
     <string name="faq_1_text">Додиром на њега уклања се један по један знак. Дуг притисак ће ресетовати сва поља одједном.</string>
 </resources>

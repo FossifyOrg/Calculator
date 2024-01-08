@@ -5,17 +5,13 @@
     <string name="scientific_calculator">Teadusrežiim</string>
     <string name="unit_converter">Ühikute teisendaja</string>
     <string name="swap_units">Vaheta ühikud</string>
-    <!-- Calculator field -->
     <string name="formula_divide_by_zero_error">Viga: nulliga jagamine</string>
-    <!-- History -->
     <string name="history">Ajalugu</string>
     <string name="history_empty">Ajalugu puudub</string>
     <string name="clear_history">Kustuta</string>
     <string name="history_cleared">Ajalugu on kustutatud</string>
-    <!-- Settings -->
     <string name="vibrate_on_button_press">Nupuvajutusel vibreeri</string>
     <string name="use_comma_as_decimal_mark">Kasutage koma kui kümnendmärki</string>
-    <!-- Unit converter -->
     <string name="unit_length">Pikkus</string>
     <string name="unit_length_kilometer">Kilomeeter</string>
     <string name="unit_length_meter">Meeter</string>
@@ -24,8 +20,6 @@
     <string name="unit_length_micrometer">Mikromeeter</string>
     <string name="unit_length_nanometer">Nanomeeter</string>
     <string name="unit_length_angstrom">Ongström</string>
-    <string name="unit_length_mile">Mile</string>
-    <string name="unit_length_yard">Yard</string>
     <string name="unit_length_foot">Jalg</string>
     <string name="unit_length_inch">Toll</string>
     <string name="unit_length_fathom">Süld</string>
@@ -33,7 +27,6 @@
     <string name="unit_length_astronomical_unit">Astronoomiline ühik</string>
     <string name="unit_length_parsec">Parsek</string>
     <string name="unit_length_light_year">Valgusaasta</string>
-    <string name="unit_area">Area</string>
     <string name="unit_area_square_kilometer">Ruutkilomeeter</string>
     <string name="unit_area_square_meter">Ruutmeeter</string>
     <string name="unit_area_square_centimeter">Ruutsentimeeter</string>
@@ -42,9 +35,7 @@
     <string name="unit_area_square_yard">Ruutjard</string>
     <string name="unit_area_square_foot">Ruutjalg</string>
     <string name="unit_area_square_inch">Ruuttoll</string>
-    <string name="unit_area_acre">Acre</string>
     <string name="unit_area_hectare">Hektar</string>
-    <string name="unit_volume">Volume</string>
     <string name="unit_volume_cubic_meter">Kuupmeeter</string>
     <string name="unit_volume_cubic_decimeter">Kuupdetsimeeter</string>
     <string name="unit_volume_cubic_centimeter">Kuupsentimeeter</string>
@@ -56,10 +47,7 @@
     <string name="unit_volume_acre_foot">Aakerjalg</string>
     <string name="unit_volume_cubic_foot">Kuupjalg</string>
     <string name="unit_volume_cubic_inch">Kuuptoll</string>
-    <string name="unit_volume_barrel_us">Barrel (US)</string>
-    <string name="unit_volume_gallon_us">Gallon (US)</string>
     <string name="unit_volume_quart_us">Kvart (US)</string>
-    <string name="unit_volume_pint_us">Pint (US)</string>
     <string name="unit_volume_gill_us">Kortel (US)</string>
     <string name="unit_volume_fluid_ounce_us">Vedelikuunts (US)</string>
     <string name="unit_volume_barrel_imperial">Barrel (inglise)</string>
@@ -68,39 +56,25 @@
     <string name="unit_volume_pint_imperial">Pint (inglise)</string>
     <string name="unit_volume_gill_imperial">Kortel (inglise)</string>
     <string name="unit_volume_fluid_ounce_imperial">Vedelikuunts (inglise)</string>
-    <string name="unit_mass">Mass</string>
     <string name="unit_mass_gram">Gramm</string>
     <string name="unit_mass_kilogram">Kilogramm</string>
     <string name="unit_mass_milligram">Milligramm</string>
     <string name="unit_mass_microgram">Mikrogramm</string>
     <string name="unit_mass_tonne">Tonn</string>
-    <string name="unit_mass_pound">Pound</string>
     <string name="unit_mass_ounce">Unts</string>
     <string name="unit_mass_grain">Graan</string>
-    <string name="unit_mass_dram">Dram</string>
     <string name="unit_mass_stone">Kivi</string>
     <string name="unit_mass_long_ton">Pikk tonn</string>
     <string name="unit_mass_short_ton">Lühike tonn</string>
     <string name="unit_mass_carat">Karaat</string>
     <string name="unit_mass_carat_metric">Karaat (SI)</string>
     <string name="unit_temperature">Temperatuur</string>
-    <string name="unit_temperature_celsius">Celsius</string>
-    <string name="unit_temperature_fahrenheit">Fahrenheit</string>
-    <string name="unit_temperature_rankine">Rankine</string>
-    <string name="unit_temperature_kelvin">Kelvin</string>
     <string name="unit_time">Aeg</string>
     <string name="unit_time_hour">Tund</string>
-    <string name="unit_time_minute">Minute</string>
     <string name="unit_time_second">Sekund</string>
     <string name="unit_time_millisecond">Mikrosekund</string>
-    <string name="unit_time_day">Day</string>
     <string name="unit_time_week">Nädal</string>
     <string name="unit_time_year">Aasta</string>
-    <!-- FAQ -->
     <string name="faq_1_title">Kuidas C (Clear) nupp toimib\?</string>
     <string name="faq_1_text">Üks klõpsatus kustutab ühe numbri. Pikk vajutus eemaldab kogu sisestuse.</string>
-    <!--
-        Haven't found some strings? There's more at
-        https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res
-    -->
 </resources>

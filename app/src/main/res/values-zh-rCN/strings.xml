@@ -5,17 +5,13 @@
     <string name="scientific_calculator">科学计算器</string>
     <string name="unit_converter">单位转换器</string>
     <string name="swap_units">交换单位</string>
-    <!-- Calculator field -->
     <string name="formula_divide_by_zero_error">错误: 被零除</string>
-    <!-- History -->
     <string name="history">历史记录</string>
     <string name="history_empty">历史记录为空</string>
     <string name="clear_history">清除</string>
     <string name="history_cleared">已清除历史记录</string>
-    <!-- Settings -->
     <string name="vibrate_on_button_press">按下按键后震动</string>
     <string name="use_comma_as_decimal_mark">用逗号作小数点</string>
-    <!-- Unit converter -->
     <string name="unit_length">长度</string>
     <string name="unit_length_kilometer">千米</string>
     <string name="unit_length_meter">米</string>
@@ -24,8 +20,6 @@
     <string name="unit_length_micrometer">微米</string>
     <string name="unit_length_nanometer">纳米</string>
     <string name="unit_length_angstrom">埃</string>
-    <string name="unit_length_mile">Mile</string>
-    <string name="unit_length_yard">Yard</string>
     <string name="unit_length_foot">英尺</string>
     <string name="unit_length_inch">英寸</string>
     <string name="unit_length_fathom">英寻</string>
@@ -33,7 +27,6 @@
     <string name="unit_length_astronomical_unit">天文单位</string>
     <string name="unit_length_parsec">秒差距</string>
     <string name="unit_length_light_year">光年</string>
-    <string name="unit_area">Area</string>
     <string name="unit_area_square_kilometer">平方千米</string>
     <string name="unit_area_square_meter">平方米</string>
     <string name="unit_area_square_centimeter">平方厘米</string>
@@ -42,9 +35,7 @@
     <string name="unit_area_square_yard">平方码</string>
     <string name="unit_area_square_foot">平方英寸</string>
     <string name="unit_area_square_inch">平方英尺</string>
-    <string name="unit_area_acre">Acre</string>
     <string name="unit_area_hectare">公顷</string>
-    <string name="unit_volume">Volume</string>
     <string name="unit_volume_cubic_meter">立方米</string>
     <string name="unit_volume_cubic_decimeter">立方分米</string>
     <string name="unit_volume_cubic_centimeter">立方厘米</string>
@@ -74,10 +65,8 @@
     <string name="unit_mass_milligram">毫克</string>
     <string name="unit_mass_microgram">微克</string>
     <string name="unit_mass_tonne">公吨</string>
-    <string name="unit_mass_pound">Pound</string>
     <string name="unit_mass_ounce">盎司</string>
     <string name="unit_mass_grain">格令</string>
-    <string name="unit_mass_dram">Dram</string>
     <string name="unit_mass_stone">英石</string>
     <string name="unit_mass_long_ton">长吨</string>
     <string name="unit_mass_short_ton">短吨</string>
@@ -90,17 +79,10 @@
     <string name="unit_temperature_kelvin">开尔文</string>
     <string name="unit_time">时间</string>
     <string name="unit_time_hour">小时</string>
-    <string name="unit_time_minute">Minute</string>
     <string name="unit_time_second">秒</string>
     <string name="unit_time_millisecond">微秒</string>
-    <string name="unit_time_day">Day</string>
     <string name="unit_time_week">周</string>
     <string name="unit_time_year">年</string>
-    <!-- FAQ -->
     <string name="faq_1_title">如何使用 C (清除) 按钮？</string>
     <string name="faq_1_text">点按它一次删除一个字母。长按它将立即重置所有字段。</string>
-    <!--
-        Haven't found some strings? There's more at
-        https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res
-    -->
 </resources>

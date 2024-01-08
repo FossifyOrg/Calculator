@@ -5,17 +5,13 @@
     <string name="scientific_calculator">Kalkulator naukowy</string>
     <string name="unit_converter">Konwerter jednostek</string>
     <string name="swap_units">Zamień jednostki</string>
-    <!-- Calculator field -->
     <string name="formula_divide_by_zero_error">Błąd: dzielenie przez zero</string>
-    <!-- History -->
     <string name="history">Historia</string>
     <string name="history_empty">Historia jest pusta</string>
     <string name="clear_history">Wyczyść</string>
     <string name="history_cleared">Historia została wyczyszczona</string>
-    <!-- Settings -->
     <string name="vibrate_on_button_press">Wibracja przy naciśnięciu przycisku</string>
     <string name="use_comma_as_decimal_mark">Używaj przecinka jako separatora dziesiętnego</string>
-    <!-- Unit converter -->
     <string name="unit_length">Długość</string>
     <string name="unit_length_kilometer">Kilometr</string>
     <string name="unit_length_meter">Metr</string>
@@ -60,7 +56,6 @@
     <string name="unit_volume_gallon_us">Galon (US)</string>
     <string name="unit_volume_quart_us">Kwarta (US)</string>
     <string name="unit_volume_pint_us">Pinta (US)</string>
-    <string name="unit_volume_gill_us">Gill (US)</string>
     <string name="unit_volume_fluid_ounce_us">Uncja cieczy (US)</string>
     <string name="unit_volume_barrel_imperial">Baryłka (imperialna)</string>
     <string name="unit_volume_gallon_imperial">Galon (imperialny)</string>
@@ -69,8 +64,6 @@
     <string name="unit_volume_gill_imperial">Gill (imperialny)</string>
     <string name="unit_volume_fluid_ounce_imperial">Uncja cieczy (imperialna)</string>
     <string name="unit_mass">Masa</string>
-    <string name="unit_mass_gram">Gram</string>
-    <string name="unit_mass_kilogram">Kilogram</string>
     <string name="unit_mass_milligram">Miligram</string>
     <string name="unit_mass_microgram">Mikrogram</string>
     <string name="unit_mass_tonne">Tona</string>
@@ -85,8 +78,6 @@
     <string name="unit_mass_carat_metric">Karat (metryczny)</string>
     <string name="unit_temperature">Temperatura</string>
     <string name="unit_temperature_celsius">Celsjusz</string>
-    <string name="unit_temperature_fahrenheit">Fahrenheit</string>
-    <string name="unit_temperature_rankine">Rankine</string>
     <string name="unit_temperature_kelvin">Kelwin</string>
     <string name="unit_time">Czas</string>
     <string name="unit_time_hour">Godzina</string>
@@ -96,11 +87,6 @@
     <string name="unit_time_day">Dzień</string>
     <string name="unit_time_week">Tydzień</string>
     <string name="unit_time_year">Rok</string>
-    <!-- FAQ -->
     <string name="faq_1_title">Jak działa przycisk C (Wyczyść)?</string>
     <string name="faq_1_text">Naciśnięcie go usunie jeden znak naraz. Długie naciśnięcie zresetuje wszystkie pola jednocześnie.</string>
-    <!--
-        Haven't found some strings? There's more at
-        https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res
-    -->
 </resources>

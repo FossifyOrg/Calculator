@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Simple Calculator</string>
     <string name="app_launcher_name">Calculadora</string>
     <string name="scientific_calculator">Calculadora científica</string>
     <string name="unit_converter">Convertidor d\'unitats</string>
     <string name="swap_units">Intercanvia les unitats</string>
-    <!-- Calculator field -->
     <string name="formula_divide_by_zero_error">Error: divisió per zero</string>
-    <!-- History -->
     <string name="history">Historial</string>
     <string name="history_empty">L\'historial és buit</string>
     <string name="clear_history">Neteja</string>
     <string name="history_cleared">S\'ha netejat l\'historial</string>
-    <!-- Settings -->
     <string name="vibrate_on_button_press">Vibra en prémer els botons</string>
     <string name="use_comma_as_decimal_mark">Utilitza la coma com a marca decimal</string>
-    <!-- Unit converter -->
     <string name="unit_length">Longitud</string>
     <string name="unit_length_kilometer">Quilòmetre</string>
     <string name="unit_length_meter">Metre</string>
@@ -24,16 +19,12 @@
     <string name="unit_length_micrometer">Micròmetre</string>
     <string name="unit_length_nanometer">Nanòmetre</string>
     <string name="unit_length_angstrom">Àngstrom</string>
-    <string name="unit_length_mile">Mile</string>
-    <string name="unit_length_yard">Yard</string>
     <string name="unit_length_foot">Peu</string>
     <string name="unit_length_inch">Polzada</string>
     <string name="unit_length_fathom">Braça</string>
     <string name="unit_length_nautical_mile">Milla nàutica</string>
     <string name="unit_length_astronomical_unit">Unitat astronòmica</string>
-    <string name="unit_length_parsec">Parsec</string>
     <string name="unit_length_light_year">Any llum</string>
-    <string name="unit_area">Area</string>
     <string name="unit_area_square_kilometer">Quilòmetre quadrat</string>
     <string name="unit_area_square_meter">Metre quadrat</string>
     <string name="unit_area_square_centimeter">Centímetre quadrat</string>
@@ -42,9 +33,7 @@
     <string name="unit_area_square_yard">Iarda quadrada</string>
     <string name="unit_area_square_foot">Peu quadrat</string>
     <string name="unit_area_square_inch">Polzada quadrada</string>
-    <string name="unit_area_acre">Acre</string>
     <string name="unit_area_hectare">Hectàrea</string>
-    <string name="unit_volume">Volume</string>
     <string name="unit_volume_cubic_meter">Metre cúbic</string>
     <string name="unit_volume_cubic_decimeter">Decímetre cúbic</string>
     <string name="unit_volume_cubic_centimeter">Centímetre cúbic</string>
@@ -64,30 +53,21 @@
     <string name="unit_volume_fluid_ounce_us">Unça fluida (EUA)</string>
     <string name="unit_volume_barrel_imperial">Barril (Imperial)</string>
     <string name="unit_volume_gallon_imperial">Galó (Imperial)</string>
-    <string name="unit_volume_quart_imperial">Quart (Imperial)</string>
     <string name="unit_volume_pint_imperial">Pinta (Imperial)</string>
-    <string name="unit_volume_gill_imperial">Gill (Imperial)</string>
     <string name="unit_volume_fluid_ounce_imperial">Unça fluida (Imperial)</string>
     <string name="unit_mass">Massa</string>
-    <string name="unit_mass_gram">Gram</string>
     <string name="unit_mass_kilogram">Quilogram</string>
     <string name="unit_mass_milligram">Mil·ligram</string>
-    <string name="unit_mass_microgram">Microgram</string>
     <string name="unit_mass_tonne">Tona</string>
     <string name="unit_mass_pound">Lliura</string>
     <string name="unit_mass_ounce">Unça</string>
     <string name="unit_mass_grain">Gra</string>
-    <string name="unit_mass_dram">Dram</string>
     <string name="unit_mass_stone">Pedra</string>
     <string name="unit_mass_long_ton">Tona llarga</string>
     <string name="unit_mass_short_ton">Tona curta</string>
     <string name="unit_mass_carat">Quirat</string>
     <string name="unit_mass_carat_metric">Quirat (Mètric)</string>
     <string name="unit_temperature">Temperatura</string>
-    <string name="unit_temperature_celsius">Celsius</string>
-    <string name="unit_temperature_fahrenheit">Fahrenheit</string>
-    <string name="unit_temperature_rankine">Rankine</string>
-    <string name="unit_temperature_kelvin">Kelvin</string>
     <string name="unit_time">Temps</string>
     <string name="unit_time_hour">Hora</string>
     <string name="unit_time_minute">Minut</string>
@@ -96,11 +76,6 @@
     <string name="unit_time_day">Dia</string>
     <string name="unit_time_week">Setmana</string>
     <string name="unit_time_year">Any</string>
-    <!-- FAQ -->
     <string name="faq_1_title">Com funciona el botó C (Esborra)\?</string>
     <string name="faq_1_text">En tocar-lo, s\'eliminarà un caràcter a la vegada. Si el premeu prolongadament, es reiniciaran tots els camps de cop.</string>
-    <!--
-        Haven't found some strings? There's more at
-        https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res
-    -->
 </resources>

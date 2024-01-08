@@ -1,23 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Απλή Αριθμομηχανή</string>
     <string name="app_launcher_name">Αριθμομηχανή</string>
     <string name="scientific_calculator">Επιστημονική Αριθμομηχανή</string>
     <string name="unit_converter">Μετατροπέας μονάδων</string>
     <string name="swap_units">Εναλλαγή μονάδων</string>
-
-    <!-- Calculator field -->
     <string name="formula_divide_by_zero_error">Σφάλμα: διαίρεση με μηδέν</string>
-
-    <!-- History -->
     <string name="history">Ιστορικό</string>
     <string name="history_empty">Το Ιστορικό είναι άδειο</string>
     <string name="clear_history">Εκκαθάριση</string>
     <string name="history_cleared">Το Ιστορικό εκκαθαρίστηκε</string>
-
-    <!-- Settings -->
     <string name="vibrate_on_button_press">Δόνηση στο πάτημα πλήκτρου</string>
     <string name="use_comma_as_decimal_mark">Χρήση κόμματος ως δεκαδικό σημείο</string>
-    <!-- Unit converter -->
     <string name="unit_length">Μήκος</string>
     <string name="unit_length_kilometer">Χιλιόμετρα</string>
     <string name="unit_length_meter">Μέτρα</string>
@@ -25,15 +19,12 @@
     <string name="unit_length_millimeter">Χιλιοστά</string>
     <string name="unit_length_micrometer">Μικρόμετρα</string>
     <string name="unit_length_nanometer">Νάνομετρα</string>
-    <string name="unit_length_angstrom">Angstrom</string>
     <string name="unit_length_mile">Μίλια</string>
     <string name="unit_length_yard">Γιάρδα</string>
     <string name="unit_length_foot">Πόδι</string>
     <string name="unit_length_inch">Ίντσα</string>
-    <string name="unit_length_fathom">Fathom</string>
     <string name="unit_length_nautical_mile">Ναυτικό μίλι</string>
     <string name="unit_length_astronomical_unit">Αστρονομική μονάδα</string>
-    <string name="unit_length_parsec">Parsec</string>
     <string name="unit_length_light_year">Έτος φωτός</string>
     <string name="unit_area">Περιοχή</string>
     <string name="unit_area_square_kilometer">Τετραγωνικό χιλιόμετρο</string>
@@ -44,7 +35,6 @@
     <string name="unit_area_square_yard">Τετραγωνική Γυάρδα</string>
     <string name="unit_area_square_foot">Τετραγωνικό πόδι</string>
     <string name="unit_area_square_inch">Τετραγωνική ίντσα</string>
-    <string name="unit_area_acre">Acre</string>
     <string name="unit_area_hectare">Εκτάριο</string>
     <string name="unit_volume">Όγκος</string>
     <string name="unit_volume_cubic_meter">Κυβικό μέτρο</string>
@@ -55,20 +45,15 @@
     <string name="unit_volume_centiliter">Εκατοστόλιτρο</string>
     <string name="unit_volume_deciliter">Δεκάλιτρο</string>
     <string name="unit_volume_milliliter">Χιλιοστόλιτρο</string>
-    <string name="unit_volume_acre_foot">Acre Foot</string>
     <string name="unit_volume_cubic_foot">Κυβικό πόδι</string>
     <string name="unit_volume_cubic_inch">Κυβική ίντσα</string>
     <string name="unit_volume_barrel_us">Βαρέλι (US)</string>
     <string name="unit_volume_gallon_us">Γαλόνι (US)</string>
     <string name="unit_volume_quart_us">Τέταρτο (US)</string>
-    <string name="unit_volume_pint_us">Pint (US)</string>
-    <string name="unit_volume_gill_us">Gill (US)</string>
     <string name="unit_volume_fluid_ounce_us">Ουγγιά υγρού (US)</string>
     <string name="unit_volume_barrel_imperial">Βαρέλι (Imperial)</string>
     <string name="unit_volume_gallon_imperial">Γαλόνι (Imperial)</string>
     <string name="unit_volume_quart_imperial">Τέταρτο (Imperial)</string>
-    <string name="unit_volume_pint_imperial">Pint (Imperial)</string>
-    <string name="unit_volume_gill_imperial">Gill (Imperial)</string>
     <string name="unit_volume_fluid_ounce_imperial">Ουγγιά υγρού (Imperial)</string>
     <string name="unit_mass">Μάζα</string>
     <string name="unit_mass_gram">Γραμμάριο</string>
@@ -80,9 +65,6 @@
     <string name="unit_mass_ounce">Ουγγιά</string>
     <string name="unit_mass_grain">Κόκκος</string>
     <string name="unit_mass_dram">Δράμι</string>
-    <string name="unit_mass_stone">Stone</string>
-    <string name="unit_mass_long_ton">Long Ton</string>
-    <string name="unit_mass_short_ton">Short Ton</string>
     <string name="unit_mass_carat">Καράτι</string>
     <string name="unit_mass_carat_metric">Καράτι (μετρικό)</string>
     <string name="unit_temperature">Θερμοκρασία</string>
@@ -98,12 +80,6 @@
     <string name="unit_time_day">Ημέρα</string>
     <string name="unit_time_week">Εβδομάδα</string>
     <string name="unit_time_year">Έτος</string>
-
-    <!-- FAQ -->
     <string name="faq_1_title">Πώς λειτουργεί το κουμπί C (Καθαρισμός);</string>
     <string name="faq_1_text">Πατώντας θα αφαιρείται ένας χαρακτήρας τη φορά. Πατώντας παρατεταμένα θα γίνει επαναφορά όλων των πεδίων ταυτόχρονα.</string>
-    <!--
-        Haven't found some strings? There's more at
-        https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res
-    -->
 </resources>

@@ -5,17 +5,13 @@
     <string name="scientific_calculator">Naučni kalkulator</string>
     <string name="unit_converter">Pretvarač jedinica</string>
     <string name="swap_units">Zamijeni jedinice</string>
-    <!-- Calculator field -->
     <string name="formula_divide_by_zero_error">Greška: dijeljenje s nulom</string>
-    <!-- History -->
     <string name="history">Historija</string>
     <string name="history_empty">Historija je prazna</string>
     <string name="clear_history">Izbriši</string>
     <string name="history_cleared">Historija je izbrisana</string>
-    <!-- Settings -->
     <string name="vibrate_on_button_press">Vibriraj prilikom pritiskanja gumba</string>
     <string name="use_comma_as_decimal_mark">Koristi zarez kao decimalni znak</string>
-    <!-- Unit converter -->
     <string name="unit_length">Dužina</string>
     <string name="unit_length_kilometer">Kilometar</string>
     <string name="unit_length_meter">Metar</string>
@@ -23,12 +19,10 @@
     <string name="unit_length_millimeter">Milimetar</string>
     <string name="unit_length_micrometer">Mikrometar</string>
     <string name="unit_length_nanometer">Nanometar</string>
-    <string name="unit_length_angstrom">Angstrom</string>
     <string name="unit_length_mile">Milja</string>
     <string name="unit_length_yard">Jard</string>
     <string name="unit_length_foot">Stopa</string>
     <string name="unit_length_inch">Palac</string>
-    <string name="unit_length_fathom">Fathom</string>
     <string name="unit_length_nautical_mile">Nautička milja</string>
     <string name="unit_length_astronomical_unit">Astronomska jedinica</string>
     <string name="unit_length_parsec">Parsek</string>
@@ -69,16 +63,11 @@
     <string name="unit_volume_gill_imperial">Gill (Imperijalni)</string>
     <string name="unit_volume_fluid_ounce_imperial">Unca tekuća (Imperijalna)</string>
     <string name="unit_mass">Masa</string>
-    <string name="unit_mass_gram">Gram</string>
-    <string name="unit_mass_kilogram">Kilogram</string>
     <string name="unit_mass_milligram">Miligram</string>
     <string name="unit_mass_microgram">Mikrogram</string>
     <string name="unit_mass_tonne">Tona</string>
     <string name="unit_mass_pound">Funta</string>
     <string name="unit_mass_ounce">Unca</string>
-    <string name="unit_mass_grain">Grain</string>
-    <string name="unit_mass_dram">Dram</string>
-    <string name="unit_mass_stone">Stone</string>
     <string name="unit_mass_long_ton">Long Tona</string>
     <string name="unit_mass_short_ton">Short Tona</string>
     <string name="unit_mass_carat">Karat</string>
@@ -86,8 +75,6 @@
     <string name="unit_temperature">Temperatura</string>
     <string name="unit_temperature_celsius">Celzijus</string>
     <string name="unit_temperature_fahrenheit">Farenhajt</string>
-    <string name="unit_temperature_rankine">Rankine</string>
-    <string name="unit_temperature_kelvin">Kelvin</string>
     <string name="unit_time">Vrijeme</string>
     <string name="unit_time_hour">Sat</string>
     <string name="unit_time_minute">Minuta</string>
@@ -96,11 +83,6 @@
     <string name="unit_time_day">Dan</string>
     <string name="unit_time_week">Sedmica</string>
     <string name="unit_time_year">Godina</string>
-    <!-- FAQ -->
     <string name="faq_1_title">Kako funkcionira gumb C (Izbriši)\?</string>
     <string name="faq_1_text">Dodirom gumba uklanjaju se znakovi jedan po jedan. Dugim pritiskom gumba brišu se svi znakovi.</string>
-    <!--
-        Haven't found some strings? There's more at
-        https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res
-    -->
 </resources>

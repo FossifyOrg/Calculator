@@ -5,17 +5,13 @@
     <string name="scientific_calculator">Calculadora científica</string>
     <string name="unit_converter">Conversor de unidades</string>
     <string name="swap_units">Cambiar unidades</string>
-    <!-- Calculator field -->
     <string name="formula_divide_by_zero_error">Error: división por cero</string>
-    <!-- History -->
     <string name="history">Historial</string>
     <string name="history_empty">El historial está vacío</string>
     <string name="clear_history">Borrar</string>
     <string name="history_cleared">El historial ha sido borrado</string>
-    <!-- Settings -->
     <string name="vibrate_on_button_press">Vibrar al presionar un botón</string>
     <string name="use_comma_as_decimal_mark">Usar una coma como marca decimal</string>
-    <!-- Unit converter -->
     <string name="unit_length">Longitud</string>
     <string name="unit_length_kilometer">Kilómetros</string>
     <string name="unit_length_meter">Metro</string>
@@ -24,8 +20,6 @@
     <string name="unit_length_micrometer">Micrómetro</string>
     <string name="unit_length_nanometer">Nanómetro</string>
     <string name="unit_length_angstrom">Ángstrom</string>
-    <string name="unit_length_mile">Mile</string>
-    <string name="unit_length_yard">Yard</string>
     <string name="unit_length_foot">Pie</string>
     <string name="unit_length_inch">Pulgada</string>
     <string name="unit_length_fathom">Braza inglesa</string>
@@ -33,7 +27,6 @@
     <string name="unit_length_astronomical_unit">Unidad astronómica</string>
     <string name="unit_length_parsec">Pársec</string>
     <string name="unit_length_light_year">Año Luz</string>
-    <string name="unit_area">Area</string>
     <string name="unit_area_square_kilometer">Kilómetro cuadrado</string>
     <string name="unit_area_square_meter">Metro cuadrado</string>
     <string name="unit_area_square_centimeter">Centímetro cuadrado</string>
@@ -42,9 +35,7 @@
     <string name="unit_area_square_yard">Yarda cuadrada</string>
     <string name="unit_area_square_foot">Pie cuadrado</string>
     <string name="unit_area_square_inch">Pulgada cuadrada</string>
-    <string name="unit_area_acre">Acre</string>
     <string name="unit_area_hectare">Hectárea</string>
-    <string name="unit_volume">Volume</string>
     <string name="unit_volume_cubic_meter">Metro cúbico</string>
     <string name="unit_volume_cubic_decimeter">Decímetro cúbico</string>
     <string name="unit_volume_cubic_centimeter">Centímetro cúbico</string>
@@ -66,7 +57,6 @@
     <string name="unit_volume_gallon_imperial">Galón (Imperial)</string>
     <string name="unit_volume_quart_imperial">Cuarto de galón (Imperial)</string>
     <string name="unit_volume_pint_imperial">Pinta (Imperial)</string>
-    <string name="unit_volume_gill_imperial">Gill (Imperial)</string>
     <string name="unit_volume_fluid_ounce_imperial">Onza líquida (Imperial)</string>
     <string name="unit_mass">Masa</string>
     <string name="unit_mass_gram">Gramo</string>
@@ -74,33 +64,20 @@
     <string name="unit_mass_milligram">Miligramo</string>
     <string name="unit_mass_microgram">Microgramo</string>
     <string name="unit_mass_tonne">Tonelada</string>
-    <string name="unit_mass_pound">Pound</string>
     <string name="unit_mass_ounce">Onza</string>
     <string name="unit_mass_grain">Grano</string>
-    <string name="unit_mass_dram">Dram</string>
     <string name="unit_mass_stone">Piedra</string>
     <string name="unit_mass_long_ton">Tonelada larga</string>
     <string name="unit_mass_short_ton">Tonelada corta</string>
     <string name="unit_mass_carat">Quilate</string>
     <string name="unit_mass_carat_metric">Quilate (sistema métrico)</string>
     <string name="unit_temperature">Temperatura</string>
-    <string name="unit_temperature_celsius">Celsius</string>
-    <string name="unit_temperature_fahrenheit">Fahrenheit</string>
-    <string name="unit_temperature_rankine">Rankine</string>
-    <string name="unit_temperature_kelvin">Kelvin</string>
     <string name="unit_time">Tiempo</string>
     <string name="unit_time_hour">Hora</string>
-    <string name="unit_time_minute">Minute</string>
     <string name="unit_time_second">Segundo</string>
     <string name="unit_time_millisecond">Microsegundo</string>
-    <string name="unit_time_day">Day</string>
     <string name="unit_time_week">Semana</string>
     <string name="unit_time_year">Año</string>
-    <!-- FAQ -->
     <string name="faq_1_title">¿Cómo funciona el botón C (Borrar)\?</string>
     <string name="faq_1_text">Presionándolo una vez eliminará un solo carácter. Mantenerlo presionado reiniciará todos los campos.</string>
-    <!--
-        Haven't found some strings? There's more at
-        https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res
-    -->
 </resources>
