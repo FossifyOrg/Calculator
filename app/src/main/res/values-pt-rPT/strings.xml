@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="unit_length_mile">Milha</string>
-    <string name="unit_length_parsec">Parsec</string>
     <string name="unit_length_inch">Polegada</string>
     <string name="unit_area_square_centimeter">Centímetro Quadrado</string>
     <string name="unit_length_foot">Pé</string>
@@ -10,11 +9,8 @@
     <string name="unit_volume_cubic_centimeter">Centímetro Cúbico</string>
     <string name="unit_area_square_kilometer">Quilómetro Quadrado</string>
     <string name="unit_length_centimeter">Centímetro</string>
-    <string name="unit_area_hectare">Hectare</string>
     <string name="unit_area_square_inch">Polegada Quadrada</string>
     <string name="unit_area_square_meter">Metro Quadrado</string>
-    <string name="unit_volume">Volume</string>
-    <string name="unit_area_acre">Acre</string>
     <string name="unit_volume_cubic_millimeter">Milímetro Cúbico</string>
     <string name="unit_length_meter">Metro</string>
     <string name="app_launcher_name">Calculadora</string>
