@@ -80,4 +80,8 @@
     <string name="unit_time_year">Año</string>
     <string name="faq_1_title">¿Cómo funciona el botón C (Borrar)\?</string>
     <string name="faq_1_text">Presionándolo una vez eliminará un solo carácter. Mantenerlo presionado reiniciará todos los campos.</string>
+    <string name="unit_length_mile">Milla</string>
+    <string name="unit_area_acre">Acre</string>
+    <string name="unit_length_yard">Yarda</string>
+    <string name="unit_area">Área</string>
 </resources>
