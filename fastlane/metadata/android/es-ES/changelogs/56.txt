@@ -1,0 +1,3 @@
+* Corregido algunos problemas relacionados con el diseño de RTL
+ * Agregar un botón Conseguir un teléfono sencillo en la sección Acerca de
+ * Añadido algunas mejoras de traducción y UX
