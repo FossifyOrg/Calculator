@@ -1,0 +1,1 @@
+* Cambió los botones de círculos a círculo cuadrado (squircles)
