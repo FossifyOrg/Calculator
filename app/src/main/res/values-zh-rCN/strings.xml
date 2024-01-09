@@ -85,4 +85,13 @@
     <string name="unit_time_year">年</string>
     <string name="faq_1_title">如何使用 C (清除) 按钮？</string>
     <string name="faq_1_text">点按它一次删除一个字母。长按它将立即重置所有字段。</string>
+    <string name="unit_volume">容积</string>
+    <string name="unit_mass_pound">磅</string>
+    <string name="unit_mass_dram">打兰</string>
+    <string name="unit_time_minute">分钟</string>
+    <string name="unit_area_acre">英亩</string>
+    <string name="unit_length_mile">英里</string>
+    <string name="unit_length_yard">码</string>
+    <string name="unit_area">面积</string>
+    <string name="unit_time_day">天</string>
 </resources>
