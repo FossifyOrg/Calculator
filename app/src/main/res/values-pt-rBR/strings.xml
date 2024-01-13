@@ -62,4 +62,9 @@
     <string name="unit_time_year">Ano</string>
     <string name="faq_1_title">Como funciona o botão C (Clear)\?</string>
     <string name="faq_1_text">Um toque remove um caractere de cada vez. Um toque longo redefine todos os campos de uma vez.</string>
+    <string name="unit_length_mile">Milha</string>
+    <string name="unit_area">Área</string>
+    <string name="unit_volume_liter">Litro</string>
+    <string name="unit_time_day">Dia</string>
+    <string name="unit_time_minute">Minuto</string>
 </resources>
