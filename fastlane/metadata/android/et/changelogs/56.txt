@@ -1,0 +1,2 @@
+* Parandasime mõned kujundusvead RTL-keelte puhul
+* Lisasime tõlgete ja graafilise liidese parandusi
