@@ -1,1 +1,1 @@
-* Les boutons ont été remplacés par des cercles.
+* Les boutons ont été remplacés par des cercles
