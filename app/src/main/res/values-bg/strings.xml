@@ -53,4 +53,14 @@
     <string name="unit_length_micrometer">Микрометър</string>
     <string name="unit_time_hour">Час</string>
     <string name="unit_time_year">Година</string>
+    <string name="unit_volume">Обем</string>
+    <string name="unit_volume_cubic_meter">Кубичен метър</string>
+    <string name="unit_volume_cubic_decimeter">Кубичен дециметър</string>
+    <string name="unit_volume_cubic_centimeter">Кубичен сантиметър</string>
+    <string name="unit_volume_cubic_millimeter">Кубичен милиметър</string>
+    <string name="unit_volume_liter">Литър</string>
+    <string name="unit_volume_centiliter">Сантилитър</string>
+    <string name="unit_volume_deciliter">Децилитър</string>
+    <string name="unit_volume_milliliter">Милилитър</string>
+    <string name="unit_mass">Маса</string>
 </resources>
