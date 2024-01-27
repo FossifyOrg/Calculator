@@ -1,1 +1,1 @@
-* Se han añadido algunas mejoras en la interfaz de usuario, la traducción y la estabilidad
+* Añadido algunas mejoras de interfaz de usuario, traducción y estabilidad

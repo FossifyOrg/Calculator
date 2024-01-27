@@ -22,4 +22,7 @@
     <string name="unit_volume_cubic_decimeter">Decimetro cubic</string>
     <string name="unit_length">Longitude</string>
     <string name="unit_area_square_foot">Pede quadrate</string>
-    </resources>
+    <string name="unit_area_acre">Acre</string>
+    <string name="unit_length_yard">Yard</string>
+    <string name="unit_area">Area</string>
+</resources>

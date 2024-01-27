@@ -1,0 +1,32 @@
+See stiilne kaasaegne kalkulaator pakub suurepärast kasutajakogemust, mida sulle meeldib näha. Pika vajutusega saad tulemuse või valemi kopeerida lõikelauale. Seda kalkulaatorit saad kasutada ka valuutakursside arvutamiseks, et arvutada oma päevatulu ja muid summasid erinevate riikide valuutades. Silmi rahustava tumeda teemaga on sul nüüd hõlpsam näha nuppe ja numbreid ning kasutada seda kalkulaatorit lihtsate arvutuste tegemiseks või kasutada seda valuutakonverterina. Võid kasutada seda matemaatilist kalkulaatorit ka hüpoteeklaenu kalkulaatorina.
+
+Rakendus on lihtne abimees kiireteks arvutusteks paljude põhifunktsioonidega, sealhulgas korrutamine, jagamine, juurutamine ja võimsused. Samuti on olemas tume teema, nii et saad kasutada seda uut tehnoloogiat, et muuta kalkulaator sujuvamaks ja hõlpsamini kasutatavaks, mitte kasutada erinevates kalkulaatorites pakutavaid teravaid värve, mis pigem segavad keeruliste arvutuste ajal.
+
+Et oleksid kindel väärtuste sisestamises, võid rakenduse panna vibreerima nupuvajutuste korral. Selles rakenduses kasutatud head värvid on lahedad ja vaatamiseks mugavad, nii et saad hõlpsasti eristada kõiki nuppe ja arvutada mugavalt. Seda kalkulaatorit saad kasutada keeruliste juurvõrrandite arvutamiseks või ka valuutakonverterina ja graafika kalkulaatorina.
+
+Mugavaks kasutamiseks on seadistuses valik, mis takistab telefoni uinumist rakenduse kasutamise ajal.
+
+Saad kohendada nii muutuva suurusega vidina tekstivärvi, kui läbipaistva tausta värve. Rakenduse avamiseks vajutage vidina tulemust või valemit.
+
+Hiljutiste arvutuste kiireks sirvimiseks on olemas toimingute ajalugu.
+
+Rakenduses on kasutatud materiaalse disaini põhimõtteid ja olemas on tume teema, mis tagavad lihtsaks kasutamiseks suurepärase kasutajakogemuse. Internetiühenduse mittekasutamine annab sulle rohkem privaatsust, turvalisust ja stabiilsust kui teised sarnased rakendused.
+
+Ei sisalda reklaame ega asjatuid õigusi. Rakendus on täielikult avatud lähtekoodiga ja võimaldab kohandatavate värvide kasutamist.
+
+Omadused:
+- Lihtsaltkasutatav kalkulaator.
+- Toimingute ajalugu.
+- Olemas on tume teema, mis võimaldab kalkulaatori sujuvat kasutamist.
+- Töötab valuutakursside arvutajana, et aidata sul arvutada oma sissetulekuid ja muid summasid.
+- Kohandatav tekstivärv, et see näeks lahedam välja ja vastavaks sinu vajadustele.
+- Et arvutamine oleks lihtsam, siis nuppude mõõdud on arvestatud keskmise sõrmesuuruse järgi.
+
+Tutvu kõikide Fossify rakendustega siin:
+https://www.fossify.org
+
+Reddit:
+https://www.reddit.com/r/Fossify
+
+Telegram:
+https://t.me/Fossify

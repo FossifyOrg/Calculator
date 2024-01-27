@@ -14,7 +14,7 @@
     <string name="unit_length">Längd</string>
     <string name="unit_length_micrometer">Mikrometer</string>
     <string name="unit_length_angstrom">Ångström</string>
-    <string name="unit_length_mile">Mil</string>
+    <string name="unit_length_mile">Engelsk mil</string>
     <string name="unit_length_foot">Fot</string>
     <string name="unit_length_inch">Tum</string>
     <string name="unit_length_fathom">Famn</string>

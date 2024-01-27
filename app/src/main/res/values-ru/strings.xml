@@ -83,6 +83,15 @@
     <string name="unit_time_millisecond">Микросекунда</string>
     <string name="unit_time_week">Неделя</string>
     <string name="unit_time_year">Год</string>
-    <string name="faq_1_title">Как работает кнопка C (Очистка)\?</string>
+    <string name="faq_1_title">Как работает кнопка [C] (очистка)?</string>
     <string name="faq_1_text">Нажатие на неё удалит один символ. Долгое нажатие сбросит все поля сразу.</string>
+    <string name="unit_mass_pound">Фунт</string>
+    <string name="unit_time_minute">Минута</string>
+    <string name="unit_time_day">День</string>
+    <string name="unit_length_mile">Миля</string>
+    <string name="unit_length_yard">Ярд</string>
+    <string name="unit_area">Площадь</string>
+    <string name="unit_area_acre">Акр</string>
+    <string name="unit_volume">Объём</string>
+    <string name="unit_mass_dram">Драм</string>
 </resources>

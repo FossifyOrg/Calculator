@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Calculatrice simple</string>
+    <string name="app_name">Fossify Calculator</string>
     <string name="app_launcher_name">Calculatrice</string>
     <string name="scientific_calculator">Calculatrice scientifique</string>
     <string name="unit_converter">Convertisseur d\'unités</string>
@@ -84,4 +84,14 @@
     <string name="unit_time_year">Année</string>
     <string name="faq_1_title">Comment le bouton C (Effacer) fonctionne-t-il \?</string>
     <string name="faq_1_text">En appuyant dessus, vous effacerez un caractère à la fois. Un appui prolongé réinitialisera tous les champs d\'un seul coup.</string>
+    <string name="unit_area_acre">Are</string>
+    <string name="unit_area_hectare">Hectare</string>
+    <string name="unit_length_parsec">Parsec</string>
+    <string name="unit_mass_tonne">Tonne</string>
+    <string name="unit_mass_carat">Carat</string>
+    <string name="unit_temperature_celsius">Celsius</string>
+    <string name="unit_temperature_fahrenheit">Fahrenheit</string>
+    <string name="unit_temperature_rankine">Rankine</string>
+    <string name="unit_temperature_kelvin">Kelvin</string>
+    <string name="unit_time_minute">Minute</string>
 </resources>

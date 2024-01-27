@@ -1,0 +1,3 @@
+* Utilisation du thème Material You par défaut sur Android 12+
+ * Augmentation de la version minimale requise du système d'exploitation Android à 6
+ * Amélioration de l'interface utilisateur, de la traduction et de la stabilité

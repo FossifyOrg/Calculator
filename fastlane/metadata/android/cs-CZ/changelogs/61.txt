@@ -1,0 +1,2 @@
+* Přidán převodník jednotek
+ * Přidána vylepšení UI, překladů a stability
