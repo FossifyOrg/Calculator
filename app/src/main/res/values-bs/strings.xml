@@ -85,4 +85,13 @@
     <string name="unit_time_year">Godina</string>
     <string name="faq_1_title">Kako funkcionira gumb C (Izbriši)\?</string>
     <string name="faq_1_text">Dodirom gumba uklanjaju se znakovi jedan po jedan. Dugim pritiskom gumba brišu se svi znakovi.</string>
+    <string name="unit_mass_dram">Dram</string>
+    <string name="unit_temperature_rankine">Rankin</string>
+    <string name="unit_temperature_kelvin">Kelvin</string>
+    <string name="unit_length_fathom">Fatom</string>
+    <string name="unit_mass_gram">Gram</string>
+    <string name="unit_mass_kilogram">Kilogram</string>
+    <string name="unit_mass_grain">Zrno</string>
+    <string name="unit_length_angstrom">Angstrom</string>
+    <string name="unit_mass_stone">Kamen</string>
 </resources>
