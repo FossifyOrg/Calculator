@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Simple Calculator</string>
+    <string name="app_name">Fossify Calculator</string>
     <string name="app_launcher_name">कैलकुलेटर</string>
     <string name="scientific_calculator">वैज्ञानिक कैलकुलेटर</string>
     <string name="formula_divide_by_zero_error">त्रुटि: शून्य से विभाजन</string>
@@ -61,14 +61,14 @@
     <string name="unit_volume_acre_foot">एकर फुट</string>
     <string name="unit_volume_cubic_foot">घन फुट</string>
     <string name="unit_volume_cubic_inch">घन इंच</string>
-    <string name="unit_volume_quart_us">क्वार्ट (यूएस)</string>
-    <string name="unit_volume_pint_us">पिंट (यूएस)</string>
-    <string name="unit_volume_gill_us">गिल (यूएस)</string>
-    <string name="unit_volume_barrel_us">बैरल (यूएस)</string>
+    <string name="unit_volume_quart_us">क्वार्ट (US)</string>
+    <string name="unit_volume_pint_us">पिंट (US)</string>
+    <string name="unit_volume_gill_us">गिल (US)</string>
+    <string name="unit_volume_barrel_us">बैरल (US)</string>
     <string name="unit_volume_gallon_us">गैलन (यूएस)</string>
     <string name="unit_volume_barrel_imperial">बैरल (इंपीरियल)</string>
     <string name="unit_volume_gallon_imperial">गैलन (इंपीरियल)</string>
-    <string name="unit_volume_fluid_ounce_us">द्रव औंस (यूएस)</string>
+    <string name="unit_volume_fluid_ounce_us">द्रव औंस (US)</string>
     <string name="unit_volume_fluid_ounce_imperial">द्रव औंस (इंपीरियल)</string>
     <string name="unit_mass">द्रव्यमान</string>
     <string name="unit_mass_kilogram">किलोग्राम</string>
