@@ -7,7 +7,7 @@
     <string name="history">इतिहास</string>
     <string name="history_empty">इतिहास खाली है</string>
     <string name="clear_history">स्पष्ट</string>
-    <string name="history_cleared">इतिहास साफ हो चुका है</string>
+    <string name="history_cleared">इतिहास साफ कर दिया गया</string>
     <string name="vibrate_on_button_press">बटन प्रेस पर कंपन</string>
     <string name="use_comma_as_decimal_mark">दशमलव चिह्न के रूप में अल्पविराम का उपयोग करें</string>
     <string name="faq_1_title">C (साफ़ करें) बटन कैसे काम करता है?</string>
@@ -24,7 +24,7 @@
     <string name="unit_mass_pound">पाउंड</string>
     <string name="unit_mass_dram">ड्राम</string>
     <string name="unit_mass_stone">पत्थर</string>
-    <string name="unit_mass_carat_metric">कैरेट (मीट्रिक)</string>
+    <string name="unit_mass_carat_metric">कैरेट (मैट्रिक)</string>
     <string name="unit_temperature">तापमान</string>
     <string name="unit_converter">इकाई कनवर्टर</string>
     <string name="swap_units">इकाइयों की अदला-बदली करें</string>
@@ -65,7 +65,7 @@
     <string name="unit_volume_pint_us">पिंट (US)</string>
     <string name="unit_volume_gill_us">गिल (US)</string>
     <string name="unit_volume_barrel_us">बैरल (US)</string>
-    <string name="unit_volume_gallon_us">गैलन (यूएस)</string>
+    <string name="unit_volume_gallon_us">गैलन (US)</string>
     <string name="unit_volume_barrel_imperial">बैरल (इंपीरियल)</string>
     <string name="unit_volume_gallon_imperial">गैलन (इंपीरियल)</string>
     <string name="unit_volume_fluid_ounce_us">द्रव औंस (US)</string>
