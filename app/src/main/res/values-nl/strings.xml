@@ -4,7 +4,7 @@
     <string name="app_launcher_name">Rekenmachine</string>
     <string name="scientific_calculator">Wetenschappelijke Rekenmachine</string>
     <string name="unit_converter">Eenheden omzetten</string>
-    <string name="swap_units">Units omwisselen</string>
+    <string name="swap_units">Eenheden omwisselen</string>
     <string name="formula_divide_by_zero_error">Fout: delen door nul</string>
     <string name="history">Geschiedenis</string>
     <string name="history_empty">Geschiedenis is leeg</string>
