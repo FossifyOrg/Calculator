@@ -1,2 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_name">ماشین حساب ساده</string>
+    <string name="scientific_calculator">ماشین حساب مهندسی</string>
+    <string name="unit_converter">مبدل واحد</string>
+    <string name="swap_units">تعویض واحدها</string>
+    <string name="formula_divide_by_zero_error">خطا: تقسیم بر صفر</string>
+    <string name="history">تاریخچه</string>
+    <string name="history_empty">تاریخچه خالی است</string>
+    <string name="clear_history">پاک کردن</string>
+    <string name="use_comma_as_decimal_mark">از کاما به عنوان علامت اعشار استفاده کنید</string>
+    <string name="unit_length_kilometer">کیلومتر</string>
+    <string name="unit_length_meter">متر</string>
+    <string name="unit_length_centimeter">سانتی‌متر</string>
+    <string name="unit_length_millimeter">میلی‌متر</string>
+    <string name="unit_length_micrometer">میکرومتر</string>
+    <string name="unit_length_angstrom">آنگستروم</string>
+    <string name="app_launcher_name">ماشین حساب</string>
+    <string name="history_cleared">تاریخچه پاک شد</string>
+    <string name="unit_length">طول</string>
+    <string name="unit_length_nanometer">نانومتر</string>
+</resources>
