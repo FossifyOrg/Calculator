@@ -1,0 +1,1 @@
+* Lade till några UI, översättningar och stabilitetsförbättringar
