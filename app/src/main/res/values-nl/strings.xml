@@ -41,7 +41,7 @@
     <string name="unit_volume_pint_us">Pint (VS)</string>
     <string name="unit_volume_gill_us">Gill (VS)</string>
     <string name="unit_volume_fluid_ounce_us">Fluid Ounce (VS)</string>
-    <string name="unit_volume_barrel_imperial">Vat (Imperial)</string>
+    <string name="unit_volume_barrel_imperial">Vat (Engels)</string>
     <string name="unit_mass">Massa</string>
     <string name="unit_mass_tonne">Ton</string>
     <string name="unit_mass_pound">Pond</string>
@@ -89,4 +89,9 @@
     <string name="unit_mass_gram">Gram</string>
     <string name="unit_volume">Volume</string>
     <string name="unit_mass_kilogram">Kilogram</string>
+    <string name="unit_volume_gallon_imperial">Gallon (Engels)</string>
+    <string name="unit_volume_quart_imperial">Quart (Engels)</string>
+    <string name="unit_volume_pint_imperial">Pint (Engels)</string>
+    <string name="unit_volume_gill_imperial">Gill (Engels)</string>
+    <string name="unit_volume_fluid_ounce_imperial">Fluid ounce (Engels)</string>
 </resources>
