@@ -1,0 +1,1 @@
+* Lade till några översättningar och förbättrade stabiliteten och användargränsnitt.
