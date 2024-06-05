@@ -8,7 +8,6 @@ import com.simplemobiletools.commons.extensions.toast
 import net.objecthunter.exp4j.ExpressionBuilder
 import org.json.JSONObject
 import org.json.JSONTokener
-import java.math.BigDecimal
 
 class CalculatorImpl(
     calculator: Calculator,
@@ -42,8 +41,9 @@ class CalculatorImpl(
     }
 
     private fun addDigit(number: Int) {
-        if (inputDisplayedFormula == "0") {
+        if (inputDisplayedFormula == "0" || lastKey == EQUALS) {
             inputDisplayedFormula = ""
+            lastKey = DIGIT
         }
 
         inputDisplayedFormula += number
@@ -202,6 +202,10 @@ class CalculatorImpl(
         }
 
         lastKey = EQUALS
+        inputDisplayedFormula = currentResult
+        baseValue = currentResult.toDouble()
+        lastOperation = ""
+        secondValue = 0.0
     }
 
     private fun getSecondValue(): Double {
@@ -221,11 +225,18 @@ class CalculatorImpl(
     }
 
     private fun calculateResult() {
-        if (lastOperation == ROOT && inputDisplayedFormula.startsWith("√")) {
-            baseValue = 1.0
-        }
+        val expression = inputDisplayedFormula.trim()
+        try {
+            val adjustedExpression = expression.replace("√", "sqrt")
+                .replace("×", "*")
+                .replace("÷", "/")
+            if (adjustedExpression.contains("/0")) {
+                context.toast(R.string.formula_divide_by_zero_error)
+                return
+            }
+            val result = ExpressionBuilder(adjustedExpression).build().evaluate()
 
-        if (lastKey != EQUALS) {
+
             val valueToCheck = inputDisplayedFormula.trimStart('-').removeGroupSeparator()
             val parts = valueToCheck.split(operationsRegex).filter { it != "" }
             if (parts.isEmpty()) {
@@ -243,61 +254,25 @@ class CalculatorImpl(
             }
 
             secondValue = parts.getOrNull(1)?.toDouble() ?: secondValue
-        }
 
-        if (lastOperation != "") {
-            val sign = getSign(lastOperation)
-            val formattedBaseValue = baseValue.format().removeGroupSeparator()
-            val formatterSecondValue = secondValue.format().removeGroupSeparator()
-            val expression = "$formattedBaseValue$sign$formatterSecondValue"
-                .replace("√", "sqrt")
-                .replace("×", "*")
-                .replace("÷", "/")
-
-            try {
-                if (sign == "÷" && secondValue == 0.0) {
-                    context.toast(R.string.formula_divide_by_zero_error)
-                    return
-                }
-
-                // handle percents manually, it doesn't seem to be possible via net.objecthunter:exp4j. "%" is used only for modulo there
-                // handle cases like 10%200 here
-                val result = if (sign == "%") {
-                    val second = (secondValue / 100f).format().removeGroupSeparator()
-                    ExpressionBuilder("$formattedBaseValue*$second").build().evaluate()
-                } else {
-                    // avoid Double rounding errors at expressions like 5250,74 + 14,98
-                    if (sign == "+" || sign == "-") {
-                        val first = BigDecimal.valueOf(baseValue)
-                        val second = BigDecimal.valueOf(secondValue)
-                        val bigDecimalResult = when (sign) {
-                            "-" -> first.minus(second)
-                            else -> first.plus(second)
-                        }
-                        bigDecimalResult.toDouble()
-                    } else {
-                        ExpressionBuilder(expression).build().evaluate()
-                    }
-                }
-
-                if (result.isInfinite() || result.isNaN()) {
-                    context.toast(com.simplemobiletools.commons.R.string.unknown_error_occurred)
-                    return
-                }
-
-                showNewResult(result.format())
-                val newFormula = "${baseValue.format()}$sign${secondValue.format()}"
-                HistoryHelper(context).insertOrUpdateHistoryEntry(
-                    History(id = null, formula = newFormula, result = result.format(), timestamp = System.currentTimeMillis())
-                )
-                showNewFormula(newFormula)
-
-                inputDisplayedFormula = result.format()
-                baseValue = result
-            } catch (e: Exception) {
+            if (result.isInfinite() || result.isNaN()) {
                 context.toast(com.simplemobiletools.commons.R.string.unknown_error_occurred)
+                return
             }
+
+            showNewResult(result.format())
+            HistoryHelper(context).insertOrUpdateHistoryEntry(
+                History(id = null, formula = expression, result = result.format(), timestamp = System.currentTimeMillis())
+            )
+            showNewFormula(expression)
+        } catch (e: ArithmeticException) {
+
+            context.toast(R.string.formula_divide_by_zero_error)
+        } catch (e: Exception) {
+
+            context.toast(com.simplemobiletools.commons.R.string.unknown_error_occurred)
         }
+
     }
 
     private fun calculatePercentage(baseValue: Double, secondValue: Double, sign: String): Double {
@@ -306,22 +281,27 @@ class CalculatorImpl(
                 val partial = 100 / secondValue
                 baseValue / partial
             }
+
             DIVIDE -> {
                 val partial = 100 / secondValue
                 baseValue * partial
             }
+
             PLUS -> {
                 val partial = baseValue / (100 / secondValue)
                 baseValue.plus(partial)
             }
+
             MINUS -> {
                 val partial = baseValue / (100 / secondValue)
                 baseValue.minus(partial)
             }
+
             PERCENT -> {
                 val partial = (baseValue % secondValue) / 100
                 partial
             }
+
             else -> baseValue / (100 * secondValue)
         }
     }
@@ -391,7 +371,7 @@ class CalculatorImpl(
         }
 
         if (lastKey == EQUALS) {
-            lastOperation = EQUALS
+            handleReset()  // Reset the input after an equals operation
         }
 
         lastKey = DIGIT
