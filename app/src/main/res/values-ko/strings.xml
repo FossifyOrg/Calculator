@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">간단한 계산기</string>
     <string name="app_launcher_name">계산기</string>
-    <string name="scientific_calculator">과학 계산기</string>
+    <string name="scientific_calculator">공학용 계산기</string>
     <string name="formula_divide_by_zero_error">오류: 0으로 나누기</string>
     <string name="history">있습니다</string>
     <string name="history_empty">기록이 비어 있습니다</string>
