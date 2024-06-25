@@ -1,0 +1,2 @@
+* Einheitswandler hinzugefügt
+* Hinzugefügt einige UI, Übersetzung und Stabilität Verbesserungen

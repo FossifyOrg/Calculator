@@ -1,0 +1,3 @@
+* Android 12+'da varsayılan olarak Material You temasını kullanın
+ * Gerekli minimum Android işletim sistemi sürümü 6'ya yükseltildi
+ * Bazı kullanıcı arayüzü, çeviri ve kararlılık iyileştirmeleri eklendi
