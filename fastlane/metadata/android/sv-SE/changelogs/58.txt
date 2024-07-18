@@ -1,0 +1,1 @@
+* Ändrade knapparna från cirklar till kvirklar

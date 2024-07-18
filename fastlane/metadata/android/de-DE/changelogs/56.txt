@@ -1,0 +1,3 @@
+* Einige Probleme mit RTL Layout behoben
+* Hinzufügen einer Get Simple Phone Taste in den Über Abschnitt
+* Hinzugefügt einige Übersetzung und UX Verbesserungen

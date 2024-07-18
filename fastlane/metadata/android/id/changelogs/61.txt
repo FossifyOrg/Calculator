@@ -1,0 +1,2 @@
+* Menambahkan konverter Satuan
+ * Peningkatan UI, terjemahan, dan stabilitas

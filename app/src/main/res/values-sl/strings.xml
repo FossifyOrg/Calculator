@@ -12,4 +12,5 @@
     <string name="use_comma_as_decimal_mark">Uporabite vejico kot decimalno znamenje</string>
     <string name="faq_1_title">Kako deluje gumb C (Clear)\?</string>
     <string name="faq_1_text">Če ga stisnete, odstranite po en lik naenkrat. Z dolgim pritiskom nanj boste odstranili vsa polja naenkrat.</string>
+    <string name="unit_converter">Pretvornik enot</string>
 </resources>

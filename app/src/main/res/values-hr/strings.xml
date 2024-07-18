@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Jednostavan kalkulator</string>
+    <string name="app_name">Jednostavni kalkulator</string>
     <string name="app_launcher_name">Kalkulator</string>
     <string name="scientific_calculator">Znanstveni kalkulator</string>
     <string name="unit_converter">Pretvarač jedinica</string>
@@ -12,7 +12,7 @@
     <string name="history_cleared">Povijest je izbrisana</string>
     <string name="vibrate_on_button_press">Vibriraj prilikom pritiskanja gumba</string>
     <string name="use_comma_as_decimal_mark">Koristi zarez kao decimalni znak</string>
-    <string name="unit_length">Duljina</string>
+    <string name="unit_length">Dužina</string>
     <string name="unit_length_kilometer">Kilometar</string>
     <string name="unit_length_meter">Metar</string>
     <string name="unit_length_centimeter">Centimetar</string>
@@ -84,4 +84,14 @@
     <string name="unit_time_year">Godina</string>
     <string name="faq_1_title">Kako funkcionira gumb C (Izbriši)\?</string>
     <string name="faq_1_text">Dodirom gumba uklanjaju se znakovi jedan po jedan. Dugim pritiskom gumba obnavljaju se sva polja.</string>
+    <string name="unit_mass_stone">Kamen</string>
+    <string name="unit_temperature_fahrenheit">Fahrenheit</string>
+    <string name="unit_temperature_rankine">Rankine</string>
+    <string name="unit_mass_dram">Dram</string>
+    <string name="unit_temperature_kelvin">Kelvin</string>
+    <string name="unit_mass_kilogram">Kilogram</string>
+    <string name="unit_length_angstrom">Angstrom</string>
+    <string name="unit_length_fathom">Fathom</string>
+    <string name="unit_mass_gram">Gram</string>
+    <string name="unit_mass_grain">Zrno</string>
 </resources>

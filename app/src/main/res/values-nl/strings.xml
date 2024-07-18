@@ -4,7 +4,7 @@
     <string name="app_launcher_name">Rekenmachine</string>
     <string name="scientific_calculator">Wetenschappelijke Rekenmachine</string>
     <string name="unit_converter">Eenheden omzetten</string>
-    <string name="swap_units">Omwisselen</string>
+    <string name="swap_units">Eenheden omwisselen</string>
     <string name="formula_divide_by_zero_error">Fout: delen door nul</string>
     <string name="history">Geschiedenis</string>
     <string name="history_empty">Geschiedenis is leeg</string>
@@ -41,7 +41,7 @@
     <string name="unit_volume_pint_us">Pint (VS)</string>
     <string name="unit_volume_gill_us">Gill (VS)</string>
     <string name="unit_volume_fluid_ounce_us">Fluid Ounce (VS)</string>
-    <string name="unit_volume_barrel_imperial">Vat (Imperial)</string>
+    <string name="unit_volume_barrel_imperial">Vat (Engels)</string>
     <string name="unit_mass">Massa</string>
     <string name="unit_mass_tonne">Ton</string>
     <string name="unit_mass_pound">Pond</string>
@@ -70,4 +70,28 @@
     <string name="unit_temperature_fahrenheit">Fahrenheit</string>
     <string name="unit_temperature_celsius">Celsius</string>
     <string name="unit_time_week">Week</string>
+    <string name="unit_length_kilometer">Kilometer</string>
+    <string name="unit_length_meter">Meter</string>
+    <string name="unit_length_centimeter">Centimeter</string>
+    <string name="unit_length_micrometer">Micrometer</string>
+    <string name="unit_length_inch">Inch</string>
+    <string name="unit_length_millimeter">Millimeter</string>
+    <string name="unit_length_angstrom">Angstrom</string>
+    <string name="unit_length_nanometer">Nanometer</string>
+    <string name="unit_length_parsec">Parsec</string>
+    <string name="unit_length_yard">Yard</string>
+    <string name="unit_area_hectare">Hectare</string>
+    <string name="unit_area_acre">Acre</string>
+    <string name="unit_volume_liter">Liter</string>
+    <string name="unit_volume_centiliter">Centiliter</string>
+    <string name="unit_volume_deciliter">Deciliter</string>
+    <string name="unit_volume_milliliter">Milliliter</string>
+    <string name="unit_mass_gram">Gram</string>
+    <string name="unit_volume">Volume</string>
+    <string name="unit_mass_kilogram">Kilogram</string>
+    <string name="unit_volume_gallon_imperial">Gallon (Engels)</string>
+    <string name="unit_volume_quart_imperial">Quart (Engels)</string>
+    <string name="unit_volume_pint_imperial">Pint (Engels)</string>
+    <string name="unit_volume_gill_imperial">Gill (Engels)</string>
+    <string name="unit_volume_fluid_ounce_imperial">Fluid ounce (Engels)</string>
 </resources>
