@@ -5,7 +5,7 @@
     android:id="@+id/main_coordinator"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.simplemobiletools.calculator.activities.MainActivity"
+    tools:context="org.fossify.calculator.activities.MainActivity"
     tools:ignore="HardcodedText">
 
     <com.google.android.material.appbar.MaterialToolbar

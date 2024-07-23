@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Vienkāršs kalkulators</string>
     <string name="app_launcher_name">Kalkulators</string>
     <string name="scientific_calculator">Zinātniskais kalkulators</string>
     <string name="formula_divide_by_zero_error">Kļūda: dalīšana ar nulli</string>

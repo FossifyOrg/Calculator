@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Basit Hesap Makinesi</string>
     <string name="app_launcher_name">Hesap Makinesi</string>
     <string name="scientific_calculator">Bilimsel Hesap Makinesi</string>
     <string name="unit_converter">Birim dönüştürücü</string>

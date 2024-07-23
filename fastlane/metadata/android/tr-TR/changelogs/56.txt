@@ -1,3 +1,0 @@
-* RTL düzeniyle ilgili bazı sorunlar düzeltildi
- * Hakkında bölümüne Basit Telefon Al düğmesi ekleme
- * Bazı çeviri ve kullanıcı deneyimi iyileştirmeleri eklendi

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">సాధారణ కాలిక్యులేటర్</string>
     <string name="app_launcher_name">గనన యంత్రము</string>
     <string name="scientific_calculator">శాస్త్రీయ గనన యంత్రము</string>
     <string name="formula_divide_by_zero_error">లోపం: సున్నాతో భాగించటం</string>

@@ -1,1 +1,1 @@
-Simple Calculator
+Fossify Calculator

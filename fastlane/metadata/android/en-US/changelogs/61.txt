@@ -1,2 +1,0 @@
- * Added a Unit converter
- * Added some UI, translation and stability improvements

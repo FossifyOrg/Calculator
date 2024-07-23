@@ -1,23 +1,35 @@
-# Simple Calculator
+# Fossify Calculator
+
 <img alt="Logo" src="graphics/icon.png" width="120" />
 
-This stylish modern calculator offers great user experience that you will love seeing. You can copy the result or formula to clipboard by long pressing it. You can also use this calculator as a currency converter to calculate your daily income and other amount in different country's currency. With eye soothing dark theme, it is now easy for you to see buttons and numbers more easily and use this calculator for simple calculations or use it as a currency converter or as a calculator and graphing calculator. You can also use this math calculator as a mortgage calculator
+This stylish modern calculator offers great user experience that you will love seeing. You can copy the result or formula to clipboard by long pressing it. You
+can also use this calculator as a currency converter to calculate your daily income and other amount in different country's currency. With eye soothing dark
+theme, it is now easy for you to see buttons and numbers more easily and use this calculator for simple calculations or use it as a currency converter or as a
+calculator and graphing calculator. You can also use this math calculator as a mortgage calculator
 
-The app is a simple helper for fast calculations with many basic functions including multiplying, dividing, root and powers. It also comes with dark theme so that you can use this new technology to make your calculator look more smooth and easy to use rather than using sharp colors provided in different calculators that can't help you concentrate on your complex calculations in this graphing calculator and math calculator.
+The app is a simple helper for fast calculations with many basic functions including multiplying, dividing, root and powers. It also comes with dark theme so
+that you can use this new technology to make your calculator look more smooth and easy to use rather than using sharp colors provided in different calculators
+that can't help you concentrate on your complex calculations in this graphing calculator and math calculator.
 
-You can make it vibrate on button presses to make you confident during inserting your values. The exquisite colors used in this app are cool and look smooth to eyes so you can easily distinguish between all the buttons and calculate with ease. This calculator can be used to solve complex root problems or it can also be used as currency converter or graphing calculator.
+You can make it vibrate on button presses to make you confident during inserting your values. The exquisite colors used in this app are cool and look smooth to
+eyes so you can easily distinguish between all the buttons and calculate with ease. This calculator can be used to solve complex root problems or it can also be
+used as currency converter or graphing calculator.
 
-There is an option in setting to prevent the phone from sleeping while using the app for comfortable usage and keep working on your complex problems in this currency converter and graphing calculator plus math calculator.
+There is an option in setting to prevent the phone from sleeping while using the app for comfortable usage and keep working on your complex problems in this
+currency converter and graphing calculator plus math calculator.
 
-The text color of the resizable widget can be customized, as well as the color and the alpha of the background. Press the result or formula in the widget to open the app.
+The text color of the resizable widget can be customized, as well as the color and the alpha of the background. Press the result or formula in the widget to
+open the app.
 
 You can access a history of the operations to quickly scan through recent calculations.
 
-It comes with material design and dark theme by default, provides great user experience for easy usage. The lack of internet access gives you more privacy, security and stability than other apps.
+It comes with material design and dark theme by default, provides great user experience for easy usage. The lack of internet access gives you more privacy,
+security and stability than other apps.
 
 Contains no ads or unnecessary permissions. It is fully opensource, provides customizable colors.
 
 Features:
+
 - Easy to use calculator.
 - Operations history
 - Comes with dark theme to allow smooth usage of calculator.

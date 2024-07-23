@@ -1,1 +1,0 @@
-* Přidána vylepšení UI, překladů a stability

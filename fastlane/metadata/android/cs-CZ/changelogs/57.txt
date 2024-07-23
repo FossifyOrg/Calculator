@@ -1,3 +1,0 @@
-* Použití motivu Material You ve výchozím nastavení v systému Android 12+
- * Zvýšena minimální požadovaná verze operačního systému Android na 6
- * Přidáno několik vylepšení uživatelského rozhraní, překladů a stability

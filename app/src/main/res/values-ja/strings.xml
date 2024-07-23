@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">シンプル電卓</string>
     <string name="app_launcher_name">電卓</string>
     <string name="scientific_calculator">科学計算電卓</string>
     <string name="formula_divide_by_zero_error">エラー：ゼロによる除算</string>

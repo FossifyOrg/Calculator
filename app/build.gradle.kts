@@ -1,16 +1,11 @@
-import java.io.FileInputStream
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 import org.jetbrains.kotlin.konan.properties.Properties
+import java.io.FileInputStream
 
 plugins {
     alias(libs.plugins.android)
     alias(libs.plugins.kotlinAndroid)
     alias(libs.plugins.ksp)
-    base
-}
-
-base {
-    archivesName.set("calculator")
 }
 
 val keystorePropertiesFile: File = rootProject.file("keystore.properties")
@@ -28,6 +23,7 @@ android {
         targetSdk = project.libs.versions.app.build.targetSDK.get().toInt()
         versionName = project.libs.versions.app.version.versionName.get()
         versionCode = project.libs.versions.app.version.versionCode.get().toInt()
+        setProperty("archivesBaseName", "calculator-$versionCode")
         ksp {
             arg("room.schemaLocation", "$projectDir/schemas")
         }
@@ -78,7 +74,7 @@ android {
     }
 
     compileOptions {
-        val currentJavaVersionFromLibs = JavaVersion.valueOf(libs.versions.app.build.javaVersion.get().toString())
+        val currentJavaVersionFromLibs = JavaVersion.valueOf(libs.versions.app.build.javaVersion.get())
         sourceCompatibility = currentJavaVersionFromLibs
         targetCompatibility = currentJavaVersionFromLibs
     }
@@ -102,11 +98,12 @@ android {
         checkReleaseBuilds = false
         abortOnError = false
     }
-    namespace = "com.simplemobiletools.calculator"
+
+    namespace = "com.fossify.calculator"
 }
 
 dependencies {
-    implementation(libs.simple.tools.commons)
+    implementation(libs.fossify.commons)
     implementation(libs.auto.fit.text.view)
     implementation(libs.exp4j)
     implementation(libs.bundles.lifecycle)

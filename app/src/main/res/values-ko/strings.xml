@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">간단한 계산기</string>
     <string name="app_launcher_name">계산기</string>
     <string name="scientific_calculator">공학용 계산기</string>
     <string name="formula_divide_by_zero_error">오류: 0으로 나누기</string>

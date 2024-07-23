@@ -1,3 +1,0 @@
-* Material verwenden Sie Thema standardmäßig auf Android 12+
-* Erhöhte minimal erforderliche Android-Betriebssystem-Version auf 6
-* Hinzugefügt einige UI, Übersetzung und Stabilität Verbesserungen

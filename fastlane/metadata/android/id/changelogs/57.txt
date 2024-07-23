@@ -1,3 +1,0 @@
-* Gunakan tema Material You secara default untuk versi Android 12+
- * Tingkatkan versi Android OS minimum yang dibutuhkan untuk menjalankan aplikasi menjadi 6
- * Peningkatan UI, terjemahan, dan stabilitas

@@ -1,3 +1,0 @@
-* Opraveny některé problémy související s rozvržením RTL
- * Přidáno tlačítko Získat Jednoduchý telefon do sekce O aplikaci
- * Přidáno několik vylepšení překladu a UX

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Eenvoudige Rekenmachine</string>
     <string name="app_launcher_name">Rekenmachine</string>
     <string name="scientific_calculator">Wetenschappelijke Rekenmachine</string>
     <string name="unit_converter">Eenheden omzetten</string>

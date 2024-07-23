@@ -16,7 +16,6 @@
     <string name="unit_time_second">Giây</string>
     <string name="scientific_calculator">Máy tính khoa học</string>
     <string name="unit_converter">Bộ chuyển đổi đơn vị</string>
-    <string name="app_name">Máy tính Fossify</string>
     <string name="swap_units">Hoán đổi đơn vị</string>
     <string name="formula_divide_by_zero_error">Lỗi: phép chia cho số 0</string>
     <string name="history">Lịch sử</string>

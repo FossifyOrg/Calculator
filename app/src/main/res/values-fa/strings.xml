@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">ماشین حساب ساده</string>
     <string name="scientific_calculator">ماشین حساب مهندسی</string>
     <string name="unit_converter">مبدل واحد</string>
     <string name="swap_units">تعویض واحدها</string>

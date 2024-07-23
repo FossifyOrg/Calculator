@@ -1,3 +1,0 @@
-* Använder Material You-tema som standards på Android 12+
-.* Ökande minimikrav för Andriodversion till version 6.
-.* Lade till några översättningar och förbättrade stabiliteten och användargränsnitt

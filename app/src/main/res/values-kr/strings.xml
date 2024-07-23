@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">심플한 계산기</string>
     <string name="app_launcher_name">계산기</string>
     <string name="scientific_calculator">공학용 계산기</string>
     <string name="formula_divide_by_zero_error">에러: 공으로 나눌 할수 없어요</string>

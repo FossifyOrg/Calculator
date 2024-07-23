@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Calculator simplu</string>
     <string name="scientific_calculator">Calculator Ştiințific</string>
     <string name="formula_divide_by_zero_error">Eroare: împărțire la zero</string>
     <string name="history">Istoric</string>

@@ -1,2 +1,0 @@
-* Birim dönüştürücü eklendi
- * Bazı kullanıcı arayüzü, çeviri ve kararlılık iyileştirmeleri eklendi

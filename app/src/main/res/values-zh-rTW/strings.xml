@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">簡易計算機</string>
     <string name="app_launcher_name">計算機</string>
     <string name="scientific_calculator">科學計算機</string>
     <string name="unit_converter">單位轉換器</string>

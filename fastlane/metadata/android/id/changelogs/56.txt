@@ -1,3 +1,0 @@
-* Perbaiki beberapa masalah terkait tata letak RTL
-* Tambahkan tombol Telepon Fossify pada bagian Tentang Kami
-* Perbarui terjemahan serta peningkatan UX

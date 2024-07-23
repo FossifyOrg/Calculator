@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">സിമ്പിൾ കാൽക്കുലേറ്റർ</string>
     <string name="app_launcher_name">കാൽക്കുലേറ്റർ</string>
     <string name="scientific_calculator">ശാസ്ത്രീയ കാൽക്കുലേറ്റർ</string>
     <string name="formula_divide_by_zero_error">പിശക്: 0 കൊണ്ട് ഹരിക്കാനാവില്ല</string>

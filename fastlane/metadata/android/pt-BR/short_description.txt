@@ -1,1 +1,0 @@
-Uma simples e linda calculadora com uma interface de usuário sem complicações

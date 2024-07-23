@@ -1,2 +1,0 @@
-* Ajout d'un convertisseur d'unités
- * Amélioration de l'interface utilisateur, de la traduction et de la stabilité

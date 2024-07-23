@@ -1,27 +1,27 @@
 [versions]
 #jetbrains
-kotlin = "1.9.10"
+kotlin = "1.9.24"
 #KSP
-ksp = "1.9.10-1.0.13"
+ksp = "1.9.24-1.0.20"
 #Androidx
 androidx-customView = "1.2.0-alpha02"
 androidx-customViewPooling = "1.0.0"
-androidx-lifecycle = "2.7.0-alpha02"
+androidx-lifecycle = "2.8.3"
 #Compose
-composeActivity = "1.8.0"
-compose = "1.6.0-alpha07"
-composeCompiler = "1.5.3"
-composeMaterial3 = "1.2.0-alpha09"
+composeActivity = "1.9.0"
+compose = "1.6.8"
+composeCompiler = "1.5.14"
+composeMaterial3 = "1.2.1"
 #AutoFitTextView
 autofittextview = "0.2.1"
 #exp4j
 exp4j = "0.4.8"
 #Room
-room = "2.5.2"
-#Simple tools
-simple-commons = "6a7777d740"
+room = "2.6.1"
+#Fossify
+commons = "88a349fe1d"
 #Gradle
-gradlePlugins-agp = "8.1.2"
+gradlePlugins-agp = "8.5.0"
 #build
 app-build-compileSDKVersion = "34"
 app-build-targetSDK = "34"
@@ -29,9 +29,9 @@ app-build-minimumSDK = "23"
 app-build-javaVersion = "VERSION_17"
 app-build-kotlinJVMTarget = "17"
 #versioning
-app-version-appId = "com.simplemobiletools.calculator"
-app-version-versionCode = "61"
-app-version-versionName = "5.12.0"
+app-version-appId = "org.fossify.calculator"
+app-version-versionCode = "1"
+app-version-versionName = "1.0.0"
 
 [libraries]
 #Android X
@@ -60,8 +60,8 @@ compose-uiTooling-debug = { module = "androidx.compose.ui:ui-tooling", version.r
 compose-uiTooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
 #UI
 auto-fit-text-view = { module = "me.grantland:autofittextview", version.ref = "autofittextview" }
-#Simple Mobile Tools
-simple-tools-commons = { module = "com.github.SimpleMobileTools:Simple-Commons", version.ref = "simple-commons" }
+#Fossify
+fossify-commons = { module = "org.fossify:commons", version.ref = "commons" }
 #Exp4j
 exp4j = { module = "net.objecthunter:exp4j", version.ref = "exp4j" }
 [bundles]
