@@ -81,16 +81,7 @@
     <string name="unit_length_mile">Milla</string>
     <string name="unit_length_yard">Iarda</string>
     <string name="unit_volume">Volum</string>
-    <string name="unit_temperature_celsius">Celsius</string>
-    <string name="unit_temperature_fahrenheit">Fahrenheit</string>
-    <string name="unit_mass_dram">Dram</string>
-    <string name="unit_temperature_rankine">Rankine</string>
-    <string name="unit_temperature_kelvin">Kelvin</string>
-    <string name="unit_length_parsec">Parsec</string>
     <string name="unit_area">Àrea</string>
-    <string name="unit_area_acre">Acre</string>
     <string name="unit_volume_quart_imperial">Quart (imperial)</string>
     <string name="unit_volume_gill_imperial">Gill (imperial)</string>
-    <string name="unit_mass_gram">Gram</string>
-    <string name="unit_mass_microgram">Microgram</string>
 </resources>

@@ -56,12 +56,5 @@
     <string name="unit_time_year">År</string>
     <string name="faq_1_title">Hur funkar C (Rensa) knappen\?</string>
     <string name="faq_1_text">Om du trycker på den tar du bort ett tecken i taget. Om du trycker länge på den återställs alla fält på en gång.</string>
-    <string name="unit_length_kilometer">Kilometer</string>
-    <string name="unit_length_centimeter">Centimeter</string>
-    <string name="unit_length_meter">Meter</string>
-    <string name="unit_length_millimeter">Millimeter</string>
-    <string name="unit_length_nanometer">Nanometer</string>
-    <string name="unit_area">Area</string>
     <string name="unit_length_parsec">Parsek</string>
-    <string name="unit_volume_liter">Liter</string>
 </resources>

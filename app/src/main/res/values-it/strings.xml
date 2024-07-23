@@ -17,12 +17,10 @@
     <string name="unit_length_millimeter">Millimetro</string>
     <string name="unit_length_micrometer">Micrometro</string>
     <string name="unit_length_nanometer">Nanometro</string>
-    <string name="unit_length_angstrom">Angstrom</string>
     <string name="unit_length_mile">Miglio</string>
     <string name="unit_length_foot">Piede</string>
     <string name="unit_length_astronomical_unit">Unità astronomica</string>
     <string name="unit_length_light_year">Anno luce</string>
-    <string name="unit_area">Area</string>
     <string name="unit_area_square_kilometer">Chilometro quadrato</string>
     <string name="unit_area_square_meter">Metro quadrato</string>
     <string name="unit_length_meter">Metro</string>

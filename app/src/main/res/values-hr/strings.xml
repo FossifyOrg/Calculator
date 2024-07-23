@@ -84,13 +84,5 @@
     <string name="faq_1_title">Kako funkcionira gumb C (Izbriši)\?</string>
     <string name="faq_1_text">Dodirom gumba uklanjaju se znakovi jedan po jedan. Dugim pritiskom gumba obnavljaju se sva polja.</string>
     <string name="unit_mass_stone">Kamen</string>
-    <string name="unit_temperature_fahrenheit">Fahrenheit</string>
-    <string name="unit_temperature_rankine">Rankine</string>
-    <string name="unit_mass_dram">Dram</string>
-    <string name="unit_temperature_kelvin">Kelvin</string>
-    <string name="unit_mass_kilogram">Kilogram</string>
-    <string name="unit_length_angstrom">Angstrom</string>
-    <string name="unit_length_fathom">Fathom</string>
-    <string name="unit_mass_gram">Gram</string>
     <string name="unit_mass_grain">Zrno</string>
 </resources>

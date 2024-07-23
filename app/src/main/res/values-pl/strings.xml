@@ -88,9 +88,4 @@
     <string name="unit_time_year">Rok</string>
     <string name="faq_1_title">Jak działa przycisk C (Wyczyść)?</string>
     <string name="faq_1_text">Naciśnięcie go usunie jeden znak naraz. Długie naciśnięcie zresetuje wszystkie pola jednocześnie.</string>
-    <string name="unit_volume_gill_us">Gill (US)</string>
-    <string name="unit_mass_gram">Gram</string>
-    <string name="unit_mass_kilogram">Kilogram</string>
-    <string name="unit_temperature_rankine">Rankine</string>
-    <string name="unit_temperature_fahrenheit">Fahrenheit</string>
 </resources>

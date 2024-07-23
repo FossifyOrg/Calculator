@@ -78,19 +78,11 @@
     <string name="faq_1_text">Üks klõpsatus kustutab ühe numbri. Pikk vajutus eemaldab kogu sisestuse.</string>
     <string name="unit_area">Pindala</string>
     <string name="unit_area_acre">Aaker</string>
-    <string name="unit_volume_pint_us">Pint (US)</string>
-    <string name="unit_mass">Mass</string>
     <string name="unit_mass_pound">Nael</string>
     <string name="unit_length_mile">Miil</string>
     <string name="unit_length_yard">Jard</string>
     <string name="unit_volume">Maht</string>
-    <string name="unit_volume_barrel_us">Barrel (US)</string>
-    <string name="unit_volume_gallon_us">Gallon (US)</string>
     <string name="unit_mass_dram">Drahm</string>
     <string name="unit_time_minute">Minut</string>
     <string name="unit_time_day">Päev</string>
-    <string name="unit_temperature_celsius">Celsius</string>
-    <string name="unit_temperature_fahrenheit">Fahrenheit</string>
-    <string name="unit_temperature_rankine">Rankine</string>
-    <string name="unit_temperature_kelvin">Kelvin</string>
 </resources>

@@ -82,14 +82,9 @@
     <string name="unit_time_day">Día</string>
     <string name="unit_time_minute">Minuto</string>
     <string name="unit_length_yard">Yarda</string>
-    <string name="unit_temperature_kelvin">Kelvin</string>
-    <string name="unit_area_acre">Acre</string>
     <string name="unit_length_mile">Milla</string>
-    <string name="unit_temperature_rankine">Rankine</string>
-    <string name="unit_temperature_fahrenheit">Fahrenheit</string>
     <string name="unit_area">Área</string>
     <string name="unit_volume">Volumen</string>
-    <string name="unit_temperature_celsius">Celsius</string>
     <string name="unit_mass_pound">Libra</string>
     <string name="unit_volume_gill_imperial">Gill (unidad de volumen)</string>
     <string name="unit_mass_dram">Dracma</string>
