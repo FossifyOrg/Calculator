@@ -19,7 +19,7 @@ exp4j = "0.4.8"
 #Room
 room = "2.6.1"
 #Fossify
-commons = "b53047c2dd"
+commons = "0c8d33952e"
 #Gradle
 gradlePlugins-agp = "8.5.0"
 #build
