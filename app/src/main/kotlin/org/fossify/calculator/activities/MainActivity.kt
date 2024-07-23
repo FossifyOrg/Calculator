@@ -181,7 +181,11 @@ class MainActivity : SimpleActivity(), Calculator {
 
     private fun launchSettings() {
         hideKeyboard()
-        startActivity(Intent(applicationContext, SettingsActivity::class.java))
+        startActivity(
+            Intent(applicationContext, SettingsActivity::class.java).apply {
+                putIntegerArrayListExtra(APP_ICON_IDS, getAppIconIDs())
+            }
+        )
     }
 
     private fun launchAbout() {
