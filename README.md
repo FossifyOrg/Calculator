@@ -1,49 +1,40 @@
 # Fossify Calculator
 
-<img alt="Logo" src="graphics/icon.webp" width="120" />
+<img alt="Logo" src="graphics/icon.webp" width="120" /> 
 
-This stylish modern calculator offers great user experience that you will love seeing. You can copy the result or formula to clipboard by long pressing it. You
-can also use this calculator as a currency converter to calculate your daily income and other amount in different country's currency. With eye soothing dark
-theme, it is now easy for you to see buttons and numbers more easily and use this calculator for simple calculations or use it as a currency converter or as a
-calculator and graphing calculator. You can also use this math calculator as a mortgage calculator
+Introducing Fossify Calculator – your versatile and efficient tool for all your calculation needs. Enjoy a stylish, modern design paired with powerful functionality, perfect for both simple calculations and more complex tasks like currency conversion.
 
-The app is a simple helper for fast calculations with many basic functions including multiplying, dividing, root and powers. It also comes with dark theme so
-that you can use this new technology to make your calculator look more smooth and easy to use rather than using sharp colors provided in different calculators
-that can't help you concentrate on your complex calculations in this graphing calculator and math calculator.
+**📶 OFFLINE FUNCTIONALITY:**    
+Fossify Calculator operates entirely offline without needing internet permissions. Use it anytime, anywhere, and experience enhanced privacy, security, and stability.
 
-You can make it vibrate on button presses to make you confident during inserting your values. The exquisite colors used in this app are cool and look smooth to
-eyes so you can easily distinguish between all the buttons and calculate with ease. This calculator can be used to solve complex root problems or it can also be
-used as currency converter or graphing calculator.
+**🌐 MULTIPLE FUNCTIONS:**    
+Whether you need to multiply, divide, calculate roots and powers, or convert currencies, Fossify Calculator has got you covered. It's perfect for everyday calculations and more specialized tasks like mortgage calculations.
 
-There is an option in setting to prevent the phone from sleeping while using the app for comfortable usage and keep working on your complex problems in this
-currency converter and graphing calculator plus math calculator.
+**📳 CUSTOMIZABLE SETTINGS:**    
+Tailor your experience with customizable settings. Toggle vibrations on button presses, prevent your phone from sleeping while using the app, and adjust the interface to your liking.
 
-The text color of the resizable widget can be customized, as well as the color and the alpha of the background. Press the result or formula in the widget to
-open the app.
+**🔒 PRIVACY AND SECURITY:**    
+Your privacy is paramount. Fossify Calculator does not collect or share any user information with third parties. Use the app with peace of mind, knowing your data is secure.
 
-You can access a history of the operations to quickly scan through recent calculations.
+**📊 OPERATIONS HISTORY:**    
+Access a history of your calculations for quick reference. Easily browse through recent operations to review or continue your work.
 
-It comes with material design and dark theme by default, provides great user experience for easy usage. The lack of internet access gives you more privacy,
-security and stability than other apps.
+**🎨 PERSONALIZED EXPERIENCE:**    
+Personalize your calculator with customizable colors. Adjust text and background colors to match your style and preferences, creating a visually appealing and easy-to-use interface.
 
-Contains no ads or unnecessary permissions. It is fully opensource, provides customizable colors.
+**🌐 OPEN-SOURCE TRANSPARENCY:**    
+Fossify Calculator is fully open-source, offering transparency and security. Access the source code for audits, ensuring a trustworthy and reliable tool.
 
-Features:
+Experience a new level of efficiency and customization with Fossify Calculator. Download now and elevate your calculation experience.
 
-- Easy to use calculator.
-- Operations history
-- Comes with dark theme to allow smooth usage of calculator.
-- Works as a currency converter to help you calculate your incomes and other amounts.
-- Can be used as a graphing calculator to calculate graphs quickly.
-- Customizable text color to make it look more cool and according to your needs.
-- Buttons sized according to the average finger tapping on screen to make calculations more comfortable.
+➡️ Explore more Fossify apps: https://www.fossify.org    
+➡️ Open-Source Code: https://www.github.com/FossifyOrg    
+➡️ Join the community on Reddit: https://www.reddit.com/r/Fossify    
+➡️ Connect on Telegram: https://t.me/Fossify
 
-Check out the full suite of apps here:
-https://github.com/FossifyOrg
-
-<div style="display:flex;">
-<img alt="App image" src="fastlane/metadata/android/en-US/images/phoneScreenshots/1_en-US.jpeg" width="30%">
-<img alt="App image" src="fastlane/metadata/android/en-US/images/phoneScreenshots/2_en-US.jpeg" width="30%">
-<img alt="App image" src="fastlane/metadata/android/en-US/images/phoneScreenshots/3_en-US.jpeg" width="30%">
+<div align="center">
+<img alt="App image" src="fastlane/metadata/android/en-US/images/phoneScreenshots/1_en-US.png" width="30%">
+<img alt="App image" src="fastlane/metadata/android/en-US/images/phoneScreenshots/2_en-US.png" width="30%">
+<img alt="App image" src="fastlane/metadata/android/en-US/images/phoneScreenshots/3_en-US.png" width="30%">
 </div>
 

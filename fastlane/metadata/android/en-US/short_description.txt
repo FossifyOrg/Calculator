@@ -1,1 +1,1 @@
-A beautiful calculator for quick simple calculations with smooth user interface
+Simple and open-source calculator for quick and easy calculations
