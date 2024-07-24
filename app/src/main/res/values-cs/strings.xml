@@ -81,4 +81,16 @@
     <string name="unit_length_nanometer">Nanometr</string>
     <string name="unit_length_light_year">Světelný rok</string>
     <string name="unit_area">Oblast</string>
+    <string name="unit_mass_dram">Dram</string>
+    <string name="unit_temperature_kelvin">Kelvin</string>
+    <string name="unit_temperature_rankine">Rankine</string>
+    <string name="unit_length_angstrom">Angstrom</string>
+    <string name="unit_mass_grain">Grain</string>
+    <string name="unit_temperature_celsius">Celsius</string>
+    <string name="unit_volume_gill_us">Gill (US)</string>
+    <string name="unit_temperature_fahrenheit">Fahrenheit</string>
+    <string name="unit_mass_kilogram">Kilogram</string>
+    <string name="unit_mass_gram">Gram</string>
+    <string name="unit_length_yard">Yard</string>
+    <string name="unit_length_fathom">Fathom</string>
 </resources>
