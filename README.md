@@ -2,6 +2,8 @@
 
 <img alt="Logo" src="graphics/icon.webp" width="120" /> 
 
+<a href="https://apt.izzysoft.de/fdroid/index/apk/org.fossify.calculator"><img src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png" alt="Get it on IzzyOnDroid" height=80/></a>
+
 Introducing Fossify Calculator – your versatile and efficient tool for all your calculation needs. Enjoy a stylish, modern design paired with powerful functionality, perfect for both simple calculations and more complex tasks like currency conversion.
 
 **📶 OFFLINE FUNCTIONALITY:**    
