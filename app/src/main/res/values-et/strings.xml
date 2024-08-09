@@ -85,4 +85,12 @@
     <string name="unit_mass_dram">Drahm</string>
     <string name="unit_time_minute">Minut</string>
     <string name="unit_time_day">Päev</string>
+    <string name="unit_volume_pint_us">USA pint</string>
+    <string name="unit_mass">Mass</string>
+    <string name="unit_volume_barrel_us">USA barrel</string>
+    <string name="unit_temperature_fahrenheit">Fahrenheit</string>
+    <string name="unit_temperature_rankine">Rankine</string>
+    <string name="unit_temperature_kelvin">Kelvin</string>
+    <string name="unit_volume_gallon_us">USA gallon</string>
+    <string name="unit_temperature_celsius">Celsius</string>
 </resources>
