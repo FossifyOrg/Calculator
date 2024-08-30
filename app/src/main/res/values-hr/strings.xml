@@ -21,7 +21,7 @@
     <string name="unit_length_mile">Milja</string>
     <string name="unit_length_yard">Jard</string>
     <string name="unit_length_foot">Stopa</string>
-    <string name="unit_length_inch">Palac</string>
+    <string name="unit_length_inch">Inč</string>
     <string name="unit_length_nautical_mile">Nautička milja</string>
     <string name="unit_length_astronomical_unit">Astronomska jedinica</string>
     <string name="unit_length_parsec">Parsek</string>
@@ -34,7 +34,7 @@
     <string name="unit_area_square_mile">Četvorna milja</string>
     <string name="unit_area_square_yard">Četvorni jard</string>
     <string name="unit_area_square_foot">Četvorna stopa</string>
-    <string name="unit_area_square_inch">Četvorni palac</string>
+    <string name="unit_area_square_inch">Kvadratni inč</string>
     <string name="unit_area_acre">Aker</string>
     <string name="unit_area_hectare">Hektar</string>
     <string name="unit_volume">Obujam</string>
@@ -48,7 +48,7 @@
     <string name="unit_volume_milliliter">Mililitra</string>
     <string name="unit_volume_acre_foot">Aker stopa</string>
     <string name="unit_volume_cubic_foot">Kubična stopa</string>
-    <string name="unit_volume_cubic_inch">Kubični palac</string>
+    <string name="unit_volume_cubic_inch">Kubični inč</string>
     <string name="unit_volume_barrel_us">Barel (SAD)</string>
     <string name="unit_volume_gallon_us">Galon (SAD)</string>
     <string name="unit_volume_quart_us">Četvrtina (SAD)</string>
@@ -67,8 +67,8 @@
     <string name="unit_mass_tonne">Tona</string>
     <string name="unit_mass_pound">Funta</string>
     <string name="unit_mass_ounce">Unca</string>
-    <string name="unit_mass_long_ton">Long Tona</string>
-    <string name="unit_mass_short_ton">Short Tona</string>
+    <string name="unit_mass_long_ton">Imperijalna tona</string>
+    <string name="unit_mass_short_ton">Tona</string>
     <string name="unit_mass_carat">Karat</string>
     <string name="unit_mass_carat_metric">Karat (Metrični)</string>
     <string name="unit_temperature">Temperatura</string>
@@ -85,4 +85,12 @@
     <string name="faq_1_text">Dodirom gumba uklanjaju se znakovi jedan po jedan. Dugim pritiskom gumba obnavljaju se sva polja.</string>
     <string name="unit_mass_stone">Kamen</string>
     <string name="unit_mass_grain">Zrno</string>
+    <string name="unit_temperature_fahrenheit">Fahrenheit</string>
+    <string name="unit_temperature_rankine">Rankin</string>
+    <string name="unit_mass_dram">Dram</string>
+    <string name="unit_temperature_kelvin">Kelvin</string>
+    <string name="unit_length_angstrom">Angstrom</string>
+    <string name="unit_length_fathom">Nutički konop</string>
+    <string name="unit_mass_kilogram">Kilogram</string>
+    <string name="unit_mass_gram">Gram</string>
 </resources>
