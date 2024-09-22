@@ -57,7 +57,7 @@
     <string name="unit_time_hour">Година</string>
     <string name="unit_time_minute">Хвилина</string>
     <string name="unit_time_second">Секунда</string>
-    <string name="unit_time_millisecond">Мікросекунда</string>
+    <string name="unit_time_millisecond">Мілісекунда</string>
     <string name="unit_time_day">День</string>
     <string name="unit_time_week">Тиждень</string>
     <string name="unit_time_year">Рік</string>
