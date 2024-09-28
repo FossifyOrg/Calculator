@@ -3,6 +3,8 @@
 kotlin = "1.9.24"
 #KSP
 ksp = "1.9.24-1.0.20"
+#Detekt
+detekt = "1.23.3"
 #Androidx
 androidx-customView = "1.2.0-alpha02"
 androidx-customViewPooling = "1.0.0"
@@ -95,4 +97,4 @@ lifecycle = [
 android = { id = "com.android.application", version.ref = "gradlePlugins-agp" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-
+detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
