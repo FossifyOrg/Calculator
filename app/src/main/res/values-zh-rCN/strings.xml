@@ -9,7 +9,7 @@
     <string name="history_empty">历史记录为空</string>
     <string name="clear_history">清除</string>
     <string name="history_cleared">已清除历史记录</string>
-    <string name="vibrate_on_button_press">按下按钮时震动</string>
+    <string name="vibrate_on_button_press">按下按钮时振动</string>
     <string name="use_comma_as_decimal_mark">用逗号作小数点</string>
     <string name="unit_length">长度</string>
     <string name="unit_length_kilometer">千米</string>
