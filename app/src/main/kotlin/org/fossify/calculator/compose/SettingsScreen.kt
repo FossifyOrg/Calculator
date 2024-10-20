@@ -4,14 +4,16 @@ import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.tooling.preview.PreviewParameter
 import com.fossify.calculator.R
 import org.fossify.commons.compose.alert_dialog.AlertDialogState
 import org.fossify.commons.compose.alert_dialog.rememberAlertDialogState
+import org.fossify.commons.compose.extensions.BooleanPreviewParameterProvider
 import org.fossify.commons.compose.extensions.MyDevices
 import org.fossify.commons.compose.lists.SimpleColumnScaffold
-import org.fossify.commons.compose.settings.SettingsCheckBoxComponent
 import org.fossify.commons.compose.settings.SettingsGroup
 import org.fossify.commons.compose.settings.SettingsPreferenceComponent
+import org.fossify.commons.compose.settings.SettingsSwitchComponent
 import org.fossify.commons.compose.settings.SettingsTitleTextComponent
 import org.fossify.commons.compose.theme.AppThemeSurface
 import org.fossify.commons.compose.theme.divider_grey
@@ -34,6 +36,7 @@ internal fun SettingsScreen(
     onSetupLanguagePress: () -> Unit,
     useCommaAsDecimalMarkFlow: Boolean,
     onUseCommaAsDecimalMarkFlow: (Boolean) -> Unit,
+    showCheckmarksOnSwitches: Boolean,
     lockedCustomizeColorText: String,
     displayLanguage: String,
     featureLockedDialogState: AlertDialogState
@@ -69,10 +72,11 @@ internal fun SettingsScreen(
                 )
             }
             if (isUseEnglishEnabled) {
-                SettingsCheckBoxComponent(
+                SettingsSwitchComponent(
                     label = stringResource(id = org.fossify.commons.R.string.use_english_language),
                     initialValue = isUseEnglishChecked,
                     onChange = onUseEnglishPress,
+                    showCheckmark = showCheckmarksOnSwitches
                 )
             }
             if (isTiramisuPlus()) {
@@ -82,20 +86,23 @@ internal fun SettingsScreen(
                     doOnPreferenceClick = onSetupLanguagePress,
                 )
             }
-            SettingsCheckBoxComponent(
+            SettingsSwitchComponent(
                 label = stringResource(id = R.string.vibrate_on_button_press),
                 initialValue = vibrateOnButtonPressFlow,
                 onChange = onVibrateOnButtonPressFlow,
+                showCheckmark = showCheckmarksOnSwitches
             )
-            SettingsCheckBoxComponent(
+            SettingsSwitchComponent(
                 label = stringResource(id = org.fossify.commons.R.string.prevent_phone_from_sleeping),
                 initialValue = preventPhoneFromSleeping,
                 onChange = onPreventPhoneFromSleeping,
+                showCheckmark = showCheckmarksOnSwitches
             )
-            SettingsCheckBoxComponent(
+            SettingsSwitchComponent(
                 label = stringResource(id = R.string.use_comma_as_decimal_mark),
                 initialValue = useCommaAsDecimalMarkFlow,
                 onChange = onUseCommaAsDecimalMarkFlow,
+                showCheckmark = showCheckmarksOnSwitches
             )
         }
     }
@@ -103,7 +110,9 @@ internal fun SettingsScreen(
 
 @MyDevices
 @Composable
-private fun SettingsScreenPreview() {
+private fun SettingsScreenPreview(
+    @PreviewParameter(BooleanPreviewParameterProvider::class) showCheckmarksOnSwitches: Boolean
+) {
     AppThemeSurface {
         SettingsScreen(
             goBack = {},
@@ -123,7 +132,8 @@ private fun SettingsScreenPreview() {
             onUseCommaAsDecimalMarkFlow = {},
             lockedCustomizeColorText = "Customize Colors",
             displayLanguage = "English",
-            featureLockedDialogState = rememberAlertDialogState()
+            featureLockedDialogState = rememberAlertDialogState(),
+            showCheckmarksOnSwitches = showCheckmarksOnSwitches
         )
     }
 }

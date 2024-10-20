@@ -47,6 +47,7 @@ class SettingsActivity : AppCompatActivity() {
                 val wasUseEnglishToggledFlow by preferences.wasUseEnglishToggledFlow.collectAsStateWithLifecycle(preferences.wasUseEnglishToggled)
                 val useEnglishFlow by preferences.useEnglishFlow.collectAsStateWithLifecycle(preferences.useEnglish)
                 val useCommaAsDecimalMarkFlow by preferences.useCommaAsDecimalMarkFlow.collectAsStateWithLifecycle(preferences.useCommaAsDecimalMark)
+                val showCheckmarksOnSwitches by config.showCheckmarksOnSwitchesFlow.collectAsStateWithLifecycle(initialValue = config.showCheckmarksOnSwitches)
                 val isUseEnglishEnabled by remember(wasUseEnglishToggledFlow) {
                     derivedStateOf {
                         (wasUseEnglishToggledFlow || Locale.getDefault().language != "en") && !isTiramisuPlus()
@@ -81,6 +82,7 @@ class SettingsActivity : AppCompatActivity() {
                             applicationContext.calculatorDB.deleteHistory()
                         }
                     },
+                    showCheckmarksOnSwitches = showCheckmarksOnSwitches,
                     lockedCustomizeColorText = getCustomizeColorsString(),
                     featureLockedDialogState = featureLockedDialogState
                 )
