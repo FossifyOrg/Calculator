@@ -1,13 +1,22 @@
 Changelog
 ==========
 
-Version 1.0 *(2024-07-24)*
+Version 1.0.2 *(2024-10-20)*
 ----------------------------
 
- * Added new translations.
+* Update themed/monochrome app icon
+* Bump minimum target Android version to 8
+* Replace checkboxes with material switches
+* Other minor fixes and improvements
+* Added new translations
 
-Version 1.0 *(2024-07-23)*
+Version 1.0.1 *(2024-07-24)*
 ----------------------------
 
- * Initial release
+* Added new translations.
+
+Version 1.0.0 *(2024-07-23)*
+----------------------------
+
+* Initial release
 

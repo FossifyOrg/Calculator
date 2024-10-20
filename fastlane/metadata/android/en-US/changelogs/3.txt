@@ -1,0 +1,5 @@
+* Update themed/monochrome app icon
+* Bump minimum target Android version to 8
+* Replace checkboxes with material switches
+* Other minor fixes and improvements
+* Added new translations
