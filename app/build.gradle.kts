@@ -107,6 +107,13 @@ android {
         baseline = file("lint-baseline.xml")
     }
 
+    bundle {
+        language {
+            @Suppress("UnstableApiUsage")
+            enableSplit = false
+        }
+    }
+
     namespace = "com.fossify.calculator"
 }
 
