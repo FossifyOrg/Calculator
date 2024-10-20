@@ -1,0 +1,5 @@
+* Actualizar el icono de la aplicación temático/monocromo
+* Aumentar la versión mínima de Android a 8
+* Reemplazar casillas de verificación con interruptores de material
+* Otras correcciones y mejoras menores
+* Añadidas nuevas traducciones
