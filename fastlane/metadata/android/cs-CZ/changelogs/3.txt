@@ -1,0 +1,5 @@
+* Aktualizace tematické/monochromatické ikony aplikace
+* Zvýšení minimální cílové verze systému Android na 8
+* Nahrazení zaškrtávacích políček přepínači materiálu
+* Další drobné opravy a vylepšení
+* Přidány nové překlady
