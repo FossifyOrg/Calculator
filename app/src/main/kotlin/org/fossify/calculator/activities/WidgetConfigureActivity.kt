@@ -78,7 +78,7 @@ class WidgetConfigureActivity : SimpleActivity() {
         updateBackgroundColor()
 
         mTextColor = config.widgetTextColor
-        if (mTextColor == resources.getColor(org.fossify.commons.R.color.default_widget_text_color, theme) && config.isUsingSystemTheme) {
+        if (mTextColor == resources.getColor(org.fossify.commons.R.color.default_widget_text_color, theme) && isDynamicTheme()) {
             mTextColor = resources.getColor(org.fossify.commons.R.color.you_primary_color, theme)
         }
 

@@ -1,19 +1,19 @@
 [versions]
 #jetbrains
-kotlin = "1.9.24"
+kotlin = "1.9.25"
 #KSP
-ksp = "1.9.24-1.0.20"
+ksp = "1.9.25-1.0.20"
 #Detekt
 detekt = "1.23.3"
 #Androidx
 androidx-customView = "1.2.0-alpha02"
 androidx-customViewPooling = "1.0.0"
-androidx-lifecycle = "2.8.3"
+androidx-lifecycle = "2.8.6"
 #Compose
-composeActivity = "1.9.0"
-compose = "1.6.8"
-composeCompiler = "1.5.14"
-composeMaterial3 = "1.2.1"
+composeActivity = "1.9.3"
+compose = "1.7.4"
+composeCompiler = "1.5.15"
+composeMaterial3 = "1.3.0"
 #AutoFitTextView
 autofittextview = "0.2.1"
 #exp4j
@@ -21,7 +21,7 @@ exp4j = "0.4.8"
 #Room
 room = "2.6.1"
 #Fossify
-commons = "0c8d33952e"
+commons = "54b78551a4"
 #Gradle
 gradlePlugins-agp = "8.5.0"
 #build

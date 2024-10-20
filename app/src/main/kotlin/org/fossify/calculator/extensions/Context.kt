@@ -16,10 +16,7 @@ import org.fossify.calculator.databases.CalculatorDatabase
 import org.fossify.calculator.helpers.Config
 import org.fossify.calculator.helpers.MyWidgetProvider
 import org.fossify.calculator.interfaces.CalculatorDao
-import org.fossify.commons.extensions.getProperBackgroundColor
-import org.fossify.commons.extensions.isUsingSystemDarkTheme
-import org.fossify.commons.extensions.lightenColor
-import org.fossify.commons.extensions.showErrorToast
+import org.fossify.commons.extensions.*
 
 val Context.config: Config get() = Config.newInstance(applicationContext)
 
@@ -31,8 +28,8 @@ fun Context.updateViewColors(viewGroup: ViewGroup, textColor: Int) {
     (0 until cnt).map { viewGroup.getChildAt(it) }
         .forEach {
             when (it) {
-                is TextView -> it.setTextColor(textColor)
                 is Button -> it.setTextColor(textColor)
+                is TextView -> it.setTextColor(textColor)
                 is ViewGroup -> updateViewColors(it, textColor)
             }
         }
@@ -70,8 +67,8 @@ fun Context.launchChangeAppLanguageIntent() {
 }
 
 fun Context.getStrokeColor(): Int {
-    return if (config.isUsingSystemTheme) {
-        if (isUsingSystemDarkTheme()) {
+    return if (isDynamicTheme()) {
+        if (isSystemInDarkMode()) {
             resources.getColor(org.fossify.commons.R.color.md_grey_800, theme)
         } else {
             resources.getColor(org.fossify.commons.R.color.md_grey_400, theme)

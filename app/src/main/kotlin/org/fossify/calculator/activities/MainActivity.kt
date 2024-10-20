@@ -202,7 +202,13 @@ class MainActivity : SimpleActivity(), Calculator {
             faqItems.add(FAQItem(org.fossify.commons.R.string.faq_6_title_commons, org.fossify.commons.R.string.faq_6_text_commons))
         }
 
-        startAboutActivity(R.string.app_name, licenses, BuildConfig.VERSION_NAME, faqItems, true)
+        startAboutActivity(
+            appNameId = R.string.app_name,
+            licenseMask = licenses,
+            versionName = BuildConfig.VERSION_NAME,
+            faqItems = faqItems,
+            showFAQBeforeMail = true
+        )
     }
 
     private fun getButtonIds() = binding.run {
