@@ -11,7 +11,7 @@
     <string name="history_cleared">L\'historique a été effacé</string>
     <string name="vibrate_on_button_press">Vibrer lors de l\'appui sur une touche</string>
     <string name="use_comma_as_decimal_mark">Utiliser la virgule comme séparateur décimal</string>
-    <string name="unit_length">Unités de longueur</string>
+    <string name="unit_length">Longueur</string>
     <string name="unit_length_kilometer">Kilomètre</string>
     <string name="unit_length_meter">Mètre</string>
     <string name="unit_length_centimeter">Centimètre</string>
@@ -27,7 +27,7 @@
     <string name="unit_length_nautical_mile">Mille marin</string>
     <string name="unit_length_astronomical_unit">Unités astronomiques</string>
     <string name="unit_length_light_year">Année-lumière</string>
-    <string name="unit_area">Unités de surface</string>
+    <string name="unit_area">Surface</string>
     <string name="unit_area_square_kilometer">Kilomètre carré</string>
     <string name="unit_area_square_meter">Mètre carré</string>
     <string name="unit_area_square_centimeter">Centimètre carré</string>
@@ -36,7 +36,7 @@
     <string name="unit_area_square_yard">Verge carrée</string>
     <string name="unit_area_square_foot">Pied carré</string>
     <string name="unit_area_square_inch">Pouce carré</string>
-    <string name="unit_volume">Unités de volume</string>
+    <string name="unit_volume">Volume</string>
     <string name="unit_volume_cubic_meter">Mètre cube</string>
     <string name="unit_volume_cubic_decimeter">Décimètre cube</string>
     <string name="unit_volume_cubic_centimeter">Centimètre cube</string>
@@ -84,4 +84,13 @@
     <string name="faq_1_title">Comment le bouton C (Effacer) fonctionne-t-il \?</string>
     <string name="faq_1_text">En appuyant dessus, vous effacerez un caractère à la fois. Un appui prolongé réinitialisera tous les champs d\'un seul coup.</string>
     <string name="unit_area_acre">Are</string>
+    <string name="unit_temperature_kelvin">Kelvin</string>
+    <string name="unit_temperature_fahrenheit">Fahrenheit</string>
+    <string name="unit_temperature_celsius">Celsius</string>
+    <string name="unit_length_parsec">Parsec</string>
+    <string name="unit_area_hectare">Hectare</string>
+    <string name="unit_mass_tonne">Tonne</string>
+    <string name="unit_mass_carat">Carat</string>
+    <string name="unit_temperature_rankine">Rankine</string>
+    <string name="unit_time_minute">Minute</string>
 </resources>
