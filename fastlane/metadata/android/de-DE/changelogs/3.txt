@@ -1,0 +1,5 @@
+* Themed/monochromes App-Symbol aktualisiert
+* Minimales Android-Targeting auf Version 8 erhöht
+* Checkboxen durch Schalter ersetzt
+* Weitere kleinere Korrekturen und Verbesserungen
+* Neue Übersetzungen hinzugefügt
