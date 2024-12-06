@@ -62,4 +62,6 @@
     <string name="unit_volume_deciliter">Децилитър</string>
     <string name="unit_volume_milliliter">Милилитър</string>
     <string name="unit_mass">Маса</string>
+    <string name="unit_volume_pint_us">Пинта (САЩ)</string>
+    <string name="unit_volume_pint_imperial">Пинта (Англия)</string>
 </resources>
