@@ -112,19 +112,19 @@ object VolumeConverter : Converter {
             factor = 0.000473176473,
             key = "PintUS"
         )
-
-        data object GillUS : Unit(
-            nameResId = R.string.unit_volume_gill_us,
-            symbolResId = R.string.unit_volume_gill_us_symbol,
-            factor = 0.00011829411825,
-            key = "GillUS"
-        )
         
         data object CupUS : Unit(
             nameResId = R.string.unit_volume_cup_us,
             symbolResId = R.string.unit_volume_cup_us_symbol,
             factor = 0.00024,
             key = "CupUS"
+        )
+
+        data object GillUS : Unit(
+            nameResId = R.string.unit_volume_gill_us,
+            symbolResId = R.string.unit_volume_gill_us_symbol,
+            factor = 0.00011829411825,
+            key = "GillUS"
         )
 
         data object FluidOunceUS : Unit(
