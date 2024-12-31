@@ -119,6 +119,13 @@ object VolumeConverter : Converter {
             factor = 0.00011829411825,
             key = "GillUS"
         )
+        
+        data object CupUS : Unit(
+            nameResId = R.string.unit_volume_cup_us,
+            symbolResId = R.string.unit_volume_cup_us_symbol,
+            factor = 0.00024,
+            key = "CupUS"
+        )
 
         data object FluidOunceUS : Unit(
             nameResId = R.string.unit_volume_fluid_ounce_us,
@@ -187,6 +194,7 @@ object VolumeConverter : Converter {
         Unit.QuartUS,
         Unit.PintUS,
         Unit.GillUS,
+        Unit.CupUS,
         Unit.FluidOunceUS,
         Unit.BarrelImperial,
         Unit.GallonImperial,
