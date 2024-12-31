@@ -113,11 +113,18 @@ object VolumeConverter : Converter {
             key = "PintUS"
         )
         
-        data object CupUS : Unit(
-            nameResId = R.string.unit_volume_cup_us,
-            symbolResId = R.string.unit_volume_cup_us_symbol,
+        data object LegalCupUS : Unit(
+            nameResId = R.string.unit_volume_legal_cup_us,
+            symbolResId = R.string.unit_volume_legal_cup_us_symbol,
             factor = 0.00024,
-            key = "CupUS"
+            key = "LegalCupUS"
+        )
+        
+        data object CustomaryCupUS : Unit(
+            nameResId = R.string.unit_volume_customary_cup_us,
+            symbolResId = R.string.unit_volume_customary_cup_us_symbol,
+            factor = 0.0002365882365,
+            key = "CustomaryCupUS"
         )
 
         data object GillUS : Unit(
@@ -193,7 +200,8 @@ object VolumeConverter : Converter {
         Unit.GallonUS,
         Unit.QuartUS,
         Unit.PintUS,
-        Unit.CupUS,
+        Unit.LegalCupUS,
+        Unit.CustomaryCupUS,
         Unit.GillUS,
         Unit.FluidOunceUS,
         Unit.BarrelImperial,
