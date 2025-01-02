@@ -1,1 +1,1 @@
-Einfacher Open-Source-Rechner für schnelle und einfache Berechnungen
+Einfacher quelloffener Rechner für schnelle und einfache Berechnungen
