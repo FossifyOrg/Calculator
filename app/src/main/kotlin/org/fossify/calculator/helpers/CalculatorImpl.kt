@@ -396,6 +396,9 @@ class CalculatorImpl(
         }
 
         if (lastKey == EQUALS) {
+            if (lastOperation != "") {
+                handleReset()
+            }
             lastOperation = EQUALS
         }
 
