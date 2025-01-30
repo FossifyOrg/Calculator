@@ -10,4 +10,22 @@
     <string name="vibrate_on_button_press">רטט בעת לחיצה</string>
     <string name="faq_1_title">כיצד פועל לחצן C (ניקוי)\?</string>
     <string name="faq_1_text">הקשה עליו תסיר תו אחד בכל פעם. לחיצה ארוכה עליו תאפס את כל השדות בבת אחת.</string>
+    <string name="unit_area_square_inch">אינץ\' רבוע</string>
+    <string name="unit_length_millimeter">מילימטר</string>
+    <string name="unit_length_kilometer">קילומטר</string>
+    <string name="unit_length_meter">מטר</string>
+    <string name="unit_length_centimeter">סנטימטר</string>
+    <string name="unit_length_nanometer">ננומטר</string>
+    <string name="unit_length_mile">מיל</string>
+    <string name="unit_length_yard">יארד</string>
+    <string name="unit_length_foot">רגל</string>
+    <string name="unit_length_inch">אינץ\'</string>
+    <string name="unit_area_square_millimeter">מילימטר רבוע</string>
+    <string name="unit_area_square_mile">מיל רבוע</string>
+    <string name="unit_length_micrometer">מיקרומטר</string>
+    <string name="unit_area_square_kilometer">קילומטר רבוע</string>
+    <string name="unit_area_square_meter">מטר רבוע</string>
+    <string name="unit_area_square_centimeter">סנטימטר רבוע</string>
+    <string name="unit_length">אורך</string>
+    <string name="unit_area_square_yard">יארד רבוע</string>
 </resources>
