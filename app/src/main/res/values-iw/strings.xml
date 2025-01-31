@@ -7,7 +7,7 @@
     <string name="history_empty">ההיסטוריה ריקה</string>
     <string name="clear_history">ניקוי</string>
     <string name="history_cleared">ההיסטוריה נוקתה</string>
-    <string name="vibrate_on_button_press">רטט בעת לחיצה</string>
+    <string name="vibrate_on_button_press">רטט בעת לחיצה על כפתורים</string>
     <string name="faq_1_title">כיצד פועל לחצן C (ניקוי)\?</string>
     <string name="faq_1_text">הקשה עליו תסיר תו אחד בכל פעם. לחיצה ארוכה עליו תאפס את כל השדות בבת אחת.</string>
     <string name="unit_area_square_inch">אינץ\' רבוע</string>
