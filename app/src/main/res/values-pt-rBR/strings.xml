@@ -66,4 +66,8 @@
     <string name="unit_volume_liter">Litro</string>
     <string name="unit_time_day">Dia</string>
     <string name="unit_time_minute">Minuto</string>
+    <string name="unit_length_yard">Jarda</string>
+    <string name="unit_length_fathom">Braça</string>
+    <string name="unit_mass_pound">Libra</string>
+    <string name="unit_mass_grain">Grão</string>
 </resources>

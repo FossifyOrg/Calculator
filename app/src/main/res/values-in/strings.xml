@@ -73,4 +73,24 @@
     <string name="unit_volume_fluid_ounce_imperial">Ons Cair (Imperial)</string>
     <string name="unit_mass">Massa</string>
     <string name="unit_mass_milligram">Miligram</string>
+    <string name="unit_volume_quart_imperial">Kuart (Imperial)</string>
+    <string name="unit_volume">Volume</string>
+    <string name="unit_mass_grain">Grain</string>
+    <string name="unit_temperature_celsius">Celsius</string>
+    <string name="unit_volume_pint_imperial">Pint (Imperial)</string>
+    <string name="unit_length_kilometer">Kilometer</string>
+    <string name="unit_length_yard">Yard</string>
+    <string name="unit_area">Area</string>
+    <string name="unit_volume_gill_imperial">Gill (Imperial)</string>
+    <string name="unit_mass_gram">Gram</string>
+    <string name="unit_mass_kilogram">Kilogram</string>
+    <string name="unit_temperature_fahrenheit">Fahrenheit</string>
+    <string name="unit_temperature_rankine">Rankine</string>
+    <string name="unit_mass_dram">Dram</string>
+    <string name="unit_mass_stone">Stone</string>
+    <string name="unit_length_meter">Meter</string>
+    <string name="unit_volume_liter">Liter</string>
+    <string name="unit_temperature_kelvin">Kelvin</string>
+    <string name="unit_length_nanometer">Nanometer</string>
+    <string name="unit_length_angstrom">Angstrom</string>
 </resources>

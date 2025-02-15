@@ -1,0 +1,5 @@
+* Mise à jour de l'icône d'application thématique/monochrome
+* Augmentation de la version cible minimale d'Android à 8
+* Remplacement des cases à cocher par des commutateurs de matériaux
+* Autres corrections et améliorations mineures
+* Ajout de nouvelles traductions
