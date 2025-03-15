@@ -109,12 +109,11 @@ android {
 
     bundle {
         language {
-            @Suppress("UnstableApiUsage")
             enableSplit = false
         }
     }
 
-    namespace = "com.fossify.calculator"
+    namespace = "org.fossify.math"
 }
 
 detekt {

@@ -82,9 +82,9 @@
     <ID>TooManyFunctions:MainActivity.kt$MainActivity : SimpleActivityCalculator</ID>
     <ID>TooManyFunctions:MyWidgetProvider.kt$MyWidgetProvider : AppWidgetProviderCalculator</ID>
     <ID>UnusedPrivateMember:SettingsScreen.kt$@MyDevices @Composable private fun SettingsScreenPreview()</ID>
-    <ID>WildcardImport:ConverterView.kt$import org.fossify.calculator.helpers.*</ID>
+    <ID>WildcardImport:ConverterView.kt$import org.fossify.math.helpers.*</ID>
     <ID>WildcardImport:ConverterView.kt$import org.fossify.commons.extensions.*</ID>
-    <ID>WildcardImport:MainActivity.kt$import org.fossify.calculator.helpers.*</ID>
+    <ID>WildcardImport:MainActivity.kt$import org.fossify.math.helpers.*</ID>
     <ID>WildcardImport:MainActivity.kt$import org.fossify.commons.extensions.*</ID>
     <ID>WildcardImport:SettingsActivity.kt$import org.fossify.commons.helpers.*</ID>
     <ID>WildcardImport:UnitTypesAdapter.kt$import org.fossify.commons.extensions.*</ID>

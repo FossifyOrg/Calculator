@@ -26,24 +26,24 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name="org.fossify.calculator.activities.SplashActivity"
+            android:name="org.fossify.math.activities.SplashActivity"
             android:exported="false"
             android:theme="@style/SplashTheme" />
 
         <activity
-            android:name="org.fossify.calculator.activities.MainActivity"
+            android:name="org.fossify.math.activities.MainActivity"
             android:exported="false" />
 
         <activity
-            android:name="org.fossify.calculator.activities.UnitConverterActivity"
+            android:name="org.fossify.math.activities.UnitConverterActivity"
             android:exported="false" />
 
         <activity
-            android:name="org.fossify.calculator.activities.UnitConverterPickerActivity"
+            android:name="org.fossify.math.activities.UnitConverterPickerActivity"
             android:exported="false" />
 
         <activity
-            android:name="org.fossify.calculator.activities.WidgetConfigureActivity"
+            android:name="org.fossify.math.activities.WidgetConfigureActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/MyWidgetConfigTheme">
@@ -53,11 +53,11 @@
         </activity>
 
         <activity
-            android:name="org.fossify.calculator.activities.SettingsActivity"
+            android:name="org.fossify.math.activities.SettingsActivity"
             android:configChanges="orientation"
             android:exported="true"
             android:label="@string/settings"
-            android:parentActivityName="org.fossify.calculator.activities.MainActivity">
+            android:parentActivityName="org.fossify.math.activities.MainActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.APPLICATION_PREFERENCES" />
@@ -70,17 +70,17 @@
             android:configChanges="orientation"
             android:exported="false"
             android:label="@string/about"
-            android:parentActivityName="org.fossify.calculator.activities.MainActivity" />
+            android:parentActivityName="org.fossify.math.activities.MainActivity" />
 
         <activity
             android:name="org.fossify.commons.activities.CustomizationActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:label="@string/customize_colors"
-            android:parentActivityName="org.fossify.calculator.activities.SettingsActivity" />
+            android:parentActivityName="org.fossify.math.activities.SettingsActivity" />
 
         <receiver
-            android:name="org.fossify.calculator.helpers.MyWidgetProvider"
+            android:name="org.fossify.math.helpers.MyWidgetProvider"
             android:exported="true"
             android:icon="@drawable/img_widget_preview">
             <intent-filter>
@@ -93,7 +93,7 @@
         </receiver>
 
         <receiver
-            android:name="org.fossify.calculator.receivers.LocaleChangeReceiver"
+            android:name="org.fossify.math.receivers.LocaleChangeReceiver"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.LOCALE_CHANGED" />
@@ -101,12 +101,12 @@
         </receiver>
 
         <activity-alias
-            android:name="org.fossify.calculator.activities.SplashActivity.Red"
+            android:name="org.fossify.math.activities.SplashActivity.Red"
             android:enabled="false"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_red"
             android:roundIcon="@mipmap/ic_launcher_red"
-            android:targetActivity="org.fossify.calculator.activities.SplashActivity">
+            android:targetActivity="org.fossify.math.activities.SplashActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -115,12 +115,12 @@
         </activity-alias>
 
         <activity-alias
-            android:name="org.fossify.calculator.activities.SplashActivity.Pink"
+            android:name="org.fossify.math.activities.SplashActivity.Pink"
             android:enabled="false"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_pink"
             android:roundIcon="@mipmap/ic_launcher_pink"
-            android:targetActivity="org.fossify.calculator.activities.SplashActivity">
+            android:targetActivity="org.fossify.math.activities.SplashActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -129,12 +129,12 @@
         </activity-alias>
 
         <activity-alias
-            android:name="org.fossify.calculator.activities.SplashActivity.Purple"
+            android:name="org.fossify.math.activities.SplashActivity.Purple"
             android:enabled="false"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_purple"
             android:roundIcon="@mipmap/ic_launcher_purple"
-            android:targetActivity="org.fossify.calculator.activities.SplashActivity">
+            android:targetActivity="org.fossify.math.activities.SplashActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -143,12 +143,12 @@
         </activity-alias>
 
         <activity-alias
-            android:name="org.fossify.calculator.activities.SplashActivity.Deep_purple"
+            android:name="org.fossify.math.activities.SplashActivity.Deep_purple"
             android:enabled="false"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_deep_purple"
             android:roundIcon="@mipmap/ic_launcher_deep_purple"
-            android:targetActivity="org.fossify.calculator.activities.SplashActivity">
+            android:targetActivity="org.fossify.math.activities.SplashActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -157,12 +157,12 @@
         </activity-alias>
 
         <activity-alias
-            android:name="org.fossify.calculator.activities.SplashActivity.Indigo"
+            android:name="org.fossify.math.activities.SplashActivity.Indigo"
             android:enabled="false"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_indigo"
             android:roundIcon="@mipmap/ic_launcher_indigo"
-            android:targetActivity="org.fossify.calculator.activities.SplashActivity">
+            android:targetActivity="org.fossify.math.activities.SplashActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -171,12 +171,12 @@
         </activity-alias>
 
         <activity-alias
-            android:name="org.fossify.calculator.activities.SplashActivity.Blue"
+            android:name="org.fossify.math.activities.SplashActivity.Blue"
             android:enabled="false"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_blue"
             android:roundIcon="@mipmap/ic_launcher_blue"
-            android:targetActivity="org.fossify.calculator.activities.SplashActivity">
+            android:targetActivity="org.fossify.math.activities.SplashActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -185,12 +185,12 @@
         </activity-alias>
 
         <activity-alias
-            android:name="org.fossify.calculator.activities.SplashActivity.Light_blue"
+            android:name="org.fossify.math.activities.SplashActivity.Light_blue"
             android:enabled="false"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_light_blue"
             android:roundIcon="@mipmap/ic_launcher_light_blue"
-            android:targetActivity="org.fossify.calculator.activities.SplashActivity">
+            android:targetActivity="org.fossify.math.activities.SplashActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -199,12 +199,12 @@
         </activity-alias>
 
         <activity-alias
-            android:name="org.fossify.calculator.activities.SplashActivity.Cyan"
+            android:name="org.fossify.math.activities.SplashActivity.Cyan"
             android:enabled="false"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_cyan"
             android:roundIcon="@mipmap/ic_launcher_cyan"
-            android:targetActivity="org.fossify.calculator.activities.SplashActivity">
+            android:targetActivity="org.fossify.math.activities.SplashActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -213,12 +213,12 @@
         </activity-alias>
 
         <activity-alias
-            android:name="org.fossify.calculator.activities.SplashActivity.Teal"
+            android:name="org.fossify.math.activities.SplashActivity.Teal"
             android:enabled="false"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_teal"
             android:roundIcon="@mipmap/ic_launcher_teal"
-            android:targetActivity="org.fossify.calculator.activities.SplashActivity">
+            android:targetActivity="org.fossify.math.activities.SplashActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -227,12 +227,12 @@
         </activity-alias>
 
         <activity-alias
-            android:name="org.fossify.calculator.activities.SplashActivity.Green"
+            android:name="org.fossify.math.activities.SplashActivity.Green"
             android:enabled="true"
             android:exported="true"
             android:icon="@mipmap/ic_launcher"
             android:roundIcon="@mipmap/ic_launcher"
-            android:targetActivity="org.fossify.calculator.activities.SplashActivity">
+            android:targetActivity="org.fossify.math.activities.SplashActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -241,12 +241,12 @@
         </activity-alias>
 
         <activity-alias
-            android:name="org.fossify.calculator.activities.SplashActivity.Light_green"
+            android:name="org.fossify.math.activities.SplashActivity.Light_green"
             android:enabled="false"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_light_green"
             android:roundIcon="@mipmap/ic_launcher_light_green"
-            android:targetActivity="org.fossify.calculator.activities.SplashActivity">
+            android:targetActivity="org.fossify.math.activities.SplashActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -255,12 +255,12 @@
         </activity-alias>
 
         <activity-alias
-            android:name="org.fossify.calculator.activities.SplashActivity.Lime"
+            android:name="org.fossify.math.activities.SplashActivity.Lime"
             android:enabled="false"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_lime"
             android:roundIcon="@mipmap/ic_launcher_lime"
-            android:targetActivity="org.fossify.calculator.activities.SplashActivity">
+            android:targetActivity="org.fossify.math.activities.SplashActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -269,12 +269,12 @@
         </activity-alias>
 
         <activity-alias
-            android:name="org.fossify.calculator.activities.SplashActivity.Yellow"
+            android:name="org.fossify.math.activities.SplashActivity.Yellow"
             android:enabled="false"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_yellow"
             android:roundIcon="@mipmap/ic_launcher_yellow"
-            android:targetActivity="org.fossify.calculator.activities.SplashActivity">
+            android:targetActivity="org.fossify.math.activities.SplashActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -283,12 +283,12 @@
         </activity-alias>
 
         <activity-alias
-            android:name="org.fossify.calculator.activities.SplashActivity.Amber"
+            android:name="org.fossify.math.activities.SplashActivity.Amber"
             android:enabled="false"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_amber"
             android:roundIcon="@mipmap/ic_launcher_amber"
-            android:targetActivity="org.fossify.calculator.activities.SplashActivity">
+            android:targetActivity="org.fossify.math.activities.SplashActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -297,12 +297,12 @@
         </activity-alias>
 
         <activity-alias
-            android:name="org.fossify.calculator.activities.SplashActivity.Orange"
+            android:name="org.fossify.math.activities.SplashActivity.Orange"
             android:enabled="false"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_orange"
             android:roundIcon="@mipmap/ic_launcher_orange"
-            android:targetActivity="org.fossify.calculator.activities.SplashActivity">
+            android:targetActivity="org.fossify.math.activities.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -310,12 +310,12 @@
         </activity-alias>
 
         <activity-alias
-            android:name="org.fossify.calculator.activities.SplashActivity.Deep_orange"
+            android:name="org.fossify.math.activities.SplashActivity.Deep_orange"
             android:enabled="false"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_deep_orange"
             android:roundIcon="@mipmap/ic_launcher_deep_orange"
-            android:targetActivity="org.fossify.calculator.activities.SplashActivity">
+            android:targetActivity="org.fossify.math.activities.SplashActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -324,12 +324,12 @@
         </activity-alias>
 
         <activity-alias
-            android:name="org.fossify.calculator.activities.SplashActivity.Brown"
+            android:name="org.fossify.math.activities.SplashActivity.Brown"
             android:enabled="false"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_brown"
             android:roundIcon="@mipmap/ic_launcher_brown"
-            android:targetActivity="org.fossify.calculator.activities.SplashActivity">
+            android:targetActivity="org.fossify.math.activities.SplashActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -338,12 +338,12 @@
         </activity-alias>
 
         <activity-alias
-            android:name="org.fossify.calculator.activities.SplashActivity.Blue_grey"
+            android:name="org.fossify.math.activities.SplashActivity.Blue_grey"
             android:enabled="false"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_blue_grey"
             android:roundIcon="@mipmap/ic_launcher_blue_grey"
-            android:targetActivity="org.fossify.calculator.activities.SplashActivity">
+            android:targetActivity="org.fossify.math.activities.SplashActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -352,12 +352,12 @@
         </activity-alias>
 
         <activity-alias
-            android:name="org.fossify.calculator.activities.SplashActivity.Grey_black"
+            android:name="org.fossify.math.activities.SplashActivity.Grey_black"
             android:enabled="false"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_grey_black"
             android:roundIcon="@mipmap/ic_launcher_grey_black"
-            android:targetActivity="org.fossify.calculator.activities.SplashActivity">
+            android:targetActivity="org.fossify.math.activities.SplashActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

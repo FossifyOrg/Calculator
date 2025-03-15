@@ -31,7 +31,7 @@ app-build-minimumSDK = "26"
 app-build-javaVersion = "VERSION_17"
 app-build-kotlinJVMTarget = "17"
 #versioning
-app-version-appId = "org.fossify.calculator"
+app-version-appId = "org.fossify.math"
 app-version-versionCode = "3"
 app-version-versionName = "1.0.2"
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Fossify Calculator</string>
-    <string name="package_name">org.fossify.calculator</string>
+    <string name="package_name">org.fossify.math</string>
 
     <string name="unit_name_with_symbol_format">%s (%s)</string>
     <string name="unit_length_kilometer_symbol">km</string>
