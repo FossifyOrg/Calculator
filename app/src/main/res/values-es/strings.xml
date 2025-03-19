@@ -43,7 +43,7 @@
     <string name="unit_volume_centiliter">Centilitro</string>
     <string name="unit_volume_deciliter">Decilitro</string>
     <string name="unit_volume_milliliter">Mililitro</string>
-    <string name="unit_volume_acre_foot">Acres</string>
+    <string name="unit_volume_acre_foot">Acre-pie</string>
     <string name="unit_volume_cubic_foot">Pie cúbico</string>
     <string name="unit_volume_cubic_inch">Pulgada cúbica</string>
     <string name="unit_volume_barrel_us">Barril (EE.UU.)</string>
