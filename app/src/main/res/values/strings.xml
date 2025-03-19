@@ -63,6 +63,8 @@
     <string name="unit_volume_gallon_us">Gallon (US)</string>
     <string name="unit_volume_quart_us">Quart (US)</string>
     <string name="unit_volume_pint_us">Pint (US)</string>
+    <string name="unit_volume_legal_cup_us">Legal Cup (US)</string>
+    <string name="unit_volume_customary_cup_us">Customary Cup (US)</string>
     <string name="unit_volume_gill_us">Gill (US)</string>
     <string name="unit_volume_fluid_ounce_us">Fluid Ounce (US)</string>
     <string name="unit_volume_barrel_imperial">Barrel (Imperial)</string>

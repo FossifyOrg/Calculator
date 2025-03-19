@@ -45,6 +45,8 @@
     <string name="unit_volume_gallon_us_symbol">gal (US)</string>
     <string name="unit_volume_quart_us_symbol">qt (US)</string>
     <string name="unit_volume_pint_us_symbol">pt (US fl)</string>
+    <string name="unit_volume_legal_cup_us_symbol">cup (US)</string>
+    <string name="unit_volume_customary_cup_us_symbol">cup (US)</string>
     <string name="unit_volume_gill_us_symbol">gi (US)</string>
     <string name="unit_volume_fluid_ounce_us_symbol">US fl oz</string>
     <string name="unit_volume_barrel_imperial_symbol">bl (imp)</string>
