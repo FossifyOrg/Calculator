@@ -1,5 +1,0 @@
-* Temalı/tek renkli uygulama simgesi güncellendi
-* Android 8 ve daha eski sürümler desteklenmiyor
-* Onay kutuları düğmelerle değiştirildi
-* Diğer küçük düzeltmeler ve iyileştirmeler
-* Yeni çeviriler eklendi

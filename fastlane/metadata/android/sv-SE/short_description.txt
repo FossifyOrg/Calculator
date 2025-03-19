@@ -1,1 +1,0 @@
-Enkel kalkylator med öppen källkod för snabba och enkla beräkningar
