@@ -93,4 +93,6 @@
     <string name="unit_length_yard">码</string>
     <string name="unit_area">面积</string>
     <string name="unit_time_day">天</string>
+    <string name="unit_volume_legal_cup_us">法定杯（美制）</string>
+    <string name="unit_volume_customary_cup_us">惯用杯（美制）</string>
 </resources>
