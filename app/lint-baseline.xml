@@ -334,7 +334,7 @@
         errorLine1="class SplashActivity : BaseSplashActivity() {"
         errorLine2="      ~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calculator/activities/SplashActivity.kt"
+            file="src/main/kotlin/org/fossify/math/activities/SplashActivity.kt"
             line="6"
             column="7"/>
     </issue>
@@ -2028,7 +2028,7 @@
         errorLine1="        private var calc: CalculatorImpl? = null"
         errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calculator/helpers/MyWidgetProvider.kt"
+            file="src/main/kotlin/org/fossify/math/helpers/MyWidgetProvider.kt"
             line="19"
             column="9"/>
     </issue>
@@ -2223,7 +2223,7 @@
     <issue
         id="UnusedResources"
         message="The resource `R.string.package_name` appears to be unused"
-        errorLine1="    &lt;string name=&quot;package_name&quot;>org.fossify.calculator&lt;/string>"
+        errorLine1="    &lt;string name=&quot;package_name&quot;>org.fossify.math&lt;/string>"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~">
         <location
             file="src/main/res/values/donottranslate.xml"
@@ -2303,7 +2303,7 @@
         errorLine1="        binding.topUnitText.text = &quot;0&quot;"
         errorLine2="                                   ~~~">
         <location
-            file="src/main/kotlin/org/fossify/calculator/views/ConverterView.kt"
+            file="src/main/kotlin/org/fossify/math/views/ConverterView.kt"
             line="72"
             column="36"/>
     </issue>
@@ -2314,7 +2314,7 @@
         errorLine1="        binding.topUnitText.text = &quot;0&quot;"
         errorLine2="                                   ~~~">
         <location
-            file="src/main/kotlin/org/fossify/calculator/views/ConverterView.kt"
+            file="src/main/kotlin/org/fossify/math/views/ConverterView.kt"
             line="109"
             column="36"/>
     </issue>
@@ -2325,7 +2325,7 @@
         errorLine1="        binding.bottomUnitText.text = &quot;0&quot;"
         errorLine2="                                      ~~~">
         <location
-            file="src/main/kotlin/org/fossify/calculator/views/ConverterView.kt"
+            file="src/main/kotlin/org/fossify/math/views/ConverterView.kt"
             line="110"
             column="39"/>
     </issue>
@@ -2336,7 +2336,7 @@
         errorLine1="            binding.topUnitText.text = &quot;0&quot;"
         errorLine2="                                       ~~~">
         <location
-            file="src/main/kotlin/org/fossify/calculator/views/ConverterView.kt"
+            file="src/main/kotlin/org/fossify/math/views/ConverterView.kt"
             line="221"
             column="40"/>
     </issue>
@@ -2347,7 +2347,7 @@
         errorLine1="            binding.bottomUnitText.text = &quot;0&quot;"
         errorLine2="                                          ~~~">
         <location
-            file="src/main/kotlin/org/fossify/calculator/views/ConverterView.kt"
+            file="src/main/kotlin/org/fossify/math/views/ConverterView.kt"
             line="222"
             column="43"/>
     </issue>
@@ -2358,7 +2358,7 @@
         errorLine1="        binding.configCalc.formula.text = &quot;15,937*5&quot;"
         errorLine2="                                          ~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calculator/activities/WidgetConfigureActivity.kt"
+            file="src/main/kotlin/org/fossify/math/activities/WidgetConfigureActivity.kt"
             line="87"
             column="43"/>
     </issue>
@@ -2369,7 +2369,7 @@
         errorLine1="        binding.configCalc.formula.text = &quot;15,937*5&quot;"
         errorLine2="                                           ~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calculator/activities/WidgetConfigureActivity.kt"
+            file="src/main/kotlin/org/fossify/math/activities/WidgetConfigureActivity.kt"
             line="87"
             column="44"/>
     </issue>
@@ -2380,7 +2380,7 @@
         errorLine1="        binding.configCalc.result.text = &quot;79,685&quot;"
         errorLine2="                                         ~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calculator/activities/WidgetConfigureActivity.kt"
+            file="src/main/kotlin/org/fossify/math/activities/WidgetConfigureActivity.kt"
             line="88"
             column="42"/>
     </issue>
@@ -2391,7 +2391,7 @@
         errorLine1="        binding.configCalc.result.text = &quot;79,685&quot;"
         errorLine2="                                          ~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/calculator/activities/WidgetConfigureActivity.kt"
+            file="src/main/kotlin/org/fossify/math/activities/WidgetConfigureActivity.kt"
             line="88"
             column="43"/>
     </issue>

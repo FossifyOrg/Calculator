@@ -1,0 +1,2 @@
+* Changed package name, re-installation is required
+* Added more translations

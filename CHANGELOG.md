@@ -1,6 +1,12 @@
 Changelog
 ==========
 
+Version 1.0.3 *(2025-03-19)*
+----------------------------
+
+* Changed package name, re-installation is required
+* Added more translations
+
 Version 1.0.2 *(2024-10-20)*
 ----------------------------
 

@@ -1,5 +1,0 @@
-* Icona app tematizzata/monocromatica aggiornata
-* Versione minima portata ad Android 8
-* Sostituzione dei checkbox con degli switch
-* Altre correzioni e miglioramenti minori
-* Aggiunta di nuove traduzioni
