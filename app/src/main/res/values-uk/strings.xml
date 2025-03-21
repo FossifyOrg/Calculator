@@ -93,4 +93,6 @@
     <string name="unit_mass_stone">Стоун</string>
     <string name="unit_mass_long_ton">Англійська тонна</string>
     <string name="unit_mass_short_ton">Американська тонна</string>
+    <string name="unit_volume_legal_cup_us">Legal Cup (США)</string>
+    <string name="unit_volume_customary_cup_us">Custom Cup (США)</string>
 </resources>

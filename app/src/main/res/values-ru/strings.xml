@@ -50,7 +50,7 @@
     <string name="unit_volume_gallon_us">Галлон (США)</string>
     <string name="unit_volume_quart_us">Кварта (США)</string>
     <string name="unit_volume_pint_us">Пинта (США)</string>
-    <string name="unit_volume_gill_us">Джилл (США)</string>
+    <string name="unit_volume_gill_us">Гилл (США)</string>
     <string name="unit_volume_fluid_ounce_us">Жидкая унция (США)</string>
     <string name="unit_volume_barrel_imperial">Баррель (Англия)</string>
     <string name="unit_volume_gallon_imperial">Галлон (Англия)</string>
@@ -93,4 +93,6 @@
     <string name="unit_area_acre">Акр</string>
     <string name="unit_volume">Объём</string>
     <string name="unit_mass_dram">Драм</string>
+    <string name="unit_volume_customary_cup_us">Обычная чашка (США)</string>
+    <string name="unit_volume_legal_cup_us">Юридическая чашка (США)</string>
 </resources>

@@ -93,4 +93,6 @@
     <string name="unit_length_yard">Yard</string>
     <string name="unit_length_inch">Inch</string>
     <string name="unit_length_parsec">Parsec</string>
+    <string name="unit_volume_customary_cup_us">Customary Cup (VS)</string>
+    <string name="unit_volume_legal_cup_us">Legal Cup (VS)</string>
 </resources>

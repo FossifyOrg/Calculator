@@ -93,4 +93,6 @@
     <string name="unit_time_week">Seachtain</string>
     <string name="faq_1_title">Conas a oibríonn an cnaipe C (Soiléir)?</string>
     <string name="faq_1_text">Má chliceálann tú air, bainfear carachtar amháin ag an am céanna. Nuair a bhrúnn tú i bhfad, athshocróidh sé gach réimse ag an am céanna.</string>
+    <string name="unit_volume_legal_cup_us">Corn Dlí (SAM)</string>
+    <string name="unit_volume_customary_cup_us">Corn an Chustaim (SAM)</string>
 </resources>

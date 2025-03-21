@@ -93,4 +93,6 @@
     <string name="unit_mass_kilogram">Kilogram</string>
     <string name="unit_temperature_rankine">Rankine</string>
     <string name="unit_temperature_fahrenheit">Fahrenheit</string>
+    <string name="unit_volume_legal_cup_us">Szklanka urzędowa (US)</string>
+    <string name="unit_volume_customary_cup_us">Szklanka zwyczajowa (US)</string>
 </resources>

@@ -93,4 +93,6 @@
     <string name="unit_mass_gram">Gram</string>
     <string name="unit_length_yard">Yard</string>
     <string name="unit_length_fathom">Fathom</string>
+    <string name="unit_volume_customary_cup_us">Klasické půl pinty (US)</string>
+    <string name="unit_volume_legal_cup_us">Legální půl pinty (US)</string>
 </resources>

@@ -93,4 +93,6 @@
     <string name="unit_mass_dram">Dram</string>
     <string name="unit_mass_stone">Stone</string>
     <string name="unit_volume_liter">Liter</string>
+    <string name="unit_volume_legal_cup_us">Legal Cup (US)</string>
+    <string name="unit_volume_customary_cup_us">Customary Cup (US)</string>
 </resources>
