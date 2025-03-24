@@ -72,4 +72,27 @@
     <string name="unit_volume_cubic_decimeter">דצימטר מעוקב</string>
     <string name="unit_volume_liter">ליטר</string>
     <string name="unit_mass_gram">גרם</string>
+    <string name="unit_mass_grain">גראין</string>
+    <string name="unit_mass_dram">לגימה</string>
+    <string name="unit_volume_deciliter">דציליטר</string>
+    <string name="unit_mass_carat_metric">קראט (מטרי)</string>
+    <string name="unit_mass_carat">קראט</string>
+    <string name="unit_mass_kilogram">קילוגרם</string>
+    <string name="unit_volume_quart_imperial">קוורט (אימפריאלי)</string>
+    <string name="unit_volume_pint_imperial">פינט (אימפריאלי)</string>
+    <string name="unit_volume_gallon_us">גלון (ארה\"ב)</string>
+    <string name="unit_volume_cubic_millimeter">מילימטר מעוקב</string>
+    <string name="unit_volume_legal_cup_us">גביע משפטי (ארה\"ב)</string>
+    <string name="unit_mass_short_ton">טון קצר</string>
+    <string name="unit_length_parsec">Parsec</string>
+    <string name="unit_volume_cubic_inch">אינץ\' מעוקב</string>
+    <string name="unit_volume_barrel_us">חבית (ארה\"ב)</string>
+    <string name="unit_volume_gallon_imperial">גלון (אימפריאלי)</string>
+    <string name="unit_volume_cubic_centimeter">סנטימטר מעוקב</string>
+    <string name="unit_mass">Mass</string>
+    <string name="unit_volume_fluid_ounce_imperial">אונקיית נוזלים (אימפריאלית)</string>
+    <string name="unit_volume_cubic_foot">רגל מעוקב</string>
+    <string name="unit_volume_gill_imperial">גיל (אימפריאלי)</string>
+    <string name="unit_mass_long_ton">טון ארוך</string>
+    <string name="unit_volume_customary_cup_us">גביע רגיל (ארה\"ב)</string>
 </resources>
