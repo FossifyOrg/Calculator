@@ -1,1 +1,1 @@
-Lihtne ja avatud lähtekoodil põhinev arvuti kiireteks ja vaevata arvutusteks
+Lihtne ja avatud lähtekoodil põhinev kalkulaator kiireks ja vaevata arvutuseks
