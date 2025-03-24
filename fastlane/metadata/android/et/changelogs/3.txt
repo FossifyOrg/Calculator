@@ -1,0 +1,5 @@
+* Uuendasime kujundatud ja mustavalget rakenduse ikooni
+* Seadsime minimaalset nõutavaks Androidi versiooniks 8
+* Asendasime märkeruudud lülititega
+* Muud väiksemad kohendused ja veaparandused
+* Lisasime uusi tõlkeid
