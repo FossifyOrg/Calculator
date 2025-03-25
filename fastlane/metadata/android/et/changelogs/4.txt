@@ -1,2 +1,0 @@
-* Muutsime paketi nime ja seega pead rakenduse uuesti paigaldama
-* Lisasime veel tõlkeid
