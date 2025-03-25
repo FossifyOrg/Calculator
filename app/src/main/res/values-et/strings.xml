@@ -93,4 +93,6 @@
     <string name="unit_temperature_kelvin">Kelvin</string>
     <string name="unit_volume_gallon_us">USA gallon</string>
     <string name="unit_temperature_celsius">Celsius</string>
+    <string name="unit_volume_legal_cup_us">Seaduslik tass (USA)</string>
+    <string name="unit_volume_customary_cup_us">Tavatass (USA)</string>
 </resources>

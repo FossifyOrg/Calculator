@@ -1,0 +1,5 @@
+* Farbschemabezogene/monochrome App-Symbole aktualisiert
+* Minimales Android-Targeting auf Version 8 erhöht
+* Checkboxen durch Material-Schalter ersetzt
+* Weitere kleinere Fehlerbehebungen und Verbesserungen
+* Weitere Übersetzungen hinzugefügt

@@ -1,0 +1,2 @@
+* Paket-Name geändert, Neuinstallation ist erforderlich
+* Weitere Übersetzungen hinzugefügt
