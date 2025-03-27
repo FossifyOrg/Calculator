@@ -44,4 +44,7 @@
     <string name="unit_volume_centiliter">Senttilitra</string>
     <string name="unit_length_meter">Metri</string>
     <string name="unit_area">Alue</string>
+    <string name="unit_length_millimeter">Millimetri</string>
+    <string name="unit_length_micrometer">Mikrometri</string>
+    <string name="unit_length_nanometer">Nanometri</string>
 </resources>
