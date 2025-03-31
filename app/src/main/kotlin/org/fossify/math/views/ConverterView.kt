@@ -136,6 +136,7 @@ class ConverterView @JvmOverloads constructor(
             R.id.btn_7 -> addDigit(7)
             R.id.btn_8 -> addDigit(8)
             R.id.btn_9 -> addDigit(9)
+            R.id.btn_plus_minus -> toggleNegative()
         }
 
         updateBottomValue()
@@ -268,5 +269,18 @@ class ConverterView @JvmOverloads constructor(
 
         updateBottomValue()
         updateUnitLabelsAndSymbols()
+    }
+
+    fun toggleNegative() {
+        var value = binding.topUnitText.text.toString()
+        if (value.isNotEmpty() && value != "0") {
+            value = if (value.startsWith("-")) {
+                value.substring(1)
+            } else {
+                "-$value"
+            }
+            binding.topUnitText.text = value
+            updateBottomValue()
+        }
     }
 }
