@@ -50,12 +50,19 @@ class UnitConverterActivity : SimpleActivity() {
         }
         this.converter = converter
 
+        binding.viewUnitConverter.plusMinusLayout.visibility =
+            if (converter.nameResId == R.string.unit_temperature) View.VISIBLE else View.GONE
+
         binding.viewUnitConverter.btnClear.setVibratingOnClickListener {
             binding.viewUnitConverter.viewConverter.root.deleteCharacter()
         }
         binding.viewUnitConverter.btnClear.setOnLongClickListener {
             binding.viewUnitConverter.viewConverter.root.clear()
             true
+        }
+
+        binding.viewUnitConverter.btnPlusMinus.setVibratingOnClickListener {
+            binding.viewUnitConverter.viewConverter.root.toggleNegative()
         }
 
         getButtonIds().forEach {
@@ -113,6 +120,11 @@ class UnitConverterActivity : SimpleActivity() {
             arrayOf(btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9).forEach {
                 it.background = ResourcesCompat.getDrawable(resources, org.fossify.commons.R.drawable.pill_background, theme)
                 it.background?.alpha = LOWER_ALPHA_INT
+            }
+
+            if (plusMinusLayout.visibility == View.VISIBLE) {
+                btnPlusMinus.background = ResourcesCompat.getDrawable(resources, org.fossify.commons.R.drawable.pill_background, theme)
+                btnPlusMinus.background?.alpha = LOWER_ALPHA_INT
             }
         }
     }
