@@ -93,4 +93,6 @@
     <string name="unit_volume_quart_imperial">क्वार्ट (इंपीरियल)</string>
     <string name="unit_volume_pint_imperial">पिंट (इंपीरियल)</string>
     <string name="unit_volume_gill_imperial">गिल (इंपीरियल)</string>
+    <string name="unit_volume_legal_cup_us">लीगल कप (US)</string>
+    <string name="unit_volume_customary_cup_us">कस्टमरी कप (US)</string>
 </resources>
