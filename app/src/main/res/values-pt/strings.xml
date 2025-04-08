@@ -9,7 +9,7 @@
     <string name="history_empty">Histórico vazio</string>
     <string name="clear_history">Limpar</string>
     <string name="history_cleared">O histórico foi limpo</string>
-    <string name="vibrate_on_button_press">Vibrar ao tocar nos botões</string>
+    <string name="vibrate_on_button_press">Vibrar ao pressionar um botão</string>
     <string name="use_comma_as_decimal_mark">Usar vírgula como separador decimal</string>
     <string name="unit_length">Comprimento</string>
     <string name="unit_length_kilometer">Quilómetros</string>
