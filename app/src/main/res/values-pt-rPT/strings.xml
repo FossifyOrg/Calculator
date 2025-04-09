@@ -42,7 +42,7 @@
     <string name="unit_area_acre">Acres</string>
     <string name="unit_area_hectare">Hectares</string>
     <string name="history_cleared">O histórico foi limpo</string>
-    <string name="vibrate_on_button_press">Vibrar ao tocar nos botões</string>
+    <string name="vibrate_on_button_press">Vibrar ao pressionar um botão</string>
     <string name="use_comma_as_decimal_mark">Usar vírgula como separador decimal</string>
     <string name="unit_length">Comprimento</string>
     <string name="unit_volume_gallon_us">Galão (EUA)</string>
@@ -93,4 +93,6 @@
     <string name="unit_mass_dram">Copinhos</string>
     <string name="unit_mass_stone">Pedras</string>
     <string name="unit_mass_long_ton">Grande tonelada</string>
+    <string name="unit_volume_customary_cup_us">Taça Customária (EUA)</string>
+    <string name="unit_volume_legal_cup_us">Taça Legal (EUA)</string>
 </resources>
