@@ -93,4 +93,6 @@
     <string name="unit_mass_carat">Carat</string>
     <string name="unit_temperature_rankine">Rankine</string>
     <string name="unit_time_minute">Minute</string>
+    <string name="unit_volume_legal_cup_us">Tasse standardisée (États-Unis)</string>
+    <string name="unit_volume_customary_cup_us">Tasse traditionnelle (États-Unis)</string>
 </resources>
