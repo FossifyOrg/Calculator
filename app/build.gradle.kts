@@ -15,6 +15,13 @@ if (keystorePropertiesFile.exists()) {
     keystoreProperties.load(FileInputStream(keystorePropertiesFile))
 }
 
+fun hasSigningVars(): Boolean {
+    return providers.environmentVariable("SIGNING_KEY_ALIAS").orNull != null
+            && providers.environmentVariable("SIGNING_KEY_PASSWORD").orNull != null
+            && providers.environmentVariable("SIGNING_STORE_FILE").orNull != null
+            && providers.environmentVariable("SIGNING_STORE_PASSWORD").orNull != null
+}
+
 android {
     compileSdk = project.libs.versions.app.build.compileSDKVersion.get().toInt()
 
@@ -38,6 +45,15 @@ android {
                 storeFile = file(keystoreProperties.getProperty("storeFile"))
                 storePassword = keystoreProperties.getProperty("storePassword")
             }
+        } else if (hasSigningVars()) {
+            register("release") {
+                keyAlias = providers.environmentVariable("SIGNING_KEY_ALIAS").get()
+                keyPassword = providers.environmentVariable("SIGNING_KEY_PASSWORD").get()
+                storeFile = file(providers.environmentVariable("SIGNING_STORE_FILE").get())
+                storePassword = providers.environmentVariable("SIGNING_STORE_PASSWORD").get()
+            }
+        } else {
+            logger.warn("Warning: No signing config found. Build will be unsigned.")
         }
     }
 
@@ -52,7 +68,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            if (keystorePropertiesFile.exists()) {
+            if (keystorePropertiesFile.exists() || hasSigningVars()) {
                 signingConfig = signingConfigs.getByName("release")
             }
         }
@@ -72,7 +88,7 @@ android {
     productFlavors {
         register("core")
         register("foss")
-        register("prepaid")
+        register("gplay")
     }
 
     compileOptions {
