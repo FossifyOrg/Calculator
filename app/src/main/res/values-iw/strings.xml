@@ -47,14 +47,14 @@
     <string name="unit_area_acre">אקר (Acre)</string>
     <string name="unit_volume">נפח</string>
     <string name="unit_length_light_year">שנת אור</string>
-    <string name="swap_units">להחליף יחידות</string>
+    <string name="swap_units">החלפת יחידות</string>
     <string name="unit_length_angstrom">אנגסטרום</string>
-    <string name="unit_length_fathom">Fathom</string>
+    <string name="unit_length_fathom">עומק</string>
     <string name="unit_length_nautical_mile">מייל ימי</string>
     <string name="unit_length_astronomical_unit">יחידה אסטרונומית</string>
     <string name="unit_volume_centiliter">סנטיליטר</string>
     <string name="unit_volume_milliliter">מיליליטר</string>
-    <string name="unit_volume_acre_foot">רגל עכו</string>
+    <string name="unit_volume_acre_foot">רגל עכוב</string>
     <string name="unit_volume_quart_us">קוורט (ארה\"ב)</string>
     <string name="unit_volume_pint_us">פינט (ארה\"ב)</string>
     <string name="unit_volume_gill_us">גיל (ארה\"ב)</string>
@@ -67,7 +67,7 @@
     <string name="unit_mass_ounce">אונקיה</string>
     <string name="unit_time_millisecond">מיקרו שנייה</string>
     <string name="unit_mass_stone">אבן</string>
-    <string name="unit_area_hectare">הקטרים</string>
+    <string name="unit_area_hectare">דונם</string>
     <string name="unit_volume_cubic_meter">מטר מעוקב</string>
     <string name="unit_volume_cubic_decimeter">דצימטר מעוקב</string>
     <string name="unit_volume_liter">ליטר</string>
@@ -89,7 +89,7 @@
     <string name="unit_volume_barrel_us">חבית (ארה\"ב)</string>
     <string name="unit_volume_gallon_imperial">גלון (אימפריאלי)</string>
     <string name="unit_volume_cubic_centimeter">סנטימטר מעוקב</string>
-    <string name="unit_mass">Mass</string>
+    <string name="unit_mass">מסה (Mass)</string>
     <string name="unit_volume_fluid_ounce_imperial">אונקיית נוזלים (אימפריאלית)</string>
     <string name="unit_volume_cubic_foot">רגל מעוקב</string>
     <string name="unit_volume_gill_imperial">גיל (אימפריאלי)</string>
