@@ -143,4 +143,21 @@
             android:layout_weight="1"
             android:text="C" />
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/plus_minus_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/btn_plus_minus"
+            style="@style/MyButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="+/-" />
+
+    </LinearLayout>
 </LinearLayout>
