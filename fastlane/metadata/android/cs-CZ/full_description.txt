@@ -1,0 +1,20 @@
+Představujeme Kalkulačku Fossify – všestranný a efektivní nástroj pro všechny vaše výpočty. Užijte si stylový, moderní design spojený s výkonnou funkcionalitou, ideální pro jednoduché výpočty i složitější úlohy.<br><br>
+<b>📶 OFFLINE FUNKČNOST:</b><br>
+Kalkulačka Fossify funguje zcela offline bez nutnosti přístupu k internetu. Používejte ji kdykoli a kdekoli a vyzkoušejte zvýšené soukromí, bezpečnost a stabilitu.<br><br>
+<b>🌐 MNOHO FUNKCÍ:</b><br>
+Ať už potřebujete násobit, dělit nebo počítat odmocniny a mocniny, Kalkulačka Fossify vás nezklame. Je navržena pro běžné výpočty i pokročilejší operace, což z ní činí spolehlivý nástroj pro různé matematické úlohy.<br><br>
+<b>📳 PŘIZPŮSOBITELNÁ NASTAVENÍ:</b><br>
+Upravte si aplikaci podle sebe díky přizpůsobitelným nastavením. Zapněte nebo vypněte vibrace při stisku tlačítek, zakažte uspání telefonu během používání aplikace a dolaďte rozhraní k obrazu svému.<br><br>
+<b>🔒 OCHRANA SOUKROMÍ A BEZPEČNOST:</b><br>
+Vaše soukromí je pro nás na prvním místě. Kalkulačka Fossify nesbírá ani nesdílí žádné uživatelské informace s třetími stranami. Používejte aplikaci bez obav, vaše data jsou v bezpečí.<br><br>
+<b>📊 HISTORIE VÝPOČTŮ:</b><br>
+Získejte přístup k historii svých výpočtů pro rychlou orientaci. Snadno si prohlédněte nedávné operace pro kontrolu nebo pokračování ve své práci.<br><br>
+<b>🎨 PERSONALIZOVANÝ ZÁŽITEK:</b><br>
+Personalizujte si kalkulačku pomocí přizpůsobitelných barev. Upravte barvy textu a pozadí tak, aby odpovídaly vašemu stylu a preferencím, a vytvořte vizuálně atraktivní a snadno ovladatelné rozhraní.<br><br>
+<b>🌐 TRANSPARENTNÍ A OPEN-SOURCE:</b><br>
+Kalkulačka Fossify je zcela otevřený projekt, což zajišťuje transparentnost a bezpečnost. Získejte přístup ke zdrojovému kódu pro audit a ujistěte se o jeho důvěryhodnosti a spolehlivosti.<br><br>
+Zažijte novou úroveň efektivity a přizpůsobení s Kalkulačkou Fossify. Stáhněte si ji nyní a pozvedněte své výpočty na vyšší úroveň.<br><br>
+Prozkoumejte další aplikace Fossify: https://www.fossify.org<br>
+Otevřený zdrojový kód: https://www.github.com/FossifyOrg<br>
+Připojte se ke komunitě na Redditu: https://www.reddit.com/r/Fossify<br>
+Připojte se k Telegramu: https://t.me/Fossify<br>
