@@ -1,0 +1,1 @@
+Hızlı ve kolay hesaplamalar için basit ve açık kaynaklı hesap makinesi
