@@ -26,11 +26,11 @@ android {
     compileSdk = project.libs.versions.app.build.compileSDKVersion.get().toInt()
 
     defaultConfig {
-        applicationId = libs.versions.app.version.appId.get()
+        applicationId = project.property("APP_ID").toString()
         minSdk = project.libs.versions.app.build.minimumSDK.get().toInt()
         targetSdk = project.libs.versions.app.build.targetSDK.get().toInt()
-        versionName = project.libs.versions.app.version.versionName.get()
-        versionCode = project.libs.versions.app.version.versionCode.get().toInt()
+        versionName = project.property("VERSION_NAME").toString()
+        versionCode = project.property("VERSION_CODE").toString().toInt()
         setProperty("archivesBaseName", "calculator-$versionCode")
         ksp {
             arg("room.schemaLocation", "$projectDir/schemas")
@@ -129,7 +129,7 @@ android {
         }
     }
 
-    namespace = "org.fossify.math"
+    namespace = project.property("APP_ID").toString()
 }
 
 detekt {
