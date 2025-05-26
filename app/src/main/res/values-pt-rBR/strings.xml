@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Calculadora</string>
+    <string name="app_launcher_name">Fossify - Calculadora</string>
     <string name="scientific_calculator">Calculadora Científica</string>
     <string name="unit_converter">Converter unidades</string>
     <string name="swap_units">Trocar unidades</string>
