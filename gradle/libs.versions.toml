@@ -6,7 +6,7 @@ ksp = "1.9.25-1.0.20"
 #Detekt
 detekt = "1.23.8"
 #Androidx
-androidx-customView = "1.2.0-alpha02"
+androidx-customView = "1.2.0"
 androidx-customViewPooling = "1.0.0"
 androidx-lifecycle = "2.8.7"
 #Compose
