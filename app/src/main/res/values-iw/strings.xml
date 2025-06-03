@@ -43,7 +43,7 @@
     <string name="unit_temperature_rankine">רנקין (Rankine)</string>
     <string name="unit_temperature_celsius">צלזיוס</string>
     <string name="unit_temperature_kelvin">קלווין</string>
-    <string name="use_comma_as_decimal_mark">השתמש בפסיק כסימן עשרוני</string>
+    <string name="use_comma_as_decimal_mark">שימוש בפסיק כסימן עשרוני</string>
     <string name="unit_area_acre">אקר (Acre)</string>
     <string name="unit_volume">נפח</string>
     <string name="unit_length_light_year">שנת אור</string>
