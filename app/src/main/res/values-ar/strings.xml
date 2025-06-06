@@ -32,5 +32,5 @@
     <string name="unit_length_angstrom">أنجستروم</string>
     <string name="unit_mass_milligram">מיליגרם</string>
     <string name="unit_volume_liter">ליטר</string>
-    <string name="unit_mass_ounce">אונקיה</string>
+    <string name="unit_mass_ounce">أونصة</string>
 </resources>
