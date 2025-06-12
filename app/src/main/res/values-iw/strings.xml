@@ -17,7 +17,7 @@
     <string name="unit_length_centimeter">סנטימטר</string>
     <string name="unit_length_nanometer">ננומטר</string>
     <string name="unit_length_mile">מיל</string>
-    <string name="unit_length_yard">יארד</string>
+    <string name="unit_length_yard">יארד (יחידת אורך)</string>
     <string name="unit_length_foot">רגל (Foot)</string>
     <string name="unit_length_inch">אינץ\'</string>
     <string name="unit_area_square_millimeter">מילימטר רבוע</string>
@@ -43,7 +43,7 @@
     <string name="unit_temperature_rankine">רנקין (Rankine)</string>
     <string name="unit_temperature_celsius">צלזיוס</string>
     <string name="unit_temperature_kelvin">קלווין</string>
-    <string name="use_comma_as_decimal_mark">השתמש בפסיק כסימן עשרוני</string>
+    <string name="use_comma_as_decimal_mark">שימוש בפסיק כסימן עשרוני</string>
     <string name="unit_area_acre">אקר (Acre)</string>
     <string name="unit_volume">נפח</string>
     <string name="unit_length_light_year">שנת אור</string>
@@ -84,12 +84,12 @@
     <string name="unit_volume_cubic_millimeter">מילימטר מעוקב</string>
     <string name="unit_volume_legal_cup_us">גביע משפטי (ארה\"ב)</string>
     <string name="unit_mass_short_ton">טון קצר</string>
-    <string name="unit_length_parsec">Parsec</string>
+    <string name="unit_length_parsec">מרחק אסטרונומי</string>
     <string name="unit_volume_cubic_inch">אינץ\' מעוקב</string>
     <string name="unit_volume_barrel_us">חבית (ארה\"ב)</string>
     <string name="unit_volume_gallon_imperial">גלון (אימפריאלי)</string>
     <string name="unit_volume_cubic_centimeter">סנטימטר מעוקב</string>
-    <string name="unit_mass">מסה (Mass)</string>
+    <string name="unit_mass">משקל</string>
     <string name="unit_volume_fluid_ounce_imperial">אונקיית נוזלים (אימפריאלית)</string>
     <string name="unit_volume_cubic_foot">רגל מעוקב</string>
     <string name="unit_volume_gill_imperial">גיל (אימפריאלי)</string>

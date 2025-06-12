@@ -30,4 +30,7 @@
     <string name="faq_1_title">كيف يعمل الزر C (مسح)؟</string>
     <string name="faq_1_text">النقر على ذلك سوف يزيل حرف واحد في وقت واحد. الضغط لفترة طويلة سوف إعادة تعيين جميع الحقول في وقت واحد.</string>
     <string name="unit_length_angstrom">أنجستروم</string>
+    <string name="unit_mass_milligram">מיליגרם</string>
+    <string name="unit_volume_liter">ליטר</string>
+    <string name="unit_mass_ounce">אונקיה</string>
 </resources>
