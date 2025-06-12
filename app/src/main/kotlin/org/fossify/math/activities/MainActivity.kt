@@ -1,27 +1,32 @@
 package org.fossify.math.activities
 
+import android.content.ClipData
+import android.content.ClipboardManager
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.view.ContextMenu
+import android.view.MenuItem
 import android.view.View
 import android.view.WindowManager
+import android.widget.Toast
 import androidx.core.content.res.ResourcesCompat
-import org.fossify.math.BuildConfig
-import org.fossify.math.R
-import org.fossify.math.databinding.ActivityMainBinding
 import me.grantland.widget.AutofitHelper
-import org.fossify.math.databases.CalculatorDatabase
-import org.fossify.math.dialogs.HistoryDialog
-import org.fossify.math.extensions.config
-import org.fossify.math.extensions.updateViewColors
-import org.fossify.math.extensions.updateWidgets
-import org.fossify.math.helpers.*
 import org.fossify.commons.extensions.*
 import org.fossify.commons.helpers.APP_ICON_IDS
 import org.fossify.commons.helpers.LICENSE_AUTOFITTEXTVIEW
 import org.fossify.commons.helpers.LOWER_ALPHA_INT
 import org.fossify.commons.helpers.MEDIUM_ALPHA_INT
 import org.fossify.commons.models.FAQItem
+import org.fossify.math.BuildConfig
+import org.fossify.math.R
+import org.fossify.math.databases.CalculatorDatabase
+import org.fossify.math.databinding.ActivityMainBinding
+import org.fossify.math.dialogs.HistoryDialog
+import org.fossify.math.extensions.config
+import org.fossify.math.extensions.updateViewColors
+import org.fossify.math.extensions.updateWidgets
+import org.fossify.math.helpers.*
 
 class MainActivity : SimpleActivity(), Calculator {
     private var storedTextColor = 0
@@ -31,6 +36,30 @@ class MainActivity : SimpleActivity(), Calculator {
     private var groupingSeparator = COMMA
     private var saveCalculatorState: String = ""
     private lateinit var calc: CalculatorImpl
+
+    private val digitMap = mapOf(
+        '0' to R.id.btn_0,
+        '1' to R.id.btn_1,
+        '2' to R.id.btn_2,
+        '3' to R.id.btn_3,
+        '4' to R.id.btn_4,
+        '5' to R.id.btn_5,
+        '6' to R.id.btn_6,
+        '7' to R.id.btn_7,
+        '8' to R.id.btn_8,
+        '9' to R.id.btn_9,
+        decimalSeparator[0] to R.id.btn_decimal
+    )
+
+    private val operationMap = mapOf(
+        '+' to PLUS,
+        '-' to MINUS,
+        '×' to MULTIPLY,
+        '÷' to DIVIDE,
+        '√' to ROOT,
+        '^' to POWER,
+        '%' to PERCENT
+    )
 
     private val binding by viewBinding(ActivityMainBinding::inflate)
 
@@ -70,10 +99,10 @@ class MainActivity : SimpleActivity(), Calculator {
         }
 
         binding.btnEquals?.setVibratingOnClickListener { calc.handleEquals() }
-        binding.formula?.setOnLongClickListener { copyToClipboard(false) }
-        binding.result?.setOnLongClickListener { copyToClipboard(true) }
         AutofitHelper.create(binding.result)
         AutofitHelper.create(binding.formula)
+        registerForContextMenu(binding.result)
+        registerForContextMenu(binding.formula)
         storeStateVariables()
         binding.calculatorHolder?.let { updateViewColors(it, getProperTextColor()) }
         setupDecimalSeparator()
@@ -129,6 +158,70 @@ class MainActivity : SimpleActivity(), Calculator {
     override fun onSaveInstanceState(bundle: Bundle) {
         super.onSaveInstanceState(bundle)
         bundle.putString(CALCULATOR_STATE, calc.getCalculatorStateJson().toString())
+    }
+
+    override fun onCreateContextMenu(contextMenu: ContextMenu, view: View, contextMenuInformation: ContextMenu.ContextMenuInfo?) {
+        super.onCreateContextMenu(contextMenu, view, contextMenuInformation)
+        contextMenu.add(0, view.id, 0, getString(R.string.copy))
+        contextMenu.add(0, view.id, 1, getString(R.string.paste))
+    }
+
+    override fun onContextItemSelected(item: MenuItem): Boolean {
+        val clipboard = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
+        val view = findViewById<View>(item.itemId)
+
+        when (item.title) {
+            getString(R.string.copy) -> {
+                val content = when (view) {
+                    binding.formula -> binding.formula?.text?.toString()
+                    binding.result -> binding.result?.text?.toString()
+                    else -> null
+                }
+
+                content?.let {
+                    val clip = ClipData.newPlainText("Calculator", it)
+                    clipboard.setPrimaryClip(clip)
+                    Toast.makeText(this, "Copied", Toast.LENGTH_SHORT).show()
+                }
+
+                return true
+            }
+
+            getString(R.string.paste) -> {
+                if (!clipboard.hasPrimaryClip()) {
+                    Toast.makeText(this, "No clip", Toast.LENGTH_SHORT).show()
+                    return true
+                }
+                val clip = clipboard.primaryClip
+
+                val text = clip?.getItemAt(0)?.text?.toString()?.replace(" ", "") ?: ""
+                if (text.isEmpty()) {
+                    Toast.makeText(this, "Clip is empty", Toast.LENGTH_SHORT).show()
+                    return true
+                }
+
+                val expression = Regex("[0-9]+(?:[${decimalSeparator}][0-9]+)?(?:[+\\-×÷√^%][0-9]+(?:[${decimalSeparator}][0-9]+)?)*")
+                if (!expression.matches(text)) {
+                    Toast.makeText(this, "Clip is invalid", Toast.LENGTH_SHORT).show()
+                    return true
+                }
+
+                calc.handleReset()
+                text.forEach { character ->
+                    digitMap[character]?.let {
+                        calc.numpadClicked(it)
+                    }
+                    operationMap[character]?.let {
+                        calc.handleOperation(it)
+                    }
+
+                }
+
+                return true
+            }
+        }
+
+        return super.onContextItemSelected(item)
     }
 
     private fun setupOptionsMenu() {
@@ -213,20 +306,6 @@ class MainActivity : SimpleActivity(), Calculator {
 
     private fun getButtonIds() = binding.run {
         arrayOf(btnDecimal, btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9)
-    }
-
-    private fun copyToClipboard(copyResult: Boolean): Boolean {
-        var value = binding.formula?.value
-        if (copyResult) {
-            value = binding.result?.value
-        }
-
-        return if (value.isNullOrEmpty()) {
-            false
-        } else {
-            copyToClipboard(value)
-            true
-        }
     }
 
     override fun showNewResult(value: String, context: Context) {
