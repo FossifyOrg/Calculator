@@ -1,11 +1,12 @@
 package org.fossify.math.helpers
 
 import android.content.Context
-import org.fossify.math.R
+import android.widget.Toast
 import net.objecthunter.exp4j.ExpressionBuilder
-import org.fossify.math.models.History
 import org.fossify.commons.extensions.showErrorToast
 import org.fossify.commons.extensions.toast
+import org.fossify.math.R
+import org.fossify.math.models.History
 import org.json.JSONObject
 import org.json.JSONTokener
 import java.math.BigDecimal
@@ -31,6 +32,29 @@ class CalculatorImpl(
     private val numbersRegex = "[^0-9,.]".toRegex()
     private val formatter = NumberFormatHelper(
         decimalSeparator = decimalSeparator, groupingSeparator = groupingSeparator
+    )
+    private val digitMap = mapOf(
+        '0' to R.id.btn_0,
+        '1' to R.id.btn_1,
+        '2' to R.id.btn_2,
+        '3' to R.id.btn_3,
+        '4' to R.id.btn_4,
+        '5' to R.id.btn_5,
+        '6' to R.id.btn_6,
+        '7' to R.id.btn_7,
+        '8' to R.id.btn_8,
+        '9' to R.id.btn_9,
+        decimalSeparator[0] to R.id.btn_decimal
+    )
+    private val expression = Regex("[0-9]+(?:[${decimalSeparator}][0-9]+)?(?:[+\\-×÷√^%][0-9]+(?:[${decimalSeparator}][0-9]+)?)*")
+    private val operationMap = mapOf(
+        '+' to PLUS,
+        '-' to MINUS,
+        '×' to MULTIPLY,
+        '÷' to DIVIDE,
+        '√' to ROOT,
+        '^' to POWER,
+        '%' to PERCENT
     )
 
     init {
@@ -459,5 +483,18 @@ class CalculatorImpl(
         baseValue = jsonObject.getDouble(BASE_VALUE)
         secondValue = jsonObject.getDouble(SECOND_VALUE)
         inputDisplayedFormula = jsonObject.getString(INPUT_DISPLAYED_FORMULA)
+    }
+
+    fun setFormula(text: String) {
+        if (!expression.matches(text)) {
+            Toast.makeText(context, "Clip is invalid", Toast.LENGTH_SHORT).show()
+            return
+        }
+
+        handleReset()
+        text.forEach { character: Char ->
+            digitMap[character]?.let { numpadClicked(it) }
+            operationMap[character]?.let { handleOperation(it) }
+        }
     }
 }

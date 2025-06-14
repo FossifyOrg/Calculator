@@ -1,6 +1,5 @@
 package org.fossify.math.activities
 
-import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Context
 import android.content.Intent
@@ -12,13 +11,13 @@ import android.view.WindowManager
 import android.widget.Toast
 import androidx.core.content.res.ResourcesCompat
 import me.grantland.widget.AutofitHelper
+import me.grantland.widget.BuildConfig
 import org.fossify.commons.extensions.*
 import org.fossify.commons.helpers.APP_ICON_IDS
 import org.fossify.commons.helpers.LICENSE_AUTOFITTEXTVIEW
 import org.fossify.commons.helpers.LOWER_ALPHA_INT
 import org.fossify.commons.helpers.MEDIUM_ALPHA_INT
 import org.fossify.commons.models.FAQItem
-import org.fossify.math.BuildConfig
 import org.fossify.math.R
 import org.fossify.math.databases.CalculatorDatabase
 import org.fossify.math.databinding.ActivityMainBinding
@@ -36,30 +35,6 @@ class MainActivity : SimpleActivity(), Calculator {
     private var groupingSeparator = COMMA
     private var saveCalculatorState: String = ""
     private lateinit var calc: CalculatorImpl
-
-    private val digitMap = mapOf(
-        '0' to R.id.btn_0,
-        '1' to R.id.btn_1,
-        '2' to R.id.btn_2,
-        '3' to R.id.btn_3,
-        '4' to R.id.btn_4,
-        '5' to R.id.btn_5,
-        '6' to R.id.btn_6,
-        '7' to R.id.btn_7,
-        '8' to R.id.btn_8,
-        '9' to R.id.btn_9,
-        decimalSeparator[0] to R.id.btn_decimal
-    )
-
-    private val operationMap = mapOf(
-        '+' to PLUS,
-        '-' to MINUS,
-        '×' to MULTIPLY,
-        '÷' to DIVIDE,
-        '√' to ROOT,
-        '^' to POWER,
-        '%' to PERCENT
-    )
 
     private val binding by viewBinding(ActivityMainBinding::inflate)
 
@@ -167,7 +142,7 @@ class MainActivity : SimpleActivity(), Calculator {
     }
 
     override fun onContextItemSelected(item: MenuItem): Boolean {
-        val clipboard = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
+        val clipboard = getSystemService(CLIPBOARD_SERVICE) as ClipboardManager
         val view = findViewById<View>(item.itemId)
 
         when (item.title) {
@@ -178,11 +153,7 @@ class MainActivity : SimpleActivity(), Calculator {
                     else -> null
                 }
 
-                content?.let {
-                    val clip = ClipData.newPlainText("Calculator", it)
-                    clipboard.setPrimaryClip(clip)
-                    Toast.makeText(this, "Copied", Toast.LENGTH_SHORT).show()
-                }
+                content?.let { copyToClipboard(it) }
 
                 return true
             }
@@ -192,31 +163,14 @@ class MainActivity : SimpleActivity(), Calculator {
                     Toast.makeText(this, "No clip", Toast.LENGTH_SHORT).show()
                     return true
                 }
-                val clip = clipboard.primaryClip
 
-                val text = clip?.getItemAt(0)?.text?.toString()?.replace(" ", "") ?: ""
+                val text = clipboard.primaryClip?.getItemAt(0)?.text?.toString()?.replace(" ", "") ?: ""
                 if (text.isEmpty()) {
                     Toast.makeText(this, "Clip is empty", Toast.LENGTH_SHORT).show()
                     return true
                 }
 
-                val expression = Regex("[0-9]+(?:[${decimalSeparator}][0-9]+)?(?:[+\\-×÷√^%][0-9]+(?:[${decimalSeparator}][0-9]+)?)*")
-                if (!expression.matches(text)) {
-                    Toast.makeText(this, "Clip is invalid", Toast.LENGTH_SHORT).show()
-                    return true
-                }
-
-                calc.handleReset()
-                text.forEach { character ->
-                    digitMap[character]?.let {
-                        calc.numpadClicked(it)
-                    }
-                    operationMap[character]?.let {
-                        calc.handleOperation(it)
-                    }
-
-                }
-
+                calc.setFormula(text)
                 return true
             }
         }

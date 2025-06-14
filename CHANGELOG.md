@@ -7,13 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [1.0.5] - 2025-06-06
+### Added
 
-### Changed
-
-- Added a contextual menu triggered by a prolonged press that features a copy and paste option
-
-## [Unreleased]
+- Ability to paste from the clipboard ([#28])
 
 ## [1.0.4] - 2025-05-31
 
