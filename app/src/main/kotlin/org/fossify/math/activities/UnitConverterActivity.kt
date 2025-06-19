@@ -51,7 +51,7 @@ class UnitConverterActivity : SimpleActivity() {
         this.converter = converter
 
         binding.viewUnitConverter.plusMinusLayout.visibility =
-            if (converter.nameResId == R.string.unit_temperature) View.VISIBLE else View.GONE
+            if (converter.key == TemperatureConverter.key) View.VISIBLE else View.GONE
 
         binding.viewUnitConverter.btnClear.setVibratingOnClickListener {
             binding.viewUnitConverter.viewConverter.root.deleteCharacter()
