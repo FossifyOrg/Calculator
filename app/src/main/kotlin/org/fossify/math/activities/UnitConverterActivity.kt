@@ -61,10 +61,6 @@ class UnitConverterActivity : SimpleActivity() {
             true
         }
 
-        binding.viewUnitConverter.btnPlusMinus.setVibratingOnClickListener {
-            binding.viewUnitConverter.viewConverter.root.toggleNegative()
-        }
-
         getButtonIds().forEach {
             it.setVibratingOnClickListener { view ->
                 binding.viewUnitConverter.viewConverter.root.numpadClicked(view.id)
