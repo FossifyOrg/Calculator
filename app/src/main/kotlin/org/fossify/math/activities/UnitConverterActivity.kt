@@ -146,7 +146,9 @@ class UnitConverterActivity : SimpleActivity() {
     }
 
     private fun getButtonIds() = binding.viewUnitConverter.run {
-        arrayOf(btnDecimal, btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9)
+        arrayOf(
+            btnDecimal, btnPlusMinus, btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9
+        )
     }
 
     private fun View.setVibratingOnClickListener(callback: (view: View) -> Unit) {
