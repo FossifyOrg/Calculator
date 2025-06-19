@@ -9,7 +9,7 @@
     <string name="history_empty">Історія порожня</string>
     <string name="clear_history">Очистити</string>
     <string name="history_cleared">Історію очищено</string>
-    <string name="vibrate_on_button_press">Вібрувати при натисканні кнопки</string>
+    <string name="vibrate_on_button_press">Вібрувати під час натискання кнопок</string>
     <string name="use_comma_as_decimal_mark">Використовувати кому як розділювач десяткових чисел</string>
     <string name="unit_length">Довжина</string>
     <string name="unit_length_kilometer">Кілометр</string>
@@ -93,6 +93,6 @@
     <string name="unit_mass_stone">Стоун</string>
     <string name="unit_mass_long_ton">Англійська тонна</string>
     <string name="unit_mass_short_ton">Американська тонна</string>
-    <string name="unit_volume_legal_cup_us">Legal Cup (США)</string>
-    <string name="unit_volume_customary_cup_us">Custom Cup (США)</string>
+    <string name="unit_volume_legal_cup_us">Офіційна чаша (США)</string>
+    <string name="unit_volume_customary_cup_us">Звичайна чаша (США)</string>
 </resources>
