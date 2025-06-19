@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Support for negative temperature conversion ([#44])
+
+### Changed
+
+- Updated translations
+
 ## [1.0.5] - 2025-06-17
 
 ### Changed
