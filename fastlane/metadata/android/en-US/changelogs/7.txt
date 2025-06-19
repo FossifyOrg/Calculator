@@ -1,0 +1,8 @@
+Added:
+
+• Support for negative temperature conversion 
+
+Changed:
+
+• Updated translations
+
