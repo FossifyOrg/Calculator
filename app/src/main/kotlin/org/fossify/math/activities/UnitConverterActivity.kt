@@ -5,6 +5,13 @@ import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
 import androidx.core.content.res.ResourcesCompat
+import androidx.core.view.isVisible
+import org.fossify.commons.extensions.getProperTextColor
+import org.fossify.commons.extensions.performHapticFeedback
+import org.fossify.commons.extensions.viewBinding
+import org.fossify.commons.helpers.LOWER_ALPHA_INT
+import org.fossify.commons.helpers.MEDIUM_ALPHA_INT
+import org.fossify.commons.helpers.NavigationIcon
 import org.fossify.math.R
 import org.fossify.math.databinding.ActivityUnitConverterBinding
 import org.fossify.math.extensions.config
@@ -13,14 +20,7 @@ import org.fossify.math.helpers.COMMA
 import org.fossify.math.helpers.CONVERTER_STATE
 import org.fossify.math.helpers.DOT
 import org.fossify.math.helpers.converters.Converter
-import org.fossify.commons.extensions.getProperTextColor
-import org.fossify.commons.extensions.performHapticFeedback
-import org.fossify.commons.extensions.viewBinding
-import org.fossify.commons.helpers.LOWER_ALPHA_INT
-import org.fossify.commons.helpers.MEDIUM_ALPHA_INT
-import org.fossify.commons.helpers.NavigationIcon
 import org.fossify.math.helpers.converters.TemperatureConverter
-import androidx.core.view.isVisible
 
 class UnitConverterActivity : SimpleActivity() {
     companion object {
@@ -41,7 +41,12 @@ class UnitConverterActivity : SimpleActivity() {
             setupOptionsMenu()
         }
 
-        updateMaterialActivityViews(binding.unitConverterCoordinator, null, useTransparentNavigation = false, useTopSearchMenu = false)
+        updateMaterialActivityViews(
+            mainCoordinatorLayout = binding.unitConverterCoordinator,
+            nestedView = null,
+            useTransparentNavigation = false,
+            useTopSearchMenu = false
+        )
         setupMaterialScrollListener(binding.nestedScrollview, binding.unitConverterToolbar)
 
         val converter = Converter.ALL.getOrNull(intent.getIntExtra(EXTRA_CONVERTER_ID, 0))
@@ -79,7 +84,10 @@ class UnitConverterActivity : SimpleActivity() {
         } else {
             val storedState = config.getLastConverterUnits(converter)
             if (storedState != null) {
-                binding.viewUnitConverter.viewConverter.root.updateUnits(storedState.topUnit, storedState.bottomUnit)
+                binding.viewUnitConverter.viewConverter.root.updateUnits(
+                    newTopUnit = storedState.topUnit,
+                    newBottomUnit = storedState.bottomUnit
+                )
             }
         }
     }
@@ -111,17 +119,29 @@ class UnitConverterActivity : SimpleActivity() {
 
         binding.viewUnitConverter.apply {
             arrayOf(btnClear, btnDecimal).forEach {
-                it.background = ResourcesCompat.getDrawable(resources, org.fossify.commons.R.drawable.pill_background, theme)
+                it.background = ResourcesCompat.getDrawable(
+                    resources,
+                    org.fossify.commons.R.drawable.pill_background,
+                    theme
+                )
                 it.background?.alpha = MEDIUM_ALPHA_INT
             }
 
             arrayOf(btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9).forEach {
-                it.background = ResourcesCompat.getDrawable(resources, org.fossify.commons.R.drawable.pill_background, theme)
+                it.background = ResourcesCompat.getDrawable(
+                    resources,
+                    org.fossify.commons.R.drawable.pill_background,
+                    theme
+                )
                 it.background?.alpha = LOWER_ALPHA_INT
             }
 
             if (plusMinusLayout.isVisible) {
-                btnPlusMinus.background = ResourcesCompat.getDrawable(resources, org.fossify.commons.R.drawable.pill_background, theme)
+                btnPlusMinus.background = ResourcesCompat.getDrawable(
+                    resources,
+                    org.fossify.commons.R.drawable.pill_background,
+                    theme
+                )
                 btnPlusMinus.background?.alpha = MEDIUM_ALPHA_INT
             }
         }
@@ -136,7 +156,10 @@ class UnitConverterActivity : SimpleActivity() {
 
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
-        outState.putBundle(CONVERTER_STATE, binding.viewUnitConverter.viewConverter.root.saveState())
+        outState.putBundle(
+            CONVERTER_STATE,
+            binding.viewUnitConverter.viewConverter.root.saveState()
+        )
     }
 
     private fun checkHaptic(view: View) {
@@ -146,7 +169,9 @@ class UnitConverterActivity : SimpleActivity() {
     }
 
     private fun getButtonIds() = binding.viewUnitConverter.run {
-        arrayOf(btnDecimal, btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9)
+        arrayOf(
+            btnDecimal, btnPlusMinus, btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9
+        )
     }
 
     private fun View.setVibratingOnClickListener(callback: (view: View) -> Unit) {
@@ -166,7 +191,10 @@ class UnitConverterActivity : SimpleActivity() {
             decimalSeparator = DOT
             groupingSeparator = COMMA
         }
-        binding.viewUnitConverter.viewConverter.root.updateSeparators(decimalSeparator, groupingSeparator)
+        binding.viewUnitConverter.viewConverter.root.updateSeparators(
+            decimalSeparator = decimalSeparator,
+            groupingSeparator = groupingSeparator
+        )
         binding.viewUnitConverter.btnDecimal.text = decimalSeparator
     }
 }
