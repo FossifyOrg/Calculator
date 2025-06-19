@@ -223,7 +223,7 @@ class ConverterView @JvmOverloads constructor(
         converter?.apply {
             val topValue = formatter.removeGroupingSeparator(binding.topUnitText.text.toString()).toDoubleOrNull() ?: 0.0
 
-            if (nameResId == R.string.unit_temperature) {
+            if (key == TemperatureConverter.key) {
                 when (topUnit?.symbolResId) {
                     R.string.unit_temperature_kelvin_symbol,
                     R.string.unit_temperature_rankine_symbol -> {
