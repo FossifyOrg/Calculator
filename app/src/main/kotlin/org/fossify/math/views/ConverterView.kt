@@ -315,7 +315,7 @@ class ConverterView @JvmOverloads constructor(
     }
 
     private fun checkTemperatureLimits(value: String): String {
-        if (converter?.nameResId != R.string.unit_temperature) return value
+        if (converter?.key != TemperatureConverter.key) return value
 
         val numericValue = formatter.removeGroupingSeparator(value).toDoubleOrNull() ?: return value
 
