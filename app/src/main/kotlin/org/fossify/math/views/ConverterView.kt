@@ -319,15 +319,15 @@ class ConverterView @JvmOverloads constructor(
 
         val numericValue = formatter.removeGroupingSeparator(value).toDoubleOrNull() ?: return value
 
-        return when (topUnit?.symbolResId) {
-            R.string.unit_temperature_celsius_symbol -> {
+        return when (topUnit?.key) {
+            TemperatureConverter.Unit.Celsius.key -> {
                 if (numericValue < -273.15) "-273.15" else value
             }
-            R.string.unit_temperature_fahrenheit_symbol -> {
+            TemperatureConverter.Unit.Fahrenheit.key -> {
                 if (numericValue < -459.67) "-459.67" else value
             }
-            R.string.unit_temperature_kelvin_symbol,
-            R.string.unit_temperature_rankine_symbol -> {
+            TemperatureConverter.Unit.Kelvin.key,
+            TemperatureConverter.Unit.Rankine.key -> {
                 if (numericValue < 0) "0" else value
             }
             else -> value
