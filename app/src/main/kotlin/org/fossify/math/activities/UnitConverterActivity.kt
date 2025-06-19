@@ -120,7 +120,7 @@ class UnitConverterActivity : SimpleActivity() {
 
             if (plusMinusLayout.visibility == View.VISIBLE) {
                 btnPlusMinus.background = ResourcesCompat.getDrawable(resources, org.fossify.commons.R.drawable.pill_background, theme)
-                btnPlusMinus.background?.alpha = LOWER_ALPHA_INT
+                btnPlusMinus.background?.alpha = MEDIUM_ALPHA_INT
             }
         }
     }
