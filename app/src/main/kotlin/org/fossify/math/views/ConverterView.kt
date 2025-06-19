@@ -23,6 +23,7 @@ import org.fossify.commons.extensions.*
 import org.fossify.commons.helpers.LOWER_ALPHA
 import org.fossify.commons.helpers.MEDIUM_ALPHA_INT
 import org.fossify.commons.models.RadioItem
+import org.fossify.math.helpers.converters.TemperatureConverter
 import kotlin.reflect.KMutableProperty0
 
 class ConverterView @JvmOverloads constructor(
@@ -129,7 +130,7 @@ class ConverterView @JvmOverloads constructor(
                 }
             }
             updateBottomValue()
-        } catch (e: Exception) {
+        } catch (_: Exception) {
             binding.topUnitText.text = "0"
             binding.bottomUnitText.text = "0"
         }
@@ -301,13 +302,12 @@ class ConverterView @JvmOverloads constructor(
     fun toggleNegative() {
         var value = binding.topUnitText.text.toString()
 
-        if (value == "0") {
-            value = "-"
-        } else if (value.startsWith("-")) {
-            value = value.substring(1)
-        } else {
-            value = "-$value"
+        value = when {
+            value == "0" -> "-"
+            value.startsWith("-") -> value.substring(1)
+            else -> "-$value"
         }
+
         value = checkTemperatureLimits(value)
 
         binding.topUnitText.text = value

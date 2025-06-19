@@ -19,6 +19,8 @@ import org.fossify.commons.extensions.viewBinding
 import org.fossify.commons.helpers.LOWER_ALPHA_INT
 import org.fossify.commons.helpers.MEDIUM_ALPHA_INT
 import org.fossify.commons.helpers.NavigationIcon
+import org.fossify.math.helpers.converters.TemperatureConverter
+import androidx.core.view.isVisible
 
 class UnitConverterActivity : SimpleActivity() {
     companion object {
@@ -118,7 +120,7 @@ class UnitConverterActivity : SimpleActivity() {
                 it.background?.alpha = LOWER_ALPHA_INT
             }
 
-            if (plusMinusLayout.visibility == View.VISIBLE) {
+            if (plusMinusLayout.isVisible) {
                 btnPlusMinus.background = ResourcesCompat.getDrawable(resources, org.fossify.commons.R.drawable.pill_background, theme)
                 btnPlusMinus.background?.alpha = MEDIUM_ALPHA_INT
             }
