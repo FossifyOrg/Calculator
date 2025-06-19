@@ -23,6 +23,7 @@ import org.fossify.commons.extensions.*
 import org.fossify.commons.helpers.LOWER_ALPHA
 import org.fossify.commons.helpers.MEDIUM_ALPHA_INT
 import org.fossify.commons.models.RadioItem
+import org.fossify.math.helpers.converters.TemperatureConverter
 import kotlin.reflect.KMutableProperty0
 
 class ConverterView @JvmOverloads constructor(
@@ -111,16 +112,28 @@ class ConverterView @JvmOverloads constructor(
     }
 
     fun deleteCharacter() {
-        var newValue = binding.topUnitText.text.dropLast(1)
-        newValue = newValue.trimEnd(groupingSeparator.single())
-        if (newValue == "") {
-            newValue = "0"
+        try {
+            var currentText = binding.topUnitText.text.toString()
+            if (currentText.length == 1) {
+                binding.topUnitText.text = "0"
+            } else {
+                if (currentText.startsWith("-") && currentText.length == 2) {
+                    binding.topUnitText.text = "0"
+                } else {
+                    var newValue = currentText.dropLast(1)
+                    newValue = newValue.trimEnd(groupingSeparator.single())
+                    if (newValue == "-" || newValue.isEmpty()) {
+                        newValue = "0"
+                    }
+                    val value = formatter.removeGroupingSeparator(newValue).toDoubleOrNull() ?: 0.0
+                    binding.topUnitText.text = formatter.doubleToString(value)
+                }
+            }
+            updateBottomValue()
+        } catch (_: Exception) {
+            binding.topUnitText.text = "0"
+            binding.bottomUnitText.text = "0"
         }
-
-        val value = formatter.removeGroupingSeparator(newValue.toString()).toDouble()
-        binding.topUnitText.text = formatter.doubleToString(value)
-
-        updateBottomValue()
     }
 
     fun numpadClicked(id: Int) {
@@ -136,6 +149,7 @@ class ConverterView @JvmOverloads constructor(
             R.id.btn_7 -> addDigit(7)
             R.id.btn_8 -> addDigit(8)
             R.id.btn_9 -> addDigit(9)
+            R.id.btn_plus_minus -> toggleNegative()
         }
 
         updateBottomValue()
@@ -164,10 +178,11 @@ class ConverterView @JvmOverloads constructor(
     private fun addDigit(digit: Int) {
         var value = binding.topUnitText.text.toString()
         if (value == "0") {
-            value = ""
+            value = digit.toString()
+        } else {
+            value += digit
         }
-
-        value += digit
+        value = checkTemperatureLimits(value)
         value = formatter.addGroupingSeparators(value)
         binding.topUnitText.text = value
     }
@@ -207,7 +222,21 @@ class ConverterView @JvmOverloads constructor(
 
     private fun updateBottomValue() {
         converter?.apply {
-            val converted = convert(topUnit!!.withValue(formatter.removeGroupingSeparator(binding.topUnitText.text.toString()).toDouble()), bottomUnit!!).value
+            val topValue = formatter.removeGroupingSeparator(binding.topUnitText.text.toString()).toDoubleOrNull() ?: 0.0
+
+            if (key == TemperatureConverter.key) {
+                when (topUnit?.key) {
+                    TemperatureConverter.Unit.Kelvin.key,
+                    TemperatureConverter.Unit.Rankine.key -> {
+                        if (topValue < 0) {
+                            binding.topUnitText.text = "0"
+                            return
+                        }
+                    }
+                }
+            }
+
+            val converted = convert(topUnit!!.withValue(topValue), bottomUnit!!).value
             binding.bottomUnitText.text = formatter.doubleToString(converted)
         }
     }
@@ -268,5 +297,40 @@ class ConverterView @JvmOverloads constructor(
 
         updateBottomValue()
         updateUnitLabelsAndSymbols()
+    }
+
+    fun toggleNegative() {
+        var value = binding.topUnitText.text.toString()
+
+        value = when {
+            value == "0" -> "-"
+            value.startsWith("-") -> value.substring(1)
+            else -> "-$value"
+        }
+
+        value = checkTemperatureLimits(value)
+
+        binding.topUnitText.text = value
+        updateBottomValue()
+    }
+
+    private fun checkTemperatureLimits(value: String): String {
+        if (converter?.key != TemperatureConverter.key) return value
+
+        val numericValue = formatter.removeGroupingSeparator(value).toDoubleOrNull() ?: return value
+
+        return when (topUnit?.key) {
+            TemperatureConverter.Unit.Celsius.key -> {
+                if (numericValue < -273.15) "-273.15" else value
+            }
+            TemperatureConverter.Unit.Fahrenheit.key -> {
+                if (numericValue < -459.67) "-459.67" else value
+            }
+            TemperatureConverter.Unit.Kelvin.key,
+            TemperatureConverter.Unit.Rankine.key -> {
+                if (numericValue < 0) "0" else value
+            }
+            else -> value
+        }
     }
 }

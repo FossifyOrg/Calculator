@@ -19,6 +19,8 @@ import org.fossify.commons.extensions.viewBinding
 import org.fossify.commons.helpers.LOWER_ALPHA_INT
 import org.fossify.commons.helpers.MEDIUM_ALPHA_INT
 import org.fossify.commons.helpers.NavigationIcon
+import org.fossify.math.helpers.converters.TemperatureConverter
+import androidx.core.view.isVisible
 
 class UnitConverterActivity : SimpleActivity() {
     companion object {
@@ -49,6 +51,9 @@ class UnitConverterActivity : SimpleActivity() {
             return
         }
         this.converter = converter
+
+        binding.viewUnitConverter.plusMinusLayout.visibility =
+            if (converter.key == TemperatureConverter.key) View.VISIBLE else View.GONE
 
         binding.viewUnitConverter.btnClear.setVibratingOnClickListener {
             binding.viewUnitConverter.viewConverter.root.deleteCharacter()
@@ -113,6 +118,11 @@ class UnitConverterActivity : SimpleActivity() {
             arrayOf(btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9).forEach {
                 it.background = ResourcesCompat.getDrawable(resources, org.fossify.commons.R.drawable.pill_background, theme)
                 it.background?.alpha = LOWER_ALPHA_INT
+            }
+
+            if (plusMinusLayout.isVisible) {
+                btnPlusMinus.background = ResourcesCompat.getDrawable(resources, org.fossify.commons.R.drawable.pill_background, theme)
+                btnPlusMinus.background?.alpha = MEDIUM_ALPHA_INT
             }
         }
     }
