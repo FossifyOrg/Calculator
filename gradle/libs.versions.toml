@@ -18,7 +18,7 @@ autofittextview = "0.2.1"
 #exp4j
 exp4j = "0.4.8"
 #Room
-room = "2.7.1"
+room = "2.7.2"
 #Fossify
 commons = "3.0.5"
 #Gradle
