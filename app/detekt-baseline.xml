@@ -1,17 +1,17 @@
 <?xml version="1.0" ?>
 <SmellBaseline>
-  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <ManuallySuppressedIssues/>
   <CurrentIssues>
     <ID>CyclomaticComplexMethod:CalculatorImpl.kt$CalculatorImpl$fun handleOperation(operation: String)</ID>
     <ID>CyclomaticComplexMethod:CalculatorImpl.kt$CalculatorImpl$private fun calculateResult()</ID>
     <ID>CyclomaticComplexMethod:MyWidgetProvider.kt$MyWidgetProvider$private fun myAction(action: String, context: Context)</ID>
     <ID>EmptyFunctionBlock:WidgetConfigureActivity.kt$WidgetConfigureActivity.&lt;no name provided&gt;${}</ID>
     <ID>ForEachOnRange:Context.kt$(0 until cnt).map { viewGroup.getChildAt(it) }</ID>
-    <ID>FunctionNaming:SettingsScreen.kt$@Composable internal fun SettingsScreen( goBack: () -&gt; Unit, customizeColors: () -&gt; Unit, customizeWidgetColors: () -&gt; Unit, preventPhoneFromSleeping: Boolean, onPreventPhoneFromSleeping: (Boolean) -&gt; Unit, vibrateOnButtonPressFlow: Boolean, onVibrateOnButtonPressFlow: (Boolean) -&gt; Unit, isOrWasThankYouInstalled: Boolean, onThankYou: () -&gt; Unit, isUseEnglishEnabled: Boolean, isUseEnglishChecked: Boolean, onUseEnglishPress: (Boolean) -&gt; Unit, onSetupLanguagePress: () -&gt; Unit, useCommaAsDecimalMarkFlow: Boolean, onUseCommaAsDecimalMarkFlow: (Boolean) -&gt; Unit, lockedCustomizeColorText: String, displayLanguage: String, featureLockedDialogState: AlertDialogState )</ID>
-    <ID>FunctionNaming:SettingsScreen.kt$@MyDevices @Composable private fun SettingsScreenPreview()</ID>
+    <ID>FunctionNaming:SettingsScreen.kt$@Composable internal fun SettingsScreen( goBack: () -&gt; Unit, customizeColors: () -&gt; Unit, customizeWidgetColors: () -&gt; Unit, preventPhoneFromSleeping: Boolean, onPreventPhoneFromSleeping: (Boolean) -&gt; Unit, vibrateOnButtonPressFlow: Boolean, onVibrateOnButtonPressFlow: (Boolean) -&gt; Unit, isOrWasThankYouInstalled: Boolean, onThankYou: () -&gt; Unit, isUseEnglishEnabled: Boolean, isUseEnglishChecked: Boolean, onUseEnglishPress: (Boolean) -&gt; Unit, onSetupLanguagePress: () -&gt; Unit, useCommaAsDecimalMarkFlow: Boolean, onUseCommaAsDecimalMarkFlow: (Boolean) -&gt; Unit, showCheckmarksOnSwitches: Boolean, lockedCustomizeColorText: String, displayLanguage: String, featureLockedDialogState: AlertDialogState )</ID>
+    <ID>FunctionNaming:SettingsScreen.kt$@MyDevices @Composable private fun SettingsScreenPreview( @PreviewParameter(BooleanPreviewParameterProvider::class) showCheckmarksOnSwitches: Boolean )</ID>
     <ID>LongMethod:CalculatorImpl.kt$CalculatorImpl$private fun calculateResult()</ID>
-    <ID>LongMethod:SettingsScreen.kt$@Composable internal fun SettingsScreen( goBack: () -&gt; Unit, customizeColors: () -&gt; Unit, customizeWidgetColors: () -&gt; Unit, preventPhoneFromSleeping: Boolean, onPreventPhoneFromSleeping: (Boolean) -&gt; Unit, vibrateOnButtonPressFlow: Boolean, onVibrateOnButtonPressFlow: (Boolean) -&gt; Unit, isOrWasThankYouInstalled: Boolean, onThankYou: () -&gt; Unit, isUseEnglishEnabled: Boolean, isUseEnglishChecked: Boolean, onUseEnglishPress: (Boolean) -&gt; Unit, onSetupLanguagePress: () -&gt; Unit, useCommaAsDecimalMarkFlow: Boolean, onUseCommaAsDecimalMarkFlow: (Boolean) -&gt; Unit, lockedCustomizeColorText: String, displayLanguage: String, featureLockedDialogState: AlertDialogState )</ID>
-    <ID>LongParameterList:SettingsScreen.kt$( goBack: () -&gt; Unit, customizeColors: () -&gt; Unit, customizeWidgetColors: () -&gt; Unit, preventPhoneFromSleeping: Boolean, onPreventPhoneFromSleeping: (Boolean) -&gt; Unit, vibrateOnButtonPressFlow: Boolean, onVibrateOnButtonPressFlow: (Boolean) -&gt; Unit, isOrWasThankYouInstalled: Boolean, onThankYou: () -&gt; Unit, isUseEnglishEnabled: Boolean, isUseEnglishChecked: Boolean, onUseEnglishPress: (Boolean) -&gt; Unit, onSetupLanguagePress: () -&gt; Unit, useCommaAsDecimalMarkFlow: Boolean, onUseCommaAsDecimalMarkFlow: (Boolean) -&gt; Unit, lockedCustomizeColorText: String, displayLanguage: String, featureLockedDialogState: AlertDialogState )</ID>
+    <ID>LongMethod:SettingsScreen.kt$@Composable internal fun SettingsScreen( goBack: () -&gt; Unit, customizeColors: () -&gt; Unit, customizeWidgetColors: () -&gt; Unit, preventPhoneFromSleeping: Boolean, onPreventPhoneFromSleeping: (Boolean) -&gt; Unit, vibrateOnButtonPressFlow: Boolean, onVibrateOnButtonPressFlow: (Boolean) -&gt; Unit, isOrWasThankYouInstalled: Boolean, onThankYou: () -&gt; Unit, isUseEnglishEnabled: Boolean, isUseEnglishChecked: Boolean, onUseEnglishPress: (Boolean) -&gt; Unit, onSetupLanguagePress: () -&gt; Unit, useCommaAsDecimalMarkFlow: Boolean, onUseCommaAsDecimalMarkFlow: (Boolean) -&gt; Unit, showCheckmarksOnSwitches: Boolean, lockedCustomizeColorText: String, displayLanguage: String, featureLockedDialogState: AlertDialogState )</ID>
+    <ID>LongParameterList:SettingsScreen.kt$( goBack: () -&gt; Unit, customizeColors: () -&gt; Unit, customizeWidgetColors: () -&gt; Unit, preventPhoneFromSleeping: Boolean, onPreventPhoneFromSleeping: (Boolean) -&gt; Unit, vibrateOnButtonPressFlow: Boolean, onVibrateOnButtonPressFlow: (Boolean) -&gt; Unit, isOrWasThankYouInstalled: Boolean, onThankYou: () -&gt; Unit, isUseEnglishEnabled: Boolean, isUseEnglishChecked: Boolean, onUseEnglishPress: (Boolean) -&gt; Unit, onSetupLanguagePress: () -&gt; Unit, useCommaAsDecimalMarkFlow: Boolean, onUseCommaAsDecimalMarkFlow: (Boolean) -&gt; Unit, showCheckmarksOnSwitches: Boolean, lockedCustomizeColorText: String, displayLanguage: String, featureLockedDialogState: AlertDialogState )</ID>
     <ID>MagicNumber:CalculatorImpl.kt$CalculatorImpl$100</ID>
     <ID>MagicNumber:CalculatorImpl.kt$CalculatorImpl$100f</ID>
     <ID>MagicNumber:CalculatorImpl.kt$CalculatorImpl$3</ID>
@@ -21,8 +21,10 @@
     <ID>MagicNumber:CalculatorImpl.kt$CalculatorImpl$7</ID>
     <ID>MagicNumber:CalculatorImpl.kt$CalculatorImpl$8</ID>
     <ID>MagicNumber:CalculatorImpl.kt$CalculatorImpl$9</ID>
+    <ID>MagicNumber:ConverterView.kt$ConverterView$273.15</ID>
     <ID>MagicNumber:ConverterView.kt$ConverterView$3</ID>
     <ID>MagicNumber:ConverterView.kt$ConverterView$4</ID>
+    <ID>MagicNumber:ConverterView.kt$ConverterView$459.67</ID>
     <ID>MagicNumber:ConverterView.kt$ConverterView$5</ID>
     <ID>MagicNumber:ConverterView.kt$ConverterView$6</ID>
     <ID>MagicNumber:ConverterView.kt$ConverterView$7</ID>
@@ -41,7 +43,7 @@
     <ID>MaxLineLength:ConverterView.kt$ConverterView$private</ID>
     <ID>MaxLineLength:ConverterView.kt$ConverterView$val bgLayer = bgLayerList.findDrawableByLayerId(org.fossify.commons.R.id.button_pill_background_shape) as GradientDrawable</ID>
     <ID>MaxLineLength:ConverterView.kt$ConverterView$val bgLayerList = drawable.findDrawableByLayerId(org.fossify.commons.R.id.button_pill_background_holder) as LayerDrawable</ID>
-    <ID>MaxLineLength:ConverterView.kt$ConverterView$val converted = convert(topUnit!!.withValue(formatter.removeGroupingSeparator(binding.topUnitText.text.toString()).toDouble()), bottomUnit!!).value</ID>
+    <ID>MaxLineLength:ConverterView.kt$ConverterView$val topValue = formatter.removeGroupingSeparator(binding.topUnitText.text.toString()).toDoubleOrNull() ?: 0.0</ID>
     <ID>MaxLineLength:ConverterView.kt$ConverterView$val width = listOf(symbolHeight, binding.topUnitSymbol.measuredWidth, binding.bottomUnitSymbol.measuredWidth).max()</ID>
     <ID>MaxLineLength:HistoryAdapter.kt$HistoryAdapter$class</ID>
     <ID>MaxLineLength:LengthConverter.kt$LengthConverter.Unit$sealed</ID>
@@ -56,13 +58,12 @@
     <ID>MaxLineLength:MyWidgetProvider.kt$MyWidgetProvider$R.id.btn_7</ID>
     <ID>MaxLineLength:MyWidgetProvider.kt$MyWidgetProvider$R.id.formula</ID>
     <ID>MaxLineLength:SettingsActivity.kt$SettingsActivity$val preventPhoneFromSleeping by preferences.preventPhoneFromSleepingFlow.collectAsStateWithLifecycle(preferences.preventPhoneFromSleeping)</ID>
+    <ID>MaxLineLength:SettingsActivity.kt$SettingsActivity$val showCheckmarksOnSwitches by config.showCheckmarksOnSwitchesFlow.collectAsStateWithLifecycle(initialValue = config.showCheckmarksOnSwitches)</ID>
     <ID>MaxLineLength:SettingsActivity.kt$SettingsActivity$val useCommaAsDecimalMarkFlow by preferences.useCommaAsDecimalMarkFlow.collectAsStateWithLifecycle(preferences.useCommaAsDecimalMark)</ID>
     <ID>MaxLineLength:SettingsActivity.kt$SettingsActivity$val vibrateOnButtonPressFlow by preferences.vibrateOnButtonPressFlow.collectAsStateWithLifecycle(preferences.vibrateOnButtonPress)</ID>
     <ID>MaxLineLength:SettingsActivity.kt$SettingsActivity$val wasUseEnglishToggledFlow by preferences.wasUseEnglishToggledFlow.collectAsStateWithLifecycle(preferences.wasUseEnglishToggled)</ID>
     <ID>MaxLineLength:TemperatureConverter.kt$TemperatureConverter.Unit$sealed</ID>
     <ID>MaxLineLength:TimeConverter.kt$TimeConverter.Unit$sealed</ID>
-    <ID>MaxLineLength:UnitConverterActivity.kt$UnitConverterActivity$it.background = ResourcesCompat.getDrawable(resources, org.fossify.commons.R.drawable.pill_background, theme)</ID>
-    <ID>MaxLineLength:UnitConverterActivity.kt$UnitConverterActivity$updateMaterialActivityViews(binding.unitConverterCoordinator, null, useTransparentNavigation = false, useTopSearchMenu = false)</ID>
     <ID>MaxLineLength:UnitConverterPickerActivity.kt$UnitConverterPickerActivity$binding.unitTypesGrid.layoutManager = AutoGridLayoutManager(this, resources.getDimensionPixelSize(R.dimen.unit_type_size))</ID>
     <ID>MaxLineLength:UnitConverterPickerActivity.kt$UnitConverterPickerActivity$updateMaterialActivityViews(binding.unitConverterPickerCoordinator, null, useTransparentNavigation = false, useTopSearchMenu = false)</ID>
     <ID>MaxLineLength:UnitTypesAdapter.kt$UnitTypesAdapter.ViewHolder$layerDrawable.findDrawableByLayerId(R.id.background_shape).applyColorFilter(context.getProperBackgroundColor().darkenColor(2))</ID>
@@ -72,8 +73,11 @@
     <ID>MaxLineLength:WidgetConfigureActivity.kt$WidgetConfigureActivity$if</ID>
     <ID>NestedBlockDepth:CalculatorImpl.kt$CalculatorImpl$fun handleOperation(operation: String)</ID>
     <ID>NestedBlockDepth:CalculatorImpl.kt$CalculatorImpl$private fun calculateResult()</ID>
+    <ID>NestedBlockDepth:ConverterView.kt$ConverterView$fun deleteCharacter()</ID>
+    <ID>NestedBlockDepth:ConverterView.kt$ConverterView$private fun updateBottomValue()</ID>
     <ID>ReturnCount:CalculatorImpl.kt$CalculatorImpl$fun turnToNegative(): Boolean</ID>
     <ID>ReturnCount:CalculatorImpl.kt$CalculatorImpl$private fun calculateResult()</ID>
+    <ID>ReturnCount:ConverterView.kt$ConverterView$private fun checkTemperatureLimits(value: String): String</ID>
     <ID>SwallowedException:CalculatorImpl.kt$CalculatorImpl$e: Exception</ID>
     <ID>TooGenericExceptionCaught:CalculatorImpl.kt$CalculatorImpl$e: Exception</ID>
     <ID>TooGenericExceptionCaught:Context.kt$e: Exception</ID>
@@ -81,11 +85,12 @@
     <ID>TooManyFunctions:ConverterView.kt$ConverterView : LinearLayout</ID>
     <ID>TooManyFunctions:MainActivity.kt$MainActivity : SimpleActivityCalculator</ID>
     <ID>TooManyFunctions:MyWidgetProvider.kt$MyWidgetProvider : AppWidgetProviderCalculator</ID>
-    <ID>UnusedPrivateMember:SettingsScreen.kt$@MyDevices @Composable private fun SettingsScreenPreview()</ID>
-    <ID>WildcardImport:ConverterView.kt$import org.fossify.math.helpers.*</ID>
+    <ID>UnusedPrivateMember:SettingsScreen.kt$@MyDevices @Composable private fun SettingsScreenPreview( @PreviewParameter(BooleanPreviewParameterProvider::class) showCheckmarksOnSwitches: Boolean )</ID>
+    <ID>WildcardImport:Context.kt$import org.fossify.commons.extensions.*</ID>
     <ID>WildcardImport:ConverterView.kt$import org.fossify.commons.extensions.*</ID>
-    <ID>WildcardImport:MainActivity.kt$import org.fossify.math.helpers.*</ID>
+    <ID>WildcardImport:ConverterView.kt$import org.fossify.math.helpers.*</ID>
     <ID>WildcardImport:MainActivity.kt$import org.fossify.commons.extensions.*</ID>
+    <ID>WildcardImport:MainActivity.kt$import org.fossify.math.helpers.*</ID>
     <ID>WildcardImport:SettingsActivity.kt$import org.fossify.commons.helpers.*</ID>
     <ID>WildcardImport:UnitTypesAdapter.kt$import org.fossify.commons.extensions.*</ID>
     <ID>WildcardImport:WidgetConfigureActivity.kt$import org.fossify.commons.extensions.*</ID>
