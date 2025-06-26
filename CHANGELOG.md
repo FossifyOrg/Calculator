@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Support for negative temperature conversion ([#44])
+- Usage of higher precision numbers ([#6])
 
 ### Changed
 
@@ -62,3 +63,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.0.0]: https://github.com/FossifyOrg/Calculator/releases/tag/1.0.0
 
 [#44]: https://github.com/FossifyOrg/Calculator/issues/44
+[#6]: https://github.com/FossifyOrg/Calculator/issues/6
