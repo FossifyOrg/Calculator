@@ -143,7 +143,7 @@ detekt {
 dependencies {
     implementation(libs.fossify.commons)
     implementation(libs.auto.fit.text.view)
-    implementation(libs.exp4j)
+    implementation(libs.evalex)
     implementation(libs.bundles.lifecycle)
     implementation(libs.bundles.compose)
     debugImplementation(libs.bundles.compose.preview)

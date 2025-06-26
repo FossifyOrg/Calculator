@@ -24,6 +24,7 @@ import org.fossify.commons.helpers.LOWER_ALPHA
 import org.fossify.commons.helpers.MEDIUM_ALPHA_INT
 import org.fossify.commons.models.RadioItem
 import org.fossify.math.helpers.converters.TemperatureConverter
+import java.math.BigDecimal
 import kotlin.reflect.KMutableProperty0
 
 class ConverterView @JvmOverloads constructor(
@@ -125,8 +126,12 @@ class ConverterView @JvmOverloads constructor(
                     if (newValue == "-" || newValue.isEmpty()) {
                         newValue = "0"
                     }
-                    val value = formatter.removeGroupingSeparator(newValue).toDoubleOrNull() ?: 0.0
-                    binding.topUnitText.text = formatter.doubleToString(value)
+                    val value = try { 
+                        formatter.removeGroupingSeparator(newValue).toBigDecimal() 
+                    } catch (e: Exception) { 
+                        BigDecimal.ZERO 
+                    }
+                    binding.topUnitText.text = formatter.bigDecimalToString(value)
                 }
             }
             updateBottomValue()
@@ -222,13 +227,17 @@ class ConverterView @JvmOverloads constructor(
 
     private fun updateBottomValue() {
         converter?.apply {
-            val topValue = formatter.removeGroupingSeparator(binding.topUnitText.text.toString()).toDoubleOrNull() ?: 0.0
+            val topValue = try { 
+                formatter.removeGroupingSeparator(binding.topUnitText.text.toString()).toBigDecimal() 
+            } catch (e: Exception) { 
+                BigDecimal.ZERO 
+            }
 
             if (key == TemperatureConverter.key) {
                 when (topUnit?.key) {
                     TemperatureConverter.Unit.Kelvin.key,
                     TemperatureConverter.Unit.Rankine.key -> {
-                        if (topValue < 0) {
+                        if (topValue < BigDecimal.ZERO) {
                             binding.topUnitText.text = "0"
                             return
                         }
@@ -236,8 +245,9 @@ class ConverterView @JvmOverloads constructor(
                 }
             }
 
+            // For unit conversion, now using BigDecimal throughout
             val converted = convert(topUnit!!.withValue(topValue), bottomUnit!!).value
-            binding.bottomUnitText.text = formatter.doubleToString(converted)
+            binding.bottomUnitText.text = formatter.bigDecimalToString(converted)
         }
     }
 
@@ -317,18 +327,22 @@ class ConverterView @JvmOverloads constructor(
     private fun checkTemperatureLimits(value: String): String {
         if (converter?.key != TemperatureConverter.key) return value
 
-        val numericValue = formatter.removeGroupingSeparator(value).toDoubleOrNull() ?: return value
+        val numericValue = try { 
+            formatter.removeGroupingSeparator(value).toBigDecimal() 
+        } catch (e: Exception) { 
+            return value 
+        }
 
         return when (topUnit?.key) {
             TemperatureConverter.Unit.Celsius.key -> {
-                if (numericValue < -273.15) "-273.15" else value
+                if (numericValue < BigDecimal("-273.15")) "-273.15" else value
             }
             TemperatureConverter.Unit.Fahrenheit.key -> {
-                if (numericValue < -459.67) "-459.67" else value
+                if (numericValue < BigDecimal("-459.67")) "-459.67" else value
             }
             TemperatureConverter.Unit.Kelvin.key,
             TemperatureConverter.Unit.Rankine.key -> {
-                if (numericValue < 0) "0" else value
+                if (numericValue < BigDecimal.ZERO) "0" else value
             }
             else -> value
         }
