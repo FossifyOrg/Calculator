@@ -294,7 +294,8 @@ class CalculatorImpl(
                     return
                 }
 
-                // handle percents manually, it doesn't seem to be possible via EvalEx. "%" is used only for modulo there
+                // handle percents manually, it doesn't seem to be possible via EvalEx. 
+                // "%" is used only for modulo there
                 // handle cases like 10%200 here
                 val result = if (sign == "%") {
                     val secondPercentValue = secondValue.divide(BigDecimal("100"), mathContext)
