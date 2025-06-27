@@ -10,13 +10,17 @@ class NumberFormatHelper(
     var groupingSeparator: String = COMMA
 ) {
 
+    companion object {
+        private const val MAX_FRACTION_DIGITS = 15
+    }
+
     fun bigDecimalToString(bd: BigDecimal): String {
         val symbols = DecimalFormatSymbols(Locale.US)
         symbols.decimalSeparator = decimalSeparator.single()
         symbols.groupingSeparator = groupingSeparator.single()
 
         val formatter = DecimalFormat()
-        formatter.maximumFractionDigits = 15
+        formatter.maximumFractionDigits = MAX_FRACTION_DIGITS
         formatter.decimalFormatSymbols = symbols
         formatter.isGroupingUsed = true
         
@@ -28,10 +32,12 @@ class NumberFormatHelper(
         }
     }
 
+    @Suppress("SwallowedException")
     fun addGroupingSeparators(str: String): String {
         return try {
             bigDecimalToString(removeGroupingSeparator(str).toBigDecimal())
-        } catch (e: Exception) {
+        } catch (e: NumberFormatException) {
+            // Return original string if it cannot be parsed as a valid number
             str
         }
     }

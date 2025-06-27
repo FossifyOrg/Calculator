@@ -180,10 +180,12 @@ class CalculatorImpl(
 
     // handle percents manually, it doesn't seem to be possible via EvalEx. "%" is used only for modulo there
     // handle cases like 10+200% here
+    @Suppress("SwallowedException")
     private fun handlePercent() {
         val result = try {
             calculatePercentage(baseValue, getSecondValue(), lastOperation)
         } catch (e: ArithmeticException) {
+            // Return zero if percentage calculation fails (e.g., division by zero)
             BigDecimal.ZERO
         }
         
@@ -295,7 +297,8 @@ class CalculatorImpl(
                 // handle percents manually, it doesn't seem to be possible via EvalEx. "%" is used only for modulo there
                 // handle cases like 10%200 here
                 val result = if (sign == "%") {
-                    val second = (secondValue.divide(BigDecimal("100"), mathContext)).format().removeGroupSeparator()
+                    val secondPercentValue = secondValue.divide(BigDecimal("100"), mathContext)
+                    val second = secondPercentValue.format().removeGroupSeparator()
                     val percentExpression = "$formattedBaseValue*$second"
                     val expr = Expression(percentExpression)
                     expr.evaluate().numberValue

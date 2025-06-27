@@ -126,9 +126,11 @@ class ConverterView @JvmOverloads constructor(
                     if (newValue == "-" || newValue.isEmpty()) {
                         newValue = "0"
                     }
+                    @Suppress("SwallowedException")
                     val value = try { 
                         formatter.removeGroupingSeparator(newValue).toBigDecimal() 
-                    } catch (e: Exception) { 
+                    } catch (e: NumberFormatException) { 
+                        // Return zero if input cannot be parsed as a valid number
                         BigDecimal.ZERO 
                     }
                     binding.topUnitText.text = formatter.bigDecimalToString(value)
@@ -227,9 +229,11 @@ class ConverterView @JvmOverloads constructor(
 
     private fun updateBottomValue() {
         converter?.apply {
+            @Suppress("SwallowedException")
             val topValue = try { 
                 formatter.removeGroupingSeparator(binding.topUnitText.text.toString()).toBigDecimal() 
-            } catch (e: Exception) { 
+            } catch (e: NumberFormatException) { 
+                // Return zero if input cannot be parsed as a valid number
                 BigDecimal.ZERO 
             }
 
@@ -327,9 +331,11 @@ class ConverterView @JvmOverloads constructor(
     private fun checkTemperatureLimits(value: String): String {
         if (converter?.key != TemperatureConverter.key) return value
 
+        @Suppress("SwallowedException")
         val numericValue = try { 
             formatter.removeGroupingSeparator(value).toBigDecimal() 
-        } catch (e: Exception) { 
+        } catch (e: NumberFormatException) { 
+            // Return original value if it cannot be parsed as a valid number
             return value 
         }
 
