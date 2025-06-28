@@ -1,5 +1,7 @@
 package org.fossify.math.helpers
 
+import java.math.MathContext
+
 const val DIGIT = "digit"
 const val EQUALS = "equals"
 const val PLUS = "plus"
@@ -47,3 +49,6 @@ const val TOP_UNIT = "top_unit"
 const val BOTTOM_UNIT = "bottom_unit"
 const val CONVERTER_VALUE = "converter_value"
 const val CONVERTER_STATE = "converter_state"
+
+// big decimal configuration
+val MATH_CONTEXT: MathContext? = MathContext.DECIMAL128

@@ -1,6 +1,7 @@
 package org.fossify.math.helpers.converters
 
 import org.fossify.math.R
+import org.fossify.math.helpers.MATH_CONTEXT
 import java.math.BigDecimal
 import java.math.MathContext
 
@@ -19,29 +20,29 @@ object TemperatureConverter : Converter {
         ) {
             private val KELVIN_OFFSET = BigDecimal("273.15")
 
-            override fun toBase(value: BigDecimal): BigDecimal = value.add(KELVIN_OFFSET, mathContext)
-            override fun fromBase(value: BigDecimal): BigDecimal = value.subtract(KELVIN_OFFSET, mathContext)
+            override fun toBase(value: BigDecimal): BigDecimal = value.add(KELVIN_OFFSET, MATH_CONTEXT)
+            override fun fromBase(value: BigDecimal): BigDecimal = value.subtract(KELVIN_OFFSET, MATH_CONTEXT)
         }
 
         data object Fahrenheit : Unit(
             nameResId = R.string.unit_temperature_fahrenheit,
             symbolResId = R.string.unit_temperature_fahrenheit_symbol,
-            factor = BigDecimal("9").divide(BigDecimal("5"), MathContext.DECIMAL128),
+            factor = BigDecimal("9").divide(BigDecimal("5"), MATH_CONTEXT),
             key = "Fahrenheit"
         ) {
             private val CELSIUS_OFFSET = BigDecimal("32")
 
             override fun toBase(value: BigDecimal): BigDecimal = 
-                Celsius.toBase(value.subtract(CELSIUS_OFFSET, mathContext).divide(factor, mathContext))
+                Celsius.toBase(value.subtract(CELSIUS_OFFSET, MATH_CONTEXT).divide(factor, MATH_CONTEXT))
 
             override fun fromBase(value: BigDecimal): BigDecimal = 
-                Celsius.fromBase(value).multiply(factor, mathContext).add(CELSIUS_OFFSET, mathContext)
+                Celsius.fromBase(value).multiply(factor, MATH_CONTEXT).add(CELSIUS_OFFSET, MATH_CONTEXT)
         }
 
         data object Rankine : Unit(
             nameResId = R.string.unit_temperature_rankine,
             symbolResId = R.string.unit_temperature_rankine_symbol,
-            factor = BigDecimal("5").divide(BigDecimal("9"), MathContext.DECIMAL128),
+            factor = BigDecimal("5").divide(BigDecimal("9"), MATH_CONTEXT),
             key = "Rankine"
         )
 

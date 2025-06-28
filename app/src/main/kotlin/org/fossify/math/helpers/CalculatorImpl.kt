@@ -9,7 +9,6 @@ import org.fossify.commons.extensions.toast
 import org.json.JSONObject
 import org.json.JSONTokener
 import java.math.BigDecimal
-import java.math.MathContext
 
 class CalculatorImpl(
     calculator: Calculator,
@@ -33,7 +32,6 @@ class CalculatorImpl(
     private val formatter = NumberFormatHelper(
         decimalSeparator = decimalSeparator, groupingSeparator = groupingSeparator
     )
-    private val mathContext = MathContext.DECIMAL128
 
     init {
         if (stateInstance != "") {
@@ -298,7 +296,7 @@ class CalculatorImpl(
                 // "%" is used only for modulo there
                 // handle cases like 10%200 here
                 val result = if (sign == "%") {
-                    val secondPercentValue = secondValue.divide(BigDecimal("100"), mathContext)
+                    val secondPercentValue = secondValue.divide(BigDecimal("100"), MATH_CONTEXT)
                     val second = secondPercentValue.format().removeGroupSeparator()
                     val percentExpression = "$formattedBaseValue*$second"
                     val expr = Expression(percentExpression)
@@ -343,31 +341,31 @@ class CalculatorImpl(
         
         return when (sign) {
             MULTIPLY -> {
-                val partial = BigDecimal("100").divide(secondValue, mathContext)
-                baseValue.divide(partial, mathContext)
+                val partial = BigDecimal("100").divide(secondValue, MATH_CONTEXT)
+                baseValue.divide(partial, MATH_CONTEXT)
             }
 
             DIVIDE -> {
-                val partial = BigDecimal("100").divide(secondValue, mathContext)
-                baseValue.multiply(partial, mathContext)
+                val partial = BigDecimal("100").divide(secondValue, MATH_CONTEXT)
+                baseValue.multiply(partial, MATH_CONTEXT)
             }
 
             PLUS -> {
-                val partial = baseValue.divide(BigDecimal("100").divide(secondValue, mathContext), mathContext)
-                baseValue.add(partial, mathContext)
+                val partial = baseValue.divide(BigDecimal("100").divide(secondValue, MATH_CONTEXT), MATH_CONTEXT)
+                baseValue.add(partial, MATH_CONTEXT)
             }
 
             MINUS -> {
-                val partial = baseValue.divide(BigDecimal("100").divide(secondValue, mathContext), mathContext)
-                baseValue.subtract(partial, mathContext)
+                val partial = baseValue.divide(BigDecimal("100").divide(secondValue, MATH_CONTEXT), MATH_CONTEXT)
+                baseValue.subtract(partial, MATH_CONTEXT)
             }
 
             PERCENT -> {
-                val partial = (baseValue.remainder(secondValue, mathContext)).divide(BigDecimal("100"), mathContext)
+                val partial = (baseValue.remainder(secondValue, MATH_CONTEXT)).divide(BigDecimal("100"), MATH_CONTEXT)
                 partial
             }
 
-            else -> baseValue.divide(BigDecimal("100").multiply(secondValue, mathContext), mathContext)
+            else -> baseValue.divide(BigDecimal("100").multiply(secondValue, MATH_CONTEXT), MATH_CONTEXT)
         }
     }
 

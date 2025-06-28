@@ -2,8 +2,8 @@ package org.fossify.math.helpers.converters
 
 import android.content.Context
 import org.fossify.math.R
+import org.fossify.math.helpers.MATH_CONTEXT
 import java.math.BigDecimal
-import java.math.MathContext
 
 interface Converter {
     companion object {
@@ -35,11 +35,9 @@ interface Converter {
         val factor: BigDecimal,
         val key: String
     ) {
-        protected val mathContext: MathContext = MathContext.DECIMAL128
+        open fun toBase(value: BigDecimal): BigDecimal = value.multiply(factor, MATH_CONTEXT)
 
-        open fun toBase(value: BigDecimal): BigDecimal = value.multiply(factor, mathContext)
-
-        open fun fromBase(value: BigDecimal): BigDecimal = value.divide(factor, mathContext)
+        open fun fromBase(value: BigDecimal): BigDecimal = value.divide(factor, MATH_CONTEXT)
 
         fun withValue(value: BigDecimal) = ValueWithUnit(value, this)
 
