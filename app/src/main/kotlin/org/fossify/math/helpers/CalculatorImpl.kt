@@ -269,11 +269,7 @@ class CalculatorImpl(
             val formattedBaseValue = baseValue.format().removeGroupSeparator()
             val formatterSecondValue = secondValue.format().removeGroupSeparator()
             
-            val expression = if (lastOperation == ROOT && inputDisplayedFormula.startsWith("√")) {
-                // Case: √4
-                "SQRT($formatterSecondValue)"
-            } else if (sign == "√") {
-                // Case: 10√2
+            val expression = if (sign == "√") {
                 "$formattedBaseValue*SQRT($formatterSecondValue)"
             } else {
                 "$formattedBaseValue$sign$formatterSecondValue"
@@ -303,14 +299,7 @@ class CalculatorImpl(
                 }
 
                 showNewResult(result.format())
-                val newFormula = if (lastOperation == ROOT && inputDisplayedFormula.startsWith("√")) {
-                    // Case: √4
-                    "√${secondValue.format()}"
-                } else if (sign == "√") {
-                    "${baseValue.format()}√${secondValue.format()}"
-                } else {
-                    "${baseValue.format()}$sign${secondValue.format()}"
-                }
+                val newFormula = "${baseValue.format()}$sign${secondValue.format()}"
                 HistoryHelper(context).insertOrUpdateHistoryEntry(
                     History(id = null, formula = newFormula, result = result.format(), timestamp = System.currentTimeMillis())
                 )
