@@ -186,7 +186,7 @@ class CalculatorImpl(
             // Return zero if percentage calculation fails (e.g., division by zero)
             BigDecimal.ZERO
         }
-        
+
         showNewFormula("${baseValue.format()}${getSign(lastOperation)}${getSecondValue().format()}%")
         inputDisplayedFormula = result.format()
         showNewResult(result.format())
@@ -198,7 +198,7 @@ class CalculatorImpl(
             calculateResult()
         }
 
-        if (lastKey != DIGIT && lastKey != DECIMAL && lastKey != ROOT) {
+        if (lastKey != DIGIT && lastKey != DECIMAL) {
             return
         }
 
@@ -273,13 +273,8 @@ class CalculatorImpl(
                 // Case: √4
                 "SQRT($formatterSecondValue)"
             } else if (sign == "√") {
-                if (secondValue == BigDecimal.ZERO) {
-                    // Case: 4√
-                    "SQRT($formattedBaseValue)"
-                } else {
-                    // Case: 10√2
-                    "$formattedBaseValue*SQRT($formatterSecondValue)"
-                }
+                // Case: 10√2
+                "$formattedBaseValue*SQRT($formatterSecondValue)"
             } else {
                 "$formattedBaseValue$sign$formatterSecondValue"
                     .replace("×", "*")
@@ -312,13 +307,7 @@ class CalculatorImpl(
                     // Case: √4
                     "√${secondValue.format()}"
                 } else if (sign == "√") {
-                    if (secondValue == BigDecimal.ZERO) {
-                        // Case: 4√
-                        "√${baseValue.format()}"
-                    } else {
-                        // Case: 10√2
-                        "${baseValue.format()}√${secondValue.format()}"
-                    }
+                    "${baseValue.format()}√${secondValue.format()}"
                 } else {
                     "${baseValue.format()}$sign${secondValue.format()}"
                 }
