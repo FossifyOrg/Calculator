@@ -103,7 +103,7 @@ object LengthConverter : Converter {
         data object AstronomicalUnit : Unit(
             nameResId = R.string.unit_length_astronomical_unit,
             symbolResId = R.string.unit_length_astronomical_unit_symbol,
-            factor = BigDecimal("149597870691"),
+            factor = BigDecimal("149597870700"),
             key = "AstronomicalUnit"
         )
 
