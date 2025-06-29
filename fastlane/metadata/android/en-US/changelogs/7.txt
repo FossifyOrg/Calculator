@@ -1,0 +1,9 @@
+Added:
+
+• Support for negative temperature conversion 
+• Usage of higher precision numbers 
+
+Changed:
+
+• Updated translations
+
