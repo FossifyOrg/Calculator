@@ -19,6 +19,7 @@ import org.fossify.math.helpers.*
 import org.fossify.commons.extensions.*
 import org.fossify.commons.helpers.APP_ICON_IDS
 import org.fossify.commons.helpers.LICENSE_AUTOFITTEXTVIEW
+import org.fossify.commons.helpers.LICENSE_EVALEX
 import org.fossify.commons.helpers.LOWER_ALPHA_INT
 import org.fossify.commons.helpers.MEDIUM_ALPHA_INT
 import org.fossify.commons.models.FAQItem
@@ -189,7 +190,7 @@ class MainActivity : SimpleActivity(), Calculator {
     }
 
     private fun launchAbout() {
-        val licenses = LICENSE_AUTOFITTEXTVIEW
+        val licenses = LICENSE_AUTOFITTEXTVIEW or LICENSE_EVALEX
 
         val faqItems = arrayListOf(
             FAQItem(R.string.faq_1_title, R.string.faq_1_text),

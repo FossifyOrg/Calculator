@@ -2,6 +2,8 @@ package org.fossify.math.helpers.converters
 
 import android.content.Context
 import org.fossify.math.R
+import org.fossify.math.helpers.MATH_CONTEXT
+import java.math.BigDecimal
 
 interface Converter {
     companion object {
@@ -30,15 +32,14 @@ interface Converter {
     open class Unit(
         val nameResId: Int,
         val symbolResId: Int,
-        val factor: Double,
+        val factor: BigDecimal,
         val key: String
     ) {
+        open fun toBase(value: BigDecimal): BigDecimal = value.multiply(factor, MATH_CONTEXT)
 
-        open fun toBase(value: Double) = value * factor
+        open fun fromBase(value: BigDecimal): BigDecimal = value.divide(factor, MATH_CONTEXT)
 
-        open fun fromBase(value: Double) = value / factor
-
-        fun withValue(value: Double) = ValueWithUnit(value, this)
+        fun withValue(value: BigDecimal) = ValueWithUnit(value, this)
 
         fun getNameWithSymbol(context: Context) = context.getString(
             R.string.unit_name_with_symbol_format,
@@ -48,4 +49,4 @@ interface Converter {
     }
 }
 
-data class ValueWithUnit<T : Converter.Unit>(val value: Double, val unit: T)
+data class ValueWithUnit<T : Converter.Unit>(val value: BigDecimal, val unit: T)

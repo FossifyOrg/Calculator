@@ -2,7 +2,7 @@ package org.fossify.math.helpers
 
 import android.content.Context
 import org.fossify.math.R
-import net.objecthunter.exp4j.ExpressionBuilder
+import com.ezylang.evalex.Expression
 import org.fossify.math.models.History
 import org.fossify.commons.extensions.showErrorToast
 import org.fossify.commons.extensions.toast
@@ -21,8 +21,8 @@ class CalculatorImpl(
     private var stateInstance = calculatorState
     private var currentResult = "0"
     private var previousCalculation = ""
-    private var baseValue = 0.0
-    private var secondValue = 0.0
+    private var baseValue = BigDecimal.ZERO
+    private var secondValue = BigDecimal.ZERO
     private var inputDisplayedFormula = "0"
     private var lastKey = ""
     private var lastOperation = ""
@@ -91,7 +91,7 @@ class CalculatorImpl(
     }
 
     fun handleOperation(operation: String) {
-        if (inputDisplayedFormula == Double.NaN.toString()) {
+        if (inputDisplayedFormula == "NaN") {
             inputDisplayedFormula = "0"
         }
 
@@ -141,7 +141,7 @@ class CalculatorImpl(
             }
         }
 
-        if (getSecondValue() == 0.0 && inputDisplayedFormula.contains("÷")) {
+        if (getSecondValue() == BigDecimal.ZERO && inputDisplayedFormula.contains("÷")) {
             lastKey = DIVIDE
             lastOperation = DIVIDE
         } else {
@@ -157,7 +157,12 @@ class CalculatorImpl(
             return false
         }
 
-        if (!inputDisplayedFormula.trimStart('-').any { it.toString() in operations } && inputDisplayedFormula.removeGroupSeparator().toDouble() != 0.0) {
+        if (!inputDisplayedFormula.trimStart('-').any { it.toString() in operations } && 
+            try { 
+                inputDisplayedFormula.removeGroupSeparator().toBigDecimal() != BigDecimal.ZERO 
+            } catch (e: Exception) { 
+                false 
+            }) {
             inputDisplayedFormula = if (inputDisplayedFormula.first() == '-') {
                 inputDisplayedFormula.substring(1)
             } else {
@@ -171,12 +176,15 @@ class CalculatorImpl(
         return false
     }
 
-    // handle percents manually, it doesn't seem to be possible via net.objecthunter:exp4j. "%" is used only for modulo there
+    // handle percents manually, it doesn't seem to be possible via EvalEx. "%" is used only for modulo there
     // handle cases like 10+200% here
+    @Suppress("SwallowedException")
     private fun handlePercent() {
-        var result = calculatePercentage(baseValue, getSecondValue(), lastOperation)
-        if (result.isInfinite() || result.isNaN()) {
-            result = 0.0
+        val result = try {
+            calculatePercentage(baseValue, getSecondValue(), lastOperation)
+        } catch (e: ArithmeticException) {
+            // Return zero if percentage calculation fails (e.g., division by zero)
+            BigDecimal.ZERO
         }
 
         showNewFormula("${baseValue.format()}${getSign(lastOperation)}${getSecondValue().format()}%")
@@ -196,7 +204,7 @@ class CalculatorImpl(
 
         secondValue = getSecondValue()
         calculateResult()
-        if ((lastOperation == DIVIDE || lastOperation == PERCENT) && secondValue == 0.0) {
+        if ((lastOperation == DIVIDE || lastOperation == PERCENT) && secondValue == BigDecimal.ZERO) {
             lastKey = DIGIT
             return
         }
@@ -204,7 +212,7 @@ class CalculatorImpl(
         lastKey = EQUALS
     }
 
-    private fun getSecondValue(): Double {
+    private fun getSecondValue(): BigDecimal {
         val valueToCheck = inputDisplayedFormula.trimStart('-').removeGroupSeparator()
 
         var value = valueToCheck.substring(valueToCheck.indexOfAny(operations) + 1)
@@ -213,76 +221,81 @@ class CalculatorImpl(
         }
 
         return try {
-            value.toDouble()
+            value.toBigDecimal()
         } catch (e: NumberFormatException) {
             context.showErrorToast(e)
-            0.0
+            BigDecimal.ZERO
         }
     }
 
     private fun calculateResult() {
         if (lastOperation == ROOT && inputDisplayedFormula.startsWith("√")) {
-            baseValue = 1.0
+            baseValue = BigDecimal.ONE
         }
 
         if (lastKey != EQUALS) {
             val valueToCheck = inputDisplayedFormula.trimStart('-').removeGroupSeparator()
-            val parts = valueToCheck.split(operationsRegex).filter { it != "" }
-            if (parts.isEmpty()) {
-                return
-            }
+            
+            if (inputDisplayedFormula.startsWith("√")) {
+                val numberAfterRoot = valueToCheck.substring(1)
+                try {
+                    secondValue = numberAfterRoot.toBigDecimal()
+                } catch (e: NumberFormatException) {
+                    context.showErrorToast(e)
+                    secondValue = BigDecimal.ZERO
+                }
+            } else {
+                val parts = valueToCheck.split(operationsRegex).filter { it != "" }
+                if (parts.isEmpty()) {
+                    return
+                }
 
-            try {
-                baseValue = parts.first().toDouble()
-            } catch (e: NumberFormatException) {
-                context.showErrorToast(e)
-            }
+                try {
+                    baseValue = parts.first().toBigDecimal()
+                } catch (e: NumberFormatException) {
+                    context.showErrorToast(e)
+                }
 
-            if (inputDisplayedFormula.startsWith("-")) {
-                baseValue *= -1
-            }
+                if (inputDisplayedFormula.startsWith("-")) {
+                    baseValue = baseValue.negate()
+                }
 
-            secondValue = parts.getOrNull(1)?.toDouble() ?: secondValue
+                secondValue = parts.getOrNull(1)?.toBigDecimal() ?: secondValue
+            }
         }
 
         if (lastOperation != "") {
             val sign = getSign(lastOperation)
             val formattedBaseValue = baseValue.format().removeGroupSeparator()
             val formatterSecondValue = secondValue.format().removeGroupSeparator()
-            val expression = "$formattedBaseValue$sign$formatterSecondValue"
-                .replace("√", "sqrt")
-                .replace("×", "*")
-                .replace("÷", "/")
+            
+            val expression = if (sign == "√") {
+                "$formattedBaseValue*SQRT($formatterSecondValue)"
+            } else {
+                "$formattedBaseValue$sign$formatterSecondValue"
+                    .replace("×", "*")
+                    .replace("÷", "/")
+            }
 
             try {
-                if (sign == "÷" && secondValue == 0.0) {
+                if (sign == "÷" && secondValue == BigDecimal.ZERO) {
                     context.toast(R.string.formula_divide_by_zero_error)
                     return
                 }
 
-                // handle percents manually, it doesn't seem to be possible via net.objecthunter:exp4j. "%" is used only for modulo there
+                // handle percents manually, it doesn't seem to be possible via EvalEx. 
+                // "%" is used only for modulo there
                 // handle cases like 10%200 here
                 val result = if (sign == "%") {
-                    val second = (secondValue / 100f).format().removeGroupSeparator()
-                    ExpressionBuilder("$formattedBaseValue*$second").build().evaluate()
+                    val secondPercentValue = secondValue.divide(BigDecimal("100"), MATH_CONTEXT)
+                    val second = secondPercentValue.format().removeGroupSeparator()
+                    val percentExpression = "$formattedBaseValue*$second"
+                    val expr = Expression(percentExpression)
+                    expr.evaluate().numberValue
                 } else {
-                    // avoid Double rounding errors at expressions like 5250,74 + 14,98
-                    if (sign == "+" || sign == "-") {
-                        val first = BigDecimal.valueOf(baseValue)
-                        val second = BigDecimal.valueOf(secondValue)
-                        val bigDecimalResult = when (sign) {
-                            "-" -> first.minus(second)
-                            else -> first.plus(second)
-                        }
-                        bigDecimalResult.toDouble()
-                    } else {
-                        ExpressionBuilder(expression).build().evaluate()
-                    }
-                }
-
-                if (result.isInfinite() || result.isNaN()) {
-                    context.toast(org.fossify.commons.R.string.unknown_error_occurred)
-                    return
+                    val expr = Expression(expression)
+                    val evaluationResult = expr.evaluate()
+                    evaluationResult.numberValue
                 }
 
                 showNewResult(result.format())
@@ -291,7 +304,6 @@ class CalculatorImpl(
                     History(id = null, formula = newFormula, result = result.format(), timestamp = System.currentTimeMillis())
                 )
                 showNewFormula(newFormula)
-
                 inputDisplayedFormula = result.format()
                 baseValue = result
             } catch (e: Exception) {
@@ -300,34 +312,38 @@ class CalculatorImpl(
         }
     }
 
-    private fun calculatePercentage(baseValue: Double, secondValue: Double, sign: String): Double {
+    private fun calculatePercentage(baseValue: BigDecimal, secondValue: BigDecimal, sign: String): BigDecimal {
+        if (secondValue == BigDecimal.ZERO) {
+            throw ArithmeticException("Division by zero in percentage calculation")
+        }
+        
         return when (sign) {
             MULTIPLY -> {
-                val partial = 100 / secondValue
-                baseValue / partial
+                val partial = BigDecimal("100").divide(secondValue, MATH_CONTEXT)
+                baseValue.divide(partial, MATH_CONTEXT)
             }
 
             DIVIDE -> {
-                val partial = 100 / secondValue
-                baseValue * partial
+                val partial = BigDecimal("100").divide(secondValue, MATH_CONTEXT)
+                baseValue.multiply(partial, MATH_CONTEXT)
             }
 
             PLUS -> {
-                val partial = baseValue / (100 / secondValue)
-                baseValue.plus(partial)
+                val partial = baseValue.divide(BigDecimal("100").divide(secondValue, MATH_CONTEXT), MATH_CONTEXT)
+                baseValue.add(partial, MATH_CONTEXT)
             }
 
             MINUS -> {
-                val partial = baseValue / (100 / secondValue)
-                baseValue.minus(partial)
+                val partial = baseValue.divide(BigDecimal("100").divide(secondValue, MATH_CONTEXT), MATH_CONTEXT)
+                baseValue.subtract(partial, MATH_CONTEXT)
             }
 
             PERCENT -> {
-                val partial = (baseValue % secondValue) / 100
+                val partial = (baseValue.remainder(secondValue, MATH_CONTEXT)).divide(BigDecimal("100"), MATH_CONTEXT)
                 partial
             }
 
-            else -> baseValue / (100 * secondValue)
+            else -> baseValue.divide(BigDecimal("100").multiply(secondValue, MATH_CONTEXT), MATH_CONTEXT)
         }
     }
 
@@ -374,8 +390,8 @@ class CalculatorImpl(
     }
 
     private fun resetValues() {
-        baseValue = 0.0
-        secondValue = 0.0
+        baseValue = BigDecimal.ZERO
+        secondValue = BigDecimal.ZERO
         lastKey = ""
         lastOperation = ""
     }
@@ -391,7 +407,7 @@ class CalculatorImpl(
     }
 
     fun numpadClicked(id: Int) {
-        if (inputDisplayedFormula == Double.NaN.toString()) {
+        if (inputDisplayedFormula == "NaN") {
             inputDisplayedFormula = ""
         }
 
@@ -434,7 +450,7 @@ class CalculatorImpl(
         }
     }
 
-    private fun Double.format() = formatter.doubleToString(this)
+    private fun BigDecimal.format() = formatter.bigDecimalToString(this)
 
     private fun String.removeGroupSeparator() = formatter.removeGroupingSeparator(this)
 
@@ -444,8 +460,8 @@ class CalculatorImpl(
         jsonObj.put(PREVIOUS_CALCULATION, previousCalculation)
         jsonObj.put(LAST_KEY, lastKey)
         jsonObj.put(LAST_OPERATION, lastOperation)
-        jsonObj.put(BASE_VALUE, baseValue)
-        jsonObj.put(SECOND_VALUE, secondValue)
+        jsonObj.put(BASE_VALUE, baseValue.toString())
+        jsonObj.put(SECOND_VALUE, secondValue.toString())
         jsonObj.put(INPUT_DISPLAYED_FORMULA, inputDisplayedFormula)
         return jsonObj
     }
@@ -456,8 +472,16 @@ class CalculatorImpl(
         previousCalculation = jsonObject.getString(PREVIOUS_CALCULATION)
         lastKey = jsonObject.getString(LAST_KEY)
         lastOperation = jsonObject.getString(LAST_OPERATION)
-        baseValue = jsonObject.getDouble(BASE_VALUE)
-        secondValue = jsonObject.getDouble(SECOND_VALUE)
+        baseValue = try { 
+            BigDecimal(jsonObject.getString(BASE_VALUE)) 
+        } catch (e: Exception) { 
+            BigDecimal.ZERO 
+        }
+        secondValue = try { 
+            BigDecimal(jsonObject.getString(SECOND_VALUE)) 
+        } catch (e: Exception) { 
+            BigDecimal.ZERO 
+        }
         inputDisplayedFormula = jsonObject.getString(INPUT_DISPLAYED_FORMULA)
     }
 }

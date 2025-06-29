@@ -1,18 +1,19 @@
 package org.fossify.math.helpers.converters
 
 import org.fossify.math.R
+import java.math.BigDecimal
 
 object TimeConverter : Converter {
     override val nameResId: Int = R.string.unit_time
     override val imageResId: Int = org.fossify.commons.R.drawable.ic_clock_vector
     override val key: String = "TimeConverter"
 
-    sealed class Unit(nameResId: Int, symbolResId: Int, factor: Double, key: String) : Converter.Unit(nameResId, symbolResId, factor, key) {
+    sealed class Unit(nameResId: Int, symbolResId: Int, factor: BigDecimal, key: String) : Converter.Unit(nameResId, symbolResId, factor, key) {
         companion object {
-            private const val MINUTE = 60.0
-            private const val HOUR = 60.0 * MINUTE
-            private const val DAY = HOUR * 24.0
-            private const val GREGORIAN_YEAR = DAY * 365.2425
+            private val MINUTE = BigDecimal("60")
+            private val HOUR = MINUTE.multiply(BigDecimal("60"))
+            private val DAY = HOUR.multiply(BigDecimal("24"))
+            private val GREGORIAN_YEAR = DAY.multiply(BigDecimal("365.2425"))
         }
 
         data object Hour : Unit(
@@ -32,14 +33,14 @@ object TimeConverter : Converter {
         data object Second : Unit(
             nameResId = R.string.unit_time_second,
             symbolResId = R.string.unit_time_second_symbol,
-            factor = 1.0,
+            factor = BigDecimal.ONE,
             key = "Second"
         )
 
         data object Millisecond : Unit(
             nameResId = R.string.unit_time_millisecond,
             symbolResId = R.string.unit_time_millisecond_symbol,
-            factor = 0.001,
+            factor = BigDecimal("0.001"),
             key = "Millisecond"
         )
 
@@ -53,7 +54,7 @@ object TimeConverter : Converter {
         data object Week : Unit(
             nameResId = R.string.unit_time_week,
             symbolResId = R.string.unit_time_week_symbol,
-            factor = DAY * 7,
+            factor = BigDecimal("604800"),
             key = "Week"
         )
 
