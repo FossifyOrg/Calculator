@@ -42,6 +42,8 @@ class ConverterView @JvmOverloads constructor(
     private val formatter = NumberFormatHelper(
         decimalSeparator = decimalSeparator, groupingSeparator = groupingSeparator
     )
+    
+    private var unitChangedListener: OnUnitChangedListener? = null
 
     override fun onFinishInflate() {
         super.onFinishInflate()
@@ -74,6 +76,15 @@ class ConverterView @JvmOverloads constructor(
         binding.topUnitText.text = "0"
         updateBottomValue()
         updateUnitLabelsAndSymbols()
+        notifyUnitsChanged()
+    }
+    
+    fun setOnUnitChangedListener(listener: OnUnitChangedListener?) {
+        unitChangedListener = listener
+    }
+    
+    private fun notifyUnitsChanged() {
+        unitChangedListener?.onUnitsChanged(topUnit, bottomUnit)
     }
 
     fun updateColors() {
@@ -114,7 +125,7 @@ class ConverterView @JvmOverloads constructor(
 
     fun deleteCharacter() {
         try {
-            var currentText = binding.topUnitText.text.toString()
+            val currentText = binding.topUnitText.text.toString()
             if (currentText.length == 1) {
                 binding.topUnitText.text = "0"
             } else {
@@ -198,6 +209,7 @@ class ConverterView @JvmOverloads constructor(
         ::topUnit.swapWith(::bottomUnit)
         updateBottomValue()
         updateUnitLabelsAndSymbols()
+        notifyUnitsChanged()
     }
 
     private fun updateUnitLabelsAndSymbols() {
@@ -285,6 +297,7 @@ class ConverterView @JvmOverloads constructor(
                 } else if (unit != propertyToChange.get()) {
                     propertyToChange.set(unit)
                     updateBottomValue()
+                    notifyUnitsChanged()
                 }
                 updateUnitLabelsAndSymbols()
                 context.config.putLastConverterUnits(converter!!, topUnit!!, bottomUnit!!)
@@ -311,6 +324,7 @@ class ConverterView @JvmOverloads constructor(
 
         updateBottomValue()
         updateUnitLabelsAndSymbols()
+        notifyUnitsChanged()
     }
 
     fun toggleNegative() {
@@ -352,5 +366,9 @@ class ConverterView @JvmOverloads constructor(
             }
             else -> value
         }
+    }
+
+    interface OnUnitChangedListener {
+        fun onUnitsChanged(topUnit: Converter.Unit?, bottomUnit: Converter.Unit?)
     }
 }

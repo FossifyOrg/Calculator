@@ -4,6 +4,7 @@
     android:id="@+id/converter_holder"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
     android:hapticFeedbackEnabled="true"
     android:layoutDirection="ltr"
     android:orientation="vertical"
@@ -15,7 +16,7 @@
         layout="@layout/view_converter"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1.5"/>
+        android:layout_weight="1.5" />
 
     <LinearLayout
         android:layout_width="match_parent"

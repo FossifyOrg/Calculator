@@ -6,6 +6,7 @@ import android.view.View
 import android.view.WindowManager
 import androidx.core.content.res.ResourcesCompat
 import androidx.core.view.isVisible
+import org.fossify.commons.extensions.beVisibleIf
 import org.fossify.commons.extensions.getProperTextColor
 import org.fossify.commons.extensions.performHapticFeedback
 import org.fossify.commons.extensions.viewBinding
@@ -21,8 +22,9 @@ import org.fossify.math.helpers.CONVERTER_STATE
 import org.fossify.math.helpers.DOT
 import org.fossify.math.helpers.converters.Converter
 import org.fossify.math.helpers.converters.TemperatureConverter
+import org.fossify.math.views.ConverterView
 
-class UnitConverterActivity : SimpleActivity() {
+class UnitConverterActivity : SimpleActivity(), ConverterView.OnUnitChangedListener {
     companion object {
         const val EXTRA_CONVERTER_ID = "converter_id"
     }
@@ -30,6 +32,12 @@ class UnitConverterActivity : SimpleActivity() {
     private val binding by viewBinding(ActivityUnitConverterBinding::inflate)
     private var vibrateOnButtonPress = true
     private lateinit var converter: Converter
+
+    private val pillDrawable by lazy {
+        ResourcesCompat.getDrawable(
+            resources, org.fossify.commons.R.drawable.pill_background, theme
+        )?.mutate()
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         isMaterialActivity = true
@@ -57,9 +65,6 @@ class UnitConverterActivity : SimpleActivity() {
         }
         this.converter = converter
 
-        binding.viewUnitConverter.plusMinusLayout.visibility =
-            if (converter.key == TemperatureConverter.key) View.VISIBLE else View.GONE
-
         binding.viewUnitConverter.btnClear.setVibratingOnClickListener {
             binding.viewUnitConverter.viewConverter.root.deleteCharacter()
         }
@@ -68,12 +73,17 @@ class UnitConverterActivity : SimpleActivity() {
             true
         }
 
-        getButtonIds().forEach {
-            it.setVibratingOnClickListener { view ->
-                binding.viewUnitConverter.viewConverter.root.numpadClicked(view.id)
+        binding.viewUnitConverter.run {
+            arrayOf(
+                btnDecimal, btnPlusMinus, btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9
+            ).forEach {
+                it.setVibratingOnClickListener { view ->
+                    binding.viewUnitConverter.viewConverter.root.numpadClicked(view.id)
+                }
             }
         }
 
+        binding.viewUnitConverter.viewConverter.root.setOnUnitChangedListener(this)
         binding.viewUnitConverter.viewConverter.root.setConverter(converter)
         binding.unitConverterToolbar.setTitle(converter.nameResId)
 
@@ -107,7 +117,9 @@ class UnitConverterActivity : SimpleActivity() {
 
         setupToolbar(binding.unitConverterToolbar, NavigationIcon.Arrow)
         binding.viewUnitConverter.viewConverter.root.updateColors()
-        binding.viewUnitConverter.converterHolder.let { updateViewColors(it, getProperTextColor()) }
+        binding.viewUnitConverter.converterHolder.let {
+            updateViewColors(it, getProperTextColor())
+        }
 
         if (config.preventPhoneFromSleeping) {
             window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
@@ -137,12 +149,7 @@ class UnitConverterActivity : SimpleActivity() {
             }
 
             if (plusMinusLayout.isVisible) {
-                btnPlusMinus.background = ResourcesCompat.getDrawable(
-                    resources,
-                    org.fossify.commons.R.drawable.pill_background,
-                    theme
-                )
-                btnPlusMinus.background?.alpha = MEDIUM_ALPHA_INT
+                updatePlusMinusButton()
             }
         }
     }
@@ -162,16 +169,24 @@ class UnitConverterActivity : SimpleActivity() {
         )
     }
 
+    override fun onUnitsChanged(topUnit: Converter.Unit?, bottomUnit: Converter.Unit?) {
+        val isTemperatureConverter = converter.key == TemperatureConverter.key
+        val shouldShowNegativeButton =
+            isTemperatureConverter && when (topUnit?.key) {
+                TemperatureConverter.Unit.Kelvin.key,
+                TemperatureConverter.Unit.Rankine.key -> false
+
+                else -> true
+            }
+
+        binding.viewUnitConverter.plusMinusLayout.beVisibleIf(shouldShowNegativeButton)
+        if (shouldShowNegativeButton) updatePlusMinusButton()
+    }
+
     private fun checkHaptic(view: View) {
         if (vibrateOnButtonPress) {
             view.performHapticFeedback()
         }
-    }
-
-    private fun getButtonIds() = binding.viewUnitConverter.run {
-        arrayOf(
-            btnDecimal, btnPlusMinus, btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9
-        )
     }
 
     private fun View.setVibratingOnClickListener(callback: (view: View) -> Unit) {
@@ -196,5 +211,12 @@ class UnitConverterActivity : SimpleActivity() {
             groupingSeparator = groupingSeparator
         )
         binding.viewUnitConverter.btnDecimal.text = decimalSeparator
+    }
+
+    private fun updatePlusMinusButton() {
+        with(binding.viewUnitConverter) {
+            btnPlusMinus.background = pillDrawable
+            btnPlusMinus.background?.alpha = MEDIUM_ALPHA_INT
+        }
     }
 }
