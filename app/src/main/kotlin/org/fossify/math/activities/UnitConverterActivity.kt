@@ -73,9 +73,13 @@ class UnitConverterActivity : SimpleActivity(), ConverterView.OnUnitChangedListe
             true
         }
 
-        getButtonIds().forEach {
-            it.setVibratingOnClickListener { view ->
-                binding.viewUnitConverter.viewConverter.root.numpadClicked(view.id)
+        binding.viewUnitConverter.run {
+            arrayOf(
+                btnDecimal, btnPlusMinus, btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9
+            ).forEach {
+                it.setVibratingOnClickListener { view ->
+                    binding.viewUnitConverter.viewConverter.root.numpadClicked(view.id)
+                }
             }
         }
 
@@ -113,7 +117,9 @@ class UnitConverterActivity : SimpleActivity(), ConverterView.OnUnitChangedListe
 
         setupToolbar(binding.unitConverterToolbar, NavigationIcon.Arrow)
         binding.viewUnitConverter.viewConverter.root.updateColors()
-        binding.viewUnitConverter.converterHolder.let { updateViewColors(it, getProperTextColor()) }
+        binding.viewUnitConverter.converterHolder.let {
+            updateViewColors(it, getProperTextColor())
+        }
 
         if (config.preventPhoneFromSleeping) {
             window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
@@ -169,6 +175,7 @@ class UnitConverterActivity : SimpleActivity(), ConverterView.OnUnitChangedListe
             isTemperatureConverter && when (topUnit?.key) {
                 TemperatureConverter.Unit.Kelvin.key,
                 TemperatureConverter.Unit.Rankine.key -> false
+
                 else -> true
             }
 
@@ -180,12 +187,6 @@ class UnitConverterActivity : SimpleActivity(), ConverterView.OnUnitChangedListe
         if (vibrateOnButtonPress) {
             view.performHapticFeedback()
         }
-    }
-
-    private fun getButtonIds() = binding.viewUnitConverter.run {
-        arrayOf(
-            btnDecimal, btnPlusMinus, btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9
-        )
     }
 
     private fun View.setVibratingOnClickListener(callback: (view: View) -> Unit) {
