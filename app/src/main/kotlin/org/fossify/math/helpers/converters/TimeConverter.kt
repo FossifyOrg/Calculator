@@ -8,7 +8,8 @@ object TimeConverter : Converter {
     override val imageResId: Int = org.fossify.commons.R.drawable.ic_clock_vector
     override val key: String = "TimeConverter"
 
-    sealed class Unit(nameResId: Int, symbolResId: Int, factor: BigDecimal, key: String) : Converter.Unit(nameResId, symbolResId, factor, key) {
+    sealed class Unit(nameResId: Int, symbolResId: Int, factor: BigDecimal, key: String) :
+        Converter.Unit(nameResId, symbolResId, factor, key) {
         companion object {
             private val MINUTE = BigDecimal("60")
             private val HOUR = MINUTE.multiply(BigDecimal("60"))

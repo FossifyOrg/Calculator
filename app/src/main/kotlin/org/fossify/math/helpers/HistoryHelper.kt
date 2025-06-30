@@ -3,9 +3,9 @@ package org.fossify.math.helpers
 import android.content.Context
 import android.os.Handler
 import android.os.Looper
+import org.fossify.commons.helpers.ensureBackgroundThread
 import org.fossify.math.extensions.calculatorDB
 import org.fossify.math.models.History
-import org.fossify.commons.helpers.ensureBackgroundThread
 
 class HistoryHelper(val context: Context) {
     fun getHistory(callback: (calculations: ArrayList<History>) -> Unit) {

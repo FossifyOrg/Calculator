@@ -8,11 +8,11 @@ import android.content.Context
 import android.content.Intent
 import android.view.View
 import android.widget.RemoteViews
-import org.fossify.math.R
-import org.fossify.math.extensions.config
 import org.fossify.commons.extensions.applyColorFilter
 import org.fossify.commons.extensions.setText
 import org.fossify.commons.extensions.setTextSize
+import org.fossify.math.R
+import org.fossify.math.extensions.config
 
 class MyWidgetProvider : AppWidgetProvider(), Calculator {
     companion object {
@@ -22,7 +22,11 @@ class MyWidgetProvider : AppWidgetProvider(), Calculator {
         private var groupingSeparator = COMMA
     }
 
-    override fun onUpdate(context: Context, appWidgetManager: AppWidgetManager, appWidgetIds: IntArray) {
+    override fun onUpdate(
+        context: Context,
+        appWidgetManager: AppWidgetManager,
+        appWidgetIds: IntArray
+    ) {
         val config = context.config
         appWidgetManager.getAppWidgetIds(getComponentName(context)).forEach {
             val views = RemoteViews(context.packageName, R.layout.widget)
@@ -61,26 +65,30 @@ class MyWidgetProvider : AppWidgetProvider(), Calculator {
         }
     }
 
-    private fun getComponentName(context: Context) = ComponentName(context, MyWidgetProvider::class.java)
+    private fun getComponentName(context: Context) =
+        ComponentName(context, MyWidgetProvider::class.java)
 
     private fun setupIntent(context: Context, views: RemoteViews, action: String, id: Int) {
         Intent(context, MyWidgetProvider::class.java).apply {
             this.action = action
-            val pendingIntent = PendingIntent.getBroadcast(context, 0, this, PendingIntent.FLAG_IMMUTABLE)
+            val pendingIntent =
+                PendingIntent.getBroadcast(context, 0, this, PendingIntent.FLAG_IMMUTABLE)
             views.setOnClickPendingIntent(id, pendingIntent)
         }
     }
 
     private fun setupAppOpenIntent(context: Context, views: RemoteViews, id: Int) {
         val intent = Intent(context, org.fossify.math.activities.MainActivity::class.java)
-        val pendingIntent = PendingIntent.getActivity(context, 0, intent, PendingIntent.FLAG_IMMUTABLE)
+        val pendingIntent =
+            PendingIntent.getActivity(context, 0, intent, PendingIntent.FLAG_IMMUTABLE)
         views.setOnClickPendingIntent(id, pendingIntent)
     }
 
     private fun updateTextColors(views: RemoteViews, color: Int, context: Context) {
         val viewIds = intArrayOf(
-            R.id.formula, R.id.result, R.id.btn_0, R.id.btn_1, R.id.btn_2, R.id.btn_3, R.id.btn_4, R.id.btn_5, R.id.btn_6,
-            R.id.btn_7, R.id.btn_8, R.id.btn_9, R.id.btn_percent, R.id.btn_power, R.id.btn_root, R.id.btn_clear, R.id.btn_reset, R.id.btn_divide,
+            R.id.formula, R.id.result, R.id.btn_0, R.id.btn_1, R.id.btn_2, R.id.btn_3, R.id.btn_4,
+            R.id.btn_5, R.id.btn_6, R.id.btn_7, R.id.btn_8, R.id.btn_9, R.id.btn_percent,
+            R.id.btn_power, R.id.btn_root, R.id.btn_clear, R.id.btn_reset, R.id.btn_divide,
             R.id.btn_multiply, R.id.btn_minus, R.id.btn_plus, R.id.btn_decimal, R.id.btn_equals
         )
 

@@ -5,7 +5,6 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.PreviewParameter
-import org.fossify.math.R
 import org.fossify.commons.compose.alert_dialog.AlertDialogState
 import org.fossify.commons.compose.alert_dialog.rememberAlertDialogState
 import org.fossify.commons.compose.extensions.BooleanPreviewParameterProvider
@@ -18,6 +17,7 @@ import org.fossify.commons.compose.settings.SettingsTitleTextComponent
 import org.fossify.commons.compose.theme.AppThemeSurface
 import org.fossify.commons.compose.theme.divider_grey
 import org.fossify.commons.helpers.isTiramisuPlus
+import org.fossify.math.R
 
 @Composable
 internal fun SettingsScreen(
@@ -41,7 +41,10 @@ internal fun SettingsScreen(
     displayLanguage: String,
     featureLockedDialogState: AlertDialogState
 ) {
-    SimpleColumnScaffold(title = stringResource(id = org.fossify.commons.R.string.settings), goBack = goBack) {
+    SimpleColumnScaffold(
+        title = stringResource(id = org.fossify.commons.R.string.settings),
+        goBack = goBack
+    ) {
         SettingsGroup(title = {
             SettingsTitleTextComponent(text = stringResource(id = org.fossify.commons.R.string.color_customization))
         }) {

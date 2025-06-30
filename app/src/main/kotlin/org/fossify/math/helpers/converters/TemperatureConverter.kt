@@ -3,14 +3,14 @@ package org.fossify.math.helpers.converters
 import org.fossify.math.R
 import org.fossify.math.helpers.MATH_CONTEXT
 import java.math.BigDecimal
-import java.math.MathContext
 
 object TemperatureConverter : Converter {
     override val nameResId: Int = R.string.unit_temperature
     override val imageResId: Int = R.drawable.ic_thermostat_vector
     override val key: String = "TemperatureConverter"
 
-    sealed class Unit(nameResId: Int, symbolResId: Int, factor: BigDecimal, key: String) : Converter.Unit(nameResId, symbolResId, factor, key) {
+    sealed class Unit(nameResId: Int, symbolResId: Int, factor: BigDecimal, key: String) :
+        Converter.Unit(nameResId, symbolResId, factor, key) {
 
         data object Celsius : Unit(
             nameResId = R.string.unit_temperature_celsius,
@@ -20,8 +20,11 @@ object TemperatureConverter : Converter {
         ) {
             private val KELVIN_OFFSET = BigDecimal("273.15")
 
-            override fun toBase(value: BigDecimal): BigDecimal = value.add(KELVIN_OFFSET, MATH_CONTEXT)
-            override fun fromBase(value: BigDecimal): BigDecimal = value.subtract(KELVIN_OFFSET, MATH_CONTEXT)
+            override fun toBase(value: BigDecimal): BigDecimal =
+                value.add(KELVIN_OFFSET, MATH_CONTEXT)
+
+            override fun fromBase(value: BigDecimal): BigDecimal =
+                value.subtract(KELVIN_OFFSET, MATH_CONTEXT)
         }
 
         data object Fahrenheit : Unit(
@@ -32,11 +35,16 @@ object TemperatureConverter : Converter {
         ) {
             private val CELSIUS_OFFSET = BigDecimal("32")
 
-            override fun toBase(value: BigDecimal): BigDecimal = 
-                Celsius.toBase(value.subtract(CELSIUS_OFFSET, MATH_CONTEXT).divide(factor, MATH_CONTEXT))
+            override fun toBase(value: BigDecimal): BigDecimal =
+                Celsius.toBase(
+                    value.subtract(CELSIUS_OFFSET, MATH_CONTEXT)
+                        .divide(factor, MATH_CONTEXT)
+                )
 
-            override fun fromBase(value: BigDecimal): BigDecimal = 
-                Celsius.fromBase(value).multiply(factor, MATH_CONTEXT).add(CELSIUS_OFFSET, MATH_CONTEXT)
+            override fun fromBase(value: BigDecimal): BigDecimal =
+                Celsius.fromBase(value)
+                    .multiply(factor, MATH_CONTEXT)
+                    .add(CELSIUS_OFFSET, MATH_CONTEXT)
         }
 
         data object Rankine : Unit(

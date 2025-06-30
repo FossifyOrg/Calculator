@@ -19,7 +19,11 @@ abstract class CalculatorDatabase : RoomDatabase() {
             if (db == null) {
                 synchronized(CalculatorDatabase::class) {
                     if (db == null) {
-                        db = Room.databaseBuilder(context.applicationContext, CalculatorDatabase::class.java, "calculator.db")
+                        db = Room.databaseBuilder(
+                            context.applicationContext,
+                            CalculatorDatabase::class.java,
+                            "calculator.db"
+                        )
                             .build()
                         db!!.openHelper.setWriteAheadLoggingEnabled(true)
                     }

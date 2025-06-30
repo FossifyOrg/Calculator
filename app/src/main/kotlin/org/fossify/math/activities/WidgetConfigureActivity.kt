@@ -1,6 +1,5 @@
 package org.fossify.math.activities
 
-import android.app.Activity
 import android.appwidget.AppWidgetManager
 import android.content.Intent
 import android.content.res.ColorStateList
@@ -9,14 +8,22 @@ import android.os.Bundle
 import android.widget.RemoteViews
 import android.widget.SeekBar
 import android.widget.TextView
+import org.fossify.commons.dialogs.ColorPickerDialog
+import org.fossify.commons.dialogs.FeatureLockedDialog
+import org.fossify.commons.extensions.adjustAlpha
+import org.fossify.commons.extensions.applyColorFilter
+import org.fossify.commons.extensions.beVisible
+import org.fossify.commons.extensions.getContrastColor
+import org.fossify.commons.extensions.getProperPrimaryColor
+import org.fossify.commons.extensions.isDynamicTheme
+import org.fossify.commons.extensions.isOrWasThankYouInstalled
+import org.fossify.commons.extensions.setFillWithStroke
+import org.fossify.commons.extensions.viewBinding
+import org.fossify.commons.helpers.IS_CUSTOMIZING_COLORS
 import org.fossify.math.R
 import org.fossify.math.databinding.WidgetConfigBinding
 import org.fossify.math.extensions.config
 import org.fossify.math.helpers.MyWidgetProvider
-import org.fossify.commons.dialogs.ColorPickerDialog
-import org.fossify.commons.dialogs.FeatureLockedDialog
-import org.fossify.commons.extensions.*
-import org.fossify.commons.helpers.IS_CUSTOMIZING_COLORS
 
 class WidgetConfigureActivity : SimpleActivity() {
     private var mBgAlpha = 0f
@@ -31,12 +38,13 @@ class WidgetConfigureActivity : SimpleActivity() {
     public override fun onCreate(savedInstanceState: Bundle?) {
         useDynamicTheme = false
         super.onCreate(savedInstanceState)
-        setResult(Activity.RESULT_CANCELED)
+        setResult(RESULT_CANCELED)
         setContentView(binding.root)
         initVariables()
 
         val isCustomizingColors = intent.extras?.getBoolean(IS_CUSTOMIZING_COLORS) ?: false
-        mWidgetId = intent.extras?.getInt(AppWidgetManager.EXTRA_APPWIDGET_ID) ?: AppWidgetManager.INVALID_APPWIDGET_ID
+        mWidgetId = intent.extras?.getInt(AppWidgetManager.EXTRA_APPWIDGET_ID)
+            ?: AppWidgetManager.INVALID_APPWIDGET_ID
 
         if (mWidgetId == AppWidgetManager.INVALID_APPWIDGET_ID && !isCustomizingColors) {
             finish()
@@ -72,13 +80,17 @@ class WidgetConfigureActivity : SimpleActivity() {
         mBgAlpha = Color.alpha(mBgColor) / 255.toFloat()
 
         binding.configCalc.btnReset.beVisible()
-        mBgColorWithoutTransparency = Color.rgb(Color.red(mBgColor), Color.green(mBgColor), Color.blue(mBgColor))
+        mBgColorWithoutTransparency =
+            Color.rgb(Color.red(mBgColor), Color.green(mBgColor), Color.blue(mBgColor))
         binding.configBgSeekbar.setOnSeekBarChangeListener(seekbarChangeListener)
         binding.configBgSeekbar.progress = (mBgAlpha * 100).toInt()
         updateBackgroundColor()
 
         mTextColor = config.widgetTextColor
-        if (mTextColor == resources.getColor(org.fossify.commons.R.color.default_widget_text_color, theme) && isDynamicTheme()) {
+        if (mTextColor == resources.getColor(
+                org.fossify.commons.R.color.default_widget_text_color, theme
+            ) && isDynamicTheme()
+        ) {
             mTextColor = resources.getColor(org.fossify.commons.R.color.you_primary_color, theme)
         }
 
@@ -101,7 +113,7 @@ class WidgetConfigureActivity : SimpleActivity() {
 
         Intent().apply {
             putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, mWidgetId)
-            setResult(Activity.RESULT_OK, this)
+            setResult(RESULT_OK, this)
         }
         finish()
     }
@@ -114,7 +126,12 @@ class WidgetConfigureActivity : SimpleActivity() {
     }
 
     private fun requestWidgetUpdate() {
-        Intent(AppWidgetManager.ACTION_APPWIDGET_UPDATE, null, this, MyWidgetProvider::class.java).apply {
+        Intent(
+            AppWidgetManager.ACTION_APPWIDGET_UPDATE,
+            null,
+            this,
+            MyWidgetProvider::class.java
+        ).apply {
             putExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS, intArrayOf(mWidgetId))
             sendBroadcast(this)
         }
@@ -131,11 +148,11 @@ class WidgetConfigureActivity : SimpleActivity() {
         binding.configTextColor.setFillWithStroke(mTextColor, mTextColor)
 
         val viewIds = intArrayOf(
-            R.id.btn_0, R.id.btn_1, R.id.btn_2, R.id.btn_3, R.id.btn_4, R.id.btn_5, R.id.btn_6, R.id.btn_7, R.id.btn_8,
-            R.id.btn_9, R.id.btn_percent, R.id.btn_power, R.id.btn_root, R.id.btn_clear, R.id.btn_reset, R.id.btn_divide, R.id.btn_multiply,
+            R.id.btn_0, R.id.btn_1, R.id.btn_2, R.id.btn_3, R.id.btn_4, R.id.btn_5, R.id.btn_6,
+            R.id.btn_7, R.id.btn_8, R.id.btn_9, R.id.btn_percent, R.id.btn_power, R.id.btn_root,
+            R.id.btn_clear, R.id.btn_reset, R.id.btn_divide, R.id.btn_multiply,
             R.id.btn_minus, R.id.btn_plus, R.id.btn_decimal, R.id.btn_equals
         )
-
 
         binding.configCalc.result.setTextColor(mTextColor)
         binding.configCalc.formula.setTextColor(mTextColor)

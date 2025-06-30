@@ -8,7 +8,8 @@ object AreaConverter : Converter {
     override val imageResId: Int = R.drawable.ic_box_vector
     override val key: String = "AreaConverter"
 
-    sealed class Unit(nameResId: Int, symbolResId: Int, factor: BigDecimal, key: String) : Converter.Unit(nameResId, symbolResId, factor, key) {
+    sealed class Unit(nameResId: Int, symbolResId: Int, factor: BigDecimal, key: String) :
+        Converter.Unit(nameResId, symbolResId, factor, key) {
         data object SquareKilometer : Unit(
             nameResId = R.string.unit_area_square_kilometer,
             symbolResId = R.string.unit_area_square_kilometer_symbol,

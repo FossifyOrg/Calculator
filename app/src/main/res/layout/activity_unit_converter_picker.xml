@@ -20,12 +20,12 @@
         android:id="@+id/unit_types_grid"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="?attr/actionBarSize"
         android:layout_marginStart="@dimen/activity_margin"
+        android:layout_marginTop="?attr/actionBarSize"
         android:layout_marginEnd="@dimen/activity_margin"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="4"
         tools:itemCount="20"
-        tools:listitem="@layout/item_unit_type"
-        app:spanCount="4" />
+        tools:listitem="@layout/item_unit_type" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
