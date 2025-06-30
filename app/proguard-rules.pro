@@ -1,0 +1,2 @@
+-keep class com.ezylang.evalex.** { *; }
+-dontwarn com.ezylang.evalex.**
