@@ -8,7 +8,8 @@ object MassConverter : Converter {
     override val imageResId: Int = R.drawable.ic_scale_vector
     override val key: String = "MassConverter"
 
-    sealed class Unit(nameResId: Int, symbolResId: Int, factor: BigDecimal, key: String) : Converter.Unit(nameResId, symbolResId, factor, key) {
+    sealed class Unit(nameResId: Int, symbolResId: Int, factor: BigDecimal, key: String) :
+        Converter.Unit(nameResId, symbolResId, factor, key) {
         data object Gram : Unit(
             nameResId = R.string.unit_mass_gram,
             symbolResId = R.string.unit_mass_gram_symbol,

@@ -1,7 +1,7 @@
 package org.fossify.math.activities
 
-import org.fossify.math.R
 import org.fossify.commons.activities.BaseSimpleActivity
+import org.fossify.math.R
 
 open class SimpleActivity : BaseSimpleActivity() {
     override fun getAppIconIDs() = arrayListOf(

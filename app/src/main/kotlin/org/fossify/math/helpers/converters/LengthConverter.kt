@@ -8,7 +8,8 @@ object LengthConverter : Converter {
     override val imageResId: Int = R.drawable.ic_height_vector
     override val key: String = "LengthConverter"
 
-    sealed class Unit(nameResId: Int, symbolResId: Int, factor: BigDecimal, key: String) : Converter.Unit(nameResId, symbolResId, factor, key) {
+    sealed class Unit(nameResId: Int, symbolResId: Int, factor: BigDecimal, key: String) :
+        Converter.Unit(nameResId, symbolResId, factor, key) {
         data object Kilometer : Unit(
             nameResId = R.string.unit_length_kilometer,
             symbolResId = R.string.unit_length_kilometer_symbol,

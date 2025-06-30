@@ -12,17 +12,27 @@ import android.view.View
 import android.widget.LinearLayout
 import androidx.core.content.res.ResourcesCompat
 import androidx.core.widget.TextViewCompat
-import org.fossify.math.R
-import org.fossify.math.databinding.ViewConverterBinding
 import me.grantland.widget.AutofitHelper
-import org.fossify.math.extensions.config
-import org.fossify.math.helpers.*
-import org.fossify.math.helpers.converters.Converter
 import org.fossify.commons.dialogs.RadioGroupDialog
-import org.fossify.commons.extensions.*
+import org.fossify.commons.extensions.adjustAlpha
+import org.fossify.commons.extensions.applyColorFilter
+import org.fossify.commons.extensions.copyToClipboard
+import org.fossify.commons.extensions.getProperPrimaryColor
+import org.fossify.commons.extensions.getProperTextColor
+import org.fossify.commons.extensions.lightenColor
 import org.fossify.commons.helpers.LOWER_ALPHA
 import org.fossify.commons.helpers.MEDIUM_ALPHA_INT
 import org.fossify.commons.models.RadioItem
+import org.fossify.math.R
+import org.fossify.math.databinding.ViewConverterBinding
+import org.fossify.math.extensions.config
+import org.fossify.math.helpers.BOTTOM_UNIT
+import org.fossify.math.helpers.COMMA
+import org.fossify.math.helpers.CONVERTER_VALUE
+import org.fossify.math.helpers.DOT
+import org.fossify.math.helpers.NumberFormatHelper
+import org.fossify.math.helpers.TOP_UNIT
+import org.fossify.math.helpers.converters.Converter
 import org.fossify.math.helpers.converters.TemperatureConverter
 import java.math.BigDecimal
 import kotlin.reflect.KMutableProperty0
@@ -42,7 +52,7 @@ class ConverterView @JvmOverloads constructor(
     private val formatter = NumberFormatHelper(
         decimalSeparator = decimalSeparator, groupingSeparator = groupingSeparator
     )
-    
+
     private var unitChangedListener: OnUnitChangedListener? = null
 
     override fun onFinishInflate() {
@@ -78,17 +88,22 @@ class ConverterView @JvmOverloads constructor(
         updateUnitLabelsAndSymbols()
         notifyUnitsChanged()
     }
-    
+
     fun setOnUnitChangedListener(listener: OnUnitChangedListener?) {
         unitChangedListener = listener
     }
-    
+
     private fun notifyUnitsChanged() {
         unitChangedListener?.onUnitsChanged(topUnit, bottomUnit)
     }
 
     fun updateColors() {
-        listOf(binding.topUnitText, binding.bottomUnitText, binding.topUnitName, binding.bottomUnitName).forEach {
+        listOf(
+            binding.topUnitText,
+            binding.bottomUnitText,
+            binding.topUnitName,
+            binding.bottomUnitName
+        ).forEach {
             it.setTextColor(context.getProperTextColor())
         }
         listOf(binding.topUnitName, binding.bottomUnitName).forEach {
@@ -101,8 +116,11 @@ class ConverterView @JvmOverloads constructor(
         val rippleDrawable = ResourcesCompat.getDrawable(
             resources, R.drawable.colored_ripple, context.theme
         )?.constantState?.newDrawable()?.mutate() as RippleDrawable
-        val rippleColoredLayer = rippleDrawable.findDrawableByLayerId(R.id.colored_background) as GradientDrawable
-        rippleColoredLayer.applyColorFilter(context.getProperPrimaryColor().lightenColor().adjustAlpha(LOWER_ALPHA))
+        val rippleColoredLayer =
+            rippleDrawable.findDrawableByLayerId(R.id.colored_background) as GradientDrawable
+        rippleColoredLayer.applyColorFilter(
+            context.getProperPrimaryColor().lightenColor().adjustAlpha(LOWER_ALPHA)
+        )
         binding.topUnitHolder.background = rippleDrawable
         binding.swapButton?.applyColorFilter(context.getProperPrimaryColor())
 
@@ -110,9 +128,15 @@ class ConverterView @JvmOverloads constructor(
             val drawable = ResourcesCompat.getDrawable(
                 resources, org.fossify.commons.R.drawable.pill_background, context.theme
             )?.constantState?.newDrawable()?.mutate() as RippleDrawable
-            val bgLayerList = drawable.findDrawableByLayerId(org.fossify.commons.R.id.button_pill_background_holder) as LayerDrawable
-            val bgLayer = bgLayerList.findDrawableByLayerId(org.fossify.commons.R.id.button_pill_background_shape) as GradientDrawable
-            bgLayer.cornerRadius = context.resources.getDimension(org.fossify.commons.R.dimen.rounded_corner_radius_big)
+            val bgLayerList = drawable.findDrawableByLayerId(
+                org.fossify.commons.R.id.button_pill_background_holder
+            ) as LayerDrawable
+            val bgLayer = bgLayerList.findDrawableByLayerId(
+                org.fossify.commons.R.id.button_pill_background_shape
+            ) as GradientDrawable
+            bgLayer.cornerRadius = context.resources.getDimension(
+                org.fossify.commons.R.dimen.rounded_corner_radius_big
+            )
             it.background = drawable
             it.background?.alpha = MEDIUM_ALPHA_INT
         }
@@ -138,11 +162,11 @@ class ConverterView @JvmOverloads constructor(
                         newValue = "0"
                     }
                     @Suppress("SwallowedException")
-                    val value = try { 
-                        formatter.removeGroupingSeparator(newValue).toBigDecimal() 
-                    } catch (e: NumberFormatException) { 
+                    val value = try {
+                        formatter.removeGroupingSeparator(newValue).toBigDecimal()
+                    } catch (_: NumberFormatException) {
                         // Return zero if input cannot be parsed as a valid number
-                        BigDecimal.ZERO 
+                        BigDecimal.ZERO
                     }
                     binding.topUnitText.text = formatter.bigDecimalToString(value)
                 }
@@ -232,7 +256,11 @@ class ConverterView @JvmOverloads constructor(
             MeasureSpec.makeMeasureSpec(symbolHeight, MeasureSpec.EXACTLY)
         )
 
-        val width = listOf(symbolHeight, binding.topUnitSymbol.measuredWidth, binding.bottomUnitSymbol.measuredWidth).max()
+        val width = listOf(
+            symbolHeight,
+            binding.topUnitSymbol.measuredWidth,
+            binding.bottomUnitSymbol.measuredWidth
+        ).max()
         binding.topUnitSymbol.layoutParams.width = width
         binding.bottomUnitSymbol.layoutParams.width = width
         binding.topUnitSymbol.requestLayout()
@@ -242,11 +270,12 @@ class ConverterView @JvmOverloads constructor(
     private fun updateBottomValue() {
         converter?.apply {
             @Suppress("SwallowedException")
-            val topValue = try { 
-                formatter.removeGroupingSeparator(binding.topUnitText.text.toString()).toBigDecimal() 
-            } catch (e: NumberFormatException) { 
+            val topValue = try {
+                formatter.removeGroupingSeparator(binding.topUnitText.text.toString())
+                    .toBigDecimal()
+            } catch (_: NumberFormatException) {
                 // Return zero if input cannot be parsed as a valid number
-                BigDecimal.ZERO 
+                BigDecimal.ZERO
             }
 
             if (key == TemperatureConverter.key) {
@@ -285,12 +314,19 @@ class ConverterView @JvmOverloads constructor(
         }
     }
 
-    private fun View.setClickListenerForUnitSelector(propertyToChange: KMutableProperty0<Converter.Unit?>, otherProperty: KMutableProperty0<Converter.Unit?>) {
+    private fun View.setClickListenerForUnitSelector(
+        propertyToChange: KMutableProperty0<Converter.Unit?>,
+        otherProperty: KMutableProperty0<Converter.Unit?>
+    ) {
         setOnClickListener {
             val items = ArrayList(converter!!.units.mapIndexed { index, unit ->
                 RadioItem(index, unit.getNameWithSymbol(context), unit)
             })
-            RadioGroupDialog(context as Activity, items, converter!!.units.indexOf(propertyToChange.get())) {
+            RadioGroupDialog(
+                context as Activity,
+                items,
+                converter!!.units.indexOf(propertyToChange.get())
+            ) {
                 val unit = it as Converter.Unit
                 if (unit == otherProperty.get()) {
                     switch()
@@ -346,24 +382,27 @@ class ConverterView @JvmOverloads constructor(
         if (converter?.key != TemperatureConverter.key) return value
 
         @Suppress("SwallowedException")
-        val numericValue = try { 
-            formatter.removeGroupingSeparator(value).toBigDecimal() 
-        } catch (e: NumberFormatException) { 
+        val numericValue = try {
+            formatter.removeGroupingSeparator(value).toBigDecimal()
+        } catch (_: NumberFormatException) {
             // Return original value if it cannot be parsed as a valid number
-            return value 
+            return value
         }
 
         return when (topUnit?.key) {
             TemperatureConverter.Unit.Celsius.key -> {
                 if (numericValue < BigDecimal("-273.15")) "-273.15" else value
             }
+
             TemperatureConverter.Unit.Fahrenheit.key -> {
                 if (numericValue < BigDecimal("-459.67")) "-459.67" else value
             }
+
             TemperatureConverter.Unit.Kelvin.key,
             TemperatureConverter.Unit.Rankine.key -> {
                 if (numericValue < BigDecimal.ZERO) "0" else value
             }
+
             else -> value
         }
     }

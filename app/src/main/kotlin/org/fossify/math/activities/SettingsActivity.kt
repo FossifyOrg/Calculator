@@ -11,11 +11,6 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.platform.LocalContext
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import org.fossify.math.compose.SettingsScreen
-import org.fossify.math.extensions.calculatorDB
-import org.fossify.math.extensions.config
-import org.fossify.math.extensions.launchChangeAppLanguageIntent
-import org.fossify.math.extensions.updateWidgets
 import org.fossify.commons.activities.CustomizationActivity
 import org.fossify.commons.compose.alert_dialog.rememberAlertDialogState
 import org.fossify.commons.compose.extensions.enableEdgeToEdgeSimple
@@ -27,7 +22,16 @@ import org.fossify.commons.dialogs.FeatureLockedAlertDialog
 import org.fossify.commons.extensions.getCustomizeColorsString
 import org.fossify.commons.extensions.isOrWasThankYouInstalled
 import org.fossify.commons.extensions.launchPurchaseThankYouIntent
-import org.fossify.commons.helpers.*
+import org.fossify.commons.helpers.APP_ICON_IDS
+import org.fossify.commons.helpers.APP_LAUNCHER_NAME
+import org.fossify.commons.helpers.IS_CUSTOMIZING_COLORS
+import org.fossify.commons.helpers.ensureBackgroundThread
+import org.fossify.commons.helpers.isTiramisuPlus
+import org.fossify.math.compose.SettingsScreen
+import org.fossify.math.extensions.calculatorDB
+import org.fossify.math.extensions.config
+import org.fossify.math.extensions.launchChangeAppLanguageIntent
+import org.fossify.math.extensions.updateWidgets
 import java.util.Locale
 import kotlin.system.exitProcess
 
@@ -42,12 +46,18 @@ class SettingsActivity : AppCompatActivity() {
         setContent {
             AppThemeSurface {
                 val context = LocalContext.current
-                val preventPhoneFromSleeping by preferences.preventPhoneFromSleepingFlow.collectAsStateWithLifecycle(preferences.preventPhoneFromSleeping)
-                val vibrateOnButtonPressFlow by preferences.vibrateOnButtonPressFlow.collectAsStateWithLifecycle(preferences.vibrateOnButtonPress)
-                val wasUseEnglishToggledFlow by preferences.wasUseEnglishToggledFlow.collectAsStateWithLifecycle(preferences.wasUseEnglishToggled)
-                val useEnglishFlow by preferences.useEnglishFlow.collectAsStateWithLifecycle(preferences.useEnglish)
-                val useCommaAsDecimalMarkFlow by preferences.useCommaAsDecimalMarkFlow.collectAsStateWithLifecycle(preferences.useCommaAsDecimalMark)
-                val showCheckmarksOnSwitches by config.showCheckmarksOnSwitchesFlow.collectAsStateWithLifecycle(initialValue = config.showCheckmarksOnSwitches)
+                val preventPhoneFromSleeping by preferences.preventPhoneFromSleepingFlow
+                    .collectAsStateWithLifecycle(preferences.preventPhoneFromSleeping)
+                val vibrateOnButtonPressFlow by preferences.vibrateOnButtonPressFlow
+                    .collectAsStateWithLifecycle(preferences.vibrateOnButtonPress)
+                val wasUseEnglishToggledFlow by preferences.wasUseEnglishToggledFlow
+                    .collectAsStateWithLifecycle(preferences.wasUseEnglishToggled)
+                val useEnglishFlow by preferences.useEnglishFlow
+                    .collectAsStateWithLifecycle(preferences.useEnglish)
+                val useCommaAsDecimalMarkFlow by preferences.useCommaAsDecimalMarkFlow
+                    .collectAsStateWithLifecycle(preferences.useCommaAsDecimalMark)
+                val showCheckmarksOnSwitches by config.showCheckmarksOnSwitchesFlow
+                    .collectAsStateWithLifecycle(initialValue = config.showCheckmarksOnSwitches)
                 val isUseEnglishEnabled by remember(wasUseEnglishToggledFlow) {
                     derivedStateOf {
                         (wasUseEnglishToggledFlow || Locale.getDefault().language != "en") && !isTiramisuPlus()

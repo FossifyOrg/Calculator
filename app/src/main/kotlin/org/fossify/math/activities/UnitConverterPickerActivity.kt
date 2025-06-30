@@ -3,14 +3,14 @@ package org.fossify.math.activities
 import android.content.Intent
 import android.os.Bundle
 import android.view.WindowManager
-import org.fossify.math.R
-import org.fossify.math.databinding.ActivityUnitConverterPickerBinding
-import org.fossify.math.adapters.UnitTypesAdapter
-import org.fossify.math.extensions.config
-import org.fossify.math.helpers.converters.Converter
 import org.fossify.commons.extensions.viewBinding
 import org.fossify.commons.helpers.NavigationIcon
 import org.fossify.commons.views.AutoGridLayoutManager
+import org.fossify.math.R
+import org.fossify.math.adapters.UnitTypesAdapter
+import org.fossify.math.databinding.ActivityUnitConverterPickerBinding
+import org.fossify.math.extensions.config
+import org.fossify.math.helpers.converters.Converter
 
 class UnitConverterPickerActivity : SimpleActivity() {
     private val binding by viewBinding(ActivityUnitConverterPickerBinding::inflate)
@@ -19,10 +19,16 @@ class UnitConverterPickerActivity : SimpleActivity() {
         isMaterialActivity = true
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-        updateMaterialActivityViews(binding.unitConverterPickerCoordinator, null, useTransparentNavigation = false, useTopSearchMenu = false)
+        updateMaterialActivityViews(
+            mainCoordinatorLayout = binding.unitConverterPickerCoordinator,
+            nestedView = null,
+            useTransparentNavigation = false,
+            useTopSearchMenu = false
+        )
         setupMaterialScrollListener(binding.unitTypesGrid, binding.unitConverterPickerToolbar)
 
-        binding.unitTypesGrid.layoutManager = AutoGridLayoutManager(this, resources.getDimensionPixelSize(R.dimen.unit_type_size))
+        binding.unitTypesGrid.layoutManager =
+            AutoGridLayoutManager(this, resources.getDimensionPixelSize(R.dimen.unit_type_size))
         binding.unitTypesGrid.adapter = UnitTypesAdapter(this, Converter.ALL) {
             Intent(this, UnitConverterActivity::class.java).apply {
                 putExtra(UnitConverterActivity.EXTRA_CONVERTER_ID, it)

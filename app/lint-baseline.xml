@@ -297,17 +297,6 @@
 
     <issue
         id="UnusedAttribute"
-        message="Attribute `localeConfig` is only used in API level 33 and higher (current min is 26)"
-        errorLine1="        android:localeConfig=&quot;@xml/locale_config&quot;"
-        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="src/main/AndroidManifest.xml"
-            line="24"
-            column="9"/>
-    </issue>
-
-    <issue
-        id="UnusedAttribute"
         message="Attribute `targetCellWidth` is only used in API level 31 and higher (current min is 26)"
         errorLine1="    android:targetCellWidth=&quot;4&quot;"
         errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
@@ -348,6 +337,39 @@
             file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/wrapper/gradle-wrapper.properties"
             line="3"
             column="17"/>
+    </issue>
+
+    <issue
+        id="AndroidGradlePluginVersion"
+        message="A newer version of com.android.application than 8.10.1 is available: 8.11.0"
+        errorLine1="gradlePlugins-agp = &quot;8.10.1&quot;"
+        errorLine2="                    ~~~~~~~~">
+        <location
+            file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/libs.versions.toml"
+            line="25"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of org.jetbrains.kotlin.android than 2.1.21 is available: 2.2.0"
+        errorLine1="kotlin = &quot;2.1.21&quot;"
+        errorLine2="         ~~~~~~~~">
+        <location
+            file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/libs.versions.toml"
+            line="3"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of org.jetbrains.kotlin.plugin.compose than 2.1.21 is available: 2.2.0"
+        errorLine1="kotlin = &quot;2.1.21&quot;"
+        errorLine2="         ~~~~~~~~">
+        <location
+            file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/libs.versions.toml"
+            line="3"
+            column="10"/>
     </issue>
 
     <issue
@@ -473,50 +495,6 @@
 
     <issue
         id="GradleDependency"
-        message="A newer version of androidx.room:room-compiler than 2.7.1 is available: 2.7.2"
-        errorLine1="room = &quot;2.7.1&quot;"
-        errorLine2="       ~~~~~~~">
-        <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/libs.versions.toml"
-            line="21"
-            column="8"/>
-    </issue>
-
-    <issue
-        id="GradleDependency"
-        message="A newer version of androidx.room:room-ktx than 2.7.1 is available: 2.7.2"
-        errorLine1="room = &quot;2.7.1&quot;"
-        errorLine2="       ~~~~~~~">
-        <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/libs.versions.toml"
-            line="21"
-            column="8"/>
-    </issue>
-
-    <issue
-        id="GradleDependency"
-        message="A newer version of androidx.room:room-runtime than 2.7.1 is available: 2.7.2"
-        errorLine1="room = &quot;2.7.1&quot;"
-        errorLine2="       ~~~~~~~">
-        <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/libs.versions.toml"
-            line="21"
-            column="8"/>
-    </issue>
-
-    <issue
-        id="GradleDependency"
-        message="A newer version of org.fossify:commons than 3.0.5 is available: 3.1.0"
-        errorLine1="commons = &quot;3.0.5&quot;"
-        errorLine2="          ~~~~~~~">
-        <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/libs.versions.toml"
-            line="23"
-            column="11"/>
-    </issue>
-
-    <issue
-        id="GradleDependency"
         message="A newer version of `compileSdkVersion` than 34 is available: 35"
         errorLine1="app-build-compileSDKVersion = &quot;34&quot;"
         errorLine2="                              ~~~~">
@@ -533,7 +511,7 @@
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="src/main/AndroidManifest.xml"
-            line="48"
+            line="47"
             column="13"/>
     </issue>
 
@@ -544,7 +522,7 @@
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="src/main/AndroidManifest.xml"
-            line="48"
+            line="47"
             column="13"/>
     </issue>
 
@@ -1673,7 +1651,7 @@
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="src/main/res/layout/view_unit_converter.xml"
-            line="157"
+            line="158"
             column="13"/>
     </issue>
 
@@ -1783,7 +1761,7 @@
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="src/main/res/layout/view_unit_converter.xml"
-            line="31"
+            line="32"
             column="13"/>
     </issue>
 
@@ -1794,7 +1772,7 @@
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="src/main/res/layout/view_unit_converter.xml"
-            line="63"
+            line="64"
             column="13"/>
     </issue>
 
@@ -1805,7 +1783,7 @@
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="src/main/res/layout/view_unit_converter.xml"
-            line="95"
+            line="96"
             column="13"/>
     </issue>
 
@@ -1816,7 +1794,7 @@
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
             file="src/main/res/layout/view_unit_converter.xml"
-            line="127"
+            line="128"
             column="13"/>
     </issue>
 
@@ -1867,7 +1845,7 @@
     <issue
         id="UseKtx"
         message="Use the KTX extension function `SharedPreferences.edit` instead?"
-        errorLine1="        set(useCommaAsDecimalMark) = prefs.edit().putBoolean(USE_COMMA_AS_DECIMAL_MARK, useCommaAsDecimalMark).apply()"
+        errorLine1="        set(useCommaAsDecimalMark) = prefs.edit()"
         errorLine2="                                     ~~~~~~~~~~~~">
         <location
             file="src/main/kotlin/org/fossify/math/helpers/Config.kt"
@@ -1878,11 +1856,11 @@
     <issue
         id="UseKtx"
         message="Use the KTX extension function `SharedPreferences.edit` instead?"
-        errorLine1="        prefs.edit().putString(&quot;$CONVERTER_UNITS_PREFIX.${converter.key}&quot;, &quot;${topUnit.key},${bottomUnit.key}&quot;).apply()"
+        errorLine1="        prefs.edit().putString("
         errorLine2="        ~~~~~~~~~~~~">
         <location
             file="src/main/kotlin/org/fossify/math/helpers/Config.kt"
-            line="35"
+            line="40"
             column="9"/>
     </issue>
 
@@ -1948,7 +1926,7 @@
         errorLine2="                                           ~~~~~~~~">
         <location
             file="src/main/kotlin/org/fossify/math/activities/WidgetConfigureActivity.kt"
-            line="87"
+            line="99"
             column="44"/>
     </issue>
 
@@ -1959,7 +1937,7 @@
         errorLine2="                                          ~~~~~~">
         <location
             file="src/main/kotlin/org/fossify/math/activities/WidgetConfigureActivity.kt"
-            line="88"
+            line="100"
             column="43"/>
     </issue>
 

@@ -2,9 +2,9 @@ package org.fossify.math.helpers
 
 import android.content.Context
 import kotlinx.coroutines.flow.Flow
+import org.fossify.commons.helpers.BaseConfig
 import org.fossify.math.helpers.converters.Converter
 import org.fossify.math.models.ConverterUnitsState
-import org.fossify.commons.helpers.BaseConfig
 
 class Config(context: Context) : BaseConfig(context) {
     companion object {
@@ -13,7 +13,8 @@ class Config(context: Context) : BaseConfig(context) {
 
     var useCommaAsDecimalMark: Boolean
         get() = prefs.getBoolean(USE_COMMA_AS_DECIMAL_MARK, getDecimalSeparator() == COMMA)
-        set(useCommaAsDecimalMark) = prefs.edit().putBoolean(USE_COMMA_AS_DECIMAL_MARK, useCommaAsDecimalMark).apply()
+        set(useCommaAsDecimalMark) = prefs.edit()
+            .putBoolean(USE_COMMA_AS_DECIMAL_MARK, useCommaAsDecimalMark).apply()
 
     fun getLastConverterUnits(converter: Converter): ConverterUnitsState? {
         val storedState = prefs.getString("$CONVERTER_UNITS_PREFIX.${converter.key}", null)
@@ -31,8 +32,15 @@ class Config(context: Context) : BaseConfig(context) {
         }
     }
 
-    fun putLastConverterUnits(converter: Converter, topUnit: Converter.Unit, bottomUnit: Converter.Unit) {
-        prefs.edit().putString("$CONVERTER_UNITS_PREFIX.${converter.key}", "${topUnit.key},${bottomUnit.key}").apply()
+    fun putLastConverterUnits(
+        converter: Converter,
+        topUnit: Converter.Unit,
+        bottomUnit: Converter.Unit
+    ) {
+        prefs.edit().putString(
+            "$CONVERTER_UNITS_PREFIX.${converter.key}",
+            "${topUnit.key},${bottomUnit.key}"
+        ).apply()
     }
 
     val preventPhoneFromSleepingFlow: Flow<Boolean> = ::preventPhoneFromSleeping.asFlowNonNull()

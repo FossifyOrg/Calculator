@@ -23,7 +23,7 @@ class NumberFormatHelper(
         formatter.maximumFractionDigits = MAX_FRACTION_DIGITS
         formatter.decimalFormatSymbols = symbols
         formatter.isGroupingUsed = true
-        
+
         val result = formatter.format(bd)
         return if (result.contains(decimalSeparator)) {
             result.trimEnd('0').trimEnd(decimalSeparator.single())

@@ -20,11 +20,11 @@
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_marginStart="@dimen/activity_margin"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:layout_marginBottom="@dimen/small_margin"
             android:gravity="center"
             android:textAlignment="gravity"
             android:textSize="@dimen/big_text_size"
-            android:layout_marginTop="@dimen/normal_margin"
-            android:layout_marginBottom="@dimen/small_margin"
             app:drawableEndCompat="@drawable/ic_arrow_drop_down_vector"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -77,12 +77,12 @@
             android:layout_height="0dp"
             android:layout_gravity="start|center_vertical"
             android:layout_marginStart="@dimen/activity_margin"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:layout_marginBottom="@dimen/small_margin"
             android:gravity="center"
             android:textAlignment="gravity"
             android:textSize="@dimen/big_text_size"
             app:drawableEndCompat="@drawable/ic_arrow_drop_down_vector"
-            android:layout_marginTop="@dimen/normal_margin"
-            android:layout_marginBottom="@dimen/small_margin"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 

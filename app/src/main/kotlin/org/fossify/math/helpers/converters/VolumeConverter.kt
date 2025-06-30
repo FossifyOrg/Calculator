@@ -8,7 +8,8 @@ object VolumeConverter : Converter {
     override val imageResId: Int = R.drawable.ic_drop_vector
     override val key: String = "VolumeConverter"
 
-    sealed class Unit(nameResId: Int, symbolResId: Int, factor: BigDecimal, key: String) : Converter.Unit(nameResId, symbolResId, factor, key) {
+    sealed class Unit(nameResId: Int, symbolResId: Int, factor: BigDecimal, key: String) :
+        Converter.Unit(nameResId, symbolResId, factor, key) {
         data object CubicMeter : Unit(
             nameResId = R.string.unit_volume_cubic_meter,
             symbolResId = R.string.unit_volume_cubic_meter_symbol,
@@ -113,14 +114,14 @@ object VolumeConverter : Converter {
             factor = BigDecimal("0.000473176473"),
             key = "PintUS"
         )
-        
+
         data object LegalCupUS : Unit(
             nameResId = R.string.unit_volume_legal_cup_us,
             symbolResId = R.string.unit_volume_legal_cup_us_symbol,
             factor = BigDecimal("0.00024"),
             key = "LegalCupUS"
         )
-        
+
         data object CustomaryCupUS : Unit(
             nameResId = R.string.unit_volume_customary_cup_us,
             symbolResId = R.string.unit_volume_customary_cup_us_symbol,

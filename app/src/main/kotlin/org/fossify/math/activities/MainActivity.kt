@@ -6,23 +6,43 @@ import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
 import androidx.core.content.res.ResourcesCompat
-import org.fossify.math.BuildConfig
-import org.fossify.math.R
-import org.fossify.math.databinding.ActivityMainBinding
 import me.grantland.widget.AutofitHelper
-import org.fossify.math.databases.CalculatorDatabase
-import org.fossify.math.dialogs.HistoryDialog
-import org.fossify.math.extensions.config
-import org.fossify.math.extensions.updateViewColors
-import org.fossify.math.extensions.updateWidgets
-import org.fossify.math.helpers.*
-import org.fossify.commons.extensions.*
+import org.fossify.commons.extensions.appLaunched
+import org.fossify.commons.extensions.copyToClipboard
+import org.fossify.commons.extensions.getProperTextColor
+import org.fossify.commons.extensions.hideKeyboard
+import org.fossify.commons.extensions.launchMoreAppsFromUsIntent
+import org.fossify.commons.extensions.performHapticFeedback
+import org.fossify.commons.extensions.toast
+import org.fossify.commons.extensions.value
+import org.fossify.commons.extensions.viewBinding
 import org.fossify.commons.helpers.APP_ICON_IDS
 import org.fossify.commons.helpers.LICENSE_AUTOFITTEXTVIEW
 import org.fossify.commons.helpers.LICENSE_EVALEX
 import org.fossify.commons.helpers.LOWER_ALPHA_INT
 import org.fossify.commons.helpers.MEDIUM_ALPHA_INT
 import org.fossify.commons.models.FAQItem
+import org.fossify.math.BuildConfig
+import org.fossify.math.R
+import org.fossify.math.databases.CalculatorDatabase
+import org.fossify.math.databinding.ActivityMainBinding
+import org.fossify.math.dialogs.HistoryDialog
+import org.fossify.math.extensions.config
+import org.fossify.math.extensions.updateViewColors
+import org.fossify.math.extensions.updateWidgets
+import org.fossify.math.helpers.CALCULATOR_STATE
+import org.fossify.math.helpers.COMMA
+import org.fossify.math.helpers.Calculator
+import org.fossify.math.helpers.CalculatorImpl
+import org.fossify.math.helpers.DIVIDE
+import org.fossify.math.helpers.DOT
+import org.fossify.math.helpers.HistoryHelper
+import org.fossify.math.helpers.MINUS
+import org.fossify.math.helpers.MULTIPLY
+import org.fossify.math.helpers.PERCENT
+import org.fossify.math.helpers.PLUS
+import org.fossify.math.helpers.POWER
+import org.fossify.math.helpers.ROOT
 
 class MainActivity : SimpleActivity(), Calculator {
     private var storedTextColor = 0
@@ -42,14 +62,25 @@ class MainActivity : SimpleActivity(), Calculator {
         appLaunched(BuildConfig.APPLICATION_ID)
         setupOptionsMenu()
         refreshMenuItems()
-        updateMaterialActivityViews(binding.mainCoordinator, null, useTransparentNavigation = false, useTopSearchMenu = false)
+        updateMaterialActivityViews(
+            mainCoordinatorLayout = binding.mainCoordinator,
+            nestedView = null,
+            useTransparentNavigation = false,
+            useTopSearchMenu = false
+        )
         setupMaterialScrollListener(binding.mainNestedScrollview, binding.mainToolbar)
 
         if (savedInstanceState != null) {
             saveCalculatorState = savedInstanceState.getCharSequence(CALCULATOR_STATE) as String
         }
 
-        calc = CalculatorImpl(this, applicationContext, decimalSeparator, groupingSeparator, saveCalculatorState)
+        calc = CalculatorImpl(
+            calculator = this,
+            context = applicationContext,
+            decimalSeparator = decimalSeparator,
+            groupingSeparator = groupingSeparator,
+            calculatorState = saveCalculatorState
+        )
         binding.btnPlus?.setOnClickOperation(PLUS)
         binding.btnMinus?.setOnClickOperation(MINUS)
         binding.btnMultiply?.setOnClickOperation(MULTIPLY)
@@ -100,13 +131,20 @@ class MainActivity : SimpleActivity(), Calculator {
         vibrateOnButtonPress = config.vibrateOnButtonPress
 
         binding.apply {
-            arrayOf(btnPercent, btnPower, btnRoot, btnClear, btnReset, btnDivide, btnMultiply, btnPlus, btnMinus, btnEquals, btnDecimal).forEach {
-                it?.background = ResourcesCompat.getDrawable(resources, org.fossify.commons.R.drawable.pill_background, theme)
+            arrayOf(
+                btnPercent, btnPower, btnRoot, btnClear, btnReset, btnDivide, btnMultiply, btnPlus,
+                btnMinus, btnEquals, btnDecimal
+            ).forEach {
+                it?.background = ResourcesCompat.getDrawable(
+                    resources, org.fossify.commons.R.drawable.pill_background, theme
+                )
                 it?.background?.alpha = MEDIUM_ALPHA_INT
             }
 
             arrayOf(btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9).forEach {
-                it?.background = ResourcesCompat.getDrawable(resources, org.fossify.commons.R.drawable.pill_background, theme)
+                it?.background = ResourcesCompat.getDrawable(
+                    resources, org.fossify.commons.R.drawable.pill_background, theme
+                )
                 it?.background?.alpha = LOWER_ALPHA_INT
             }
         }
@@ -148,7 +186,8 @@ class MainActivity : SimpleActivity(), Calculator {
 
     private fun refreshMenuItems() {
         binding.mainToolbar.menu.apply {
-            findItem(R.id.more_apps_from_us).isVisible = !resources.getBoolean(org.fossify.commons.R.bool.hide_google_relations)
+            findItem(R.id.more_apps_from_us).isVisible =
+                !resources.getBoolean(org.fossify.commons.R.bool.hide_google_relations)
         }
     }
 
@@ -194,13 +233,29 @@ class MainActivity : SimpleActivity(), Calculator {
 
         val faqItems = arrayListOf(
             FAQItem(R.string.faq_1_title, R.string.faq_1_text),
-            FAQItem(org.fossify.commons.R.string.faq_1_title_commons, org.fossify.commons.R.string.faq_1_text_commons),
-            FAQItem(org.fossify.commons.R.string.faq_4_title_commons, org.fossify.commons.R.string.faq_4_text_commons)
+            FAQItem(
+                title = org.fossify.commons.R.string.faq_1_title_commons,
+                text = org.fossify.commons.R.string.faq_1_text_commons
+            ),
+            FAQItem(
+                title = org.fossify.commons.R.string.faq_4_title_commons,
+                text = org.fossify.commons.R.string.faq_4_text_commons
+            )
         )
 
         if (!resources.getBoolean(org.fossify.commons.R.bool.hide_google_relations)) {
-            faqItems.add(FAQItem(org.fossify.commons.R.string.faq_2_title_commons, org.fossify.commons.R.string.faq_2_text_commons))
-            faqItems.add(FAQItem(org.fossify.commons.R.string.faq_6_title_commons, org.fossify.commons.R.string.faq_6_text_commons))
+            faqItems.add(
+                FAQItem(
+                    title = org.fossify.commons.R.string.faq_2_title_commons,
+                    text = org.fossify.commons.R.string.faq_2_text_commons
+                )
+            )
+            faqItems.add(
+                FAQItem(
+                    title = org.fossify.commons.R.string.faq_6_title_commons,
+                    text = org.fossify.commons.R.string.faq_6_text_commons
+                )
+            )
         }
 
         startAboutActivity(
