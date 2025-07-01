@@ -290,7 +290,7 @@
         errorLine1="app-build-targetSDK = &quot;34&quot;"
         errorLine2="                      ~~~~">
         <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/libs.versions.toml"
+            file="$HOME/work/Calculator/Calculator/gradle/libs.versions.toml"
             line="28"
             column="23"/>
     </issue>
@@ -334,7 +334,7 @@
         errorLine1="distributionUrl=https\://services.gradle.org/distributions/gradle-8.11.1-bin.zip"
         errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/wrapper/gradle-wrapper.properties"
+            file="$HOME/work/Calculator/Calculator/gradle/wrapper/gradle-wrapper.properties"
             line="3"
             column="17"/>
     </issue>
@@ -345,31 +345,9 @@
         errorLine1="gradlePlugins-agp = &quot;8.10.1&quot;"
         errorLine2="                    ~~~~~~~~">
         <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/libs.versions.toml"
+            file="$HOME/work/Calculator/Calculator/gradle/libs.versions.toml"
             line="25"
             column="21"/>
-    </issue>
-
-    <issue
-        id="GradleDependency"
-        message="A newer version of org.jetbrains.kotlin.android than 2.1.21 is available: 2.2.0"
-        errorLine1="kotlin = &quot;2.1.21&quot;"
-        errorLine2="         ~~~~~~~~">
-        <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/libs.versions.toml"
-            line="3"
-            column="10"/>
-    </issue>
-
-    <issue
-        id="GradleDependency"
-        message="A newer version of org.jetbrains.kotlin.plugin.compose than 2.1.21 is available: 2.2.0"
-        errorLine1="kotlin = &quot;2.1.21&quot;"
-        errorLine2="         ~~~~~~~~">
-        <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/libs.versions.toml"
-            line="3"
-            column="10"/>
     </issue>
 
     <issue
@@ -378,7 +356,7 @@
         errorLine1="androidx-lifecycle = &quot;2.8.7&quot;"
         errorLine2="                     ~~~~~~~">
         <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/libs.versions.toml"
+            file="$HOME/work/Calculator/Calculator/gradle/libs.versions.toml"
             line="11"
             column="22"/>
     </issue>
@@ -389,7 +367,7 @@
         errorLine1="androidx-lifecycle = &quot;2.8.7&quot;"
         errorLine2="                     ~~~~~~~">
         <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/libs.versions.toml"
+            file="$HOME/work/Calculator/Calculator/gradle/libs.versions.toml"
             line="11"
             column="22"/>
     </issue>
@@ -400,7 +378,7 @@
         errorLine1="androidx-lifecycle = &quot;2.8.7&quot;"
         errorLine2="                     ~~~~~~~">
         <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/libs.versions.toml"
+            file="$HOME/work/Calculator/Calculator/gradle/libs.versions.toml"
             line="11"
             column="22"/>
     </issue>
@@ -411,7 +389,7 @@
         errorLine1="androidx-lifecycle = &quot;2.8.7&quot;"
         errorLine2="                     ~~~~~~~">
         <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/libs.versions.toml"
+            file="$HOME/work/Calculator/Calculator/gradle/libs.versions.toml"
             line="11"
             column="22"/>
     </issue>
@@ -422,7 +400,7 @@
         errorLine1="composeActivity = &quot;1.9.3&quot;"
         errorLine2="                  ~~~~~~~">
         <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/libs.versions.toml"
+            file="$HOME/work/Calculator/Calculator/gradle/libs.versions.toml"
             line="13"
             column="19"/>
     </issue>
@@ -433,7 +411,7 @@
         errorLine1="compose = &quot;1.7.8&quot;"
         errorLine2="          ~~~~~~~">
         <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/libs.versions.toml"
+            file="$HOME/work/Calculator/Calculator/gradle/libs.versions.toml"
             line="14"
             column="11"/>
     </issue>
@@ -444,7 +422,7 @@
         errorLine1="compose = &quot;1.7.8&quot;"
         errorLine2="          ~~~~~~~">
         <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/libs.versions.toml"
+            file="$HOME/work/Calculator/Calculator/gradle/libs.versions.toml"
             line="14"
             column="11"/>
     </issue>
@@ -455,7 +433,7 @@
         errorLine1="compose = &quot;1.7.8&quot;"
         errorLine2="          ~~~~~~~">
         <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/libs.versions.toml"
+            file="$HOME/work/Calculator/Calculator/gradle/libs.versions.toml"
             line="14"
             column="11"/>
     </issue>
@@ -466,7 +444,7 @@
         errorLine1="compose = &quot;1.7.8&quot;"
         errorLine2="          ~~~~~~~">
         <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/libs.versions.toml"
+            file="$HOME/work/Calculator/Calculator/gradle/libs.versions.toml"
             line="14"
             column="11"/>
     </issue>
@@ -477,7 +455,7 @@
         errorLine1="compose = &quot;1.7.8&quot;"
         errorLine2="          ~~~~~~~">
         <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/libs.versions.toml"
+            file="$HOME/work/Calculator/Calculator/gradle/libs.versions.toml"
             line="14"
             column="11"/>
     </issue>
@@ -488,7 +466,7 @@
         errorLine1="compose = &quot;1.7.8&quot;"
         errorLine2="          ~~~~~~~">
         <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/libs.versions.toml"
+            file="$HOME/work/Calculator/Calculator/gradle/libs.versions.toml"
             line="14"
             column="11"/>
     </issue>
@@ -499,7 +477,7 @@
         errorLine1="app-build-compileSDKVersion = &quot;34&quot;"
         errorLine2="                              ~~~~">
         <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/libs.versions.toml"
+            file="$HOME/work/Calculator/Calculator/gradle/libs.versions.toml"
             line="27"
             column="31"/>
     </issue>
@@ -528,7 +506,7 @@
 
     <issue
         id="MissingTranslation"
-        message="&quot;app_launcher_name&quot; is not translated in &quot;fil&quot; (Filipino; Pilipino), &quot;ur&quot; (Urdu), &quot;en&quot; (English), &quot;is&quot; (Icelandic), &quot;my&quot; (Burmese), &quot;eu&quot; (Basque), &quot;ne&quot; (Nepali), &quot;nn&quot; (Norwegian Nynorsk), &quot;bn&quot; (Bangla), &quot;br&quot; (Breton), &quot;si&quot; (Sinhala), &quot;ltg&quot;, &quot;or&quot; (Odia), &quot;sat&quot; (Santali), &quot;cr&quot; (Cree), &quot;th&quot; (Thai)"
+        message="&quot;app_launcher_name&quot; is not translated in &quot;fil&quot; (Filipino; Pilipino), &quot;ur&quot; (Urdu), &quot;is&quot; (Icelandic), &quot;my&quot; (Burmese), &quot;eu&quot; (Basque), &quot;ne&quot; (Nepali), &quot;nn&quot; (Norwegian Nynorsk), &quot;bn&quot; (Bangla), &quot;br&quot; (Breton), &quot;si&quot; (Sinhala), &quot;ltg&quot;, &quot;or&quot; (Odia), &quot;sat&quot; (Santali), &quot;cr&quot; (Cree), &quot;th&quot; (Thai)"
         errorLine1="    &lt;string name=&quot;app_launcher_name&quot;>Calculator_debug&lt;/string>"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
@@ -539,7 +517,7 @@
 
     <issue
         id="MissingTranslation"
-        message="&quot;app_launcher_name&quot; is not translated in &quot;fil&quot; (Filipino; Pilipino), &quot;ur&quot; (Urdu), &quot;en&quot; (English), &quot;is&quot; (Icelandic), &quot;my&quot; (Burmese), &quot;eu&quot; (Basque), &quot;ne&quot; (Nepali), &quot;nn&quot; (Norwegian Nynorsk), &quot;bn&quot; (Bangla), &quot;br&quot; (Breton), &quot;si&quot; (Sinhala), &quot;ltg&quot;, &quot;or&quot; (Odia), &quot;sat&quot; (Santali), &quot;cr&quot; (Cree), &quot;th&quot; (Thai)"
+        message="&quot;app_launcher_name&quot; is not translated in &quot;fil&quot; (Filipino; Pilipino), &quot;ur&quot; (Urdu), &quot;is&quot; (Icelandic), &quot;my&quot; (Burmese), &quot;eu&quot; (Basque), &quot;ne&quot; (Nepali), &quot;nn&quot; (Norwegian Nynorsk), &quot;bn&quot; (Bangla), &quot;br&quot; (Breton), &quot;si&quot; (Sinhala), &quot;ltg&quot;, &quot;or&quot; (Odia), &quot;sat&quot; (Santali), &quot;cr&quot; (Cree), &quot;th&quot; (Thai)"
         errorLine1="    &lt;string name=&quot;app_launcher_name&quot;>Calculator&lt;/string>"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
@@ -550,7 +528,7 @@
 
     <issue
         id="MissingTranslation"
-        message="&quot;scientific_calculator&quot; is not translated in &quot;fil&quot; (Filipino; Pilipino), &quot;ia&quot; (Interlingua), &quot;ur&quot; (Urdu), &quot;en&quot; (English), &quot;my&quot; (Burmese), &quot;eu&quot; (Basque), &quot;ne&quot; (Nepali), &quot;az&quot; (Azerbaijani), &quot;nn&quot; (Norwegian Nynorsk), &quot;bn&quot; (Bangla), &quot;br&quot; (Breton), &quot;si&quot; (Sinhala), &quot;ltg&quot;, &quot;or&quot; (Odia), &quot;sat&quot; (Santali), &quot;cr&quot; (Cree), &quot;th&quot; (Thai)"
+        message="&quot;scientific_calculator&quot; is not translated in &quot;fil&quot; (Filipino; Pilipino), &quot;ia&quot; (Interlingua), &quot;ur&quot; (Urdu), &quot;my&quot; (Burmese), &quot;eu&quot; (Basque), &quot;ne&quot; (Nepali), &quot;az&quot; (Azerbaijani), &quot;nn&quot; (Norwegian Nynorsk), &quot;bn&quot; (Bangla), &quot;br&quot; (Breton), &quot;si&quot; (Sinhala), &quot;ltg&quot;, &quot;or&quot; (Odia), &quot;sat&quot; (Santali), &quot;cr&quot; (Cree), &quot;th&quot; (Thai)"
         errorLine1="    &lt;string name=&quot;scientific_calculator&quot;>Scientific Calculator&lt;/string>"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
@@ -1144,7 +1122,7 @@
 
     <issue
         id="MissingTranslation"
-        message="&quot;unit_volume_legal_cup_us&quot; is not translated in &quot;fil&quot; (Filipino; Pilipino), &quot;lt&quot; (Lithuanian), &quot;hr&quot; (Croatian), &quot;lv&quot; (Latvian), &quot;hu&quot; (Hungarian), &quot;ia&quot; (Interlingua), &quot;ur&quot; (Urdu), &quot;mk&quot; (Macedonian), &quot;ml&quot; (Malayalam), &quot;ms&quot; (Malay), &quot;el&quot; (Greek), &quot;en&quot; (English), &quot;is&quot; (Icelandic), &quot;it&quot; (Italian), &quot;my&quot; (Burmese), &quot;es&quot; (Spanish), &quot;eu&quot; (Basque), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;ja&quot; (Japanese), &quot;ne&quot; (Nepali), &quot;az&quot; (Azerbaijani), &quot;fa&quot; (Persian), &quot;ro&quot; (Romanian), &quot;nn&quot; (Norwegian Nynorsk), &quot;be&quot; (Belarusian), &quot;bg&quot; (Bulgarian), &quot;bn&quot; (Bangla), &quot;br&quot; (Breton), &quot;bs&quot; (Bosnian), &quot;si&quot; (Sinhala), &quot;sk&quot; (Slovak), &quot;sl&quot; (Slovenian), &quot;zgh&quot; (Standard Moroccan Tamazight), &quot;ltg&quot;, &quot;sr&quot; (Serbian), &quot;kn&quot; (Kannada), &quot;or&quot; (Odia), &quot;ko&quot; (Korean), &quot;gl&quot; (Galician), &quot;kr&quot; (Kanuri), &quot;sat&quot; (Santali), &quot;ta&quot; (Tamil), &quot;cr&quot; (Cree), &quot;pa&quot; (Punjabi), &quot;te&quot; (Telugu), &quot;th&quot; (Thai), &quot;cy&quot; (Welsh), &quot;ckb&quot;, &quot;da&quot; (Danish), &quot;tr&quot; (Turkish)"
+        message="&quot;unit_volume_legal_cup_us&quot; is not translated in &quot;fil&quot; (Filipino; Pilipino), &quot;lt&quot; (Lithuanian), &quot;hr&quot; (Croatian), &quot;lv&quot; (Latvian), &quot;hu&quot; (Hungarian), &quot;ia&quot; (Interlingua), &quot;ur&quot; (Urdu), &quot;mk&quot; (Macedonian), &quot;ml&quot; (Malayalam), &quot;ms&quot; (Malay), &quot;el&quot; (Greek), &quot;en&quot; (English), &quot;is&quot; (Icelandic), &quot;it&quot; (Italian), &quot;my&quot; (Burmese), &quot;es&quot; (Spanish), &quot;eu&quot; (Basque), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;ja&quot; (Japanese), &quot;ne&quot; (Nepali), &quot;az&quot; (Azerbaijani), &quot;fa&quot; (Persian), &quot;ro&quot; (Romanian), &quot;nn&quot; (Norwegian Nynorsk), &quot;be&quot; (Belarusian), &quot;bg&quot; (Bulgarian), &quot;bn&quot; (Bangla), &quot;br&quot; (Breton), &quot;bs&quot; (Bosnian), &quot;si&quot; (Sinhala), &quot;sk&quot; (Slovak), &quot;sl&quot; (Slovenian), &quot;zgh&quot; (Standard Moroccan Tamazight), &quot;ltg&quot;, &quot;sr&quot; (Serbian), &quot;kn&quot; (Kannada), &quot;or&quot; (Odia), &quot;ko&quot; (Korean), &quot;gl&quot; (Galician), &quot;kr&quot; (Kanuri), &quot;sat&quot; (Santali), &quot;ta&quot; (Tamil), &quot;cr&quot; (Cree), &quot;pa&quot; (Punjabi), &quot;te&quot; (Telugu), &quot;th&quot; (Thai), &quot;cy&quot; (Welsh), &quot;ckb&quot;, &quot;da&quot; (Danish)"
         errorLine1="    &lt;string name=&quot;unit_volume_legal_cup_us&quot;>Legal Cup (US)&lt;/string>"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
@@ -1155,7 +1133,7 @@
 
     <issue
         id="MissingTranslation"
-        message="&quot;unit_volume_customary_cup_us&quot; is not translated in &quot;fil&quot; (Filipino; Pilipino), &quot;lt&quot; (Lithuanian), &quot;hr&quot; (Croatian), &quot;lv&quot; (Latvian), &quot;hu&quot; (Hungarian), &quot;ia&quot; (Interlingua), &quot;ur&quot; (Urdu), &quot;mk&quot; (Macedonian), &quot;ml&quot; (Malayalam), &quot;ms&quot; (Malay), &quot;el&quot; (Greek), &quot;en&quot; (English), &quot;is&quot; (Icelandic), &quot;it&quot; (Italian), &quot;my&quot; (Burmese), &quot;es&quot; (Spanish), &quot;eu&quot; (Basque), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;ja&quot; (Japanese), &quot;ne&quot; (Nepali), &quot;az&quot; (Azerbaijani), &quot;fa&quot; (Persian), &quot;ro&quot; (Romanian), &quot;nn&quot; (Norwegian Nynorsk), &quot;be&quot; (Belarusian), &quot;bg&quot; (Bulgarian), &quot;bn&quot; (Bangla), &quot;br&quot; (Breton), &quot;bs&quot; (Bosnian), &quot;si&quot; (Sinhala), &quot;sk&quot; (Slovak), &quot;sl&quot; (Slovenian), &quot;zgh&quot; (Standard Moroccan Tamazight), &quot;ltg&quot;, &quot;sr&quot; (Serbian), &quot;kn&quot; (Kannada), &quot;or&quot; (Odia), &quot;ko&quot; (Korean), &quot;gl&quot; (Galician), &quot;kr&quot; (Kanuri), &quot;sat&quot; (Santali), &quot;ta&quot; (Tamil), &quot;cr&quot; (Cree), &quot;pa&quot; (Punjabi), &quot;te&quot; (Telugu), &quot;th&quot; (Thai), &quot;cy&quot; (Welsh), &quot;ckb&quot;, &quot;da&quot; (Danish), &quot;tr&quot; (Turkish)"
+        message="&quot;unit_volume_customary_cup_us&quot; is not translated in &quot;fil&quot; (Filipino; Pilipino), &quot;lt&quot; (Lithuanian), &quot;hr&quot; (Croatian), &quot;lv&quot; (Latvian), &quot;hu&quot; (Hungarian), &quot;ia&quot; (Interlingua), &quot;ur&quot; (Urdu), &quot;mk&quot; (Macedonian), &quot;ml&quot; (Malayalam), &quot;ms&quot; (Malay), &quot;el&quot; (Greek), &quot;en&quot; (English), &quot;is&quot; (Icelandic), &quot;it&quot; (Italian), &quot;my&quot; (Burmese), &quot;es&quot; (Spanish), &quot;eu&quot; (Basque), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;ja&quot; (Japanese), &quot;ne&quot; (Nepali), &quot;az&quot; (Azerbaijani), &quot;fa&quot; (Persian), &quot;ro&quot; (Romanian), &quot;nn&quot; (Norwegian Nynorsk), &quot;be&quot; (Belarusian), &quot;bg&quot; (Bulgarian), &quot;bn&quot; (Bangla), &quot;br&quot; (Breton), &quot;bs&quot; (Bosnian), &quot;si&quot; (Sinhala), &quot;sk&quot; (Slovak), &quot;sl&quot; (Slovenian), &quot;zgh&quot; (Standard Moroccan Tamazight), &quot;ltg&quot;, &quot;sr&quot; (Serbian), &quot;kn&quot; (Kannada), &quot;or&quot; (Odia), &quot;ko&quot; (Korean), &quot;gl&quot; (Galician), &quot;kr&quot; (Kanuri), &quot;sat&quot; (Santali), &quot;ta&quot; (Tamil), &quot;cr&quot; (Cree), &quot;pa&quot; (Punjabi), &quot;te&quot; (Telugu), &quot;th&quot; (Thai), &quot;cy&quot; (Welsh), &quot;ckb&quot;, &quot;da&quot; (Danish)"
         errorLine1="    &lt;string name=&quot;unit_volume_customary_cup_us&quot;>Customary Cup (US)&lt;/string>"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
