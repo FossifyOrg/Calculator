@@ -1,2 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_launcher_name">Kalkulagailua</string>
+    <string name="scientific_calculator">Kalkulagailu zientifikoa</string>
+    <string name="unit_converter">Unitate bihurgailua</string>
+    <string name="swap_units">Aldatu unitateak</string>
+</resources>
