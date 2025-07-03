@@ -30,7 +30,8 @@ class CalculatorImpl(
 
     private val decimalSeparator: String get() = formatter.decimalSeparator
     private val groupingSeparator: String get() = formatter.groupingSeparator
-    private val numbersRegex: Regex get() = "[^0-9${Regex.escape(decimalSeparator)}${Regex.escape(groupingSeparator)}]".toRegex()
+    private val numbersRegex: Regex get() =
+        "[^0-9${Regex.escape(decimalSeparator)}${Regex.escape(groupingSeparator)}]".toRegex()
 
     init {
         if (stateInstance != "") {
