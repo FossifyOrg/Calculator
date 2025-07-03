@@ -5,6 +5,7 @@ kotlin = "2.1.21"
 ksp = "2.1.21-2.0.2"
 #Detekt
 detekt = "1.23.8"
+detektCompose = "0.4.22"
 #Androidx
 androidx-customView = "1.2.0"
 androidx-customViewPooling = "1.1.0"
@@ -44,6 +45,7 @@ androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "
 androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
 androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
 #Compose
+compose-detekt = { module = "io.nlopez.compose.rules:detekt", version.ref = "detektCompose" }
 compose-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "compose" }
 compose-material3 = { module = "androidx.compose.material3:material3", version.ref = "composeMaterial3" }
 compose-material-icons = { module = "androidx.compose.material:material-icons-extended", version.ref = "compose" }
