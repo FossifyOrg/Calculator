@@ -25,13 +25,10 @@ import org.fossify.commons.extensions.launchPurchaseThankYouIntent
 import org.fossify.commons.helpers.APP_ICON_IDS
 import org.fossify.commons.helpers.APP_LAUNCHER_NAME
 import org.fossify.commons.helpers.IS_CUSTOMIZING_COLORS
-import org.fossify.commons.helpers.ensureBackgroundThread
 import org.fossify.commons.helpers.isTiramisuPlus
 import org.fossify.math.compose.SettingsScreen
-import org.fossify.math.extensions.calculatorDB
 import org.fossify.math.extensions.config
 import org.fossify.math.extensions.launchChangeAppLanguageIntent
-import org.fossify.math.extensions.updateWidgets
 import java.util.Locale
 import kotlin.system.exitProcess
 
@@ -54,8 +51,6 @@ class SettingsActivity : AppCompatActivity() {
                     .collectAsStateWithLifecycle(preferences.wasUseEnglishToggled)
                 val useEnglishFlow by preferences.useEnglishFlow
                     .collectAsStateWithLifecycle(preferences.useEnglish)
-                val useCommaAsDecimalMarkFlow by preferences.useCommaAsDecimalMarkFlow
-                    .collectAsStateWithLifecycle(preferences.useCommaAsDecimalMark)
                 val showCheckmarksOnSwitches by config.showCheckmarksOnSwitchesFlow
                     .collectAsStateWithLifecycle(initialValue = config.showCheckmarksOnSwitches)
                 val isUseEnglishEnabled by remember(wasUseEnglishToggledFlow) {
@@ -84,14 +79,6 @@ class SettingsActivity : AppCompatActivity() {
                         exitProcess(0)
                     },
                     onSetupLanguagePress = ::launchChangeAppLanguageIntent,
-                    useCommaAsDecimalMarkFlow = useCommaAsDecimalMarkFlow,
-                    onUseCommaAsDecimalMarkFlow = { isChecked ->
-                        preferences.useCommaAsDecimalMark = isChecked
-                        updateWidgets()
-                        ensureBackgroundThread {
-                            applicationContext.calculatorDB.deleteHistory()
-                        }
-                    },
                     showCheckmarksOnSwitches = showCheckmarksOnSwitches,
                     lockedCustomizeColorText = getCustomizeColorsString(),
                     featureLockedDialogState = featureLockedDialogState

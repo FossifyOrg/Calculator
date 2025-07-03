@@ -29,13 +29,10 @@ import org.fossify.math.databinding.ActivityMainBinding
 import org.fossify.math.dialogs.HistoryDialog
 import org.fossify.math.extensions.config
 import org.fossify.math.extensions.updateViewColors
-import org.fossify.math.extensions.updateWidgets
 import org.fossify.math.helpers.CALCULATOR_STATE
-import org.fossify.math.helpers.COMMA
 import org.fossify.math.helpers.Calculator
 import org.fossify.math.helpers.CalculatorImpl
 import org.fossify.math.helpers.DIVIDE
-import org.fossify.math.helpers.DOT
 import org.fossify.math.helpers.HistoryHelper
 import org.fossify.math.helpers.MINUS
 import org.fossify.math.helpers.MULTIPLY
@@ -43,13 +40,11 @@ import org.fossify.math.helpers.PERCENT
 import org.fossify.math.helpers.PLUS
 import org.fossify.math.helpers.POWER
 import org.fossify.math.helpers.ROOT
+import org.fossify.math.helpers.getDecimalSeparator
 
 class MainActivity : SimpleActivity(), Calculator {
     private var storedTextColor = 0
     private var vibrateOnButtonPress = true
-    private var storedUseCommaAsDecimalMark = false
-    private var decimalSeparator = DOT
-    private var groupingSeparator = COMMA
     private var saveCalculatorState: String = ""
     private lateinit var calc: CalculatorImpl
 
@@ -77,8 +72,6 @@ class MainActivity : SimpleActivity(), Calculator {
         calc = CalculatorImpl(
             calculator = this,
             context = applicationContext,
-            decimalSeparator = decimalSeparator,
-            groupingSeparator = groupingSeparator,
             calculatorState = saveCalculatorState
         )
         binding.btnPlus?.setOnClickOperation(PLUS)
@@ -108,7 +101,7 @@ class MainActivity : SimpleActivity(), Calculator {
         AutofitHelper.create(binding.formula)
         storeStateVariables()
         binding.calculatorHolder?.let { updateViewColors(it, getProperTextColor()) }
-        setupDecimalSeparator()
+        setupDecimalButton()
         checkAppOnSDCard()
     }
 
@@ -123,11 +116,7 @@ class MainActivity : SimpleActivity(), Calculator {
             window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
         }
 
-        if (storedUseCommaAsDecimalMark != config.useCommaAsDecimalMark) {
-            setupDecimalSeparator()
-            updateWidgets()
-        }
-
+        setupDecimalButton()
         vibrateOnButtonPress = config.vibrateOnButtonPress
 
         binding.apply {
@@ -194,7 +183,6 @@ class MainActivity : SimpleActivity(), Calculator {
     private fun storeStateVariables() {
         config.apply {
             storedTextColor = textColor
-            storedUseCommaAsDecimalMark = useCommaAsDecimalMark
         }
     }
 
@@ -293,17 +281,8 @@ class MainActivity : SimpleActivity(), Calculator {
         binding.formula?.text = value
     }
 
-    private fun setupDecimalSeparator() {
-        storedUseCommaAsDecimalMark = config.useCommaAsDecimalMark
-        if (storedUseCommaAsDecimalMark) {
-            decimalSeparator = COMMA
-            groupingSeparator = DOT
-        } else {
-            decimalSeparator = DOT
-            groupingSeparator = COMMA
-        }
-        calc.updateSeparators(decimalSeparator, groupingSeparator)
-        binding.btnDecimal?.text = decimalSeparator
+    private fun setupDecimalButton() {
+        binding.btnDecimal?.text = getDecimalSeparator()
     }
 
     private fun View.setVibratingOnClickListener(callback: (view: View) -> Unit) {

@@ -13,8 +13,6 @@ import java.math.BigDecimal
 class CalculatorImpl(
     calculator: Calculator,
     private val context: Context,
-    private var decimalSeparator: String = DOT,
-    private var groupingSeparator: String = COMMA,
     calculatorState: String = ""
 ) {
     private var callback: Calculator? = calculator
@@ -28,10 +26,11 @@ class CalculatorImpl(
     private var lastOperation = ""
     private val operations = listOf("+", "-", "×", "÷", "^", "%", "√")
     private val operationsRegex = "[-+×÷^%√]".toPattern()
-    private val numbersRegex = "[^0-9,.]".toRegex()
-    private val formatter = NumberFormatHelper(
-        decimalSeparator = decimalSeparator, groupingSeparator = groupingSeparator
-    )
+    private val formatter = NumberFormatHelper()
+
+    private val decimalSeparator: String get() = formatter.decimalSeparator
+    private val groupingSeparator: String get() = formatter.groupingSeparator
+    private val numbersRegex: Regex get() = "[^0-9${Regex.escape(decimalSeparator)}${Regex.escape(groupingSeparator)}]".toRegex()
 
     init {
         if (stateInstance != "") {
@@ -287,7 +286,7 @@ class CalculatorImpl(
                     return
                 }
 
-                // handle percents manually, it doesn't seem to be possible via EvalEx. 
+                // handle percents manually, it doesn't seem to be possible via EvalEx.
                 // "%" is used only for modulo there
                 // handle cases like 10%200 here
                 val result = if (sign == "%") {
@@ -457,17 +456,6 @@ class CalculatorImpl(
         inputDisplayedFormula = number
         addThousandsDelimiter()
         showNewResult(inputDisplayedFormula)
-    }
-
-    fun updateSeparators(decimalSeparator: String, groupingSeparator: String) {
-        if (this.decimalSeparator != decimalSeparator || this.groupingSeparator != groupingSeparator) {
-            this.decimalSeparator = decimalSeparator
-            this.groupingSeparator = groupingSeparator
-            formatter.decimalSeparator = decimalSeparator
-            formatter.groupingSeparator = groupingSeparator
-            // future: maybe update the formulas with new separators instead of resetting the whole thing
-            handleReset()
-        }
     }
 
     private fun BigDecimal.format() = formatter.bigDecimalToString(this)

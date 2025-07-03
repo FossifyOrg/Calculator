@@ -17,11 +17,10 @@ import org.fossify.math.R
 import org.fossify.math.databinding.ActivityUnitConverterBinding
 import org.fossify.math.extensions.config
 import org.fossify.math.extensions.updateViewColors
-import org.fossify.math.helpers.COMMA
 import org.fossify.math.helpers.CONVERTER_STATE
-import org.fossify.math.helpers.DOT
 import org.fossify.math.helpers.converters.Converter
 import org.fossify.math.helpers.converters.TemperatureConverter
+import org.fossify.math.helpers.getDecimalSeparator
 import org.fossify.math.views.ConverterView
 
 class UnitConverterActivity : SimpleActivity(), ConverterView.OnUnitChangedListener {
@@ -125,7 +124,7 @@ class UnitConverterActivity : SimpleActivity(), ConverterView.OnUnitChangedListe
             window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
         }
 
-        setupDecimalSeparator()
+        setupDecimalButton()
 
         vibrateOnButtonPress = config.vibrateOnButtonPress
 
@@ -196,21 +195,8 @@ class UnitConverterActivity : SimpleActivity(), ConverterView.OnUnitChangedListe
         }
     }
 
-    private fun setupDecimalSeparator() {
-        val decimalSeparator: String
-        val groupingSeparator: String
-        if (config.useCommaAsDecimalMark) {
-            decimalSeparator = COMMA
-            groupingSeparator = DOT
-        } else {
-            decimalSeparator = DOT
-            groupingSeparator = COMMA
-        }
-        binding.viewUnitConverter.viewConverter.root.updateSeparators(
-            decimalSeparator = decimalSeparator,
-            groupingSeparator = groupingSeparator
-        )
-        binding.viewUnitConverter.btnDecimal.text = decimalSeparator
+    private fun setupDecimalButton() {
+        binding.viewUnitConverter.btnDecimal.text = getDecimalSeparator()
     }
 
     private fun updatePlusMinusButton() {

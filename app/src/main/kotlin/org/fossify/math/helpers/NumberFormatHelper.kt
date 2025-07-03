@@ -3,21 +3,18 @@ package org.fossify.math.helpers
 import java.math.BigDecimal
 import java.text.DecimalFormat
 import java.text.DecimalFormatSymbols
-import java.util.Locale
 
-class NumberFormatHelper(
-    var decimalSeparator: String = DOT,
-    var groupingSeparator: String = COMMA
-) {
+class NumberFormatHelper {
 
     companion object {
         private const val MAX_FRACTION_DIGITS = 15
     }
 
+    val decimalSeparator: String = getDecimalSeparator()
+    val groupingSeparator: String = getGroupingSeparator()
+
     fun bigDecimalToString(bd: BigDecimal): String {
-        val symbols = DecimalFormatSymbols(Locale.US)
-        symbols.decimalSeparator = decimalSeparator.single()
-        symbols.groupingSeparator = groupingSeparator.single()
+        val symbols = DecimalFormatSymbols.getInstance()
 
         val formatter = DecimalFormat()
         formatter.maximumFractionDigits = MAX_FRACTION_DIGITS
@@ -43,10 +40,14 @@ class NumberFormatHelper(
     }
 
     fun removeGroupingSeparator(str: String): String {
-        return str.replace(groupingSeparator, "").replace(decimalSeparator, DOT)
+        return str.replace(groupingSeparator, "").replace(decimalSeparator, ".")
     }
 }
 
 fun getDecimalSeparator(): String {
     return DecimalFormatSymbols.getInstance().decimalSeparator.toString()
+}
+
+fun getGroupingSeparator(): String {
+    return DecimalFormatSymbols.getInstance().groupingSeparator.toString()
 }

@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Replaced setting for using comma with using system's locale ([#64])
 - Updated translations
 
 ## [1.0.5] - 2025-06-17
@@ -64,3 +65,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 [#44]: https://github.com/FossifyOrg/Calculator/issues/44
 [#6]: https://github.com/FossifyOrg/Calculator/issues/6
+[#64]: https://github.com/FossifyOrg/Calculator/issues/64
