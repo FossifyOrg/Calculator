@@ -86,7 +86,7 @@
     <string name="unit_time_hour">घंटा</string>
     <string name="unit_time_minute">मिनट</string>
     <string name="unit_time_second">सेकंड</string>
-    <string name="unit_time_millisecond">माइक्रोसेकंड</string>
+    <string name="unit_time_millisecond">मिलीसेकंड</string>
     <string name="unit_time_day">दिन</string>
     <string name="unit_time_week">सप्ताह</string>
     <string name="unit_time_year">वर्ष</string>
