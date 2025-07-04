@@ -4,4 +4,15 @@
     <string name="scientific_calculator">Kalkulagailu zientifikoa</string>
     <string name="unit_converter">Unitate bihurgailua</string>
     <string name="swap_units">Aldatu unitateak</string>
+    <string name="formula_divide_by_zero_error">Errorea: zati zero</string>
+    <string name="history">Historia</string>
+    <string name="history_empty">Historia hutsik dago</string>
+    <string name="clear_history">Garbitu</string>
+    <string name="history_cleared">Historia garbitu da</string>
+    <string name="vibrate_on_button_press">Dardara egin botoia sakatzean</string>
+    <string name="unit_length">Luzera</string>
+    <string name="unit_length_kilometer">Kilometro</string>
+    <string name="unit_length_meter">Metro</string>
+    <string name="unit_length_centimeter">Zentimetro</string>
+    <string name="unit_length_millimeter">Milimetro</string>
 </resources>
