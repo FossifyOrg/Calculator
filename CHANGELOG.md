@@ -18,11 +18,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
  
- - Removed comma-decimal toggle to follow system locale ([#64])
+- Removed comma-decimal toggle to follow system locale ([#64])
 
 ### Fixed
 
-- Corrected mislabeled millisecond unit in converter
+- Corrected mislabeled millisecond unit in the converter
 
 ## [1.0.5] - 2025-06-17
 
