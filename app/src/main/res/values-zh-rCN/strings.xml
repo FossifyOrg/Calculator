@@ -79,7 +79,7 @@
     <string name="unit_time">时间</string>
     <string name="unit_time_hour">小时</string>
     <string name="unit_time_second">秒</string>
-    <string name="unit_time_millisecond">微秒</string>
+    <string name="unit_time_millisecond">毫秒</string>
     <string name="unit_time_week">周</string>
     <string name="unit_time_year">年</string>
     <string name="faq_1_title">如何使用 C（清除）按钮？</string>
