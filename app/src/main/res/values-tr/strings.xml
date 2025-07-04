@@ -10,7 +10,6 @@
     <string name="clear_history">Temizle</string>
     <string name="history_cleared">Geçmiş temizlendi</string>
     <string name="vibrate_on_button_press">Düğmeye basıldığında titret</string>
-    <string name="use_comma_as_decimal_mark">Ondalık işareti olarak virgül kullan</string>
     <string name="unit_length">Uzunluk</string>
     <string name="unit_length_kilometer">Kilometre</string>
     <string name="unit_length_meter">Metre</string>

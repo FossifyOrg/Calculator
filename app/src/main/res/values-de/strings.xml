@@ -10,7 +10,6 @@
     <string name="clear_history">Leeren</string>
     <string name="history_cleared">Verlauf ist gelöscht worden</string>
     <string name="vibrate_on_button_press">Bei Tastendruck vibrieren</string>
-    <string name="use_comma_as_decimal_mark">Komma als Dezimaltrennzeichen verwenden</string>
     <string name="unit_length">Länge</string>
     <string name="unit_length_centimeter">Zentimeter</string>
     <string name="unit_length_micrometer">Mikrometer</string>

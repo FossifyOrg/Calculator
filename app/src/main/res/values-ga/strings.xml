@@ -4,7 +4,6 @@
     <string name="history">Stair</string>
     <string name="history_empty">Tá an stair folamh</string>
     <string name="clear_history">Glan</string>
-    <string name="use_comma_as_decimal_mark">Úsáid camóg mar mharc deachúlach</string>
     <string name="unit_length">Fad</string>
     <string name="unit_length_meter">Méadar</string>
     <string name="unit_length_centimeter">Ceintiméadar</string>

@@ -10,7 +10,6 @@
     <string name="clear_history">Apagar</string>
     <string name="history_cleared">O histórico foi apagado</string>
     <string name="vibrate_on_button_press">Vibrar ao pressionar um botão</string>
-    <string name="use_comma_as_decimal_mark">Usar virgula como marca decimal</string>
     <string name="unit_length">Comprimento</string>
     <string name="unit_length_kilometer">Quilômetro</string>
     <string name="unit_length_meter">Metro</string>

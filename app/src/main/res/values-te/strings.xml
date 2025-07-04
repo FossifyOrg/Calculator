@@ -7,7 +7,6 @@
     <string name="history_empty">చరిత్ర శూన్యం</string>
     <string name="clear_history">క్లియర్</string>
     <string name="history_cleared">చరిత్ర క్లియర్ చేయబడింది</string>
-    <string name="use_comma_as_decimal_mark">కామాను దశాంశ గుర్తుగా ఉపయోగించండి</string>
     <string name="faq_1_title">C (క్లియర్) బటన్ ఎలా పని చేస్తుంది\?</string>
     <string name="faq_1_text">దానిపై నొక్కడం ద్వారా ఒక్కో అక్షరం తీసివేయబడుతుంది. ఎక్కువసేపు నొక్కితే, అన్ని ఫీల్డ్‌లు ఒకేసారి రీసెట్ చేయబడతాయి.</string>
 </resources>

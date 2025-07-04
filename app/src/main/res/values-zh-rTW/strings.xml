@@ -10,7 +10,6 @@
     <string name="clear_history">清除</string>
     <string name="history_cleared">歷史紀錄已被清除</string>
     <string name="vibrate_on_button_press">按下按鈕時震動</string>
-    <string name="use_comma_as_decimal_mark">使用逗號作為小數點</string>
     <string name="unit_length">長度</string>
     <string name="unit_length_kilometer">公里</string>
     <string name="unit_length_meter">公尺</string>

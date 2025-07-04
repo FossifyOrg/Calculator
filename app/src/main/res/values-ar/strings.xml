@@ -10,7 +10,6 @@
     <string name="clear_history">مسح</string>
     <string name="history_cleared">تم مسح التاريخ</string>
     <string name="vibrate_on_button_press">الاهتزاز عند الضغط على الازرار</string>
-    <string name="use_comma_as_decimal_mark">استخدام الفاصلة كعلامة عشرية</string>
     <string name="unit_length">المدى</string>
     <string name="unit_length_kilometer">كيلوميتر</string>
     <string name="unit_length_meter">متر</string>

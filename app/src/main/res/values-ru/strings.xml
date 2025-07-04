@@ -10,7 +10,6 @@
     <string name="clear_history">Очистить</string>
     <string name="history_cleared">История очищена</string>
     <string name="vibrate_on_button_press">Вибрация при нажатии кнопок</string>
-    <string name="use_comma_as_decimal_mark">Использовать запятую в качестве десятичного разделителя</string>
     <string name="unit_length">Длина</string>
     <string name="unit_length_kilometer">Километр</string>
     <string name="unit_length_meter">Метр</string>

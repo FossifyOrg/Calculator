@@ -10,7 +10,6 @@
     <string name="clear_history">Izbriši</string>
     <string name="history_cleared">Historija je izbrisana</string>
     <string name="vibrate_on_button_press">Vibriraj prilikom pritiskanja gumba</string>
-    <string name="use_comma_as_decimal_mark">Koristi zarez kao decimalni znak</string>
     <string name="unit_length">Dužina</string>
     <string name="unit_length_kilometer">Kilometar</string>
     <string name="unit_length_meter">Metar</string>

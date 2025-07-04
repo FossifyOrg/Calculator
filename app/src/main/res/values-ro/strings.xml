@@ -7,7 +7,6 @@
     <string name="clear_history">Șterge</string>
     <string name="history_cleared">Istoricul a fost șters</string>
     <string name="vibrate_on_button_press">Vibrează la apăsarea butoanelor</string>
-    <string name="use_comma_as_decimal_mark">Utilizează virgula ca separator zecimal</string>
     <string name="faq_1_title">Cum funcționează butonul Ș (Șterge)\?</string>
     <string name="faq_1_text">Apăsând pe el, veți elimina câte un caracter pe rând. Apăsarea lungă va reseta toate câmpurile deodată.</string>
     <string name="unit_volume_liter">Litru</string>

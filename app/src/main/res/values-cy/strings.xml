@@ -8,7 +8,6 @@
     <string name="clear_history">Clirio</string>
     <string name="history_cleared">Mae\'r hanes wedi cael ei glirio</string>
     <string name="vibrate_on_button_press">Dirgrynu wrth wasgu botymau</string>
-    <string name="use_comma_as_decimal_mark">Defnyddio atalnod fel pwynt degol</string>
     <string name="faq_1_title">Sut mae\'r botwm C (clirio) yn gweithio?</string>
     <string name="faq_1_text">Mae ei dapio yn tynnu un rhif ar y tro. Mae ei dal yn ailosod pob maes gyda\'i gilydd ar unwaith.</string>
 </resources>

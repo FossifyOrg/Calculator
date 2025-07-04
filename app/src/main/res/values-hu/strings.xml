@@ -10,7 +10,6 @@
     <string name="clear_history">Törlés</string>
     <string name="history_cleared">Az előzmények törölve lettek</string>
     <string name="vibrate_on_button_press">Rezgés gombnyomáskor</string>
-    <string name="use_comma_as_decimal_mark">Tizedesvessző használata</string>
     <string name="unit_length">Hossz</string>
     <string name="unit_length_kilometer">Kilométer</string>
     <string name="unit_length_meter">Méter</string>

@@ -10,7 +10,6 @@
     <string name="clear_history">Очистити</string>
     <string name="history_cleared">Історію очищено</string>
     <string name="vibrate_on_button_press">Вібрувати під час натискання кнопок</string>
-    <string name="use_comma_as_decimal_mark">Використовувати кому як розділювач десяткових чисел</string>
     <string name="unit_length">Довжина</string>
     <string name="unit_length_kilometer">Кілометр</string>
     <string name="unit_length_meter">Метр</string>

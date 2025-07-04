@@ -8,7 +8,6 @@
     <string name="clear_history">Limpar</string>
     <string name="history_cleared">Borrouse o historial</string>
     <string name="vibrate_on_button_press">Vibrar ao premer nun botón</string>
-    <string name="use_comma_as_decimal_mark">Usar cómaa como marca decimal</string>
     <string name="faq_1_title">Como funciona o botón C (Borrar)?</string>
     <string name="faq_1_text">O premer, eliminarase un carácter á vez. O premer de forma continua, restableceranse todos os campos á vez.</string>
 </resources>

@@ -8,7 +8,6 @@
     <string name="clear_history">クリア</string>
     <string name="history_cleared">履歴をクリアしました</string>
     <string name="vibrate_on_button_press">ボタンを押した時に振動</string>
-    <string name="use_comma_as_decimal_mark">カンマを小数点として使う</string>
     <string name="faq_1_title">C (クリア) ボタンはどのように機能しますか？</string>
     <string name="faq_1_text">ボタンをタップするたびに1文字ずつ削除されます。ボタンを長押しするとすべてのフィールドがリセットされます。</string>
     <string name="unit_mass_pound">ポンド</string>
