@@ -33,7 +33,7 @@
     <string name="unit_time_minute">Минута</string>
     <string name="unit_time">Време</string>
     <string name="unit_time_second">Секунда</string>
-    <string name="unit_time_millisecond">Микросекунда</string>
+    <string name="unit_time_millisecond">Милисекунда</string>
     <string name="unit_temperature_kelvin">Келвин</string>
     <string name="unit_length_light_year">Светлинна година</string>
     <string name="unit_area_square_kilometer">Квадратен километър</string>
