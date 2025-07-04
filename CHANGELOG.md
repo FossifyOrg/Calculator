@@ -10,12 +10,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Support for negative temperature conversion ([#44])
-- Usage of higher precision numbers ([#6])
 
 ### Changed
 
-- Replaced setting for using comma with using system's locale ([#64])
+- Improved calculation precision to prevent rounding errors ([#6])
 - Updated translations
+
+### Removed
+ 
+ - Removed comma-decimal toggle to follow system locale ([#64])
+
+### Fixed
+
+- Corrected mislabeled millisecond unit in converter
 
 ## [1.0.5] - 2025-06-17
 
