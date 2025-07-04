@@ -71,7 +71,7 @@
     <string name="unit_time">Aeg</string>
     <string name="unit_time_hour">Tund</string>
     <string name="unit_time_second">Sekund</string>
-    <string name="unit_time_millisecond">Mikrosekund</string>
+    <string name="unit_time_millisecond">Millisekund</string>
     <string name="unit_time_week">Nädal</string>
     <string name="unit_time_year">Aasta</string>
     <string name="faq_1_title">Kuidas C (Clear) nupp toimib\?</string>
