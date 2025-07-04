@@ -91,7 +91,7 @@
     <string name="unit_time_minute">Minuutti</string>
     <string name="unit_volume_legal_cup_us">Kuppi (US)</string>
     <string name="unit_time_second">Sekuntti</string>
-    <string name="unit_time_millisecond">Mikrosekuntti</string>
+    <string name="unit_time_millisecond">Millisekunti</string>
     <string name="unit_time_day">Päivä</string>
     <string name="unit_time_week">Viikko</string>
     <string name="unit_time_year">Vuosi</string>
