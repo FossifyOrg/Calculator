@@ -72,7 +72,7 @@
     <string name="unit_time_hour">Hora</string>
     <string name="unit_time_minute">Minut</string>
     <string name="unit_time_second">Segon</string>
-    <string name="unit_time_millisecond">Microsegon</string>
+    <string name="unit_time_millisecond">Mil·lisegon</string>
     <string name="unit_time_day">Dia</string>
     <string name="unit_time_week">Setmana</string>
     <string name="unit_time_year">Any</string>
