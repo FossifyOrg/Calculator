@@ -64,7 +64,7 @@
     <string name="unit_volume_milliliter">Mililitru</string>
     <string name="unit_volume_acre_foot">Acru foot</string>
     <string name="unit_time_second">Secundă</string>
-    <string name="unit_time_millisecond">Microsecundă</string>
+    <string name="unit_time_millisecond">Milisecundă</string>
     <string name="unit_area_acre">Acru</string>
     <string name="unit_area_hectare">Hectar</string>
     <string name="unit_volume_barrel_imperial">Baril (Imperial)</string>
