@@ -26,7 +26,7 @@
     <string name="unit_mass_pound">Pund</string>
     <string name="unit_mass_ounce">Unse</string>
     <string name="unit_time_minute">Minut</string>
-    <string name="unit_time_millisecond">Mikrosekund</string>
+    <string name="unit_time_millisecond">Millisekund</string>
     <string name="unit_time_day">Dag</string>
     <string name="unit_time_year">År</string>
     <string name="use_comma_as_decimal_mark">Brug komma som decimalmærke</string>
