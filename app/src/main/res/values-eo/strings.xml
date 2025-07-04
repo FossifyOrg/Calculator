@@ -91,7 +91,7 @@
     <string name="unit_temperature_celsius">Celsio</string>
     <string name="unit_temperature_fahrenheit">Farenhejta</string>
     <string name="unit_temperature_rankine">Rankino</string>
-    <string name="unit_time_millisecond">Mikrosekundo</string>
+    <string name="unit_time_millisecond">Milisekundo</string>
     <string name="unit_time_week">Semajno</string>
     <string name="unit_volume_legal_cup_us">Leĝa taso (Usono)</string>
     <string name="unit_volume_customary_cup_us">Kutima taso (Usono)</string>
