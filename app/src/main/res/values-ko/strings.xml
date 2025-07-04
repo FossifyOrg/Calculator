@@ -61,7 +61,7 @@
     <string name="unit_time_hour">시</string>
     <string name="unit_time_minute">분</string>
     <string name="unit_time_second">초</string>
-    <string name="unit_time_millisecond">마이크로초</string>
+    <string name="unit_time_millisecond">밀리초</string>
     <string name="unit_time_day">일</string>
     <string name="unit_time_week">주</string>
     <string name="unit_time_year">년</string>
