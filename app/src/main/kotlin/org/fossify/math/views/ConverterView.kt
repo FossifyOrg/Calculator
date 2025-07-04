@@ -27,9 +27,7 @@ import org.fossify.math.R
 import org.fossify.math.databinding.ViewConverterBinding
 import org.fossify.math.extensions.config
 import org.fossify.math.helpers.BOTTOM_UNIT
-import org.fossify.math.helpers.COMMA
 import org.fossify.math.helpers.CONVERTER_VALUE
-import org.fossify.math.helpers.DOT
 import org.fossify.math.helpers.NumberFormatHelper
 import org.fossify.math.helpers.TOP_UNIT
 import org.fossify.math.helpers.converters.Converter
@@ -47,11 +45,10 @@ class ConverterView @JvmOverloads constructor(
     private var topUnit: Converter.Unit? = null
     private var bottomUnit: Converter.Unit? = null
 
-    private var decimalSeparator: String = DOT
-    private var groupingSeparator: String = COMMA
-    private val formatter = NumberFormatHelper(
-        decimalSeparator = decimalSeparator, groupingSeparator = groupingSeparator
-    )
+    private val formatter = NumberFormatHelper()
+
+    private val decimalSeparator: String get() = formatter.decimalSeparator
+    private val groupingSeparator: String get() = formatter.groupingSeparator
 
     private var unitChangedListener: OnUnitChangedListener? = null
 
@@ -293,17 +290,6 @@ class ConverterView @JvmOverloads constructor(
             // For unit conversion, now using BigDecimal throughout
             val converted = convert(topUnit!!.withValue(topValue), bottomUnit!!).value
             binding.bottomUnitText.text = formatter.bigDecimalToString(converted)
-        }
-    }
-
-    fun updateSeparators(decimalSeparator: String, groupingSeparator: String) {
-        if (this.decimalSeparator != decimalSeparator || this.groupingSeparator != groupingSeparator) {
-            this.decimalSeparator = decimalSeparator
-            this.groupingSeparator = groupingSeparator
-            formatter.decimalSeparator = decimalSeparator
-            formatter.groupingSeparator = groupingSeparator
-            binding.topUnitText.text = "0"
-            binding.bottomUnitText.text = "0"
         }
     }
 

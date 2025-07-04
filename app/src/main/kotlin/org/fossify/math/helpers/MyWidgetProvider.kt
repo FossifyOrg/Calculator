@@ -17,9 +17,6 @@ import org.fossify.math.extensions.config
 class MyWidgetProvider : AppWidgetProvider(), Calculator {
     companion object {
         private var calc: CalculatorImpl? = null
-        private var storedUseCommaAsDecimalMark = false
-        private var decimalSeparator = DOT
-        private var groupingSeparator = COMMA
     }
 
     override fun onUpdate(
@@ -60,7 +57,7 @@ class MyWidgetProvider : AppWidgetProvider(), Calculator {
             views.applyColorFilter(R.id.widget_background, config.widgetBgColor)
 
             updateTextColors(views, config.widgetTextColor, context)
-            setupDecimalSeparator(views, config.useCommaAsDecimalMark)
+            setupDecimalButton(views)
             appWidgetManager.updateAppWidget(it, views)
         }
     }
@@ -111,7 +108,7 @@ class MyWidgetProvider : AppWidgetProvider(), Calculator {
 
     private fun myAction(action: String, context: Context) {
         if (calc == null) {
-            calc = CalculatorImpl(this, context, decimalSeparator, groupingSeparator)
+            calc = CalculatorImpl(this, context)
         }
 
         when (action) {
@@ -156,16 +153,7 @@ class MyWidgetProvider : AppWidgetProvider(), Calculator {
         calc = null
     }
 
-    private fun setupDecimalSeparator(views: RemoteViews, useCommaAsDecimalMark: Boolean) {
-        storedUseCommaAsDecimalMark = useCommaAsDecimalMark
-        if (storedUseCommaAsDecimalMark) {
-            decimalSeparator = COMMA
-            groupingSeparator = DOT
-        } else {
-            decimalSeparator = DOT
-            groupingSeparator = COMMA
-        }
-        calc?.updateSeparators(decimalSeparator, groupingSeparator)
-        views.setTextViewText(R.id.btn_decimal, decimalSeparator)
+    private fun setupDecimalButton(views: RemoteViews) {
+        views.setTextViewText(R.id.btn_decimal, getDecimalSeparator())
     }
 }

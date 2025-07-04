@@ -34,8 +34,6 @@ internal fun SettingsScreen(
     isUseEnglishChecked: Boolean,
     onUseEnglishPress: (Boolean) -> Unit,
     onSetupLanguagePress: () -> Unit,
-    useCommaAsDecimalMarkFlow: Boolean,
-    onUseCommaAsDecimalMarkFlow: (Boolean) -> Unit,
     showCheckmarksOnSwitches: Boolean,
     lockedCustomizeColorText: String,
     displayLanguage: String,
@@ -101,12 +99,6 @@ internal fun SettingsScreen(
                 onChange = onPreventPhoneFromSleeping,
                 showCheckmark = showCheckmarksOnSwitches
             )
-            SettingsSwitchComponent(
-                label = stringResource(id = R.string.use_comma_as_decimal_mark),
-                initialValue = useCommaAsDecimalMarkFlow,
-                onChange = onUseCommaAsDecimalMarkFlow,
-                showCheckmark = showCheckmarksOnSwitches
-            )
         }
     }
 }
@@ -131,8 +123,6 @@ private fun SettingsScreenPreview(
             isUseEnglishChecked = false,
             onUseEnglishPress = {},
             onSetupLanguagePress = {},
-            useCommaAsDecimalMarkFlow = false,
-            onUseCommaAsDecimalMarkFlow = {},
             lockedCustomizeColorText = "Customize Colors",
             displayLanguage = "English",
             featureLockedDialogState = rememberAlertDialogState(),

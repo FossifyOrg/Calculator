@@ -11,11 +11,6 @@ class Config(context: Context) : BaseConfig(context) {
         fun newInstance(context: Context) = Config(context)
     }
 
-    var useCommaAsDecimalMark: Boolean
-        get() = prefs.getBoolean(USE_COMMA_AS_DECIMAL_MARK, getDecimalSeparator() == COMMA)
-        set(useCommaAsDecimalMark) = prefs.edit()
-            .putBoolean(USE_COMMA_AS_DECIMAL_MARK, useCommaAsDecimalMark).apply()
-
     fun getLastConverterUnits(converter: Converter): ConverterUnitsState? {
         val storedState = prefs.getString("$CONVERTER_UNITS_PREFIX.${converter.key}", null)
         return if (!storedState.isNullOrEmpty()) {
@@ -45,5 +40,4 @@ class Config(context: Context) : BaseConfig(context) {
 
     val preventPhoneFromSleepingFlow: Flow<Boolean> = ::preventPhoneFromSleeping.asFlowNonNull()
     val vibrateOnButtonPressFlow: Flow<Boolean> = ::vibrateOnButtonPress.asFlowNonNull()
-    val useCommaAsDecimalMarkFlow: Flow<Boolean> = ::useCommaAsDecimalMark.asFlowNonNull()
 }
