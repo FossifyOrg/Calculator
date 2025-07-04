@@ -80,7 +80,7 @@
     <string name="unit_time_hour">Horas</string>
     <string name="unit_time_minute">Minutos</string>
     <string name="unit_time_second">Segundos</string>
-    <string name="unit_time_millisecond">Milissegundo</string>
+    <string name="unit_time_millisecond">Milissegundos</string>
     <string name="unit_time_day">Dias</string>
     <string name="unit_time_week">Semanas</string>
     <string name="unit_time_year">Anos</string>
