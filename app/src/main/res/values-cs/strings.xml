@@ -60,7 +60,7 @@
     <string name="unit_volume_cubic_centimeter">Centimetr krychlový</string>
     <string name="unit_volume_cubic_millimeter">Milimetr krychlový</string>
     <string name="unit_volume_cubic_foot">Stopa krychlová</string>
-    <string name="unit_time_millisecond">Mikrosekunda</string>
+    <string name="unit_time_millisecond">Milisekunda</string>
     <string name="unit_time_hour">Hodina</string>
     <string name="unit_volume_acre_foot">Akrová stopa</string>
     <string name="unit_volume_quart_us">Kvart (US)</string>
