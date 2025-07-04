@@ -57,7 +57,7 @@
     <string name="unit_mass_short_ton">ショートトン</string>
     <string name="unit_time_second">秒</string>
     <string name="unit_time_minute">分</string>
-    <string name="unit_time_millisecond">マイクロ秒</string>
+    <string name="unit_time_millisecond">ミリ秒</string>
     <string name="unit_time_day">日</string>
     <string name="unit_time_week">週</string>
     <string name="unit_time_year">年</string>
