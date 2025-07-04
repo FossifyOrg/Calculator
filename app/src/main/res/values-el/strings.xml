@@ -75,7 +75,7 @@
     <string name="unit_time_hour">Ώρα</string>
     <string name="unit_time_minute">Λεπτό</string>
     <string name="unit_time_second">Δευτερόλεπτο</string>
-    <string name="unit_time_millisecond">Μιλιδευτερόλεπτο</string>
+    <string name="unit_time_millisecond">Χιλιοδευτερόλεπτο</string>
     <string name="unit_time_day">Ημέρα</string>
     <string name="unit_time_week">Εβδομάδα</string>
     <string name="unit_time_year">Έτος</string>
