@@ -10,7 +10,6 @@
     <string name="clear_history">Kustuta</string>
     <string name="history_cleared">Ajalugu on kustutatud</string>
     <string name="vibrate_on_button_press">Nupuvajutusel vibreeri</string>
-    <string name="use_comma_as_decimal_mark">Kasuta koma kümnendmärgina</string>
     <string name="unit_length">Pikkus</string>
     <string name="unit_length_kilometer">Kilomeeter</string>
     <string name="unit_length_meter">Meeter</string>

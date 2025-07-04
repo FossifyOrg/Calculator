@@ -8,7 +8,6 @@
     <string name="clear_history">Tyhjennä</string>
     <string name="history_cleared">Historia on tyhjennetty</string>
     <string name="vibrate_on_button_press">Värähdä painikkeista</string>
-    <string name="use_comma_as_decimal_mark">Käytä pilkkua desimaalierottimena</string>
     <string name="faq_1_title">Miten C (Tyhjennä) -painike toimii\?</string>
     <string name="faq_1_text">Sen napautus poistaa yhden merkin kerrallaan ja pitkä painallus tyhjentää kaikki kentät.</string>
     <string name="unit_volume_deciliter">Decilitra</string>

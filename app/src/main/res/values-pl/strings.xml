@@ -10,7 +10,6 @@
     <string name="clear_history">Wyczyść</string>
     <string name="history_cleared">Historia została wyczyszczona</string>
     <string name="vibrate_on_button_press">Wibracja przy naciśnięciu przycisku</string>
-    <string name="use_comma_as_decimal_mark">Używaj przecinka jako separatora dziesiętnego</string>
     <string name="unit_length">Długość</string>
     <string name="unit_length_kilometer">Kilometr</string>
     <string name="unit_length_meter">Metr</string>

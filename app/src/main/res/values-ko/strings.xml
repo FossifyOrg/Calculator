@@ -8,7 +8,6 @@
     <string name="clear_history">지우기</string>
     <string name="history_cleared">기록이 지워졌습니다</string>
     <string name="vibrate_on_button_press">진동 버튼을 누릅니다</string>
-    <string name="use_comma_as_decimal_mark">쉼표를 소수점으로 사용합니다</string>
     <string name="faq_1_title">C(지우기) 버튼은 어떻게 작동합니까\?</string>
     <string name="faq_1_text">누르면 한 번에 한 문자씩 제거됩니다. 길게 누르면 모든 필드가 한 번에 재설정됩니다.</string>
     <string name="unit_converter">단위 변환기</string>

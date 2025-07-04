@@ -10,7 +10,6 @@
     <string name="clear_history">Rensa</string>
     <string name="history_cleared">Historiken har rensats</string>
     <string name="vibrate_on_button_press">Vibrera vid knapptryck</string>
-    <string name="use_comma_as_decimal_mark">Använd komma som decimaltecken</string>
     <string name="unit_length">Längd</string>
     <string name="unit_length_micrometer">Mikrometer</string>
     <string name="unit_length_angstrom">Ångström</string>

@@ -10,7 +10,6 @@
     <string name="clear_history">Neteja</string>
     <string name="history_cleared">S\'ha netejat l\'historial</string>
     <string name="vibrate_on_button_press">Vibra en prémer els botons</string>
-    <string name="use_comma_as_decimal_mark">Utilitza la coma com a marca decimal</string>
     <string name="unit_length">Longitud</string>
     <string name="unit_length_kilometer">Quilòmetre</string>
     <string name="unit_length_meter">Metre</string>

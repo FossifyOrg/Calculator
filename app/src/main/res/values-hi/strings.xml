@@ -8,7 +8,6 @@
     <string name="clear_history">स्पष्ट</string>
     <string name="history_cleared">इतिहास साफ कर दिया गया</string>
     <string name="vibrate_on_button_press">बटन प्रेस पर कंपन</string>
-    <string name="use_comma_as_decimal_mark">दशमलव चिह्न के रूप में अल्पविराम का उपयोग करें</string>
     <string name="faq_1_title">C (साफ़ करें) बटन कैसे काम करता है?</string>
     <string name="faq_1_text">इस पर टैप करने से एक बार में एक कैरेक्टर हट जाएगा। इसे लंबे समय तक दबाने पर सभी फ़ील्ड एक ही बार में रीसेट हो जाएंगी।</string>
     <string name="unit_length_angstrom">एंगस्ट्रॉम</string>

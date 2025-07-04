@@ -22,7 +22,6 @@
     <string name="history_empty">Lịch sử trống rỗng</string>
     <string name="history_cleared">Lịch sử đã bị xóa</string>
     <string name="vibrate_on_button_press">Rung khi nhấn nút</string>
-    <string name="use_comma_as_decimal_mark">Sử dụng dấu phẩy làm dấu thập phân</string>
     <string name="unit_length">Chiều dài</string>
     <string name="unit_length_meter">Mét</string>
     <string name="unit_length_millimeter">Milimét</string>

@@ -10,7 +10,6 @@
     <string name="clear_history">Εκκαθάριση</string>
     <string name="history_cleared">Το Ιστορικό εκκαθαρίστηκε</string>
     <string name="vibrate_on_button_press">Δόνηση στο πάτημα πλήκτρου</string>
-    <string name="use_comma_as_decimal_mark">Χρήση κόμματος ως δεκαδικό σημείο</string>
     <string name="unit_length">Μήκος</string>
     <string name="unit_length_kilometer">Χιλιόμετρα</string>
     <string name="unit_length_meter">Μέτρα</string>

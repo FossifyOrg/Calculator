@@ -7,7 +7,6 @@
     <string name="history">تاریخچه</string>
     <string name="history_empty">تاریخچه خالی است</string>
     <string name="clear_history">پاک کردن</string>
-    <string name="use_comma_as_decimal_mark">از کاما به عنوان علامت اعشار استفاده کنید</string>
     <string name="unit_length_kilometer">کیلومتر</string>
     <string name="unit_length_meter">متر</string>
     <string name="unit_length_centimeter">سانتی‌متر</string>

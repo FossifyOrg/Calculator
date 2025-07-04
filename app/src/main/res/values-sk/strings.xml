@@ -10,7 +10,6 @@
     <string name="clear_history">Vymazať</string>
     <string name="history_cleared">História bola vymazaná</string>
     <string name="vibrate_on_button_press">Vibrovať pri stlačení tlačidla</string>
-    <string name="use_comma_as_decimal_mark">Používať čiarku na oddelenie desatinných čísel</string>
     <string name="unit_length">Dĺžka</string>
     <string name="unit_length_millimeter">Milimeter</string>
     <string name="unit_length_micrometer">Mikrometer</string>

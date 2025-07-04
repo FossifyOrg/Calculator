@@ -10,7 +10,6 @@
     <string name="clear_history">Wissen</string>
     <string name="history_cleared">Geschiedenis is gewist</string>
     <string name="vibrate_on_button_press">Trillen bij het indrukken van toetsen</string>
-    <string name="use_comma_as_decimal_mark">Komma als decimaalteken gebruiken</string>
     <string name="unit_length">Lengte</string>
     <string name="unit_length_mile">Mijl</string>
     <string name="unit_length_foot">Voet</string>

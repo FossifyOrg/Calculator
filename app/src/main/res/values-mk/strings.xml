@@ -8,7 +8,6 @@
     <string name="clear_history">ясно</string>
     <string name="history_cleared">Историјата е исчистена</string>
     <string name="vibrate_on_button_press">Вибрирајте на копчето притиснете</string>
-    <string name="use_comma_as_decimal_mark">Користете замена како знак за децимален знак</string>
     <string name="faq_1_title">Како функционира копчето C (Clear) \?</string>
     <string name="faq_1_text">Прислушкувањето на него ќе отстрани еден лик во исто време. Долгото притискање ќе ги ресетира сите полиња одеднаш.</string>
 </resources>

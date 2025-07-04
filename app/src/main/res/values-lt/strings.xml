@@ -8,7 +8,6 @@
     <string name="clear_history">Išvalyti</string>
     <string name="history_cleared">Istorija išvalyta</string>
     <string name="vibrate_on_button_press">Vibruoti, kai paspaudžiami mygtukai</string>
-    <string name="use_comma_as_decimal_mark">Naudoti kablelį kaip dešimtainių dalių skirtuką</string>
     <string name="faq_1_title">Kaip veikia C (Išvalymo) mygtukas\?</string>
     <string name="faq_1_text">Kiekvieną kartą ant jo bakstelėjus, bus šalinama po vieną simbolį. Ilgai jį palaikius, bus iš karto atstatyti visi laukai.</string>
 </resources>

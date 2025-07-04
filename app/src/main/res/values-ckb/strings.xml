@@ -8,7 +8,6 @@
     <string name="clear_history">سڕینەوە</string>
     <string name="history_cleared">مێژوو خاوێنکرایەوە</string>
     <string name="vibrate_on_button_press">لەرزین لەکاتی دەستنان بە هێماکان</string>
-    <string name="use_comma_as_decimal_mark">بەکارهێنانی فاریزە وەک نیشانەی دەیان</string>
     <string name="faq_1_text">دەستدان لێی یەک ژمارە دەسڕێتەوە یەکجار، زیاتر دەسڕاگرتن خانەکە سفر دەکاتەوە.</string>
     <string name="faq_1_title">دوگمەی C (سڕینەوە) چۆن کارەکات؟</string>
 </resources>

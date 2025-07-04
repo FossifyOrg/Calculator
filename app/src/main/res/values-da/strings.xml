@@ -29,7 +29,6 @@
     <string name="unit_time_millisecond">Millisekund</string>
     <string name="unit_time_day">Dag</string>
     <string name="unit_time_year">År</string>
-    <string name="use_comma_as_decimal_mark">Brug komma som decimalmærke</string>
     <string name="unit_length">Længde</string>
     <string name="unit_length_fathom">Favn</string>
     <string name="unit_length_nautical_mile">Sømil</string>
