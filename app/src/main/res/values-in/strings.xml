@@ -55,7 +55,7 @@
     <string name="unit_time">Waktu</string>
     <string name="unit_time_hour">Jam</string>
     <string name="unit_time_second">Detik</string>
-    <string name="unit_time_millisecond">Mikrodetik</string>
+    <string name="unit_time_millisecond">Milidetik</string>
     <string name="unit_time_day">Hari</string>
     <string name="unit_time_week">Minggu</string>
     <string name="unit_time_year">Tahun</string>
