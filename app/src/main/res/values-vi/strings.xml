@@ -84,7 +84,7 @@
     <string name="unit_time">Thời gian</string>
     <string name="unit_time_hour">Giờ</string>
     <string name="unit_time_minute">Phút</string>
-    <string name="unit_time_millisecond">Micrô giây</string>
+    <string name="unit_time_millisecond">Mili giây</string>
     <string name="unit_time_day">Ngày</string>
     <string name="unit_time_week">Tuần</string>
     <string name="unit_time_year">Năm</string>
