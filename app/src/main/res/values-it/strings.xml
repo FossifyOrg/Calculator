@@ -64,7 +64,7 @@
     <string name="unit_time_hour">Ora</string>
     <string name="unit_time_minute">Minuto</string>
     <string name="unit_time_second">Secondo</string>
-    <string name="unit_time_millisecond">Microsecondo</string>
+    <string name="unit_time_millisecond">Millisecondo</string>
     <string name="unit_time_day">Giorno</string>
     <string name="unit_converter">Convertitore di unità</string>
     <string name="swap_units">Scambia unità</string>
