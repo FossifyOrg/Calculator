@@ -230,6 +230,9 @@ class ConverterView @JvmOverloads constructor(
         updateBottomValue()
         updateUnitLabelsAndSymbols()
         notifyUnitsChanged()
+        if (converter != null) {
+            context.config.putLastConverterUnits(converter!!, topUnit!!, bottomUnit!!)
+        }
     }
 
     private fun updateUnitLabelsAndSymbols() {
