@@ -222,7 +222,7 @@ class ConverterView @JvmOverloads constructor(
             value += digit
         }
         value = checkTemperatureLimits(value)
-        binding.topUnitText.text = formatter.formatUserInput(value)
+        binding.topUnitText.text = formatter.formatForDisplay(value)
     }
 
     fun switch() {

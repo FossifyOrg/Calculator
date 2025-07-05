@@ -4,14 +4,13 @@ import java.math.BigDecimal
 import java.text.DecimalFormat
 import java.text.DecimalFormatSymbols
 
-class NumberFormatHelper {
-
+class NumberFormatHelper(
+    val decimalSeparator: String = getDecimalSeparator(),
+    val groupingSeparator: String = getGroupingSeparator()
+) {
     companion object {
         private const val MAX_FRACTION_DIGITS = 15
     }
-
-    val decimalSeparator: String = getDecimalSeparator()
-    val groupingSeparator: String = getGroupingSeparator()
 
     fun bigDecimalToString(bd: BigDecimal): String {
         val symbols = DecimalFormatSymbols.getInstance()
@@ -33,7 +32,7 @@ class NumberFormatHelper {
     fun addGroupingSeparators(str: String): String {
         return try {
             bigDecimalToString(removeGroupingSeparator(str).toBigDecimal())
-        } catch (e: NumberFormatException) {
+        } catch (_: NumberFormatException) {
             // Return original string if it cannot be parsed as a valid number
             str
         }
@@ -43,7 +42,7 @@ class NumberFormatHelper {
         return str.replace(groupingSeparator, "").replace(decimalSeparator, ".")
     }
 
-    fun formatUserInput(input: String): String {
+    fun formatForDisplay(input: String): String {
         var formatted = addGroupingSeparators(input)
         // allow writing numbers like 0.003
         if (input.contains(decimalSeparator)) {

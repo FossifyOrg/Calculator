@@ -81,7 +81,7 @@ class CalculatorImpl(
         val valuesToCheck = numbersRegex.split(inputDisplayedFormula)
             .filter { it.trim().isNotEmpty() }
         valuesToCheck.forEach {
-            val formatted = formatter.formatUserInput(it)
+            val formatted = formatter.formatForDisplay(it)
             inputDisplayedFormula = inputDisplayedFormula.replace(it, formatted)
         }
     }
