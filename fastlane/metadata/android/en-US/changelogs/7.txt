@@ -1,0 +1,18 @@
+Added:
+
+• Support for negative temperature conversion 
+
+Changed:
+
+• Improved calculation precision to prevent rounding errors 
+• Updated translations
+
+Removed:
+
+• Removed comma-decimal toggle to follow system locale 
+
+Fixed:
+
+• Corrected mislabeled millisecond unit in the converter
+• Fixed an issue that prevented typing decimal numbers like 1.01 in the unit converter 
+
