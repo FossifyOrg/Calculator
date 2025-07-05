@@ -141,7 +141,7 @@ class ConverterView @JvmOverloads constructor(
 
     fun clear() {
         binding.topUnitText.text = "0"
-        binding.bottomUnitText.text = "0"
+        updateBottomValue()
     }
 
     fun deleteCharacter() {
