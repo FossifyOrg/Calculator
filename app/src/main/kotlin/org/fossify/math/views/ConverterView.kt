@@ -141,7 +141,7 @@ class ConverterView @JvmOverloads constructor(
 
     fun clear() {
         binding.topUnitText.text = "0"
-        binding.bottomUnitText.text = "0"
+        updateBottomValue()
     }
 
     fun deleteCharacter() {
@@ -381,11 +381,17 @@ class ConverterView @JvmOverloads constructor(
 
         return when (topUnit?.key) {
             TemperatureConverter.Unit.Celsius.key -> {
-                if (numericValue < BigDecimal("-273.15")) "-273.15" else value
+                val minCelsius = BigDecimal("-273.15")
+                if (numericValue < minCelsius) formatter.bigDecimalToString(minCelsius) else value
             }
 
             TemperatureConverter.Unit.Fahrenheit.key -> {
-                if (numericValue < BigDecimal("-459.67")) "-459.67" else value
+                val minFahrenheit = BigDecimal("-459.67")
+                if (numericValue < minFahrenheit) {
+                    formatter.bigDecimalToString(minFahrenheit)
+                } else {
+                    value
+                }
             }
 
             TemperatureConverter.Unit.Kelvin.key,
