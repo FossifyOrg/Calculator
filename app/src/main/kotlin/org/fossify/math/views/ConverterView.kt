@@ -221,7 +221,6 @@ class ConverterView @JvmOverloads constructor(
         } else {
             value += digit
         }
-        value = checkTemperatureLimits(value)
         binding.topUnitText.text = formatter.formatForDisplay(value)
     }
 
@@ -230,6 +229,9 @@ class ConverterView @JvmOverloads constructor(
         updateBottomValue()
         updateUnitLabelsAndSymbols()
         notifyUnitsChanged()
+        if (converter != null) {
+            context.config.putLastConverterUnits(converter!!, topUnit!!, bottomUnit!!)
+        }
     }
 
     private fun updateUnitLabelsAndSymbols() {
@@ -265,10 +267,15 @@ class ConverterView @JvmOverloads constructor(
 
     private fun updateBottomValue() {
         converter?.apply {
+            val rawText = binding.topUnitText.text.toString()
+            val clampedText = checkTemperatureLimits(rawText)
+            if (clampedText != rawText) {
+                binding.topUnitText.text = clampedText
+            }
+
             @Suppress("SwallowedException")
             val topValue = try {
-                formatter.removeGroupingSeparator(binding.topUnitText.text.toString())
-                    .toBigDecimal()
+                formatter.removeGroupingSeparator(clampedText).toBigDecimal()
             } catch (_: NumberFormatException) {
                 // Return zero if input cannot be parsed as a valid number
                 BigDecimal.ZERO
@@ -356,8 +363,6 @@ class ConverterView @JvmOverloads constructor(
             value.startsWith("-") -> value.substring(1)
             else -> "-$value"
         }
-
-        value = checkTemperatureLimits(value)
 
         binding.topUnitText.text = value
         updateBottomValue()
