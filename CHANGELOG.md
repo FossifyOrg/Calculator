@@ -23,6 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - Corrected mislabeled millisecond unit in the converter
+- Fixed an issue that prevented typing decimal numbers like 1.01 in the unit converter ([#31])
 
 ## [1.0.5] - 2025-06-17
 
@@ -70,6 +71,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [1.0.1]: https://github.com/FossifyOrg/Calculator/compare/1.0.0...1.0.1
 [1.0.0]: https://github.com/FossifyOrg/Calculator/releases/tag/1.0.0
 
-[#44]: https://github.com/FossifyOrg/Calculator/issues/44
 [#6]: https://github.com/FossifyOrg/Calculator/issues/6
+[#31]: https://github.com/FossifyOrg/Calculator/issues/31
+[#44]: https://github.com/FossifyOrg/Calculator/issues/44
 [#64]: https://github.com/FossifyOrg/Calculator/issues/64
