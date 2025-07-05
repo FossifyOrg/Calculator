@@ -81,16 +81,8 @@ class CalculatorImpl(
         val valuesToCheck = numbersRegex.split(inputDisplayedFormula)
             .filter { it.trim().isNotEmpty() }
         valuesToCheck.forEach {
-            var newString = formatter.addGroupingSeparators(it)
-
-            // allow writing numbers like 0.003
-            if (it.contains(decimalSeparator)) {
-                val firstPart = newString.substringBefore(decimalSeparator)
-                val lastPart = it.substringAfter(decimalSeparator)
-                newString = "$firstPart$decimalSeparator$lastPart"
-            }
-
-            inputDisplayedFormula = inputDisplayedFormula.replace(it, newString)
+            val formatted = formatter.formatUserInput(it)
+            inputDisplayedFormula = inputDisplayedFormula.replace(it, formatted)
         }
     }
 

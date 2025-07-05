@@ -222,15 +222,7 @@ class ConverterView @JvmOverloads constructor(
             value += digit
         }
         value = checkTemperatureLimits(value)
-        var formattedValue = formatter.addGroupingSeparators(value)
-
-        // allow writing numbers like 0.003 (copied from CalculatorImpl)
-        if (value.contains(decimalSeparator)) {
-            val firstPart = formattedValue.substringBefore(decimalSeparator)
-            val lastPart = value.substringAfter(decimalSeparator)
-            formattedValue = "$firstPart$decimalSeparator$lastPart"
-        }
-        binding.topUnitText.text = formattedValue
+        binding.topUnitText.text = formatter.formatUserInput(value)
     }
 
     fun switch() {

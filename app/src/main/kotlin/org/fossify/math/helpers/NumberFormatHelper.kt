@@ -42,6 +42,18 @@ class NumberFormatHelper {
     fun removeGroupingSeparator(str: String): String {
         return str.replace(groupingSeparator, "").replace(decimalSeparator, ".")
     }
+
+    fun formatUserInput(input: String): String {
+        var formatted = addGroupingSeparators(input)
+        // allow writing numbers like 0.003
+        if (input.contains(decimalSeparator)) {
+            val firstPart = formatted.substringBefore(decimalSeparator)
+            val lastPart = input.substringAfter(decimalSeparator)
+            formatted = "$firstPart$decimalSeparator$lastPart"
+        }
+
+        return formatted
+    }
 }
 
 fun getDecimalSeparator(): String {
