@@ -92,4 +92,6 @@
     <string name="unit_length_fathom">Nutički konop</string>
     <string name="unit_mass_kilogram">Kilogram</string>
     <string name="unit_mass_gram">Gram</string>
+    <string name="unit_volume_legal_cup_us">Legal Cup (SAD)</string>
+    <string name="unit_volume_customary_cup_us">Customary Cup (SAD)</string>
 </resources>
