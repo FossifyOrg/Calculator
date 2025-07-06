@@ -1,3 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_launcher_name">ماشیݩ هساو</string>
+    <string name="scientific_calculator">ماشیݩ هساو موهندسی</string>
+    <string name="unit_converter">موبدل واهڌ</string>
+    <string name="swap_units">آلشت واهڌا</string>
+    <string name="formula_divide_by_zero_error">ختا: تقسیم ری سفر</string>
+    <string name="history">ویرگار</string>
+    <string name="history_empty">ویرگار پتی هڌ</string>
+    <string name="clear_history">پاک کردن</string>
+    <string name="history_cleared">ویرگار پاک وابی</string>
+    <string name="unit_length">تۊل</string>
+    <string name="unit_length_kilometer">کیلۊمتر</string>
+    <string name="unit_length_meter">متر</string>
+    <string name="unit_length_centimeter">سانتی متر</string>
+    <string name="unit_length_millimeter">میلی متر</string>
+    <string name="unit_length_micrometer">میکرو متر</string>
+    <string name="unit_length_nanometer">نانو متر</string>
+    <string name="unit_length_angstrom">آنگستروم</string>
 </resources>
