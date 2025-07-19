@@ -74,4 +74,6 @@
     <string name="unit_time_year">Rok</string>
     <string name="faq_1_title">Ako funguje tlačidlo C?</string>
     <string name="faq_1_text">Jedným stlačením viete vymazať 1 znak. Dlhé podržanie vymaže všetky polia naraz.</string>
+    <string name="unit_length_kilometer">Kilometer</string>
+    <string name="unit_length_meter">Meter</string>
 </resources>
