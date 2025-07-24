@@ -14,7 +14,7 @@
     <string name="unit_length_millimeter">Milimeter</string>
     <string name="unit_length_micrometer">Mikrometer</string>
     <string name="unit_length_mile">Míľa</string>
-    <string name="unit_length_foot">Noha</string>
+    <string name="unit_length_foot">Stopa</string>
     <string name="unit_length_inch">Palec</string>
     <string name="unit_length_nautical_mile">Námorná míľa</string>
     <string name="unit_length_astronomical_unit">Astronomická jednotka</string>
@@ -27,7 +27,7 @@
     <string name="unit_area_square_millimeter">Milimeter štvorcový</string>
     <string name="unit_area_square_mile">Míľa štvorcová</string>
     <string name="unit_area_square_yard">Yard štvorcový</string>
-    <string name="unit_area_square_foot">Noha štvorcová</string>
+    <string name="unit_area_square_foot">Stopa štvorcová</string>
     <string name="unit_area_square_inch">Palec štvorcový</string>
     <string name="unit_area_acre">Aker</string>
     <string name="unit_area_hectare">Hektár</string>
@@ -55,7 +55,7 @@
     <string name="unit_mass_microgram">Mikrogram</string>
     <string name="unit_mass_tonne">Tona</string>
     <string name="unit_mass_pound">Libra</string>
-    <string name="unit_mass_ounce">Uncia</string>
+    <string name="unit_mass_ounce">Unca</string>
     <string name="unit_mass_grain">Zrno</string>
     <string name="unit_mass_stone">Kameň</string>
     <string name="unit_mass_long_ton">Dlhá tona</string>
@@ -63,7 +63,7 @@
     <string name="unit_mass_carat">Karát</string>
     <string name="unit_mass_carat_metric">Karát (Metrický)</string>
     <string name="unit_temperature">Teplota</string>
-    <string name="unit_temperature_celsius">Celzius</string>
+    <string name="unit_temperature_celsius">Stupeň Celzia</string>
     <string name="unit_time">Čas</string>
     <string name="unit_time_hour">Hodina</string>
     <string name="unit_time_minute">Minúta</string>
@@ -76,4 +76,22 @@
     <string name="faq_1_text">Jedným stlačením viete vymazať 1 znak. Dlhé podržanie vymaže všetky polia naraz.</string>
     <string name="unit_length_kilometer">Kilometer</string>
     <string name="unit_length_meter">Meter</string>
+    <string name="unit_length_centimeter">Centimeter</string>
+    <string name="unit_length_nanometer">Nanometer</string>
+    <string name="unit_length_fathom">Siaha</string>
+    <string name="unit_length_angstrom">Angström</string>
+    <string name="unit_length_yard">Yard</string>
+    <string name="unit_volume_liter">Liter</string>
+    <string name="unit_volume_centiliter">Centiliter</string>
+    <string name="unit_volume_deciliter">Deciliter</string>
+    <string name="unit_volume_quart_us">Kvart (US)</string>
+    <string name="unit_volume_legal_cup_us">Legal Cup (US)</string>
+    <string name="unit_volume_customary_cup_us">Customary Cup (US)</string>
+    <string name="unit_volume_gill_us">Gill (US)</string>
+    <string name="unit_mass_gram">Gram</string>
+    <string name="unit_mass_kilogram">Kilogram</string>
+    <string name="unit_temperature_fahrenheit">Stupeň Fahrenheita</string>
+    <string name="unit_temperature_rankine">Stupeň Rankina</string>
+    <string name="unit_temperature_kelvin">Kelvin</string>
+    <string name="unit_mass_dram">Dram</string>
 </resources>
