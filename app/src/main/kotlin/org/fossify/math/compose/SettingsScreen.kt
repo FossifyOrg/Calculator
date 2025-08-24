@@ -5,8 +5,6 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.PreviewParameter
-import org.fossify.commons.compose.alert_dialog.AlertDialogState
-import org.fossify.commons.compose.alert_dialog.rememberAlertDialogState
 import org.fossify.commons.compose.extensions.BooleanPreviewParameterProvider
 import org.fossify.commons.compose.extensions.MyDevices
 import org.fossify.commons.compose.lists.SimpleColumnScaffold
@@ -35,9 +33,7 @@ internal fun SettingsScreen(
     onUseEnglishPress: (Boolean) -> Unit,
     onSetupLanguagePress: () -> Unit,
     showCheckmarksOnSwitches: Boolean,
-    lockedCustomizeColorText: String,
-    displayLanguage: String,
-    featureLockedDialogState: AlertDialogState
+    displayLanguage: String
 ) {
     SimpleColumnScaffold(
         title = stringResource(id = org.fossify.commons.R.string.settings),
@@ -47,13 +43,9 @@ internal fun SettingsScreen(
             SettingsTitleTextComponent(text = stringResource(id = org.fossify.commons.R.string.color_customization))
         }) {
             SettingsPreferenceComponent(
-                label = lockedCustomizeColorText,
+                label = stringResource(id = org.fossify.commons.R.string.customize_colors),
                 doOnPreferenceClick = {
-                    if (isOrWasThankYouInstalled) {
-                        customizeColors()
-                    } else {
-                        featureLockedDialogState.show()
-                    }
+                    customizeColors()
                 },
                 preferenceLabelColor = MaterialTheme.colorScheme.onSurface
             )
@@ -123,9 +115,7 @@ private fun SettingsScreenPreview(
             isUseEnglishChecked = false,
             onUseEnglishPress = {},
             onSetupLanguagePress = {},
-            lockedCustomizeColorText = "Customize Colors",
             displayLanguage = "English",
-            featureLockedDialogState = rememberAlertDialogState(),
             showCheckmarksOnSwitches = showCheckmarksOnSwitches
         )
     }

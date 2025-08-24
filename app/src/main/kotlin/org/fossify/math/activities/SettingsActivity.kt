@@ -5,21 +5,17 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
-import androidx.compose.runtime.Composable
 import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.platform.LocalContext
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import org.fossify.commons.activities.CustomizationActivity
-import org.fossify.commons.compose.alert_dialog.rememberAlertDialogState
 import org.fossify.commons.compose.extensions.enableEdgeToEdgeSimple
 import org.fossify.commons.compose.extensions.onEventValue
 import org.fossify.commons.compose.theme.AppThemeSurface
 import org.fossify.commons.compose.theme.getAppIconIds
 import org.fossify.commons.compose.theme.getAppLauncherName
-import org.fossify.commons.dialogs.FeatureLockedAlertDialog
-import org.fossify.commons.extensions.getCustomizeColorsString
 import org.fossify.commons.extensions.isOrWasThankYouInstalled
 import org.fossify.commons.extensions.launchPurchaseThankYouIntent
 import org.fossify.commons.helpers.APP_ICON_IDS
@@ -58,13 +54,14 @@ class SettingsActivity : AppCompatActivity() {
                         (wasUseEnglishToggledFlow || Locale.getDefault().language != "en") && !isTiramisuPlus()
                     }
                 }
-                val isOrWasThankYouInstalled = onEventValue { context.isOrWasThankYouInstalled() }
+                val isOrWasThankYouInstalled = onEventValue {
+                    context.isOrWasThankYouInstalled(allowPretend = false)
+                }
                 val displayLanguage = remember { Locale.getDefault().displayLanguage }
-                val featureLockedDialogState = getFeatureLockedDialogState()
                 SettingsScreen(
                     displayLanguage = displayLanguage,
                     goBack = ::finish,
-                    customizeColors = ::handleCustomizeColorsClick,
+                    customizeColors = ::startCustomizationActivity,
                     customizeWidgetColors = ::setupCustomizeWidgetColors,
                     preventPhoneFromSleeping = preventPhoneFromSleeping,
                     onPreventPhoneFromSleeping = preferences::preventPhoneFromSleeping::set,
@@ -80,22 +77,12 @@ class SettingsActivity : AppCompatActivity() {
                     },
                     onSetupLanguagePress = ::launchChangeAppLanguageIntent,
                     showCheckmarksOnSwitches = showCheckmarksOnSwitches,
-                    lockedCustomizeColorText = getCustomizeColorsString(),
-                    featureLockedDialogState = featureLockedDialogState
                 )
             }
         }
     }
 
-    @Composable
-    private fun getFeatureLockedDialogState() =
-        rememberAlertDialogState().apply {
-            DialogMember {
-                FeatureLockedAlertDialog(alertDialogState = this, cancelCallback = {})
-            }
-        }
-
-    private fun handleCustomizeColorsClick() {
+    private fun startCustomizationActivity() {
         Intent(applicationContext, CustomizationActivity::class.java).apply {
             putExtra(APP_ICON_IDS, getAppIconIds())
             putExtra(APP_LAUNCHER_NAME, getAppLauncherName())
