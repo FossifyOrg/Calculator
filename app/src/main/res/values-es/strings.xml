@@ -92,4 +92,6 @@
     <string name="unit_temperature_kelvin">Kelvin</string>
     <string name="unit_temperature_rankine">Rankine</string>
     <string name="unit_temperature_fahrenheit">Fahrenheit</string>
+    <string name="unit_volume_customary_cup_us">Taza común (EEUU)</string>
+    <string name="unit_volume_legal_cup_us">Taza legal (EEUU)</string>
 </resources>
