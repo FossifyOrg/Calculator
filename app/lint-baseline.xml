@@ -341,7 +341,7 @@
 
     <issue
         id="AndroidGradlePluginVersion"
-        message="A newer version of com.android.application than 8.11.1 is available: 8.12.0"
+        message="A newer version of com.android.application than 8.11.1 is available: 8.12.2"
         errorLine1="gradlePlugins-agp = &quot;8.11.1&quot;"
         errorLine2="                    ~~~~~~~~">
         <location
@@ -352,7 +352,7 @@
 
     <issue
         id="GradleDependency"
-        message="A newer version of androidx.lifecycle:lifecycle-runtime-compose than 2.8.7 is available: 2.9.2"
+        message="A newer version of androidx.lifecycle:lifecycle-runtime-compose than 2.8.7 is available: 2.9.3"
         errorLine1="androidx-lifecycle = &quot;2.8.7&quot;"
         errorLine2="                     ~~~~~~~">
         <location
@@ -363,7 +363,7 @@
 
     <issue
         id="GradleDependency"
-        message="A newer version of androidx.lifecycle:lifecycle-runtime-ktx than 2.8.7 is available: 2.9.2"
+        message="A newer version of androidx.lifecycle:lifecycle-runtime-ktx than 2.8.7 is available: 2.9.3"
         errorLine1="androidx-lifecycle = &quot;2.8.7&quot;"
         errorLine2="                     ~~~~~~~">
         <location
@@ -374,7 +374,7 @@
 
     <issue
         id="GradleDependency"
-        message="A newer version of androidx.lifecycle:lifecycle-viewmodel-compose than 2.8.7 is available: 2.9.2"
+        message="A newer version of androidx.lifecycle:lifecycle-viewmodel-compose than 2.8.7 is available: 2.9.3"
         errorLine1="androidx-lifecycle = &quot;2.8.7&quot;"
         errorLine2="                     ~~~~~~~">
         <location
@@ -385,7 +385,7 @@
 
     <issue
         id="GradleDependency"
-        message="A newer version of androidx.lifecycle:lifecycle-viewmodel-ktx than 2.8.7 is available: 2.9.2"
+        message="A newer version of androidx.lifecycle:lifecycle-viewmodel-ktx than 2.8.7 is available: 2.9.3"
         errorLine1="androidx-lifecycle = &quot;2.8.7&quot;"
         errorLine2="                     ~~~~~~~">
         <location
@@ -407,7 +407,7 @@
 
     <issue
         id="GradleDependency"
-        message="A newer version of androidx.compose.animation:animation than 1.7.8 is available: 1.8.3"
+        message="A newer version of androidx.compose.animation:animation than 1.7.8 is available: 1.9.0"
         errorLine1="compose = &quot;1.7.8&quot;"
         errorLine2="          ~~~~~~~">
         <location
@@ -418,7 +418,7 @@
 
     <issue
         id="GradleDependency"
-        message="A newer version of androidx.compose.runtime:runtime than 1.7.8 is available: 1.8.3"
+        message="A newer version of androidx.compose.runtime:runtime than 1.7.8 is available: 1.9.0"
         errorLine1="compose = &quot;1.7.8&quot;"
         errorLine2="          ~~~~~~~">
         <location
@@ -429,7 +429,7 @@
 
     <issue
         id="GradleDependency"
-        message="A newer version of androidx.compose.ui:ui than 1.7.8 is available: 1.8.3"
+        message="A newer version of androidx.compose.ui:ui than 1.7.8 is available: 1.9.0"
         errorLine1="compose = &quot;1.7.8&quot;"
         errorLine2="          ~~~~~~~">
         <location
@@ -440,7 +440,7 @@
 
     <issue
         id="GradleDependency"
-        message="A newer version of androidx.compose.ui:ui-tooling than 1.7.8 is available: 1.8.3"
+        message="A newer version of androidx.compose.ui:ui-tooling than 1.7.8 is available: 1.9.0"
         errorLine1="compose = &quot;1.7.8&quot;"
         errorLine2="          ~~~~~~~">
         <location
@@ -451,7 +451,7 @@
 
     <issue
         id="GradleDependency"
-        message="A newer version of androidx.compose.ui:ui-tooling-preview than 1.7.8 is available: 1.8.3"
+        message="A newer version of androidx.compose.ui:ui-tooling-preview than 1.7.8 is available: 1.9.0"
         errorLine1="compose = &quot;1.7.8&quot;"
         errorLine2="          ~~~~~~~">
         <location
