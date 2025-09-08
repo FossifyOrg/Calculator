@@ -21,7 +21,7 @@ evalex = "3.5.0"
 #Room
 room = "2.7.2"
 #Fossify
-commons = "5.0.0"
+commons = "5.0.2"
 #Gradle
 gradlePlugins-agp = "8.11.1"
 #build
