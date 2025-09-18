@@ -92,4 +92,6 @@
     <string name="unit_time_year">Година</string>
     <string name="faq_1_title">Како функционише дугме C (Очисти)\?</string>
     <string name="faq_1_text">Додиром на њега уклања се један по један знак. Дуг притисак ће ресетовати сва поља одједном.</string>
+    <string name="unit_volume_customary_cup_us">Уобичајена шоља (САД)</string>
+    <string name="unit_volume_legal_cup_us">Законски одређена шоља (САД)</string>
 </resources>
