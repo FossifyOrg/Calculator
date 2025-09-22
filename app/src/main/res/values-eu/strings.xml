@@ -15,4 +15,13 @@
     <string name="unit_length_meter">Metro</string>
     <string name="unit_length_centimeter">Zentimetro</string>
     <string name="unit_length_millimeter">Milimetro</string>
+    <string name="unit_length_micrometer">Mikrometroa</string>
+    <string name="unit_length_nanometer">Nanometroa</string>
+    <string name="unit_length_angstrom">Angstrom</string>
+    <string name="unit_length_mile">Milia</string>
+    <string name="unit_length_yard">Yarda</string>
+    <string name="unit_length_foot">Oina</string>
+    <string name="unit_length_inch">Hazbetea</string>
+    <string name="unit_length_fathom">Braza</string>
+    <string name="unit_length_nautical_mile">Itsas milia</string>
 </resources>
