@@ -24,4 +24,14 @@
     <string name="unit_length_inch">Hazbetea</string>
     <string name="unit_length_fathom">Braza</string>
     <string name="unit_length_nautical_mile">Itsas milia</string>
+    <string name="unit_length_parsec">Parsec</string>
+    <string name="unit_length_light_year">Argi-urtea</string>
+    <string name="unit_area">Area</string>
+    <string name="unit_area_square_kilometer">Kilometro karratua</string>
+    <string name="unit_area_square_meter">Metro karratua</string>
+    <string name="unit_area_square_centimeter">Zentimetro karratua</string>
+    <string name="unit_area_square_millimeter">Milimetro karratua</string>
+    <string name="unit_area_square_mile">Milia karratua</string>
+    <string name="unit_area_square_yard">Yarda karratua</string>
+    <string name="unit_area_square_foot">Oin karratua</string>
 </resources>
