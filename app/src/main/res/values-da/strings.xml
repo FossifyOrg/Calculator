@@ -3,14 +3,14 @@
     <string name="app_launcher_name">Lommeregner</string>
     <string name="scientific_calculator">Videnskabelig lommeregner</string>
     <string name="formula_divide_by_zero_error">Fejl: division med nul</string>
-    <string name="history">Historie</string>
+    <string name="history">Historik</string>
     <string name="history_empty">Historikken er tom</string>
     <string name="clear_history">Ryd</string>
     <string name="history_cleared">Historikken er blevet ryddet</string>
-    <string name="vibrate_on_button_press">Vibrer ved knaptryk</string>
+    <string name="vibrate_on_button_press">Vibrer ved tryk på knap</string>
     <string name="faq_1_title">Hvordan virker knappen C (Slet)\?</string>
     <string name="faq_1_text">Hvis du trykker på det, fjernes et tegn ad gangen. Langt tryk vil nulstille alle felter på én gang.</string>
-    <string name="unit_converter">Enhed konverter</string>
+    <string name="unit_converter">Enhedsomregner</string>
     <string name="unit_length_micrometer">Mikrometer</string>
     <string name="unit_length_mile">Mil</string>
     <string name="unit_length_foot">Fod</string>
@@ -46,7 +46,7 @@
     <string name="unit_volume_cubic_inch">Kubiktomme</string>
     <string name="unit_volume_barrel_us">Tønde (US)</string>
     <string name="unit_volume_barrel_imperial">Tønde (Imperial)</string>
-    <string name="swap_units">Skift enheder</string>
+    <string name="swap_units">Byt enheder</string>
     <string name="unit_area_square_foot">Kvadratfod</string>
     <string name="unit_length_inch">Tomme</string>
     <string name="unit_mass_carat">Karat</string>
