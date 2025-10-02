@@ -60,7 +60,7 @@
     <string name="unit_length_centimeter">Centimeter</string>
     <string name="unit_length_millimeter">Millimeter</string>
     <string name="unit_length_nanometer">Nanometer</string>
-    <string name="unit_length_angstrom">Ångstrøm</string>
+    <string name="unit_length_angstrom">Ångström</string>
     <string name="unit_length_yard">Yard</string>
     <string name="unit_length_parsec">Parsec</string>
     <string name="unit_volume_liter">Liter</string>
