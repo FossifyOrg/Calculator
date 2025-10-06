@@ -67,7 +67,7 @@
     <string name="unit_volume_centiliter">Centiliter</string>
     <string name="unit_volume_deciliter">Deciliter</string>
     <string name="unit_volume_milliliter">Milliliter</string>
-    <string name="unit_volume_acre_foot">Acre fod</string>
+    <string name="unit_volume_acre_foot">Acre-fod</string>
     <string name="unit_volume_gallon_us">Gallon (US)</string>
     <string name="unit_volume_quart_us">Quart (US)</string>
     <string name="unit_volume_pint_us">Pint (US)</string>
