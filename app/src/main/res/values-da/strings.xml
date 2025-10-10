@@ -8,8 +8,8 @@
     <string name="clear_history">Ryd</string>
     <string name="history_cleared">Historikken er blevet ryddet</string>
     <string name="vibrate_on_button_press">Vibrer ved tryk på knap</string>
-    <string name="faq_1_title">Hvordan virker knappen C (Slet)\?</string>
-    <string name="faq_1_text">Hvis du trykker på det, fjernes et tegn ad gangen. Langt tryk vil nulstille alle felter på én gang.</string>
+    <string name="faq_1_title">Hvordan virker knappen C (Ryd)?</string>
+    <string name="faq_1_text">Hvis du trykker på det, fjernes ét tegn ad gangen. Langt tryk nulstiller alle felter på én gang.</string>
     <string name="unit_converter">Enhedsomregner</string>
     <string name="unit_length_micrometer">Mikrometer</string>
     <string name="unit_length_mile">Mil</string>
