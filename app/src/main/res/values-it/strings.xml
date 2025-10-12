@@ -92,4 +92,5 @@
     <string name="unit_time_week">Settimana</string>
     <string name="unit_time_year">Anno</string>
     <string name="unit_length_angstrom">Angstrom</string>
+    <string name="unit_volume_legal_cup_us">Coppa legale (US)</string>
 </resources>
