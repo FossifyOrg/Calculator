@@ -104,7 +104,7 @@ class MainActivity : SimpleActivity(), Calculator {
 
     override fun onResume() {
         super.onResume()
-        setupToolbar(binding.mainToolbar)
+        setupTopAppBar(binding.mainToolbar)
         if (storedTextColor != config.textColor) {
             binding.calculatorHolder?.let { updateViewColors(it, getProperTextColor()) }
         }

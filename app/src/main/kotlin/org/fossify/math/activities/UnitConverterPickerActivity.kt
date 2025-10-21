@@ -39,7 +39,7 @@ class UnitConverterPickerActivity : SimpleActivity() {
     override fun onResume() {
         super.onResume()
 
-        setupToolbar(binding.unitConverterPickerToolbar, NavigationIcon.Arrow)
+        setupTopAppBar(binding.unitConverterPickerToolbar, NavigationIcon.Arrow)
 
         if (config.preventPhoneFromSleeping) {
             window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
