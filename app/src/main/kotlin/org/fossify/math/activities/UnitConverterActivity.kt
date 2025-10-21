@@ -47,11 +47,8 @@ class UnitConverterActivity : SimpleActivity(), ConverterView.OnUnitChangedListe
             setupOptionsMenu()
         }
 
-        updateEdgeToEdge(
-            topAppBar = binding.unitConverterToolbar,
-            scrollingView = binding.nestedScrollview,
-        )
-        setupMaterialScrollListener(binding.nestedScrollview, binding.unitConverterToolbar)
+        setupEdgeToEdge(padBottomSystem = listOf(binding.nestedScrollview))
+        setupMaterialScrollListener(binding.nestedScrollview, binding.unitConverterAppbar)
 
         val converter = Converter.ALL.getOrNull(intent.getIntExtra(EXTRA_CONVERTER_ID, 0))
 
@@ -111,7 +108,7 @@ class UnitConverterActivity : SimpleActivity(), ConverterView.OnUnitChangedListe
     override fun onResume() {
         super.onResume()
 
-        setupTopAppBar(binding.unitConverterToolbar, NavigationIcon.Arrow)
+        setupTopAppBar(binding.unitConverterAppbar, NavigationIcon.Arrow)
         binding.viewUnitConverter.viewConverter.root.updateColors()
         binding.viewUnitConverter.converterHolder.let {
             updateViewColors(it, getProperTextColor())

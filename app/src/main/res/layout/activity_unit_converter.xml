@@ -9,20 +9,27 @@
     tools:context="org.fossify.math.activities.UnitConverterActivity"
     tools:ignore="HardcodedText">
 
-    <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/unit_converter_toolbar"
+    <org.fossify.commons.views.MyAppBarLayout
+        android:id="@+id/unit_converter_appbar"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/color_primary"
-        app:titleTextAppearance="@style/AppTheme.ActionBar.TitleTextStyle" />
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/unit_converter_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/color_primary"
+            app:titleTextAppearance="@style/AppTheme.ActionBar.TitleTextStyle" />
+
+    </org.fossify.commons.views.MyAppBarLayout>
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/nested_scrollview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="?attr/actionBarSize"
         android:fillViewport="true"
-        android:scrollbars="none">
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <include
             android:id="@+id/view_unit_converter"

@@ -40,6 +40,7 @@ class WidgetConfigureActivity : SimpleActivity() {
         super.onCreate(savedInstanceState)
         setResult(RESULT_CANCELED)
         setContentView(binding.root)
+        setupEdgeToEdge(padTopSystem = listOf(binding.root), padBottomSystem = listOf(binding.root))
         initVariables()
 
         val isCustomizingColors = intent.extras?.getBoolean(IS_CUSTOMIZING_COLORS) ?: false
