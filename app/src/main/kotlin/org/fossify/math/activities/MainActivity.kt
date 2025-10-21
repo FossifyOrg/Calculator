@@ -51,17 +51,14 @@ class MainActivity : SimpleActivity(), Calculator {
     private val binding by viewBinding(ActivityMainBinding::inflate)
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        isMaterialActivity = true
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
         appLaunched(BuildConfig.APPLICATION_ID)
         setupOptionsMenu()
         refreshMenuItems()
-        updateMaterialActivityViews(
-            mainCoordinatorLayout = binding.mainCoordinator,
-            nestedView = null,
-            useTransparentNavigation = false,
-            useTopSearchMenu = false
+        updateEdgeToEdge(
+            topAppBar = binding.mainToolbar,
+            scrollingView = binding.mainNestedScrollview,
         )
         setupMaterialScrollListener(binding.mainNestedScrollview, binding.mainToolbar)
 
