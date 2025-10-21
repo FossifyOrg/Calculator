@@ -16,14 +16,11 @@ class UnitConverterPickerActivity : SimpleActivity() {
     private val binding by viewBinding(ActivityUnitConverterPickerBinding::inflate)
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        isMaterialActivity = true
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-        updateMaterialActivityViews(
-            mainCoordinatorLayout = binding.unitConverterPickerCoordinator,
-            nestedView = null,
-            useTransparentNavigation = false,
-            useTopSearchMenu = false
+        updateEdgeToEdge(
+            topAppBar = binding.unitConverterPickerToolbar,
+            scrollingView = binding.unitTypesGrid,
         )
         setupMaterialScrollListener(binding.unitTypesGrid, binding.unitConverterPickerToolbar)
 

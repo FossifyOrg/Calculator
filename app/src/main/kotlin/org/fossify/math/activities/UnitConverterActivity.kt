@@ -39,7 +39,6 @@ class UnitConverterActivity : SimpleActivity(), ConverterView.OnUnitChangedListe
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        isMaterialActivity = true
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
@@ -48,11 +47,9 @@ class UnitConverterActivity : SimpleActivity(), ConverterView.OnUnitChangedListe
             setupOptionsMenu()
         }
 
-        updateMaterialActivityViews(
-            mainCoordinatorLayout = binding.unitConverterCoordinator,
-            nestedView = null,
-            useTransparentNavigation = false,
-            useTopSearchMenu = false
+        updateEdgeToEdge(
+            topAppBar = binding.unitConverterToolbar,
+            scrollingView = binding.nestedScrollview,
         )
         setupMaterialScrollListener(binding.nestedScrollview, binding.unitConverterToolbar)
 
