@@ -56,11 +56,8 @@ class MainActivity : SimpleActivity(), Calculator {
         appLaunched(BuildConfig.APPLICATION_ID)
         setupOptionsMenu()
         refreshMenuItems()
-        updateEdgeToEdge(
-            topAppBar = binding.mainToolbar,
-            scrollingView = binding.mainNestedScrollview,
-        )
-        setupMaterialScrollListener(binding.mainNestedScrollview, binding.mainToolbar)
+        setupEdgeToEdge(padBottomSystem = listOf(binding.mainNestedScrollview))
+        setupMaterialScrollListener(binding.mainNestedScrollview, binding.mainAppbar!!)
 
         if (savedInstanceState != null) {
             saveCalculatorState = savedInstanceState.getCharSequence(CALCULATOR_STATE) as String
@@ -104,7 +101,7 @@ class MainActivity : SimpleActivity(), Calculator {
 
     override fun onResume() {
         super.onResume()
-        setupTopAppBar(binding.mainToolbar)
+        setupTopAppBar(binding.mainAppbar!!)
         if (storedTextColor != config.textColor) {
             binding.calculatorHolder?.let { updateViewColors(it, getProperTextColor()) }
         }

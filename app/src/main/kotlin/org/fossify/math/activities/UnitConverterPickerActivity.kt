@@ -18,11 +18,11 @@ class UnitConverterPickerActivity : SimpleActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-        updateEdgeToEdge(
-            topAppBar = binding.unitConverterPickerToolbar,
-            scrollingView = binding.unitTypesGrid,
+        setupEdgeToEdge(padBottomSystem = listOf(binding.unitTypesGrid))
+        setupMaterialScrollListener(
+            binding.unitTypesGrid,
+            binding.unitConverterPickerAppbar
         )
-        setupMaterialScrollListener(binding.unitTypesGrid, binding.unitConverterPickerToolbar)
 
         binding.unitTypesGrid.layoutManager =
             AutoGridLayoutManager(this, resources.getDimensionPixelSize(R.dimen.unit_type_size))
@@ -39,7 +39,7 @@ class UnitConverterPickerActivity : SimpleActivity() {
     override fun onResume() {
         super.onResume()
 
-        setupTopAppBar(binding.unitConverterPickerToolbar, NavigationIcon.Arrow)
+        setupTopAppBar(binding.unitConverterPickerAppbar, NavigationIcon.Arrow)
 
         if (config.preventPhoneFromSleeping) {
             window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
