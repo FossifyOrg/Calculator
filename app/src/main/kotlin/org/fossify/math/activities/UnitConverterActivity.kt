@@ -111,7 +111,7 @@ class UnitConverterActivity : SimpleActivity(), ConverterView.OnUnitChangedListe
     override fun onResume() {
         super.onResume()
 
-        setupToolbar(binding.unitConverterToolbar, NavigationIcon.Arrow)
+        setupTopAppBar(binding.unitConverterToolbar, NavigationIcon.Arrow)
         binding.viewUnitConverter.viewConverter.root.updateColors()
         binding.viewUnitConverter.converterHolder.let {
             updateViewColors(it, getProperTextColor())
