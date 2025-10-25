@@ -102,6 +102,7 @@ class MainActivity : SimpleActivity(), Calculator {
     override fun onResume() {
         super.onResume()
         setupTopAppBar(binding.mainAppbar!!)
+        setupMaterialScrollListener(binding.mainNestedScrollview, binding.mainAppbar)
         if (storedTextColor != config.textColor) {
             binding.calculatorHolder?.let { updateViewColors(it, getProperTextColor()) }
         }
