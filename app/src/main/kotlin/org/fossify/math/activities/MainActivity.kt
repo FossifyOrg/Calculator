@@ -51,19 +51,13 @@ class MainActivity : SimpleActivity(), Calculator {
     private val binding by viewBinding(ActivityMainBinding::inflate)
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        isMaterialActivity = true
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
         appLaunched(BuildConfig.APPLICATION_ID)
         setupOptionsMenu()
         refreshMenuItems()
-        updateMaterialActivityViews(
-            mainCoordinatorLayout = binding.mainCoordinator,
-            nestedView = null,
-            useTransparentNavigation = false,
-            useTopSearchMenu = false
-        )
-        setupMaterialScrollListener(binding.mainNestedScrollview, binding.mainToolbar)
+        setupEdgeToEdge(padBottomSystem = listOf(binding.mainNestedScrollview))
+        setupMaterialScrollListener(binding.mainNestedScrollview, binding.mainAppbar!!)
 
         if (savedInstanceState != null) {
             saveCalculatorState = savedInstanceState.getCharSequence(CALCULATOR_STATE) as String
@@ -107,7 +101,8 @@ class MainActivity : SimpleActivity(), Calculator {
 
     override fun onResume() {
         super.onResume()
-        setupToolbar(binding.mainToolbar)
+        setupTopAppBar(binding.mainAppbar!!)
+        setupMaterialScrollListener(binding.mainNestedScrollview, binding.mainAppbar)
         if (storedTextColor != config.textColor) {
             binding.calculatorHolder?.let { updateViewColors(it, getProperTextColor()) }
         }

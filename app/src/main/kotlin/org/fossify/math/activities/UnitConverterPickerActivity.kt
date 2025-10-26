@@ -16,16 +16,13 @@ class UnitConverterPickerActivity : SimpleActivity() {
     private val binding by viewBinding(ActivityUnitConverterPickerBinding::inflate)
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        isMaterialActivity = true
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-        updateMaterialActivityViews(
-            mainCoordinatorLayout = binding.unitConverterPickerCoordinator,
-            nestedView = null,
-            useTransparentNavigation = false,
-            useTopSearchMenu = false
+        setupEdgeToEdge(padBottomSystem = listOf(binding.unitTypesGrid))
+        setupMaterialScrollListener(
+            binding.unitTypesGrid,
+            binding.unitConverterPickerAppbar
         )
-        setupMaterialScrollListener(binding.unitTypesGrid, binding.unitConverterPickerToolbar)
 
         binding.unitTypesGrid.layoutManager =
             AutoGridLayoutManager(this, resources.getDimensionPixelSize(R.dimen.unit_type_size))
@@ -42,7 +39,7 @@ class UnitConverterPickerActivity : SimpleActivity() {
     override fun onResume() {
         super.onResume()
 
-        setupToolbar(binding.unitConverterPickerToolbar, NavigationIcon.Arrow)
+        setupTopAppBar(binding.unitConverterPickerAppbar, NavigationIcon.Arrow)
 
         if (config.preventPhoneFromSleeping) {
             window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)

@@ -27,8 +27,6 @@
     <ID>NestedBlockDepth:CalculatorImpl.kt$CalculatorImpl$fun handleOperation(operation: String)</ID>
     <ID>NestedBlockDepth:ConverterView.kt$ConverterView$fun deleteCharacter()</ID>
     <ID>NestedBlockDepth:ConverterView.kt$ConverterView$private fun updateBottomValue()</ID>
-    <ID>ReturnCount:CalculatorImpl.kt$CalculatorImpl$fun turnToNegative(): Boolean</ID>
-    <ID>ReturnCount:ConverterView.kt$ConverterView$private fun checkTemperatureLimits(value: String): String</ID>
     <ID>TooGenericExceptionCaught:Context.kt$e: Exception</ID>
     <ID>TooManyFunctions:CalculatorImpl.kt$CalculatorImpl</ID>
     <ID>TooManyFunctions:ConverterView.kt$ConverterView : LinearLayout</ID>
