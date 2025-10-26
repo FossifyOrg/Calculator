@@ -13,7 +13,7 @@ androidx-lifecycle = "2.8.7"
 #Compose
 composeActivity = "1.9.3"
 compose = "1.7.8"
-composeMaterial3 = "1.3.2"
+composeMaterial3 = "1.4.0"
 #AutoFitTextView
 autofittextview = "0.2.1"
 #EvalEx
