@@ -9,7 +9,7 @@ detektCompose = "0.4.27"
 #Androidx
 androidx-customView = "1.2.0"
 androidx-customViewPooling = "1.1.0"
-androidx-lifecycle = "2.8.7"
+androidx-lifecycle = "2.9.4"
 #Compose
 composeActivity = "1.11.0"
 compose = "1.7.8"
