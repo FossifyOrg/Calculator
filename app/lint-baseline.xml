@@ -323,7 +323,7 @@
         errorLine1="distributionUrl=https\://services.gradle.org/distributions/gradle-8.13-bin.zip"
         errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/wrapper/gradle-wrapper.properties"
+            file="$HOME/work/Calculator/Calculator/gradle/wrapper/gradle-wrapper.properties"
             line="3"
             column="17"/>
     </issue>
@@ -334,64 +334,9 @@
         errorLine1="gradlePlugins-agp = &quot;8.11.1&quot;"
         errorLine2="                    ~~~~~~~~">
         <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/libs.versions.toml"
+            file="$HOME/work/Calculator/Calculator/gradle/libs.versions.toml"
             line="26"
             column="21"/>
-    </issue>
-
-    <issue
-        id="GradleDependency"
-        message="A newer version of androidx.lifecycle:lifecycle-runtime-compose than 2.8.7 is available: 2.9.4"
-        errorLine1="androidx-lifecycle = &quot;2.8.7&quot;"
-        errorLine2="                     ~~~~~~~">
-        <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/libs.versions.toml"
-            line="12"
-            column="22"/>
-    </issue>
-
-    <issue
-        id="GradleDependency"
-        message="A newer version of androidx.lifecycle:lifecycle-runtime-ktx than 2.8.7 is available: 2.9.4"
-        errorLine1="androidx-lifecycle = &quot;2.8.7&quot;"
-        errorLine2="                     ~~~~~~~">
-        <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/libs.versions.toml"
-            line="12"
-            column="22"/>
-    </issue>
-
-    <issue
-        id="GradleDependency"
-        message="A newer version of androidx.lifecycle:lifecycle-viewmodel-compose than 2.8.7 is available: 2.9.4"
-        errorLine1="androidx-lifecycle = &quot;2.8.7&quot;"
-        errorLine2="                     ~~~~~~~">
-        <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/libs.versions.toml"
-            line="12"
-            column="22"/>
-    </issue>
-
-    <issue
-        id="GradleDependency"
-        message="A newer version of androidx.lifecycle:lifecycle-viewmodel-ktx than 2.8.7 is available: 2.9.4"
-        errorLine1="androidx-lifecycle = &quot;2.8.7&quot;"
-        errorLine2="                     ~~~~~~~">
-        <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/libs.versions.toml"
-            line="12"
-            column="22"/>
-    </issue>
-
-    <issue
-        id="GradleDependency"
-        message="A newer version of androidx.activity:activity-compose than 1.9.3 is available: 1.11.0"
-        errorLine1="composeActivity = &quot;1.9.3&quot;"
-        errorLine2="                  ~~~~~~~">
-        <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/libs.versions.toml"
-            line="14"
-            column="19"/>
     </issue>
 
     <issue
@@ -400,7 +345,7 @@
         errorLine1="compose = &quot;1.7.8&quot;"
         errorLine2="          ~~~~~~~">
         <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/libs.versions.toml"
+            file="$HOME/work/Calculator/Calculator/gradle/libs.versions.toml"
             line="15"
             column="11"/>
     </issue>
@@ -411,7 +356,7 @@
         errorLine1="compose = &quot;1.7.8&quot;"
         errorLine2="          ~~~~~~~">
         <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/libs.versions.toml"
+            file="$HOME/work/Calculator/Calculator/gradle/libs.versions.toml"
             line="15"
             column="11"/>
     </issue>
@@ -422,7 +367,7 @@
         errorLine1="compose = &quot;1.7.8&quot;"
         errorLine2="          ~~~~~~~">
         <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/libs.versions.toml"
+            file="$HOME/work/Calculator/Calculator/gradle/libs.versions.toml"
             line="15"
             column="11"/>
     </issue>
@@ -433,7 +378,7 @@
         errorLine1="compose = &quot;1.7.8&quot;"
         errorLine2="          ~~~~~~~">
         <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/libs.versions.toml"
+            file="$HOME/work/Calculator/Calculator/gradle/libs.versions.toml"
             line="15"
             column="11"/>
     </issue>
@@ -444,7 +389,7 @@
         errorLine1="compose = &quot;1.7.8&quot;"
         errorLine2="          ~~~~~~~">
         <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/libs.versions.toml"
+            file="$HOME/work/Calculator/Calculator/gradle/libs.versions.toml"
             line="15"
             column="11"/>
     </issue>
@@ -455,53 +400,9 @@
         errorLine1="compose = &quot;1.7.8&quot;"
         errorLine2="          ~~~~~~~">
         <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/libs.versions.toml"
+            file="$HOME/work/Calculator/Calculator/gradle/libs.versions.toml"
             line="15"
             column="11"/>
-    </issue>
-
-    <issue
-        id="GradleDependency"
-        message="A newer version of androidx.compose.material3:material3 than 1.3.2 is available: 1.4.0"
-        errorLine1="composeMaterial3 = &quot;1.3.2&quot;"
-        errorLine2="                   ~~~~~~~">
-        <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/libs.versions.toml"
-            line="16"
-            column="20"/>
-    </issue>
-
-    <issue
-        id="GradleDependency"
-        message="A newer version of androidx.room:room-compiler than 2.8.2 is available: 2.8.3"
-        errorLine1="room = &quot;2.8.2&quot;"
-        errorLine2="       ~~~~~~~">
-        <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/libs.versions.toml"
-            line="22"
-            column="8"/>
-    </issue>
-
-    <issue
-        id="GradleDependency"
-        message="A newer version of androidx.room:room-ktx than 2.8.2 is available: 2.8.3"
-        errorLine1="room = &quot;2.8.2&quot;"
-        errorLine2="       ~~~~~~~">
-        <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/libs.versions.toml"
-            line="22"
-            column="8"/>
-    </issue>
-
-    <issue
-        id="GradleDependency"
-        message="A newer version of androidx.room:room-runtime than 2.8.2 is available: 2.8.3"
-        errorLine1="room = &quot;2.8.2&quot;"
-        errorLine2="       ~~~~~~~">
-        <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/libs.versions.toml"
-            line="22"
-            column="8"/>
     </issue>
 
     <issue
@@ -513,28 +414,6 @@
             file="src/main/AndroidManifest.xml"
             line="47"
             column="13"/>
-    </issue>
-
-    <issue
-        id="NewerVersionAvailable"
-        message="A newer version of org.jetbrains.kotlin.android than 2.2.20 is available: 2.2.21"
-        errorLine1="kotlin = &quot;2.2.20&quot;"
-        errorLine2="         ~~~~~~~~">
-        <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/libs.versions.toml"
-            line="3"
-            column="10"/>
-    </issue>
-
-    <issue
-        id="NewerVersionAvailable"
-        message="A newer version of org.jetbrains.kotlin.plugin.compose than 2.2.20 is available: 2.2.21"
-        errorLine1="kotlin = &quot;2.2.20&quot;"
-        errorLine2="         ~~~~~~~~">
-        <location
-            file="$HOME/Projects/Fossify/FossifyOrg/Calculator/gradle/libs.versions.toml"
-            line="3"
-            column="10"/>
     </issue>
 
     <issue
@@ -1155,7 +1034,7 @@
 
     <issue
         id="MissingTranslation"
-        message="&quot;unit_volume_legal_cup_us&quot; is not translated in &quot;fil&quot; (Filipino; Pilipino), &quot;lt&quot; (Lithuanian), &quot;lv&quot; (Latvian), &quot;hu&quot; (Hungarian), &quot;ia&quot; (Interlingua), &quot;ur&quot; (Urdu), &quot;mk&quot; (Macedonian), &quot;ml&quot; (Malayalam), &quot;ms&quot; (Malay), &quot;el&quot; (Greek), &quot;en&quot; (English), &quot;is&quot; (Icelandic), &quot;it&quot; (Italian), &quot;my&quot; (Burmese), &quot;eu&quot; (Basque), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;ja&quot; (Japanese), &quot;ne&quot; (Nepali), &quot;az&quot; (Azerbaijani), &quot;fa&quot; (Persian), &quot;ro&quot; (Romanian), &quot;nn&quot; (Norwegian Nynorsk), &quot;be&quot; (Belarusian), &quot;bg&quot; (Bulgarian), &quot;bn&quot; (Bangla), &quot;br&quot; (Breton), &quot;bs&quot; (Bosnian), &quot;si&quot; (Sinhala), &quot;sl&quot; (Slovenian), &quot;zgh&quot; (Standard Moroccan Tamazight), &quot;ltg&quot;, &quot;kn&quot; (Kannada), &quot;or&quot; (Odia), &quot;ko&quot; (Korean), &quot;gl&quot; (Galician), &quot;kr&quot; (Kanuri), &quot;sat&quot; (Santali), &quot;ta&quot; (Tamil), &quot;cr&quot; (Cree), &quot;pa&quot; (Punjabi), &quot;te&quot; (Telugu), &quot;th&quot; (Thai), &quot;cy&quot; (Welsh), &quot;ckb&quot;"
+        message="&quot;unit_volume_legal_cup_us&quot; is not translated in &quot;fil&quot; (Filipino; Pilipino), &quot;lt&quot; (Lithuanian), &quot;lv&quot; (Latvian), &quot;hu&quot; (Hungarian), &quot;ia&quot; (Interlingua), &quot;ur&quot; (Urdu), &quot;mk&quot; (Macedonian), &quot;ml&quot; (Malayalam), &quot;ms&quot; (Malay), &quot;el&quot; (Greek), &quot;en&quot; (English), &quot;is&quot; (Icelandic), &quot;my&quot; (Burmese), &quot;eu&quot; (Basque), &quot;ar&quot; (Arabic), &quot;vi&quot; (Vietnamese), &quot;ja&quot; (Japanese), &quot;ne&quot; (Nepali), &quot;az&quot; (Azerbaijani), &quot;fa&quot; (Persian), &quot;ro&quot; (Romanian), &quot;nn&quot; (Norwegian Nynorsk), &quot;be&quot; (Belarusian), &quot;bg&quot; (Bulgarian), &quot;bn&quot; (Bangla), &quot;br&quot; (Breton), &quot;bs&quot; (Bosnian), &quot;si&quot; (Sinhala), &quot;sl&quot; (Slovenian), &quot;zgh&quot; (Standard Moroccan Tamazight), &quot;ltg&quot;, &quot;kn&quot; (Kannada), &quot;or&quot; (Odia), &quot;ko&quot; (Korean), &quot;gl&quot; (Galician), &quot;kr&quot; (Kanuri), &quot;sat&quot; (Santali), &quot;ta&quot; (Tamil), &quot;cr&quot; (Cree), &quot;pa&quot; (Punjabi), &quot;te&quot; (Telugu), &quot;th&quot; (Thai), &quot;cy&quot; (Welsh), &quot;ckb&quot;"
         errorLine1="    &lt;string name=&quot;unit_volume_legal_cup_us&quot;>Legal Cup (US)&lt;/string>"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
