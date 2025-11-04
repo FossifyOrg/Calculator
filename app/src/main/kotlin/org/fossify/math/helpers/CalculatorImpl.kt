@@ -260,7 +260,7 @@ class CalculatorImpl(
             }
         }
 
-        if (lastOperation != "") {
+        if (lastOperation != "" && secondValue != BigDecimal.ZERO) {
             val sign = getSign(lastOperation)
             val formattedBaseValue = baseValue.format().removeGroupSeparator()
             val formatterSecondValue = secondValue.format().removeGroupSeparator()
