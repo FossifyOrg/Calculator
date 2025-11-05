@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Fixed
-- Fixed fix issue that occurs after doing a percent operation ([#160])
+- Fixed issue that occurs after doing a percent operation ([#160])
 
 ## [1.2.0] - 2025-10-29
 ### Changed
