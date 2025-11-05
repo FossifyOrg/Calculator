@@ -260,7 +260,7 @@ class CalculatorImpl(
             }
         }
 
-        if (lastOperation != "" && secondValue != BigDecimal.ZERO) {
+        if (lastOperation != "") {
             val sign = getSign(lastOperation)
             val formattedBaseValue = baseValue.format().removeGroupSeparator()
             val formatterSecondValue = secondValue.format().removeGroupSeparator()
@@ -376,6 +376,7 @@ class CalculatorImpl(
         if (newValue == "" || newValue == "0") {
             newValue = "0"
             lastKey = CLEAR
+            resetValues()
         } else {
             if (operations.contains(lastDeletedValue) || lastKey == EQUALS) {
                 lastOperation = ""
