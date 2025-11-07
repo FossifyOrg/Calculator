@@ -114,6 +114,7 @@ class CalculatorImpl(
         if (lastKey == DIGIT || lastKey == DECIMAL) {
             if (lastOperation != "" && operation == PERCENT) {
                 handlePercent()
+                lastOperation = ""
             } else {
                 // split to multiple lines just to see when does the crash happen
                 secondValue = when (operation) {
@@ -140,7 +141,7 @@ class CalculatorImpl(
         if (getSecondValue() == BigDecimal.ZERO && inputDisplayedFormula.contains("÷")) {
             lastKey = DIVIDE
             lastOperation = DIVIDE
-        } else {
+        } else if(operation != PERCENT) {
             lastKey = operation
             lastOperation = operation
         }
@@ -376,6 +377,7 @@ class CalculatorImpl(
         if (newValue == "" || newValue == "0") {
             newValue = "0"
             lastKey = CLEAR
+            resetValues()
         } else {
             if (operations.contains(lastDeletedValue) || lastKey == EQUALS) {
                 lastOperation = ""

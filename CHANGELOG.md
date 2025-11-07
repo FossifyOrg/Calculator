@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+- Fixed issue that occurs after doing a percent operation ([#160])
+
 ## [1.2.0] - 2025-10-29
 ### Changed
 - Compatibility updates for Android 15 & 16
@@ -60,6 +63,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#31]: https://github.com/FossifyOrg/Calculator/issues/31
 [#44]: https://github.com/FossifyOrg/Calculator/issues/44
 [#64]: https://github.com/FossifyOrg/Calculator/issues/64
+[#160]: https://github.com/FossifyOrg/Calculator/issues/160
 
 [Unreleased]: https://github.com/FossifyOrg/Calculator/compare/1.2.0...HEAD
 [1.2.0]: https://github.com/FossifyOrg/Calculator/compare/1.1.0...1.2.0
