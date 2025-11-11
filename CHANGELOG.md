@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.1] - 2025-11-11
+### Changed
+- Updated translations
+
 ### Fixed
 - Fixed issue that occurs after doing a percent operation ([#160])
 
@@ -65,7 +69,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#64]: https://github.com/FossifyOrg/Calculator/issues/64
 [#160]: https://github.com/FossifyOrg/Calculator/issues/160
 
-[Unreleased]: https://github.com/FossifyOrg/Calculator/compare/1.2.0...HEAD
+[Unreleased]: https://github.com/FossifyOrg/Calculator/compare/1.2.1...HEAD
+[1.2.1]: https://github.com/FossifyOrg/Calculator/compare/1.2.0...1.2.1
 [1.2.0]: https://github.com/FossifyOrg/Calculator/compare/1.1.0...1.2.0
 [1.1.0]: https://github.com/FossifyOrg/Calculator/compare/1.0.5...1.1.0
 [1.0.5]: https://github.com/FossifyOrg/Calculator/compare/1.0.4...1.0.5
