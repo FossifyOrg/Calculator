@@ -80,4 +80,10 @@
     <string name="unit_time_year">Έτος</string>
     <string name="faq_1_title">Πώς λειτουργεί το κουμπί C (Καθαρισμός);</string>
     <string name="faq_1_text">Πατώντας θα αφαιρείται ένας χαρακτήρας τη φορά. Πατώντας παρατεταμένα θα γίνει επαναφορά όλων των πεδίων ταυτόχρονα.</string>
+    <string name="unit_length_angstrom">Άνγκστρομ</string>
+    <string name="unit_length_fathom">Οργυιά</string>
+    <string name="unit_length_parsec">Παρσέκ</string>
+    <string name="unit_area_acre">Έικρ</string>
+    <string name="unit_volume_pint_us">Πίντα (ΗΠΑ)</string>
+    <string name="unit_volume_pint_imperial">Πίντα (αγγλική)</string>
 </resources>
