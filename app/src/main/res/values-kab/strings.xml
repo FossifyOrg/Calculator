@@ -1,3 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_launcher_name">Tamsiḍent</string>
+    <string name="clear_history">Sfeḍ</string>
+    <string name="unit_length_kilometer">Kilumitr</string>
+    <string name="unit_length_meter">Mitr</string>
+    <string name="unit_length_centimeter">Suntimitr</string>
+    <string name="unit_length_millimeter">Milimitr</string>
+    <string name="unit_length_micrometer">Mikrumitr</string>
+    <string name="unit_length_nanometer">Nanumitr</string>
+    <string name="unit_length_angstrom">Angstrom</string>
+    <string name="unit_length_parsec">Parsek</string>
+    <string name="history">Amazray</string>
+    <string name="unit_time_day">Ass</string>
+    <string name="unit_time_week">Amalas</string>
+    <string name="unit_time_year">Aseggas</string>
 </resources>
