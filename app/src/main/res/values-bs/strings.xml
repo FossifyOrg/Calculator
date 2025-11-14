@@ -87,4 +87,11 @@
     <string name="unit_length_fathom">Fatom</string>
     <string name="unit_mass_grain">Zrno</string>
     <string name="unit_mass_stone">Kamen</string>
+    <string name="unit_length_angstrom">Angstrom</string>
+    <string name="unit_volume_legal_cup_us">Legal Cup (SAD)</string>
+    <string name="unit_volume_customary_cup_us">Customary Cup (SAD)</string>
+    <string name="unit_mass_gram">Gram</string>
+    <string name="unit_mass_kilogram">Kilogram</string>
+    <string name="unit_mass_dram">Dram</string>
+    <string name="unit_temperature_kelvin">Kelvin</string>
 </resources>
