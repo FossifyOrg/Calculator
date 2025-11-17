@@ -19,4 +19,7 @@
     <string name="unit_length">Teɣzi</string>
     <string name="unit_length_mile">Amil</string>
     <string name="unit_length_inch">Adebbuz</string>
+    <string name="unit_length_light_year">Aseggas afessas</string>
+    <string name="unit_area_square_millimeter">Amilimitr Amkuẓ</string>
+    <string name="unit_area_square_mile">Amil amkuẓ</string>
 </resources>
