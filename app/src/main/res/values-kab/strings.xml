@@ -22,4 +22,13 @@
     <string name="unit_length_light_year">Aseggas afessas</string>
     <string name="unit_area_square_millimeter">Amilimitr Amkuẓ</string>
     <string name="unit_area_square_mile">Amil amkuẓ</string>
+    <string name="unit_area_acre">Acr</string>
+    <string name="unit_area_hectare">Ahiktar</string>
+    <string name="unit_volume">Ableɣ</string>
+    <string name="unit_volume_cubic_meter">Lmitra ugasas</string>
+    <string name="unit_volume_cubic_decimeter">Adisimitr agasas</string>
+    <string name="unit_volume_cubic_centimeter">Asentimtr Agasas</string>
+    <string name="unit_volume_cubic_foot">Aḍar agasas</string>
+    <string name="unit_volume_acre_foot">Aḍar Acr</string>
+    <string name="unit_volume_cubic_inch">adebbuz agasas</string>
 </resources>
