@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_launcher_name">Tamsiḍent</string>
+    <string name="clear_history">Sfeḍ</string>
+    <string name="unit_length_kilometer">Kilumitr</string>
+    <string name="unit_length_meter">Mitr</string>
+    <string name="unit_length_centimeter">Suntimitr</string>
+    <string name="unit_length_millimeter">Milimitr</string>
+    <string name="unit_length_micrometer">Mikrumitr</string>
+    <string name="unit_length_nanometer">Nanumitr</string>
+    <string name="unit_length_angstrom">Angstrom</string>
+    <string name="unit_length_parsec">Parsek</string>
+    <string name="history">Amazray</string>
+    <string name="unit_time_day">Ass</string>
+    <string name="unit_time_week">Amalas</string>
+    <string name="unit_time_year">Aseggas</string>
+    <string name="history_empty">Amazray d ilem</string>
+    <string name="vibrate_on_button_press">Senhez ɣef usiti n tqeffalt</string>
+    <string name="unit_length">Teɣzi</string>
+    <string name="unit_length_mile">Amil</string>
+    <string name="unit_length_inch">Adebbuz</string>
+    <string name="unit_length_light_year">Aseggas afessas</string>
+    <string name="unit_area_square_millimeter">Amilimitr Amkuẓ</string>
+    <string name="unit_area_square_mile">Amil amkuẓ</string>
+    <string name="unit_area_acre">Acr</string>
+    <string name="unit_area_hectare">Ahiktar</string>
+    <string name="unit_volume">Ableɣ</string>
+    <string name="unit_volume_cubic_meter">Lmitra ugasas</string>
+    <string name="unit_volume_cubic_decimeter">Adisimitr agasas</string>
+    <string name="unit_volume_cubic_centimeter">Asentimtr Agasas</string>
+    <string name="unit_volume_cubic_foot">Aḍar agasas</string>
+    <string name="unit_volume_acre_foot">Aḍar Acr</string>
+    <string name="unit_volume_cubic_inch">adebbuz agasas</string>
+</resources>
