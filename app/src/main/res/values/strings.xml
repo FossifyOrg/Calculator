@@ -141,7 +141,7 @@
     <string name="unit_energy_electronvolt">Electronvolt</string>
     <string name="unit_energy_btu">British thermal unit</string>
     <string name="unit_energy_therm">Therm</string>
-    <string name="unit_energy_foot_pound">Foot-Pound</string>
+    <string name="unit_energy_foot_pound">Foot-pound</string>
     <string name="unit_energy_erg">Erg</string>
 
     <!-- FAQ -->
