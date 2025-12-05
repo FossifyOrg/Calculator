@@ -40,7 +40,7 @@ object SpeedConverter : Converter {
         data object KilometerPerHour : Unit(
             nameResId = R.string.unit_speed_kilometer_per_hour,
             symbolResId = R.string.unit_speed_kilometer_per_hour_symbol,
-            factor = BigDecimal(1000).divide(BigDecimal(HOUR_SECONDS), MATH_CONTEXT),
+            factor = BigDecimal("1000").divide(BigDecimal("3600"), MATH_CONTEXT),
             key = "KilometerPerHour"
         )
 
@@ -54,7 +54,7 @@ object SpeedConverter : Converter {
         data object Knot : Unit(
             nameResId = R.string.unit_speed_knot,
             symbolResId = R.string.unit_speed_knot_symbol,
-            factor = BigDecimal(1852).divide(BigDecimal(3600), MATH_CONTEXT),
+            factor = BigDecimal("1852").divide(BigDecimal("3600"), MATH_CONTEXT),
             key = "Knot"
         )
 
