@@ -5,6 +5,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- Energy unit converter ([#192])
+- Pressure unit converter ([#191])
+- Speed unit converter ([#190])
 
 ### Fixed
 - Fixed issue that occurs after doing a percent operation ([#160])
@@ -64,6 +68,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#44]: https://github.com/FossifyOrg/Calculator/issues/44
 [#64]: https://github.com/FossifyOrg/Calculator/issues/64
 [#160]: https://github.com/FossifyOrg/Calculator/issues/160
+[#190]: https://github.com/FossifyOrg/Calculator/issues/190
+[#191]: https://github.com/FossifyOrg/Calculator/issues/191
+[#192]: https://github.com/FossifyOrg/Calculator/issues/192
 
 [Unreleased]: https://github.com/FossifyOrg/Calculator/compare/1.2.0...HEAD
 [1.2.0]: https://github.com/FossifyOrg/Calculator/compare/1.1.0...1.2.0

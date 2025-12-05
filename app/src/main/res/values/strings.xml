@@ -35,6 +35,7 @@
     <string name="unit_length_astronomical_unit">Astronomical Unit</string>
     <string name="unit_length_parsec">Parsec</string>
     <string name="unit_length_light_year">Light Year</string>
+
     <string name="unit_area">Area</string>
     <string name="unit_area_square_kilometer">Square Kilometer</string>
     <string name="unit_area_square_meter">Square Meter</string>
@@ -46,6 +47,7 @@
     <string name="unit_area_square_inch">Square Inch</string>
     <string name="unit_area_acre">Acre</string>
     <string name="unit_area_hectare">Hectare</string>
+
     <string name="unit_volume">Volume</string>
     <string name="unit_volume_cubic_meter">Cubic Meter</string>
     <string name="unit_volume_cubic_decimeter">Cubic Decimeter</string>
@@ -72,6 +74,7 @@
     <string name="unit_volume_pint_imperial">Pint (Imperial)</string>
     <string name="unit_volume_gill_imperial">Gill (Imperial)</string>
     <string name="unit_volume_fluid_ounce_imperial">Fluid Ounce (Imperial)</string>
+
     <string name="unit_mass">Mass</string>
     <string name="unit_mass_gram">Gram</string>
     <string name="unit_mass_kilogram">Kilogram</string>
@@ -87,11 +90,13 @@
     <string name="unit_mass_short_ton">Short Ton</string>
     <string name="unit_mass_carat">Carat</string>
     <string name="unit_mass_carat_metric">Carat (Metric)</string>
+
     <string name="unit_temperature">Temperature</string>
     <string name="unit_temperature_celsius">Celsius</string>
     <string name="unit_temperature_fahrenheit">Fahrenheit</string>
     <string name="unit_temperature_rankine">Rankine</string>
     <string name="unit_temperature_kelvin">Kelvin</string>
+
     <string name="unit_time">Time</string>
     <string name="unit_time_hour">Hour</string>
     <string name="unit_time_minute">Minute</string>
@@ -100,6 +105,44 @@
     <string name="unit_time_day">Day</string>
     <string name="unit_time_week">Week</string>
     <string name="unit_time_year">Year</string>
+
+    <string name="unit_speed">Speed</string>
+    <string name="unit_speed_meter_per_second">Meter per second</string>
+    <string name="unit_speed_kilometer_per_second">Kilometer per second</string>
+    <string name="unit_speed_kilometer_per_hour">Kilometer per hour</string>
+    <string name="unit_speed_mile_per_hour">Mile per hour</string>
+    <string name="unit_speed_knot">Knot</string>
+    <string name="unit_speed_foot_per_second">Foot per second</string>
+    <string name="unit_speed_mach">Mach</string>
+    <string name="unit_speed_speed_of_light">Speed of light</string>
+
+    <string name="unit_pressure">Pressure</string>
+    <string name="unit_pressure_pascal">Pascal</string>
+    <string name="unit_pressure_kilopascal">Kilopascal</string>
+    <string name="unit_pressure_megapascal">Megapascal</string>
+    <string name="unit_pressure_bar">Bar</string>
+    <string name="unit_pressure_millibar">Millibar</string>
+    <string name="unit_pressure_atmosphere">Atmosphere</string>
+    <string name="unit_pressure_psi">Pound per square inch</string>
+    <string name="unit_pressure_torr">Torr</string>
+    <string name="unit_pressure_mmhg">Millimeter of mercury</string>
+    <string name="unit_pressure_inhg">Inch of mercury</string>
+
+    <string name="unit_energy">Energy</string>
+    <string name="unit_energy_joule">Joule</string>
+    <string name="unit_energy_kilojoule">Kilojoule</string>
+    <string name="unit_energy_megajoule">Megajoule</string>
+    <string name="unit_energy_gigajoule">Gigajoule</string>
+    <string name="unit_energy_calorie">Calorie</string>
+    <string name="unit_energy_kilocalorie">Kilocalorie</string>
+    <string name="unit_energy_watt_hour">Watt hour</string>
+    <string name="unit_energy_kilowatt_hour">Kilowatt hour</string>
+    <string name="unit_energy_megawatt_hour">Megawatt hour</string>
+    <string name="unit_energy_electronvolt">Electronvolt</string>
+    <string name="unit_energy_btu">British thermal unit</string>
+    <string name="unit_energy_therm">Therm</string>
+    <string name="unit_energy_foot_pound">Foot-pound</string>
+    <string name="unit_energy_erg">Erg</string>
 
     <!-- FAQ -->
     <string name="faq_1_title">How does the C (Clear) button work?</string>

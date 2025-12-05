@@ -20,6 +20,7 @@
     <string name="unit_length_astronomical_unit_symbol">au</string>
     <string name="unit_length_parsec_symbol">pc</string>
     <string name="unit_length_light_year_symbol">ly</string>
+
     <string name="unit_area_square_kilometer_symbol">km²</string>
     <string name="unit_area_square_meter_symbol">m²</string>
     <string name="unit_area_square_centimeter_symbol">cm²</string>
@@ -30,6 +31,7 @@
     <string name="unit_area_square_inch_symbol">sq in</string>
     <string name="unit_area_acre_symbol">ac</string>
     <string name="unit_area_hectare_symbol">ha</string>
+
     <string name="unit_volume_cubic_meter_symbol">m³</string>
     <string name="unit_volume_cubic_decimeter_symbol">dm³</string>
     <string name="unit_volume_cubic_centimeter_symbol">cm³</string>
@@ -55,6 +57,7 @@
     <string name="unit_volume_pint_imperial_symbol">pt (imp)</string>
     <string name="unit_volume_gill_imperial_symbol">gi (imp)</string>
     <string name="unit_volume_fluid_ounce_imperial_symbol">fl oz (imp)</string>
+
     <string name="unit_mass_gram_symbol">g</string>
     <string name="unit_mass_kilogram_symbol">kg</string>
     <string name="unit_mass_milligram_symbol">mg</string>
@@ -69,10 +72,12 @@
     <string name="unit_mass_short_ton_symbol">sh tn</string>
     <string name="unit_mass_carat_symbol">kt</string>
     <string name="unit_mass_carat_metric_symbol">ct</string>
+
     <string name="unit_temperature_celsius_symbol">°C</string>
     <string name="unit_temperature_fahrenheit_symbol">°F</string>
     <string name="unit_temperature_rankine_symbol">°R</string>
     <string name="unit_temperature_kelvin_symbol">K</string>
+
     <string name="unit_time_hour_symbol">h</string>
     <string name="unit_time_minute_symbol">m</string>
     <string name="unit_time_second_symbol">s</string>
@@ -80,4 +85,39 @@
     <string name="unit_time_day_symbol">d</string>
     <string name="unit_time_week_symbol">wk</string>
     <string name="unit_time_year_symbol">y</string>
+
+    <string name="unit_speed_meter_per_second_symbol">m/s</string>
+    <string name="unit_speed_kilometer_per_second_symbol">km/s</string>
+    <string name="unit_speed_kilometer_per_hour_symbol">km/h</string>
+    <string name="unit_speed_mile_per_hour_symbol">mph</string>
+    <string name="unit_speed_knot_symbol">kn</string>
+    <string name="unit_speed_foot_per_second_symbol">ft/s</string>
+    <string name="unit_speed_mach_symbol">Ma</string>
+    <string name="unit_speed_speed_of_light_symbol">c</string>
+
+    <string name="unit_pressure_pascal_symbol">Pa</string>
+    <string name="unit_pressure_kilopascal_symbol">kPa</string>
+    <string name="unit_pressure_megapascal_symbol">MPa</string>
+    <string name="unit_pressure_bar_symbol">bar</string>
+    <string name="unit_pressure_millibar_symbol">mbar</string>
+    <string name="unit_pressure_atmosphere_symbol">atm</string>
+    <string name="unit_pressure_psi_symbol">psi</string>
+    <string name="unit_pressure_torr_symbol">Torr</string>
+    <string name="unit_pressure_mmhg_symbol">mmHg</string>
+    <string name="unit_pressure_inhg_symbol">inHg</string>
+
+    <string name="unit_energy_joule_symbol">J</string>
+    <string name="unit_energy_kilojoule_symbol">kJ</string>
+    <string name="unit_energy_megajoule_symbol">MJ</string>
+    <string name="unit_energy_gigajoule_symbol">GJ</string>
+    <string name="unit_energy_calorie_symbol">cal</string>
+    <string name="unit_energy_kilocalorie_symbol">kcal</string>
+    <string name="unit_energy_watt_hour_symbol">Wh</string>
+    <string name="unit_energy_kilowatt_hour_symbol">kWh</string>
+    <string name="unit_energy_megawatt_hour_symbol">MWh</string>
+    <string name="unit_energy_electronvolt_symbol">eV</string>
+    <string name="unit_energy_btu_symbol">BTU</string>
+    <string name="unit_energy_therm_symbol">thm</string>
+    <string name="unit_energy_foot_pound_symbol">ft⋅lbf</string>
+    <string name="unit_energy_erg_symbol">erg</string>
 </resources>

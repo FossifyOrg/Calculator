@@ -13,7 +13,10 @@ interface Converter {
             VolumeConverter,
             MassConverter,
             TemperatureConverter,
-            TimeConverter
+            TimeConverter,
+            SpeedConverter,
+            PressureConverter,
+            EnergyConverter
         )
     }
 
