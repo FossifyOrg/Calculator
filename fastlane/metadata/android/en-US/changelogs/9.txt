@@ -1,0 +1,14 @@
+Added:
+
+• Energy unit converter 
+• Pressure unit converter 
+• Speed unit converter 
+
+Changed:
+
+• Updated translations
+
+Fixed:
+
+• Fixed issue that occurs after doing a percent operation 
+
