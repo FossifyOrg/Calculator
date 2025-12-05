@@ -112,8 +112,8 @@
     <string name="unit_pressure_atmosphere">वायुमंडल</string>
     <string name="unit_pressure_psi">पाउंड प्रति वर्ग इंच</string>
     <string name="unit_pressure_torr">टॉर</string>
-    <string name="unit_pressure_mmhg">मिलीमीटर पारा</string>
-    <string name="unit_pressure_inhg">इंच पारा</string>
+    <string name="unit_pressure_mmhg">पारे के मिलीमीटर</string>
+    <string name="unit_pressure_inhg">पारे के इंच</string>
     <string name="unit_energy">ऊर्जा</string>
     <string name="unit_energy_joule">जूल</string>
     <string name="unit_energy_kilojoule">किलोजूल</string>
