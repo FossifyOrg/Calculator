@@ -5,4 +5,7 @@
     <string name="vibrate_on_button_press">Düyməyə basdıqda titrə</string>
     <string name="faq_1_title">C (Sil) düyməsi necə işləyir?</string>
     <string name="faq_1_text">Tək toxunur 1 rəqəmi siləcək. Basılı saxlamaq isə tamamilə rəqəmləri sıfırlayacaq.</string>
+    <string name="scientific_calculator">Elmi Kalkulyator</string>
+    <string name="unit_converter">Ölçü çevirici</string>
+    <string name="swap_units">Ölçüləri dəyiş</string>
 </resources>
