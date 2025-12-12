@@ -94,4 +94,15 @@
     <string name="unit_temperature_fahrenheit">Fahrenheit</string>
     <string name="unit_volume_customary_cup_us">Taza común (EEUU)</string>
     <string name="unit_volume_legal_cup_us">Taza legal (EEUU)</string>
+    <string name="unit_speed_meter_per_second">Metros por segundo</string>
+    <string name="unit_speed_kilometer_per_second">Kilómetros por segundo</string>
+    <string name="unit_speed_kilometer_per_hour">Kilómetros por hora</string>
+    <string name="unit_speed_mile_per_hour">Millas por hora</string>
+    <string name="unit_speed_foot_per_second">Pies por segundo</string>
+    <string name="unit_speed_speed_of_light">Velocidad de la luz</string>
+    <string name="unit_pressure">Presión</string>
+    <string name="unit_pressure_pascal">Pascal</string>
+    <string name="unit_pressure_kilopascal">Kilopascal</string>
+    <string name="unit_pressure_megapascal">Megapascal</string>
+    <string name="unit_pressure_bar">Bar</string>
 </resources>
