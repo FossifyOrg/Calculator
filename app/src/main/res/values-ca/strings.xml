@@ -7,9 +7,9 @@
     <string name="formula_divide_by_zero_error">Error: divisió per zero</string>
     <string name="history">Historial</string>
     <string name="history_empty">L\'historial és buit</string>
-    <string name="clear_history">Neteja</string>
+    <string name="clear_history">Netejar</string>
     <string name="history_cleared">S\'ha netejat l\'historial</string>
-    <string name="vibrate_on_button_press">Vibra en prémer els botons</string>
+    <string name="vibrate_on_button_press">Vibrar en prémer els botons</string>
     <string name="unit_length">Longitud</string>
     <string name="unit_length_kilometer">Quilòmetre</string>
     <string name="unit_length_meter">Metre</string>
@@ -128,5 +128,5 @@
     <string name="unit_energy_btu">Unitat tèrmica britànica</string>
     <string name="unit_energy_therm">Therm</string>
     <string name="unit_energy_erg">Erg</string>
-    <string name="unit_energy_foot_pound">Foot-pound</string>
+    <string name="unit_energy_foot_pound">Peu-lliura</string>
 </resources>
