@@ -127,6 +127,6 @@
     <string name="unit_energy_kilowatt_hour">Quilowatt-hora</string>
     <string name="unit_energy_megawatt_hour">Megawatt-hora</string>
     <string name="unit_energy_electronvolt">Elétron-volt</string>
-    <string name="unit_energy_therm">Termo</string>
+    <string name="unit_energy_therm">Term</string>
     <string name="unit_energy_erg">Erg</string>
 </resources>
