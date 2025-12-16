@@ -94,4 +94,19 @@
     <string name="unit_volume_gill_imperial">גיל (אימפריאלי)</string>
     <string name="unit_mass_long_ton">טון ארוך</string>
     <string name="unit_volume_customary_cup_us">גביע רגיל (ארה\"ב)</string>
+    <string name="unit_speed">מהירות</string>
+    <string name="unit_speed_meter_per_second">מטר לשנייה</string>
+    <string name="unit_speed_kilometer_per_second">קילומטר לשניה</string>
+    <string name="unit_speed_kilometer_per_hour">קילומטר לשעה</string>
+    <string name="unit_speed_mile_per_hour">מייל לשעה</string>
+    <string name="unit_speed_foot_per_second">רגל לשנייה</string>
+    <string name="unit_speed_mach">מאך</string>
+    <string name="unit_speed_speed_of_light">מהירות האור</string>
+    <string name="unit_pressure">לחץ</string>
+    <string name="unit_pressure_pascal">פסקל</string>
+    <string name="unit_pressure_kilopascal">קילופסקל</string>
+    <string name="unit_pressure_megapascal">מגה-פסקל</string>
+    <string name="unit_pressure_bar">בר</string>
+    <string name="unit_pressure_millibar">מיליבר</string>
+    <string name="unit_pressure_atmosphere">אטמוספרה</string>
 </resources>
