@@ -34,4 +34,18 @@
     <string name="unit_area_square_mile">Milia karratua</string>
     <string name="unit_area_square_yard">Yarda karratua</string>
     <string name="unit_area_square_foot">Oin karratua</string>
+    <string name="unit_length_astronomical_unit">Unitate astronomikoa</string>
+    <string name="unit_area_square_inch">Hazbete karratua</string>
+    <string name="unit_area_acre">Akre</string>
+    <string name="unit_area_hectare">Hektarea</string>
+    <string name="unit_volume">Bolumena</string>
+    <string name="unit_volume_cubic_meter">Metro kubikoa</string>
+    <string name="unit_volume_cubic_decimeter">Dezimetro kubikoa</string>
+    <string name="unit_volume_cubic_centimeter">Zentimetro kubikoa</string>
+    <string name="unit_volume_cubic_millimeter">Milimetro kubikoa</string>
+    <string name="unit_volume_liter">Litroa</string>
+    <string name="unit_volume_centiliter">Zentilitroa</string>
+    <string name="unit_volume_deciliter">Dezilitroa</string>
+    <string name="unit_volume_milliliter">Mililitroa</string>
+    <string name="unit_volume_acre_foot">Akre oina</string>
 </resources>
