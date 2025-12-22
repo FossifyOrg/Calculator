@@ -48,4 +48,14 @@
     <string name="unit_volume_deciliter">Dezilitroa</string>
     <string name="unit_volume_milliliter">Mililitroa</string>
     <string name="unit_volume_acre_foot">Akre oina</string>
+    <string name="unit_volume_cubic_foot">Oin kubikoa</string>
+    <string name="unit_volume_cubic_inch">Hazbete kubikoa</string>
+    <string name="unit_volume_barrel_us">Kupela (AEB)</string>
+    <string name="unit_volume_gallon_us">Galoia (AEB)</string>
+    <string name="unit_volume_quart_us">Galoi laurdena (AEB)</string>
+    <string name="unit_volume_pint_us">Pinta (AEB)</string>
+    <string name="unit_volume_fluid_ounce_us">Ontza likidoa (AEB)</string>
+    <string name="unit_volume_barrel_imperial">Kupela (inperiala)</string>
+    <string name="unit_volume_gallon_imperial">Galoia (inperiala)</string>
+    <string name="unit_volume_quart_imperial">Galoi laurdena (inperiala)</string>
 </resources>
