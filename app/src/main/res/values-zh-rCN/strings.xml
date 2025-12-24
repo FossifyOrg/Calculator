@@ -126,7 +126,7 @@
     <string name="unit_energy_megawatt_hour">兆瓦时</string>
     <string name="unit_energy_electronvolt">电子伏特</string>
     <string name="unit_energy_btu">英制热量单位</string>
-    <string name="unit_energy_therm">thm</string>
+    <string name="unit_energy_therm">热单位</string>
     <string name="unit_energy_foot_pound">英尺磅</string>
     <string name="unit_energy_erg">尔格</string>
 </resources>
