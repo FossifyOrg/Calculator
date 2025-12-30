@@ -58,4 +58,25 @@
     <string name="unit_volume_barrel_imperial">Kupela (inperiala)</string>
     <string name="unit_volume_gallon_imperial">Galoia (inperiala)</string>
     <string name="unit_volume_quart_imperial">Galoi laurdena (inperiala)</string>
+    <string name="unit_volume_legal_cup_us">Kopa legala (AEB)</string>
+    <string name="unit_volume_customary_cup_us">Ohiko Kopa (AEB)</string>
+    <string name="unit_volume_gill_us">Gill (AEB)</string>
+    <string name="unit_volume_pint_imperial">Pinta (inperiala)</string>
+    <string name="unit_volume_gill_imperial">Gill (inperiala)</string>
+    <string name="unit_volume_fluid_ounce_imperial">Ontza likidoa (inperiala)</string>
+    <string name="unit_mass">Masa</string>
+    <string name="unit_mass_gram">Gramoa</string>
+    <string name="unit_mass_kilogram">Kilogramoa</string>
+    <string name="unit_mass_milligram">Miligramoa</string>
+    <string name="unit_mass_microgram">Mikrogramoa</string>
+    <string name="unit_mass_tonne">Tona</string>
+    <string name="unit_mass_pound">Libra</string>
+    <string name="unit_mass_ounce">Ontza</string>
+    <string name="unit_mass_grain">Alea</string>
+    <string name="unit_mass_stone">Harria</string>
+    <string name="unit_mass_long_ton">Tona luzea</string>
+    <string name="unit_mass_short_ton">Tona laburra</string>
+    <string name="unit_mass_carat">Kilate</string>
+    <string name="unit_mass_carat_metric">Kilate (sistema metrikoa)</string>
+    <string name="unit_temperature">Tenperatura</string>
 </resources>
