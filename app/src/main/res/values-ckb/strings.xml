@@ -10,4 +10,6 @@
     <string name="vibrate_on_button_press">لەرزین لەکاتی دەستنان بە هێماکان</string>
     <string name="faq_1_text">دەستدان لێی یەک ژمارە دەسڕێتەوە یەکجار، زیاتر دەسڕاگرتن خانەکە سفر دەکاتەوە.</string>
     <string name="faq_1_title">دوگمەی C (سڕینەوە) چۆن کارەکات؟</string>
+    <string name="unit_converter">وەرگێڕی یەکە</string>
+    <string name="swap_units">جێگۆڕینی یەکە</string>
 </resources>
