@@ -29,8 +29,8 @@
     <string name="faq_1_title">كيف يعمل الزر C (مسح)؟</string>
     <string name="faq_1_text">النقر على ذلك سوف يزيل حرف واحد في وقت واحد. الضغط لفترة طويلة سوف إعادة تعيين جميع الحقول في وقت واحد.</string>
     <string name="unit_length_angstrom">أنجستروم</string>
-    <string name="unit_mass_milligram">מיליגרם</string>
-    <string name="unit_volume_liter">ליטר</string>
+    <string name="unit_mass_milligram">ملليغرام</string>
+    <string name="unit_volume_liter">لتر</string>
     <string name="unit_mass_ounce">أونصة</string>
     <string name="unit_length_mile">ميل</string>
     <string name="unit_length_yard">ياردة</string>
@@ -53,7 +53,7 @@
     <string name="unit_volume_barrel_us">برميل (الولايات المتحدة)</string>
     <string name="unit_volume_gallon_us">جالون (الولايات المتحدة)</string>
     <string name="unit_volume_quart_us">كوارت (الولايات المتحدة)</string>
-    <string name="unit_volume_pint_us">نصف لتر (الولايات المتحدة)</string>
+    <string name="unit_volume_pint_us">باينت (الولايات المتحدة)</string>
     <string name="unit_volume_legal_cup_us">كوب قانوني (الولايات المتحدة)</string>
     <string name="unit_volume_customary_cup_us">كوب تقليدي (الولايات المتحدة)</string>
     <string name="unit_volume_gill_us">غيل (الولايات المتحدة)</string>
@@ -61,7 +61,7 @@
     <string name="unit_volume_barrel_imperial">برميل (إمبريالي)</string>
     <string name="unit_volume_gallon_imperial">غالون (إمبريالي)</string>
     <string name="unit_volume_quart_imperial">كوارت (إمبريالي)</string>
-    <string name="unit_volume_pint_imperial">نصف لتر (إمبريالي)</string>
+    <string name="unit_volume_pint_imperial">باينت (إمبريالي)</string>
     <string name="unit_volume_gill_imperial">غيل (إمبريالي)</string>
     <string name="unit_volume_fluid_ounce_imperial">الأونصة السائلة (إمبريالي)</string>
     <string name="unit_mass">الكتلة</string>
