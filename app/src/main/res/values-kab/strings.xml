@@ -31,4 +31,9 @@
     <string name="unit_volume_cubic_foot">Aḍar agasas</string>
     <string name="unit_volume_acre_foot">Aḍar Acr</string>
     <string name="unit_volume_cubic_inch">adebbuz agasas</string>
+    <string name="scientific_calculator">Tamṣident tussnant</string>
+    <string name="unit_converter">Aselkat n uferdis</string>
+    <string name="swap_units">Iferdisen n usemmeskel</string>
+    <string name="formula_divide_by_zero_error">Tuccḍa: taẓunt s yilem</string>
+    <string name="history_cleared">Amazray yettwasfeḍ</string>
 </resources>
