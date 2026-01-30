@@ -2,4 +2,23 @@
 <resources>
     <string name="app_launcher_name">Calculator</string>
     <string name="scientific_calculator">Scientific Calculator</string>
+    <string name="unit_length_kilometer">Kilometre</string>
+    <string name="unit_length_meter">Metre</string>
+    <string name="unit_length_centimeter">Centimetre</string>
+    <string name="unit_length_millimeter">Millimetre</string>
+    <string name="unit_length_micrometer">Micrometre</string>
+    <string name="unit_length_nanometer">Nanometre</string>
+    <string name="unit_area_square_kilometer">Square Kilometre</string>
+    <string name="unit_area_square_meter">Square Metre</string>
+    <string name="unit_area_square_centimeter">Square Centimetre</string>
+    <string name="unit_area_square_millimeter">Square Millimetre</string>
+    <string name="unit_area_square_mile">Square Mile</string>
+    <string name="unit_volume_cubic_meter">Cubic Metre</string>
+    <string name="unit_volume_cubic_decimeter">Cubic Decimetre</string>
+    <string name="unit_volume_cubic_centimeter">Cubic Centimetre</string>
+    <string name="unit_volume_cubic_millimeter">Cubic Millimetre</string>
+    <string name="unit_volume_liter">Litre</string>
+    <string name="unit_volume_centiliter">Centilitre</string>
+    <string name="unit_volume_deciliter">Decilitre</string>
+    <string name="unit_volume_milliliter">Millilitre</string>
 </resources>
