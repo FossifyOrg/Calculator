@@ -1,3 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    </resources>
+    <string name="vibrate_on_button_press">สั่นเมื่อกดปุ่ม</string>
+</resources>
