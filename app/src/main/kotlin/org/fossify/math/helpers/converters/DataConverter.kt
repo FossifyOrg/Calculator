@@ -12,6 +12,11 @@ object DataConverter : Converter {
     private val KILO = BigDecimal("1000")
     private val KIBI = BigDecimal("1024")
 
+    private const val EXPONENT_2 = 2
+    private const val EXPONENT_3 = 3
+    private const val EXPONENT_4 = 4
+    private const val EXPONENT_5 = 5
+
     sealed class Unit(nameResId: Int, symbolResId: Int, factor: BigDecimal, key: String) :
         Converter.Unit(nameResId, symbolResId, factor, key) {
         data object Bit : Unit(
@@ -46,28 +51,28 @@ object DataConverter : Converter {
         data object Megabit : Unit(
             nameResId = R.string.unit_data_megabit,
             symbolResId = R.string.unit_data_megabit_symbol,
-            factor = KILO.pow(2),
+            factor = KILO.pow(EXPONENT_2),
             key = "Megabit"
         )
 
         data object Gigabit : Unit(
             nameResId = R.string.unit_data_gigabit,
             symbolResId = R.string.unit_data_gigabit_symbol,
-            factor = KILO.pow(3),
+            factor = KILO.pow(EXPONENT_3),
             key = "Gigabit"
         )
 
         data object Terabit : Unit(
             nameResId = R.string.unit_data_terabit,
             symbolResId = R.string.unit_data_terabit_symbol,
-            factor = KILO.pow(4),
+            factor = KILO.pow(EXPONENT_4),
             key = "Terabit"
         )
 
         data object Petabit : Unit(
             nameResId = R.string.unit_data_petabit,
             symbolResId = R.string.unit_data_petabit_symbol,
-            factor = KILO.pow(5),
+            factor = KILO.pow(EXPONENT_5),
             key = "Petabit"
         )
 
@@ -82,28 +87,28 @@ object DataConverter : Converter {
         data object Mebibit : Unit(
             nameResId = R.string.unit_data_mebibit,
             symbolResId = R.string.unit_data_mebibit_symbol,
-            factor = KIBI.pow(2),
+            factor = KIBI.pow(EXPONENT_2),
             key = "Mebibit"
         )
 
         data object Gibibit : Unit(
             nameResId = R.string.unit_data_gibibit,
             symbolResId = R.string.unit_data_gibibit_symbol,
-            factor = KIBI.pow(3),
+            factor = KIBI.pow(EXPONENT_3),
             key = "Gibibit"
         )
 
         data object Tebibit : Unit(
             nameResId = R.string.unit_data_tebibit,
             symbolResId = R.string.unit_data_tebibit_symbol,
-            factor = KIBI.pow(4),
+            factor = KIBI.pow(EXPONENT_4),
             key = "Tebibit"
         )
 
         data object Pebibit : Unit(
             nameResId = R.string.unit_data_pebibit,
             symbolResId = R.string.unit_data_pebibit_symbol,
-            factor = KIBI.pow(5),
+            factor = KIBI.pow(EXPONENT_5),
             key = "Pebibit"
         )
 
@@ -118,28 +123,28 @@ object DataConverter : Converter {
         data object Megabyte : Unit(
             nameResId = R.string.unit_data_megabyte,
             symbolResId = R.string.unit_data_megabyte_symbol,
-            factor = BITS_IN_BYTE.multiply(KILO.pow(2)),
+            factor = BITS_IN_BYTE.multiply(KILO.pow(EXPONENT_2)),
             key = "Megabyte"
         )
 
         data object Gigabyte : Unit(
             nameResId = R.string.unit_data_gigabyte,
             symbolResId = R.string.unit_data_gigabyte_symbol,
-            factor = BITS_IN_BYTE.multiply(KILO.pow(3)),
+            factor = BITS_IN_BYTE.multiply(KILO.pow(EXPONENT_3)),
             key = "Gigabyte"
         )
 
         data object Terabyte : Unit(
             nameResId = R.string.unit_data_terabyte,
             symbolResId = R.string.unit_data_terabyte_symbol,
-            factor = BITS_IN_BYTE.multiply(KILO.pow(4)),
+            factor = BITS_IN_BYTE.multiply(KILO.pow(EXPONENT_4)),
             key = "Terabyte"
         )
 
         data object Petabyte : Unit(
             nameResId = R.string.unit_data_petabyte,
             symbolResId = R.string.unit_data_petabyte_symbol,
-            factor = BITS_IN_BYTE.multiply(KILO.pow(5)),
+            factor = BITS_IN_BYTE.multiply(KILO.pow(EXPONENT_5)),
             key = "Petabyte"
         )
 
@@ -154,28 +159,28 @@ object DataConverter : Converter {
         data object Mebibyte : Unit(
             nameResId = R.string.unit_data_mebibyte,
             symbolResId = R.string.unit_data_mebibyte_symbol,
-            factor = BITS_IN_BYTE.multiply(KIBI.pow(2)),
+            factor = BITS_IN_BYTE.multiply(KIBI.pow(EXPONENT_2)),
             key = "Mebibyte"
         )
 
         data object Gibibyte : Unit(
             nameResId = R.string.unit_data_gibibyte,
             symbolResId = R.string.unit_data_gibibyte_symbol,
-            factor = BITS_IN_BYTE.multiply(KIBI.pow(3)),
+            factor = BITS_IN_BYTE.multiply(KIBI.pow(EXPONENT_3)),
             key = "Gibibyte"
         )
 
         data object Tebibyte : Unit(
             nameResId = R.string.unit_data_tebibyte,
             symbolResId = R.string.unit_data_tebibyte_symbol,
-            factor = BITS_IN_BYTE.multiply(KIBI.pow(4)),
+            factor = BITS_IN_BYTE.multiply(KIBI.pow(EXPONENT_4)),
             key = "Tebibyte"
         )
 
         data object Pebibyte : Unit(
             nameResId = R.string.unit_data_pebibyte,
             symbolResId = R.string.unit_data_pebibyte_symbol,
-            factor = BITS_IN_BYTE.multiply(KIBI.pow(5)),
+            factor = BITS_IN_BYTE.multiply(KIBI.pow(EXPONENT_5)),
             key = "Pebibyte"
         )
     }
