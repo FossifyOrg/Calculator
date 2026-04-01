@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<issues format="6" by="lint 9.0.1" type="baseline" client="gradle" dependencies="false" name="AGP (9.0.1)" variant="all" version="9.0.1">
+<issues format="6" by="lint 9.1.0" type="baseline" client="gradle" dependencies="false" name="AGP (9.1.0)" variant="all" version="9.1.0">
 
     <issue
         id="InconsistentLayout"
@@ -319,7 +319,7 @@
 
     <issue
         id="GradleDependency"
-        message="A newer version of androidx.compose.animation:animation than 1.7.8 is available: 1.10.4"
+        message="A newer version of androidx.compose.animation:animation than 1.7.8 is available: 1.10.6"
         errorLine1="compose = &quot;1.7.8&quot;"
         errorLine2="          ~~~~~~~">
         <location
@@ -330,7 +330,7 @@
 
     <issue
         id="GradleDependency"
-        message="A newer version of androidx.compose.runtime:runtime than 1.7.8 is available: 1.10.4"
+        message="A newer version of androidx.compose.runtime:runtime than 1.7.8 is available: 1.10.6"
         errorLine1="compose = &quot;1.7.8&quot;"
         errorLine2="          ~~~~~~~">
         <location
@@ -341,7 +341,7 @@
 
     <issue
         id="GradleDependency"
-        message="A newer version of androidx.compose.ui:ui than 1.7.8 is available: 1.10.4"
+        message="A newer version of androidx.compose.ui:ui than 1.7.8 is available: 1.10.6"
         errorLine1="compose = &quot;1.7.8&quot;"
         errorLine2="          ~~~~~~~">
         <location
@@ -352,7 +352,7 @@
 
     <issue
         id="GradleDependency"
-        message="A newer version of androidx.compose.ui:ui-tooling than 1.7.8 is available: 1.10.4"
+        message="A newer version of androidx.compose.ui:ui-tooling than 1.7.8 is available: 1.10.6"
         errorLine1="compose = &quot;1.7.8&quot;"
         errorLine2="          ~~~~~~~">
         <location
@@ -363,7 +363,7 @@
 
     <issue
         id="GradleDependency"
-        message="A newer version of androidx.compose.ui:ui-tooling-preview than 1.7.8 is available: 1.10.4"
+        message="A newer version of androidx.compose.ui:ui-tooling-preview than 1.7.8 is available: 1.10.6"
         errorLine1="compose = &quot;1.7.8&quot;"
         errorLine2="          ~~~~~~~">
         <location
@@ -392,6 +392,17 @@
             file="src/main/AndroidManifest.xml"
             line="47"
             column="13"/>
+    </issue>
+
+    <issue
+        id="NewerVersionAvailable"
+        message="A newer version of org.jetbrains.kotlin.plugin.compose than 2.3.10 is available: 2.3.20"
+        errorLine1="kotlin = &quot;2.3.10&quot;"
+        errorLine2="         ~~~~~~~~">
+        <location
+            file="$HOME/work/Calculator/Calculator/gradle/libs.versions.toml"
+            line="3"
+            column="10"/>
     </issue>
 
     <issue
