@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_launcher_name">Számológép</string>
-    <string name="scientific_calculator">Tudományos számológép</string>
+    <string name="scientific_calculator">Tudományos Számológép</string>
     <string name="unit_converter">Mértékegységváltó</string>
     <string name="swap_units">Mértékegységek felcserélése</string>
     <string name="formula_divide_by_zero_error">Hiba: nullával való osztás</string>
