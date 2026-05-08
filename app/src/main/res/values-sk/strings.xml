@@ -128,4 +128,5 @@
     <string name="unit_energy_therm">Term</string>
     <string name="unit_energy_erg">Erg</string>
     <string name="unit_energy_foot_pound">Stopa libry</string>
+    <string name="unit_speed_mach">Mach</string>
 </resources>
