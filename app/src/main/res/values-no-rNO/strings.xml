@@ -94,4 +94,8 @@
     <string name="unit_time_day">Dag</string>
     <string name="unit_time_week">Uke</string>
     <string name="unit_time_year">År</string>
+    <string name="unit_energy_calorie">Kalori</string>
+    <string name="unit_energy">Energi</string>
+    <string name="unit_energy_joule">Joule</string>
+    <string name="unit_energy_watt_hour">Wattime</string>
 </resources>
