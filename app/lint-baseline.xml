@@ -330,7 +330,51 @@
 
     <issue
         id="GradleDependency"
-        message="A newer version of androidx.compose.animation:animation than 1.7.8 is available: 1.11.2"
+        message="A newer version of androidx.lifecycle:lifecycle-runtime-compose than 2.10.0 is available: 2.11.0"
+        errorLine1="androidx-lifecycle = &quot;2.10.0&quot;"
+        errorLine2="                     ~~~~~~~~">
+        <location
+            file="$HOME/work/Calculator/Calculator/gradle/libs.versions.toml"
+            line="12"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-runtime-ktx than 2.10.0 is available: 2.11.0"
+        errorLine1="androidx-lifecycle = &quot;2.10.0&quot;"
+        errorLine2="                     ~~~~~~~~">
+        <location
+            file="$HOME/work/Calculator/Calculator/gradle/libs.versions.toml"
+            line="12"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-viewmodel-compose than 2.10.0 is available: 2.11.0"
+        errorLine1="androidx-lifecycle = &quot;2.10.0&quot;"
+        errorLine2="                     ~~~~~~~~">
+        <location
+            file="$HOME/work/Calculator/Calculator/gradle/libs.versions.toml"
+            line="12"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-viewmodel-ktx than 2.10.0 is available: 2.11.0"
+        errorLine1="androidx-lifecycle = &quot;2.10.0&quot;"
+        errorLine2="                     ~~~~~~~~">
+        <location
+            file="$HOME/work/Calculator/Calculator/gradle/libs.versions.toml"
+            line="12"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.compose.animation:animation than 1.7.8 is available: 1.11.3"
         errorLine1="compose = &quot;1.7.8&quot;"
         errorLine2="          ~~~~~~~">
         <location
@@ -341,7 +385,7 @@
 
     <issue
         id="GradleDependency"
-        message="A newer version of androidx.compose.runtime:runtime than 1.7.8 is available: 1.11.2"
+        message="A newer version of androidx.compose.runtime:runtime than 1.7.8 is available: 1.11.3"
         errorLine1="compose = &quot;1.7.8&quot;"
         errorLine2="          ~~~~~~~">
         <location
@@ -352,7 +396,7 @@
 
     <issue
         id="GradleDependency"
-        message="A newer version of androidx.compose.ui:ui than 1.7.8 is available: 1.11.2"
+        message="A newer version of androidx.compose.ui:ui than 1.7.8 is available: 1.11.3"
         errorLine1="compose = &quot;1.7.8&quot;"
         errorLine2="          ~~~~~~~">
         <location
@@ -363,7 +407,7 @@
 
     <issue
         id="GradleDependency"
-        message="A newer version of androidx.compose.ui:ui-tooling than 1.7.8 is available: 1.11.2"
+        message="A newer version of androidx.compose.ui:ui-tooling than 1.7.8 is available: 1.11.3"
         errorLine1="compose = &quot;1.7.8&quot;"
         errorLine2="          ~~~~~~~">
         <location
@@ -374,7 +418,7 @@
 
     <issue
         id="GradleDependency"
-        message="A newer version of androidx.compose.ui:ui-tooling-preview than 1.7.8 is available: 1.11.2"
+        message="A newer version of androidx.compose.ui:ui-tooling-preview than 1.7.8 is available: 1.11.3"
         errorLine1="compose = &quot;1.7.8&quot;"
         errorLine2="          ~~~~~~~">
         <location
@@ -418,7 +462,7 @@
 
     <issue
         id="NewerVersionAvailable"
-        message="A newer version of org.jetbrains.kotlin.plugin.compose than 2.3.10 is available: 2.3.21"
+        message="A newer version of org.jetbrains.kotlin.plugin.compose than 2.3.10 is available: 2.4.0"
         errorLine1="kotlin = &quot;2.3.10&quot;"
         errorLine2="         ~~~~~~~~">
         <location
@@ -429,7 +473,7 @@
 
     <issue
         id="NewerVersionAvailable"
-        message="A newer version of io.nlopez.compose.rules:detekt than 0.4.28 is available: 0.5.9"
+        message="A newer version of io.nlopez.compose.rules:detekt than 0.4.28 is available: 0.6.2"
         errorLine1="detektCompose = &quot;0.4.28&quot;"
         errorLine2="                ~~~~~~~~">
         <location
