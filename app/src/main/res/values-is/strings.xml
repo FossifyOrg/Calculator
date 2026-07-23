@@ -11,7 +11,7 @@
     <string name="app_launcher_name">Reiknir</string>
     <string name="unit_converter">Einingabreytir</string>
     <string name="swap_units">Skipta á einingum</string>
-    <string name="unit_length">Einingabreytir</string>
+    <string name="unit_length">Lengd</string>
     <string name="unit_length_kilometer">Kílómeter</string>
     <string name="unit_length_meter">Meter</string>
     <string name="unit_length_centimeter">Sentímeter</string>
