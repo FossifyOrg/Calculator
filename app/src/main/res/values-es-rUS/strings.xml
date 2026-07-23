@@ -15,8 +15,8 @@
     <string name="unit_length_meter">Metros</string>
     <string name="unit_length_centimeter">Centímetros</string>
     <string name="unit_length_millimeter">Milímetros</string>
-    <string name="unit_length_micrometer">Micrometros</string>
-    <string name="unit_length_nanometer">Manómetros</string>
+    <string name="unit_length_micrometer">Micrómetros</string>
+    <string name="unit_length_nanometer">Nanómetros</string>
     <string name="unit_length_angstrom">Ángstroms</string>
     <string name="unit_length_mile">Millas</string>
     <string name="unit_length_yard">Yardas</string>
@@ -40,17 +40,17 @@
     <string name="unit_area_hectare">Hectáreas</string>
     <string name="unit_volume">Volumen</string>
     <string name="unit_volume_cubic_meter">Metros Cúbicos</string>
-    <string name="unit_volume_cubic_decimeter">Díctímetros Cúbicos</string>
+    <string name="unit_volume_cubic_decimeter">Decímetros Cúbicos</string>
     <string name="unit_volume_cubic_centimeter">Centímetros Cúbicos</string>
     <string name="unit_volume_cubic_millimeter">Milímetros Cúbicos</string>
     <string name="unit_volume_liter">Litros</string>
     <string name="unit_volume_centiliter">Centilitros</string>
     <string name="unit_volume_deciliter">Decilitros</string>
     <string name="unit_volume_milliliter">Mililitros</string>
-    <string name="unit_volume_acre_foot">Pies de Agua</string>
+    <string name="unit_volume_acre_foot">Acre-pie</string>
     <string name="unit_volume_cubic_foot">Pies Cúbicos</string>
     <string name="unit_volume_cubic_inch">Pulgadas Cúbicas</string>
-    <string name="unit_volume_barrel_us">Barril(US)</string>
+    <string name="unit_volume_barrel_us">Barril (US)</string>
     <string name="unit_volume_gallon_us">Galón (US)</string>
     <string name="unit_volume_quart_us">Cuarto (US)</string>
     <string name="unit_volume_pint_us">Pinta (US)</string>
@@ -105,8 +105,8 @@
     <string name="unit_pressure_pascal">Pascales</string>
     <string name="unit_pressure_kilopascal">Kilopascales</string>
     <string name="unit_pressure_megapascal">Megapascales</string>
-    <string name="unit_pressure_bar">Bara</string>
-    <string name="unit_pressure_millibar">Bilibara</string>
+    <string name="unit_pressure_bar">Bar</string>
+    <string name="unit_pressure_millibar">Milibar</string>
     <string name="unit_pressure_atmosphere">Atmósfera</string>
     <string name="unit_pressure_psi">Libra por pulgada cuadrada</string>
     <string name="unit_pressure_torr">Torr</string>
@@ -128,5 +128,5 @@
     <string name="unit_energy_foot_pound">Pie-libra</string>
     <string name="unit_energy_erg">Ergio</string>
     <string name="faq_1_title">¿Cómo funciona el botón C (Clear)?</string>
-    <string name="faq_1_text">Al tocarla, se elimina un campo a la vez. Al mantenerla presionada, se reinician todos los campos a la vez.</string>
+    <string name="faq_1_text">Al tocarla, se elimina un carácter a la vez. Al mantenerla presionada, se reinician todos los campos a la vez.</string>
 </resources>
