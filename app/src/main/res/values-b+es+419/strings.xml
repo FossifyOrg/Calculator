@@ -47,7 +47,7 @@
     <string name="unit_volume_centiliter">Centilitro</string>
     <string name="unit_volume_deciliter">Decilitro</string>
     <string name="unit_volume_milliliter">Mililitro</string>
-    <string name="unit_volume_acre_foot">Acre Pie</string>
+    <string name="unit_volume_acre_foot">Acre-pie</string>
     <string name="unit_volume_cubic_foot">Pie Cúbico</string>
     <string name="unit_volume_cubic_inch">Pulgada Cúbica</string>
     <string name="unit_volume_barrel_us">Barril (EE.UU.)</string>
@@ -56,7 +56,7 @@
     <string name="unit_volume_pint_us">Pinta (EE.UU.)</string>
     <string name="unit_volume_legal_cup_us">Copa Legal (EE.UU.)</string>
     <string name="unit_volume_customary_cup_us">Taza Estándar (EE.UU.)</string>
-    <string name="unit_volume_gill_us">Branquia (EE.UU.)</string>
+    <string name="unit_volume_gill_us">Gill (EE.UU.)</string>
     <string name="unit_volume_fluid_ounce_us">Onza Líquida (EE.UU.)</string>
     <string name="unit_volume_barrel_imperial">Barril (Imperial)</string>
     <string name="unit_volume_gallon_imperial">Galón (Imperial)</string>
