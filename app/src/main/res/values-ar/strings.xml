@@ -15,8 +15,8 @@
     <string name="unit_length_meter">متر</string>
     <string name="unit_length_centimeter">السنتيمتر</string>
     <string name="unit_length_millimeter">ملليمتر</string>
-    <string name="unit_length_micrometer">اصغر متر</string>
-    <string name="unit_length_nanometer">جزى الثانية</string>
+    <string name="unit_length_micrometer">ميكرومتر</string>
+    <string name="unit_length_nanometer">نانومتر</string>
     <string name="unit_length_foot">قدم</string>
     <string name="unit_length_inch">انش</string>
     <string name="unit_length_astronomical_unit">الوحدة الفلكية</string>
@@ -73,4 +73,14 @@
     <string name="unit_volume_deciliter">ديسيلتر</string>
     <string name="unit_volume_milliliter">ملليلتر</string>
     <string name="unit_volume_acre_foot">فدان قدم</string>
+    <string name="unit_mass_microgram">ميكروغرام</string>
+    <string name="unit_mass_tonne">طن</string>
+    <string name="unit_mass_pound">رطل</string>
+    <string name="unit_mass_grain">حبة</string>
+    <string name="unit_mass_dram">درام</string>
+    <string name="unit_mass_stone">ستون</string>
+    <string name="unit_mass_long_ton">طن طويل</string>
+    <string name="unit_mass_short_ton">طن قصير</string>
+    <string name="unit_mass_carat">قيراط</string>
+    <string name="unit_mass_carat_metric">قيراط (متري)</string>
 </resources>
