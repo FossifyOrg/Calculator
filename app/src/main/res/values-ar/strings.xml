@@ -83,4 +83,27 @@
     <string name="unit_mass_short_ton">طن قصير</string>
     <string name="unit_mass_carat">قيراط</string>
     <string name="unit_mass_carat_metric">قيراط (متري)</string>
+    <string name="unit_time">الوقت</string>
+    <string name="unit_temperature">درجة الحرارة</string>
+    <string name="unit_time_hour">الساعة</string>
+    <string name="unit_time_minute">الدقيقة</string>
+    <string name="unit_time_second">الثانية</string>
+    <string name="unit_time_millisecond">الملي ثانية</string>
+    <string name="unit_time_day">اليوم</string>
+    <string name="unit_speed">السرعة</string>
+    <string name="unit_speed_meter_per_second">المتر في الثانية</string>
+    <string name="unit_speed_kilometer_per_second">الكيلومتر في الثانية</string>
+    <string name="unit_speed_kilometer_per_hour">الكيلومتر في الساعة</string>
+    <string name="unit_speed_mile_per_hour">الميل في الساعة</string>
+    <string name="unit_speed_knot">العقدة</string>
+    <string name="unit_speed_foot_per_second">القدم في الثانية</string>
+    <string name="unit_speed_speed_of_light">سرعة الضوء</string>
+    <string name="unit_pressure">الضغط</string>
+    <string name="unit_pressure_pascal">باسكال</string>
+    <string name="unit_pressure_kilopascal">كيلوباسكال</string>
+    <string name="unit_pressure_megapascal">ميغاباسكال</string>
+    <string name="unit_pressure_bar">البار</string>
+    <string name="unit_pressure_millibar">الميلّي بار</string>
+    <string name="unit_pressure_atmosphere">الأجواء</string>
+    <string name="unit_pressure_psi">رطل لكل بوصة مربعة</string>
 </resources>
