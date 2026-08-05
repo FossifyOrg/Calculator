@@ -1,2 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_launcher_name">ᱠᱟᱞᱠᱩᱞᱮᱴᱚᱨ</string>
+    <string name="scientific_calculator">ᱥᱟᱬᱮᱥᱤ ᱠᱮᱞᱠᱩᱞᱮᱴᱚᱨ</string>
+    <string name="unit_converter">ᱭᱩᱱᱤᱴ ᱠᱚᱱᱵᱷᱚᱴᱚᱨ</string>
+    <string name="swap_units">ᱥᱣᱟᱯ ᱭᱩᱱᱤᱴ</string>
+    <string name="formula_divide_by_zero_error">ᱦᱩᱰᱟᱹᱜ: ᱥᱩᱱ ᱛᱮ ᱦᱟᱹᱴᱤᱧ</string>
+    <string name="history">ᱱᱟᱜᱟᱢ</string>
+    <string name="history_empty">ᱱᱟᱜᱟᱢ ᱫᱚ ᱠᱷᱟᱹᱞᱤ ᱜᱮᱭᱟ</string>
+    <string name="clear_history">ᱯᱷᱟᱨᱪᱟ</string>
+    <string name="history_cleared">ᱱᱟᱜᱟᱢ ᱯᱷᱟᱨᱪᱟ ᱮᱱᱟ</string>
+    <string name="vibrate_on_button_press">ᱵᱩᱛᱟᱢ ᱞᱤᱱ ᱞᱮᱠᱷᱟᱱ ᱵᱷᱟᱭᱵᱨᱮᱴᱚᱜᱼᱟ</string>
+    <string name="unit_length">ᱡᱤᱞᱤᱧ</string>
+    <string name="unit_length_kilometer">ᱠᱤᱞᱚᱢᱤᱴᱚᱨ</string>
+    <string name="unit_length_meter">ᱢᱤᱴᱚᱨ</string>
+    <string name="unit_length_centimeter">ᱥᱮᱱᱴᱤᱢᱤᱴᱚᱨ</string>
+    <string name="unit_length_millimeter">ᱢᱤᱞᱤᱢᱤᱴᱚᱨ</string>
+    <string name="unit_length_micrometer">ᱢᱟᱭᱠᱨᱚᱢᱤᱴᱚᱨ</string>
+    <string name="unit_length_nanometer">ᱱᱟᱱᱚᱢᱤᱴᱚᱨ</string>
+    <string name="unit_length_angstrom">ᱟᱝᱥᱴᱨᱚᱝ</string>
+    <string name="unit_length_mile">ᱢᱟᱭᱤᱞ</string>
+    <string name="unit_length_yard">ᱭᱟᱰ</string>
+    <string name="unit_length_foot">ᱯᱷᱩᱴ</string>
+    <string name="unit_length_inch">ᱤᱧᱪ</string>
+    <string name="unit_length_fathom">ᱯᱷᱟᱛᱷᱚᱢ</string>
+    <string name="unit_length_nautical_mile">ᱱᱟᱹᱣᱴᱤᱠᱟᱞ ᱢᱟᱭᱤᱞ</string>
+    <string name="unit_length_astronomical_unit">ᱟᱥᱴᱨᱚᱱᱚᱢᱤᱠᱟᱞ ᱭᱩᱱᱤᱴ</string>
+</resources>

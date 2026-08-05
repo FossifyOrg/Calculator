@@ -10,4 +10,12 @@
     <string name="vibrate_on_button_press">ബട്ടൺ അമർത്തുമ്പോൾ വൈബ്രേറ്റ് ചെയ്യുക</string>
     <string name="faq_1_title">C(ക്ലിയർ ) ബട്ടൺ പ്രവർത്തിക്കുന്നത് എങ്ങനെ\?</string>
     <string name="faq_1_text">ടാപ്പ് ചെയ്യുമ്പോൾ ഒരു സമയം ഒരു പ്രതീകത്തെ നീക്കംചെയ്യും. ദീർഘനേരം അമർത്തിയാൽ എല്ലാ ഫീൽഡുകളും പുനഃസജ്ജമാക്കും.</string>
+    <string name="unit_length_kilometer">കിലോമീറ്റർ</string>
+    <string name="unit_length_meter">മീറ്റർ</string>
+    <string name="unit_length_centimeter">സെന്റീമീറ്റർ</string>
+    <string name="unit_length_millimeter">മില്ലീമീറ്റർ</string>
+    <string name="unit_length_micrometer">മൈക്രോമീറ്റർ</string>
+    <string name="unit_length_nanometer">നാനോമീറ്റർ</string>
+    <string name="unit_area">വിസ്തീർണം</string>
+    <string name="unit_volume">വ്യാപ്തം</string>
 </resources>
