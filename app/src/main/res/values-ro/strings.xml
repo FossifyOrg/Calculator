@@ -78,4 +78,8 @@
     <string name="unit_time">Timp</string>
     <string name="unit_time_week">Săptămână</string>
     <string name="unit_time_year">An</string>
+    <string name="unit_speed_kilometer_per_hour">Kilometru pe oră</string>
+    <string name="unit_speed_mile_per_hour">Mile pe oră</string>
+    <string name="unit_speed_knot">Nod</string>
+    <string name="unit_energy">Energie</string>
 </resources>
