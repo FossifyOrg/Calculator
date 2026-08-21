@@ -42,7 +42,7 @@ class CalculatorImpl(
     }
 
     private fun addDigit(number: Int) {
-        if (inputDisplayedFormula == "0") {
+        if (inputDisplayedFormula == "0" || lastKey == EQUALS) {
             inputDisplayedFormula = ""
         }
 
@@ -87,11 +87,7 @@ class CalculatorImpl(
     }
 
     fun handleOperation(operation: String) {
-        if (inputDisplayedFormula == "NaN") {
-            inputDisplayedFormula = "0"
-        }
-
-        if (inputDisplayedFormula == "") {
+        if (inputDisplayedFormula == "NaN" || inputDisplayedFormula == "") {
             inputDisplayedFormula = "0"
         }
 
@@ -105,43 +101,12 @@ class CalculatorImpl(
         if (lastChar == decimalSeparator) {
             inputDisplayedFormula = inputDisplayedFormula.dropLast(1)
         } else if (operations.contains(lastChar)) {
-            inputDisplayedFormula = inputDisplayedFormula.dropLast(1)
-            inputDisplayedFormula += getSign(operation)
-        } else if (!inputDisplayedFormula.trimStart('-').contains(operationsRegex.toRegex())) {
+            inputDisplayedFormula = inputDisplayedFormula.dropLast(1) + getSign(operation)
+        } else {
             inputDisplayedFormula += getSign(operation)
         }
 
-        if (lastKey == DIGIT || lastKey == DECIMAL) {
-            if (lastOperation != "" && operation == PERCENT) {
-                handlePercent()
-                lastOperation = ""
-            } else {
-                // split to multiple lines just to see when does the crash happen
-                secondValue = when (operation) {
-                    PLUS -> getSecondValue()
-                    MINUS -> getSecondValue()
-                    MULTIPLY -> getSecondValue()
-                    DIVIDE -> getSecondValue()
-                    ROOT -> getSecondValue()
-                    POWER -> getSecondValue()
-                    PERCENT -> getSecondValue()
-                    else -> getSecondValue()
-                }
-
-                calculateResult()
-
-                if (!operations.contains(inputDisplayedFormula.last().toString())) {
-                    if (!inputDisplayedFormula.contains("÷")) {
-                        inputDisplayedFormula += getSign(operation)
-                    }
-                }
-            }
-        }
-
-        if (getSecondValue() == BigDecimal.ZERO && inputDisplayedFormula.contains("÷")) {
-            lastKey = DIVIDE
-            lastOperation = DIVIDE
-        } else if(operation != PERCENT) {
+        if (operation != PERCENT) {
             lastKey = operation
             lastOperation = operation
         }
@@ -173,14 +138,11 @@ class CalculatorImpl(
         return false
     }
 
-    // handle percents manually, it doesn't seem to be possible via EvalEx. "%" is used only for modulo there
-    // handle cases like 10+200% here
     @Suppress("SwallowedException")
     private fun handlePercent() {
         val result = try {
             calculatePercentage(baseValue, getSecondValue(), lastOperation)
         } catch (_: ArithmeticException) {
-            // Return zero if percentage calculation fails (e.g., division by zero)
             BigDecimal.ZERO
         }
 
@@ -191,22 +153,10 @@ class CalculatorImpl(
     }
 
     fun handleEquals() {
-        if (lastKey == EQUALS) {
+        if (lastKey != EQUALS) {
             calculateResult()
+            lastKey = EQUALS
         }
-
-        if (lastKey != DIGIT && lastKey != DECIMAL) {
-            return
-        }
-
-        secondValue = getSecondValue()
-        calculateResult()
-        if ((lastOperation == DIVIDE || lastOperation == PERCENT) && secondValue == BigDecimal.ZERO) {
-            lastKey = DIGIT
-            return
-        }
-
-        lastKey = EQUALS
     }
 
     private fun getSecondValue(): BigDecimal {
@@ -226,89 +176,40 @@ class CalculatorImpl(
     }
 
     private fun calculateResult() {
-        if (lastOperation == ROOT && inputDisplayedFormula.startsWith("√")) {
-            baseValue = BigDecimal.ONE
+        if (inputDisplayedFormula.isEmpty()) return
+
+        var formulaToEvaluate = inputDisplayedFormula
+        if (operations.contains(formulaToEvaluate.last().toString())) {
+            formulaToEvaluate = formulaToEvaluate.dropLast(1)
         }
 
-        if (lastKey != EQUALS) {
-            val valueToCheck = inputDisplayedFormula.trimStart('-').removeGroupSeparator()
+        val cleanExpression = formulaToEvaluate
+            .replace("×", "*")
+            .replace("÷", "/")
+            .removeGroupSeparator()
 
-            if (inputDisplayedFormula.startsWith("√")) {
-                val numberAfterRoot = valueToCheck.substring(1)
-                try {
-                    secondValue = numberAfterRoot.toBigDecimal()
-                } catch (e: NumberFormatException) {
-                    context.showErrorToast(e)
-                    secondValue = BigDecimal.ZERO
-                }
-            } else {
-                val parts = valueToCheck.split(operationsRegex).filter { it != "" }
-                if (parts.isEmpty()) {
-                    return
-                }
+        try {
+            val expr = Expression(cleanExpression)
+            val evaluationResult = expr.evaluate()
+            val result = evaluationResult.numberValue
 
-                try {
-                    baseValue = parts.first().toBigDecimal()
-                } catch (e: NumberFormatException) {
-                    context.showErrorToast(e)
-                }
-
-                if (inputDisplayedFormula.startsWith("-")) {
-                    baseValue = baseValue.negate()
-                }
-
-                secondValue = parts.getOrNull(1)?.toBigDecimal() ?: secondValue
-            }
-        }
-
-        if (lastOperation != "") {
-            val sign = getSign(lastOperation)
-            val formattedBaseValue = baseValue.format().removeGroupSeparator()
-            val formatterSecondValue = secondValue.format().removeGroupSeparator()
-
-            val expression = if (sign == "√") {
-                "$formattedBaseValue*SQRT($formatterSecondValue)"
-            } else {
-                "$formattedBaseValue$sign$formatterSecondValue"
-                    .replace("×", "*")
-                    .replace("÷", "/")
-            }
-
-            try {
-                if (sign == "÷" && secondValue == BigDecimal.ZERO) {
-                    context.toast(R.string.formula_divide_by_zero_error)
-                    return
-                }
-
-                // handle percents manually, it doesn't seem to be possible via EvalEx.
-                // "%" is used only for modulo there
-                // handle cases like 10%200 here
-                val result = if (sign == "%") {
-                    val secondPercentValue = secondValue.divide(BigDecimal("100"), MATH_CONTEXT)
-                    val second = secondPercentValue.format().removeGroupSeparator()
-                    val percentExpression = "$formattedBaseValue*$second"
-                    val expr = Expression(percentExpression)
-                    expr.evaluate().numberValue
-                } else {
-                    val expr = Expression(expression)
-                    val evaluationResult = expr.evaluate()
-                    evaluationResult.numberValue
-                }
-
-                showNewResult(result.format())
-                val newFormula = "${baseValue.format()}$sign${secondValue.format()}"
-                HistoryHelper(context).insertOrUpdateHistoryEntry(
-                    History(
-                        id = null,
-                        formula = newFormula,
-                        result = result.format(),
-                        timestamp = System.currentTimeMillis()
-                    )
+            HistoryHelper(context).insertOrUpdateHistoryEntry(
+                History(
+                    id = null,
+                    formula = formulaToEvaluate,
+                    result = result.format(),
+                    timestamp = System.currentTimeMillis()
                 )
-                showNewFormula(newFormula)
-                inputDisplayedFormula = result.format()
-                baseValue = result
-            } catch (_: Exception) {
+            )
+
+            showNewFormula(formulaToEvaluate)
+            showNewResult(result.format())
+            inputDisplayedFormula = result.format()
+            baseValue = result
+        } catch (_: Exception) {
+            if (cleanExpression.contains("/0")) {
+                context.toast(R.string.formula_divide_by_zero_error)
+            } else {
                 context.toast(org.fossify.commons.R.string.unknown_error_occurred)
             }
         }
