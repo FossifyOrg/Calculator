@@ -95,4 +95,5 @@
     <string name="unit_volume_legal_cup_us">法定杯（美制）</string>
     <string name="unit_volume_customary_cup_us">習慣杯（美制）</string>
     <string name="unit_speed_speed_of_light">光速</string>
+    <string name="unit_speed">速度</string>
 </resources>
