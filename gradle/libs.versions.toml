@@ -19,7 +19,7 @@ autofittextview = "0.2.1"
 #EvalEx
 evalex = "3.7.0"
 #Room
-room = "2.8.4"
+room = "2.8.5"
 #Fossify
 commons = "6.1.6"
 #Gradle
