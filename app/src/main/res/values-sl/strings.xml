@@ -16,7 +16,7 @@
     <string name="unit_length_kilometer">Kilometer</string>
     <string name="unit_length_meter">Meter</string>
     <string name="unit_length_centimeter">Centimeter</string>
-    <string name="unit_length_millimeter">Millimeter</string>
+    <string name="unit_length_millimeter">Milimeter</string>
     <string name="unit_length_micrometer">Mikrometer</string>
     <string name="unit_length_nanometer">Nanometer</string>
     <string name="unit_length_angstrom">Angstrom</string>
@@ -48,7 +48,7 @@
     <string name="unit_volume_liter">Liter</string>
     <string name="unit_volume_centiliter">Centiliter</string>
     <string name="unit_volume_deciliter">Deciliter</string>
-    <string name="unit_volume_milliliter">Milliliter</string>
+    <string name="unit_volume_milliliter">Mililiter</string>
     <string name="unit_volume_acre_foot">Acre Foot</string>
     <string name="unit_volume_cubic_foot">Kubični čevelj</string>
     <string name="unit_volume_cubic_inch">Kubični palec</string>
@@ -63,13 +63,13 @@
     <string name="unit_volume_barrel_imperial">Imperialni sod</string>
     <string name="unit_volume_gallon_imperial">Imperialna galona</string>
     <string name="unit_volume_quart_imperial">Imperialni četrtnik</string>
-    <string name="unit_volume_pint_imperial">Imperialni pinta</string>
+    <string name="unit_volume_pint_imperial">Imperialna pinta</string>
     <string name="unit_volume_gill_imperial">Imperialni gil</string>
     <string name="unit_volume_fluid_ounce_imperial">Imperialna tekoča unča</string>
     <string name="unit_mass">Masa</string>
     <string name="unit_mass_gram">Gram</string>
     <string name="unit_mass_kilogram">Kilogram</string>
-    <string name="unit_mass_milligram">Milligram</string>
+    <string name="unit_mass_milligram">Miligram</string>
     <string name="unit_mass_microgram">Mikrogram</string>
     <string name="unit_mass_tonne">Tona</string>
     <string name="unit_mass_pound">Funt</string>
@@ -127,6 +127,6 @@
     <string name="unit_energy_electronvolt">Elektronvolt</string>
     <string name="unit_energy_btu">Britanska termalna enota</string>
     <string name="unit_energy_therm">Term</string>
-    <string name="unit_energy_foot_pound">Čevlje-funt</string>
+    <string name="unit_energy_foot_pound">Čevelj-funt</string>
     <string name="unit_energy_erg">Erg</string>
 </resources>
