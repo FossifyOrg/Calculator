@@ -98,7 +98,7 @@
     <string name="unit_speed">速度</string>
     <string name="unit_speed_meter_per_second">公尺/秒</string>
     <string name="unit_speed_kilometer_per_second">公里/秒</string>
-    <string name="unit_speed_kilometer_per_hour">公尺/小時</string>
+    <string name="unit_speed_kilometer_per_hour">公里/小時</string>
     <string name="unit_speed_mile_per_hour">英里/小時</string>
     <string name="unit_speed_knot">節</string>
     <string name="unit_speed_foot_per_second">英尺/秒</string>
@@ -121,9 +121,9 @@
     <string name="unit_energy_gigajoule">吉焦耳</string>
     <string name="unit_energy_calorie">卡路里</string>
     <string name="unit_energy_kilocalorie">千卡</string>
-    <string name="unit_energy_watt_hour">瓦时</string>
-    <string name="unit_energy_kilowatt_hour">千瓦时</string>
-    <string name="unit_energy_megawatt_hour">兆瓦时</string>
+    <string name="unit_energy_watt_hour">瓦時</string>
+    <string name="unit_energy_kilowatt_hour">千瓦時</string>
+    <string name="unit_energy_megawatt_hour">兆瓦時</string>
     <string name="unit_energy_electronvolt">電子伏特</string>
     <string name="unit_energy_btu">英熱單位</string>
     <string name="unit_energy_therm">熱單位</string>
