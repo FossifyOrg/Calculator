@@ -120,4 +120,28 @@
     <string name="unit_energy_therm_symbol">thm</string>
     <string name="unit_energy_foot_pound_symbol">ft⋅lbf</string>
     <string name="unit_energy_erg_symbol">erg</string>
+
+    <string name="unit_data_bit_symbol">b</string>
+    <string name="unit_data_nibble_symbol">nib</string>
+    <string name="unit_data_byte_symbol">B</string>
+    <string name="unit_data_kilobit_symbol">kb</string>
+    <string name="unit_data_kibibit_symbol">Kib</string>
+    <string name="unit_data_megabit_symbol">Mb</string>
+    <string name="unit_data_mebibit_symbol">Mib</string>
+    <string name="unit_data_gigabit_symbol">Gb</string>
+    <string name="unit_data_gibibit_symbol">Gib</string>
+    <string name="unit_data_terabit_symbol">Tb</string>
+    <string name="unit_data_tebibit_symbol">Tib</string>
+    <string name="unit_data_petabit_symbol">Pb</string>
+    <string name="unit_data_pebibit_symbol">Pib</string>
+    <string name="unit_data_kilobyte_symbol">kB</string>
+    <string name="unit_data_kibibyte_symbol">KiB</string>
+    <string name="unit_data_megabyte_symbol">MB</string>
+    <string name="unit_data_mebibyte_symbol">MiB</string>
+    <string name="unit_data_gigabyte_symbol">GB</string>
+    <string name="unit_data_gibibyte_symbol">GiB</string>
+    <string name="unit_data_terabyte_symbol">TB</string>
+    <string name="unit_data_tebibyte_symbol">TiB</string>
+    <string name="unit_data_petabyte_symbol">PB</string>
+    <string name="unit_data_pebibyte_symbol">PiB</string>
 </resources>
