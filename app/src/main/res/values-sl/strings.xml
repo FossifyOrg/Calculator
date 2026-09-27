@@ -62,7 +62,7 @@
     <string name="unit_volume_fluid_ounce_us">Ameriška tekoča unča</string>
     <string name="unit_volume_barrel_imperial">Imperialni sod</string>
     <string name="unit_volume_gallon_imperial">Imperialna galona</string>
-    <string name="unit_volume_quart_imperial">Imperialni četrtnik</string>
+    <string name="unit_volume_quart_imperial">Imperialni kvart</string>
     <string name="unit_volume_pint_imperial">Imperialna pinta</string>
     <string name="unit_volume_gill_imperial">Imperialni gil</string>
     <string name="unit_volume_fluid_ounce_imperial">Imperialna tekoča unča</string>
@@ -101,7 +101,7 @@
     <string name="unit_speed_mile_per_hour">Milja na uro</string>
     <string name="unit_speed_knot">Vozel</string>
     <string name="unit_speed_foot_per_second">Čevlji na sekundo</string>
-    <string name="unit_speed_mach">Mah</string>
+    <string name="unit_speed_mach">Mach</string>
     <string name="unit_speed_speed_of_light">Svetlobna hitrost</string>
     <string name="unit_pressure">Pritisk</string>
     <string name="unit_pressure_pascal">Paskal</string>
