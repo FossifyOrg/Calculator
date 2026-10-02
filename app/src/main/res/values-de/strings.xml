@@ -8,7 +8,7 @@
     <string name="history">Verlauf</string>
     <string name="history_empty">Verlauf ist leer</string>
     <string name="clear_history">Leeren</string>
-    <string name="history_cleared">Verlauf ist gelöscht worden</string>
+    <string name="history_cleared">Der Verlauf ist gelöscht worden</string>
     <string name="vibrate_on_button_press">Bei Tastendruck vibrieren</string>
     <string name="unit_length">Länge</string>
     <string name="unit_length_centimeter">Zentimeter</string>
