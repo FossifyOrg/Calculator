@@ -171,7 +171,7 @@ class MainActivity : SimpleActivity(), Calculator {
     private fun refreshMenuItems() {
         binding.mainToolbar.menu.apply {
             findItem(R.id.more_apps_from_us).isVisible =
-                !resources.getBoolean(org.fossify.commons.R.bool.hide_google_relations)
+                resources.getBoolean(org.fossify.commons.R.bool.is_google_play_build)
         }
     }
 
@@ -226,7 +226,7 @@ class MainActivity : SimpleActivity(), Calculator {
             )
         )
 
-        if (!resources.getBoolean(org.fossify.commons.R.bool.hide_google_relations)) {
+        if (resources.getBoolean(org.fossify.commons.R.bool.is_google_play_build)) {
             faqItems.add(
                 FAQItem(
                     title = org.fossify.commons.R.string.faq_2_title_commons,
