@@ -8,6 +8,7 @@ import androidx.compose.ui.tooling.preview.PreviewParameter
 import org.fossify.commons.compose.extensions.BooleanPreviewParameterProvider
 import org.fossify.commons.compose.extensions.MyDevices
 import org.fossify.commons.compose.lists.SimpleColumnScaffold
+import org.fossify.commons.compose.settings.PurchaseThankYouPreference
 import org.fossify.commons.compose.settings.SettingsGroup
 import org.fossify.commons.compose.settings.SettingsPreferenceComponent
 import org.fossify.commons.compose.settings.SettingsSwitchComponent
@@ -26,8 +27,6 @@ internal fun SettingsScreen(
     onPreventPhoneFromSleeping: (Boolean) -> Unit,
     vibrateOnButtonPressFlow: Boolean,
     onVibrateOnButtonPressFlow: (Boolean) -> Unit,
-    isOrWasThankYouInstalled: Boolean,
-    onThankYou: () -> Unit,
     isUseEnglishEnabled: Boolean,
     isUseEnglishChecked: Boolean,
     onUseEnglishPress: (Boolean) -> Unit,
@@ -58,12 +57,7 @@ internal fun SettingsScreen(
         SettingsGroup(title = {
             SettingsTitleTextComponent(text = stringResource(id = org.fossify.commons.R.string.general_settings))
         }) {
-            if (!isOrWasThankYouInstalled) {
-                SettingsPreferenceComponent(
-                    label = stringResource(id = org.fossify.commons.R.string.purchase_simple_thank_you),
-                    doOnPreferenceClick = onThankYou,
-                )
-            }
+            PurchaseThankYouPreference()
             if (isUseEnglishEnabled) {
                 SettingsSwitchComponent(
                     label = stringResource(id = org.fossify.commons.R.string.use_english_language),
@@ -109,8 +103,6 @@ private fun SettingsScreenPreview(
             onPreventPhoneFromSleeping = {},
             vibrateOnButtonPressFlow = false,
             onVibrateOnButtonPressFlow = {},
-            isOrWasThankYouInstalled = true,
-            onThankYou = {},
             isUseEnglishEnabled = false,
             isUseEnglishChecked = false,
             onUseEnglishPress = {},

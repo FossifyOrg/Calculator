@@ -2,6 +2,5 @@
 <resources>
     <bool name="default_vibrate_on_press">true</bool>
     <bool name="show_donate_in_about">true</bool>
-    <bool name="hide_google_relations">true</bool>
-    <bool name="pretend_thank_you_installed">true</bool>
+    <bool name="is_google_play_build">false</bool>
 </resources>

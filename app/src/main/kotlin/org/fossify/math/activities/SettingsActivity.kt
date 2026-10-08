@@ -8,16 +8,12 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
-import androidx.compose.ui.platform.LocalContext
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import org.fossify.commons.activities.CustomizationActivity
 import org.fossify.commons.compose.extensions.enableEdgeToEdgeSimple
-import org.fossify.commons.compose.extensions.onEventValue
 import org.fossify.commons.compose.theme.AppThemeSurface
 import org.fossify.commons.compose.theme.getAppIconIds
 import org.fossify.commons.compose.theme.getAppLauncherName
-import org.fossify.commons.extensions.isOrWasThankYouInstalled
-import org.fossify.commons.extensions.launchPurchaseThankYouIntent
 import org.fossify.commons.helpers.APP_ICON_IDS
 import org.fossify.commons.helpers.APP_LAUNCHER_NAME
 import org.fossify.commons.helpers.IS_CUSTOMIZING_COLORS
@@ -38,7 +34,6 @@ class SettingsActivity : AppCompatActivity() {
         enableEdgeToEdgeSimple()
         setContent {
             AppThemeSurface {
-                val context = LocalContext.current
                 val preventPhoneFromSleeping by preferences.preventPhoneFromSleepingFlow
                     .collectAsStateWithLifecycle(preferences.preventPhoneFromSleeping)
                 val vibrateOnButtonPressFlow by preferences.vibrateOnButtonPressFlow
@@ -54,9 +49,6 @@ class SettingsActivity : AppCompatActivity() {
                         (wasUseEnglishToggledFlow || Locale.getDefault().language != "en") && !isTiramisuPlus()
                     }
                 }
-                val isOrWasThankYouInstalled = onEventValue {
-                    context.isOrWasThankYouInstalled(allowPretend = false)
-                }
                 val displayLanguage = remember { Locale.getDefault().displayLanguage }
                 SettingsScreen(
                     displayLanguage = displayLanguage,
@@ -67,8 +59,6 @@ class SettingsActivity : AppCompatActivity() {
                     onPreventPhoneFromSleeping = preferences::preventPhoneFromSleeping::set,
                     vibrateOnButtonPressFlow = vibrateOnButtonPressFlow,
                     onVibrateOnButtonPressFlow = preferences::vibrateOnButtonPress::set,
-                    isOrWasThankYouInstalled = isOrWasThankYouInstalled,
-                    onThankYou = ::launchPurchaseThankYouIntent,
                     isUseEnglishEnabled = isUseEnglishEnabled,
                     isUseEnglishChecked = useEnglishFlow,
                     onUseEnglishPress = { isChecked ->

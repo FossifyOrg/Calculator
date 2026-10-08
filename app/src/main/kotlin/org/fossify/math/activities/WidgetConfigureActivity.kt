@@ -9,14 +9,12 @@ import android.widget.RemoteViews
 import android.widget.SeekBar
 import android.widget.TextView
 import org.fossify.commons.dialogs.ColorPickerDialog
-import org.fossify.commons.dialogs.FeatureLockedDialog
 import org.fossify.commons.extensions.adjustAlpha
 import org.fossify.commons.extensions.applyColorFilter
 import org.fossify.commons.extensions.beVisible
 import org.fossify.commons.extensions.getContrastColor
 import org.fossify.commons.extensions.getProperPrimaryColor
 import org.fossify.commons.extensions.isDynamicTheme
-import org.fossify.commons.extensions.isOrWasThankYouInstalled
 import org.fossify.commons.extensions.setFillWithStroke
 import org.fossify.commons.extensions.viewBinding
 import org.fossify.commons.helpers.IS_CUSTOMIZING_COLORS
@@ -31,7 +29,6 @@ class WidgetConfigureActivity : SimpleActivity() {
     private var mBgColor = 0
     private var mTextColor = 0
     private var mBgColorWithoutTransparency = 0
-    private var mFeatureLockedDialog: FeatureLockedDialog? = null
 
     private val binding by viewBinding(WidgetConfigBinding::inflate)
 
@@ -57,23 +54,11 @@ class WidgetConfigureActivity : SimpleActivity() {
 
         val primaryColor = getProperPrimaryColor()
         binding.configBgSeekbar.setColors(mTextColor, primaryColor, primaryColor)
-
-        if (!isCustomizingColors && !isOrWasThankYouInstalled()) {
-            mFeatureLockedDialog = FeatureLockedDialog(this) {
-                if (!isOrWasThankYouInstalled()) {
-                    finish()
-                }
-            }
-        }
     }
 
     override fun onResume() {
         super.onResume()
         window.decorView.setBackgroundColor(0)
-
-        if (mFeatureLockedDialog != null && isOrWasThankYouInstalled()) {
-            mFeatureLockedDialog?.dismissDialog()
-        }
     }
 
     private fun initVariables() {
