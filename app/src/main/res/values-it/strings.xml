@@ -119,4 +119,14 @@
     <string name="unit_energy_electronvolt">Elettronvolt</string>
     <string name="unit_energy_btu">Unità termica britannica</string>
     <string name="unit_energy_foot_pound">Piede-libbra</string>
+    <string name="unit_volume_customary_cup_us">Tazza statunitense (US)</string>
+    <string name="unit_pressure_torr">Torr</string>
+    <string name="unit_energy_joule">Joule</string>
+    <string name="unit_energy_kilojoule">Kilojoule</string>
+    <string name="unit_energy_megajoule">Megajoule</string>
+    <string name="unit_energy_gigajoule">Gigajoule</string>
+    <string name="unit_energy_calorie">Calorie</string>
+    <string name="unit_energy_erg">Erg</string>
+    <string name="unit_energy_kilocalorie">Kilocalorie</string>
+    <string name="unit_energy_therm">Therm</string>
 </resources>
