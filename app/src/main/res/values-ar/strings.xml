@@ -95,7 +95,7 @@
     <string name="unit_speed_kilometer_per_second">الكيلومتر في الثانية</string>
     <string name="unit_speed_kilometer_per_hour">الكيلومتر في الساعة</string>
     <string name="unit_speed_mile_per_hour">الميل في الساعة</string>
-    <string name="unit_speed_knot">العقدة</string>
+    <string name="unit_speed_knot">عُقدة</string>
     <string name="unit_speed_foot_per_second">القدم في الثانية</string>
     <string name="unit_speed_speed_of_light">سرعة الضوء</string>
     <string name="unit_pressure">الضغط</string>
@@ -106,4 +106,27 @@
     <string name="unit_pressure_millibar">الميلّي بار</string>
     <string name="unit_pressure_atmosphere">الأجواء</string>
     <string name="unit_pressure_psi">رطل لكل بوصة مربعة</string>
+    <string name="unit_temperature_kelvin">كلفن</string>
+    <string name="unit_temperature_fahrenheit">فهرنهايت</string>
+    <string name="unit_temperature_rankine">رانكين</string>
+    <string name="unit_speed_mach">ماخ</string>
+    <string name="unit_pressure_torr">تور</string>
+    <string name="unit_pressure_mmhg">ملليمتر زئبق</string>
+    <string name="unit_pressure_inhg">بوصة زئبق</string>
+    <string name="unit_energy">طاقة</string>
+    <string name="unit_energy_joule">جول</string>
+    <string name="unit_energy_kilojoule">كيلوجول</string>
+    <string name="unit_energy_megajoule">ميجاجول</string>
+    <string name="unit_energy_gigajoule">جيجاجول</string>
+    <string name="unit_energy_calorie">سعرة حرارية</string>
+    <string name="unit_energy_kilocalorie">كيلو سعرة حرارية</string>
+    <string name="unit_energy_watt_hour">واط ساعة</string>
+    <string name="unit_energy_kilowatt_hour">كيلو واط ساعة</string>
+    <string name="unit_energy_megawatt_hour">ميجاواط ساعة</string>
+    <string name="unit_energy_electronvolt">إلكترون فولت</string>
+    <string name="unit_energy_btu">وحدة حرارية بريطانية</string>
+    <string name="unit_energy_therm">ثيرم</string>
+    <string name="unit_energy_foot_pound">قدم-رطل</string>
+    <string name="unit_energy_erg">إرغ</string>
+    <string name="unit_temperature_celsius">درجة مئوية</string>
 </resources>
