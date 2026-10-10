@@ -144,6 +144,31 @@
     <string name="unit_energy_foot_pound">Foot-pound</string>
     <string name="unit_energy_erg">Erg</string>
 
+    <string name="unit_data">Data</string>
+    <string name="unit_data_bit">Bit</string>
+    <string name="unit_data_nibble">Nibble</string>
+    <string name="unit_data_byte">Byte</string>
+    <string name="unit_data_kilobit">Kilobit</string>
+    <string name="unit_data_kibibit">Kibibit</string>
+    <string name="unit_data_megabit">Megabit</string>
+    <string name="unit_data_mebibit">Mebibit</string>
+    <string name="unit_data_gigabit">Gigabit</string>
+    <string name="unit_data_gibibit">Gibibit</string>
+    <string name="unit_data_terabit">Terabit</string>
+    <string name="unit_data_tebibit">Tebibit</string>
+    <string name="unit_data_petabit">Petabit</string>
+    <string name="unit_data_pebibit">Pebibit</string>
+    <string name="unit_data_kilobyte">Kilobyte</string>
+    <string name="unit_data_kibibyte">Kibibyte</string>
+    <string name="unit_data_megabyte">Megabyte</string>
+    <string name="unit_data_mebibyte">Mebibyte</string>
+    <string name="unit_data_gigabyte">Gigabyte</string>
+    <string name="unit_data_gibibyte">Gibibyte</string>
+    <string name="unit_data_terabyte">Terabyte</string>
+    <string name="unit_data_tebibyte">Tebibyte</string>
+    <string name="unit_data_petabyte">Petabyte</string>
+    <string name="unit_data_pebibyte">Pebibyte</string>
+
     <!-- FAQ -->
     <string name="faq_1_title">How does the C (Clear) button work?</string>
     <string name="faq_1_text">Tapping on it will remove one character at a time. Long pressing it will reset all fields at once.</string>
