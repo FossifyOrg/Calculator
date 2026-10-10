@@ -3,6 +3,7 @@ package org.fossify.math.activities
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.view.KeyEvent
 import android.view.View
 import android.view.WindowManager
 import androidx.core.content.res.ResourcesCompat
@@ -97,6 +98,53 @@ class MainActivity : SimpleActivity(), Calculator {
         binding.calculatorHolder?.let { updateViewColors(it, getProperTextColor()) }
         setupDecimalButton()
         checkAppOnSDCard()
+    }
+
+    private val keyCodeToButtonId = mapOf(
+        KeyEvent.KEYCODE_0 to R.id.btn_0, KeyEvent.KEYCODE_NUMPAD_0 to R.id.btn_0,
+        KeyEvent.KEYCODE_1 to R.id.btn_1, KeyEvent.KEYCODE_NUMPAD_1 to R.id.btn_1,
+        KeyEvent.KEYCODE_2 to R.id.btn_2, KeyEvent.KEYCODE_NUMPAD_2 to R.id.btn_2,
+        KeyEvent.KEYCODE_3 to R.id.btn_3, KeyEvent.KEYCODE_NUMPAD_3 to R.id.btn_3,
+        KeyEvent.KEYCODE_4 to R.id.btn_4, KeyEvent.KEYCODE_NUMPAD_4 to R.id.btn_4,
+        KeyEvent.KEYCODE_5 to R.id.btn_5, KeyEvent.KEYCODE_NUMPAD_5 to R.id.btn_5,
+        KeyEvent.KEYCODE_6 to R.id.btn_6, KeyEvent.KEYCODE_NUMPAD_6 to R.id.btn_6,
+        KeyEvent.KEYCODE_7 to R.id.btn_7, KeyEvent.KEYCODE_NUMPAD_7 to R.id.btn_7,
+        KeyEvent.KEYCODE_8 to R.id.btn_8, KeyEvent.KEYCODE_NUMPAD_8 to R.id.btn_8,
+        KeyEvent.KEYCODE_9 to R.id.btn_9, KeyEvent.KEYCODE_NUMPAD_9 to R.id.btn_9,
+        KeyEvent.KEYCODE_PERIOD to R.id.btn_decimal,
+        KeyEvent.KEYCODE_COMMA to R.id.btn_decimal,
+        KeyEvent.KEYCODE_NUMPAD_DOT to R.id.btn_decimal,
+    )
+
+    private val keyCodeToOperation = mapOf(
+        KeyEvent.KEYCODE_PLUS to PLUS, KeyEvent.KEYCODE_NUMPAD_ADD to PLUS,
+        KeyEvent.KEYCODE_MINUS to MINUS, KeyEvent.KEYCODE_NUMPAD_SUBTRACT to MINUS,
+        KeyEvent.KEYCODE_STAR to MULTIPLY, KeyEvent.KEYCODE_NUMPAD_MULTIPLY to MULTIPLY,
+        KeyEvent.KEYCODE_SLASH to DIVIDE, KeyEvent.KEYCODE_NUMPAD_DIVIDE to DIVIDE,
+    )
+
+    private val equalsKeyCodes = setOf(
+        KeyEvent.KEYCODE_EQUALS, KeyEvent.KEYCODE_NUMPAD_EQUALS,
+        KeyEvent.KEYCODE_ENTER, KeyEvent.KEYCODE_NUMPAD_ENTER,
+    )
+
+    private val clearKeyCodes = setOf(KeyEvent.KEYCODE_DEL, KeyEvent.KEYCODE_FORWARD_DEL)
+
+    private val resetKeyCodes = setOf(KeyEvent.KEYCODE_ESCAPE, KeyEvent.KEYCODE_CLEAR)
+
+    override fun onKeyDown(keyCode: Int, event: KeyEvent): Boolean {
+        val buttonId = keyCodeToButtonId[keyCode]
+        val operation = keyCodeToOperation[keyCode]
+        when {
+            buttonId != null -> calc.numpadClicked(buttonId)
+            operation != null -> calc.handleOperation(operation)
+            keyCode in equalsKeyCodes -> calc.handleEquals()
+            keyCode in clearKeyCodes -> calc.handleClear()
+            keyCode in resetKeyCodes -> calc.handleReset()
+            else -> return super.onKeyDown(keyCode, event)
+        }
+
+        return true
     }
 
     override fun onResume() {

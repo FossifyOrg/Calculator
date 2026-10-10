@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- Added support for hardware keyboard input, including numpad keys ([#134])
 
 ## [1.4.0] - 2026-01-30
 ### Added
@@ -79,6 +81,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#31]: https://github.com/FossifyOrg/Calculator/issues/31
 [#44]: https://github.com/FossifyOrg/Calculator/issues/44
 [#64]: https://github.com/FossifyOrg/Calculator/issues/64
+[#134]: https://github.com/FossifyOrg/Calculator/issues/134
 [#160]: https://github.com/FossifyOrg/Calculator/issues/160
 [#190]: https://github.com/FossifyOrg/Calculator/issues/190
 [#191]: https://github.com/FossifyOrg/Calculator/issues/191
