@@ -184,9 +184,19 @@ class CalculatorImpl(
             BigDecimal.ZERO
         }
 
-        showNewFormula("${baseValue.format()}${getSign(lastOperation)}${getSecondValue().format()}%")
+        val formula = "${baseValue.format()}${getSign(lastOperation)}${getSecondValue().format()}%"
+        showNewFormula(formula)
         inputDisplayedFormula = result.format()
         showNewResult(result.format())
+        // Persist percentual operations in history (previously only calculateResult did)
+        HistoryHelper(context).insertOrUpdateHistoryEntry(
+            History(
+                id = null,
+                formula = formula,
+                result = result.format(),
+                timestamp = System.currentTimeMillis()
+            )
+        )
         baseValue = result
     }
 
