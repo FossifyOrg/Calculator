@@ -119,9 +119,9 @@
     <string name="unit_energy_megajoule">Megajoule</string>
     <string name="unit_energy_gigajoule">Gigajoule</string>
     <string name="unit_energy_calorie">Caloria</string>
-    <string name="unit_energy_watt_hour">Watt p/hora</string>
+    <string name="unit_energy_watt_hour">Watt-hora</string>
     <string name="unit_energy_kilocalorie">Quilocalorias</string>
-    <string name="unit_energy_kilowatt_hour">Quilowatts p/hora</string>
-    <string name="unit_energy_megawatt_hour">Megawatts p/hora</string>
+    <string name="unit_energy_kilowatt_hour">Quilowatts-hora</string>
+    <string name="unit_energy_megawatt_hour">Megawatts-hora</string>
     <string name="unit_energy_btu">Unidade termal britânica</string>
 </resources>
