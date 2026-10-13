@@ -123,5 +123,5 @@
     <string name="unit_energy_kilocalorie">Quilocalorias</string>
     <string name="unit_energy_kilowatt_hour">Quilowatts-hora</string>
     <string name="unit_energy_megawatt_hour">Megawatts-hora</string>
-    <string name="unit_energy_btu">Unidade termal britânica</string>
+    <string name="unit_energy_btu">Unidade térmica britânica</string>
 </resources>
