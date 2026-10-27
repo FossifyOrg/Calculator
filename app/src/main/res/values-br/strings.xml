@@ -1,2 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_launcher_name">Jederez</string>
+    <string name="scientific_calculator">Jederez Skiantel</string>
+    <string name="unit_converter">Amdroerez Unanennoù</string>
+    <string name="swap_units">Eskemm an unanennoù</string>
+</resources>
