@@ -65,7 +65,7 @@
     <string name="unit_volume_quart_imperial">Imperialni kvart</string>
     <string name="unit_volume_pint_imperial">Imperialna pinta</string>
     <string name="unit_volume_gill_imperial">Imperialni gil</string>
-    <string name="unit_volume_fluid_ounce_imperial">Imperialna tekoča unča</string>
+    <string name="unit_volume_fluid_ounce_imperial">Tekočinska unča (imperialna)</string>
     <string name="unit_mass">Masa</string>
     <string name="unit_mass_gram">Gram</string>
     <string name="unit_mass_kilogram">Kilogram</string>
