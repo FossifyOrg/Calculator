@@ -1,2 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_launcher_name">ਕੈਲਕੂਲਟਰ</string>
+    <string name="scientific_calculator">ਵਿਗਿਆਨਕ ਕੈਲਕੁਲੇਟਰ</string>
+    <string name="unit_converter">ਇਕਾਈ ਪਰਿਵਰਤਕ</string>
+    <string name="swap_units">ਇਕਾਈਆਂ ਬਦਲੋ</string>
+    <string name="formula_divide_by_zero_error">ਗਲਤੀ: ਸਿਫ਼ਰ ਨਾਲ ਵੰਡ</string>
+    <string name="history">ਇਤਿਹਾਸ</string>
+    <string name="history_empty">ਇਤਿਹਾਸ ਖਾਲੀ ਹੈ</string>
+    <string name="clear_history">ਸਾਫ਼</string>
+    <string name="history_cleared">ਇਤਿਹਾਸ ਸਾਫ਼ ਕਰ ਦਿੱਤਾ ਗਿਆ ਹੈ</string>
+    <string name="vibrate_on_button_press">ਬਟਨ ਦਬਾਉਣ \'ਤੇ ਵਾਈਬ੍ਰੇਟ ਕਰੋ</string>
+    <string name="unit_length">ਲੰਬਾਈ</string>
+    <string name="unit_length_kilometer">ਕਿਲੋਮੀਟਰ</string>
+    <string name="unit_length_meter">ਮੀਟਰ</string>
+    <string name="unit_length_centimeter">ਸੈਂਟੀਮੀਟਰ</string>
+    <string name="unit_length_millimeter">ਮਿਲੀਮੀਟਰ</string>
+    <string name="unit_length_micrometer">ਮਾਈਕ੍ਰੋਮੀਟਰ</string>
+    <string name="unit_length_nanometer">ਨੈਨੋਮੀਟਰ</string>
+    <string name="unit_length_angstrom">ਐਂਗਸਟ੍ਰੋਮ</string>
+    <string name="unit_length_mile">ਮੀਲ</string>
+    <string name="unit_length_yard">ਵਿਹੜਾ</string>
+    <string name="unit_length_foot">ਪੈਰ</string>
+    <string name="unit_length_inch">ਇੰਚ</string>
+    <string name="unit_length_fathom">ਸਮਝਣਾ</string>
+    <string name="unit_length_nautical_mile">ਸਮੁੰਦਰੀ ਮੀਲ</string>
+    <string name="unit_length_astronomical_unit">ਖਗੋਲੀ ਇਕਾਈ</string>
+    <string name="unit_length_parsec">ਪਾਰਸੈਕ</string>
+</resources>
