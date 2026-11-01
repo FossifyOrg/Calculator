@@ -4,4 +4,9 @@
     <string name="scientific_calculator">Jederez Skiantel</string>
     <string name="unit_converter">Amdroerez Unanennoù</string>
     <string name="swap_units">Eskemm an unanennoù</string>
+    <string name="formula_divide_by_zero_error">Fazi : rannadur dre vann</string>
+    <string name="history">Roll istor</string>
+    <string name="history_empty">Goullo eo ar roll istor</string>
+    <string name="clear_history">Skarzhañ</string>
+    <string name="history_cleared">Skarzhet eo bet ar roll istor</string>
 </resources>
