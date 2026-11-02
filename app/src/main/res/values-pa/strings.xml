@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">ਕੈਲਕੂਲਟਰ</string>
+    <string name="app_launcher_name">ਕੈਲਕੂਲੇਟਰ</string>
     <string name="scientific_calculator">ਵਿਗਿਆਨਕ ਕੈਲਕੁਲੇਟਰ</string>
     <string name="unit_converter">ਇਕਾਈ ਪਰਿਵਰਤਕ</string>
     <string name="swap_units">ਇਕਾਈਆਂ ਬਦਲੋ</string>
@@ -19,10 +19,10 @@
     <string name="unit_length_nanometer">ਨੈਨੋਮੀਟਰ</string>
     <string name="unit_length_angstrom">ਐਂਗਸਟ੍ਰੋਮ</string>
     <string name="unit_length_mile">ਮੀਲ</string>
-    <string name="unit_length_yard">ਵਿਹੜਾ</string>
-    <string name="unit_length_foot">ਪੈਰ</string>
+    <string name="unit_length_yard">ਗਜ਼</string>
+    <string name="unit_length_foot">ਫੁੱਟ</string>
     <string name="unit_length_inch">ਇੰਚ</string>
-    <string name="unit_length_fathom">ਸਮਝਣਾ</string>
+    <string name="unit_length_fathom">ਫੈਦਮ</string>
     <string name="unit_length_nautical_mile">ਸਮੁੰਦਰੀ ਮੀਲ</string>
     <string name="unit_length_astronomical_unit">ਖਗੋਲੀ ਇਕਾਈ</string>
     <string name="unit_length_parsec">ਪਾਰਸੈਕ</string>
