@@ -1,2 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="unit_converter">ইউনিট কনভার্টার</string>
+    <string name="swap_units">ইউনিট পরিবর্তন করুন</string>
+    <string name="formula_divide_by_zero_error">এরর: শুন্য দারা ভাগ</string>
+    <string name="history">ইতিহাস</string>
+    <string name="history_empty">ইতিহাস খালি</string>
+    <string name="clear_history">মুছে ফেলুন</string>
+    <string name="history_cleared">আপনার ইতিহাস খালি করা হয়েছে</string>
+    <string name="unit_length">লেন্থ</string>
+    <string name="unit_length_kilometer">কিলোমিটার</string>
+    <string name="unit_length_centimeter">সেন্টিমিটার</string>
+    <string name="unit_length_millimeter">মিলিমিটার</string>
+    <string name="unit_length_micrometer">মাইক্রোমিটার</string>
+    <string name="unit_length_nanometer">নানোমিটার</string>
+    <string name="app_launcher_name">Calculator</string>
+    <string name="scientific_calculator">বৈজ্ঞানিক ক্যালকুলেটর</string>
+    <string name="unit_area_square_centimeter">বর্গ সেমি</string>
+    <string name="unit_area_square_millimeter">বর্গ মিমি</string>
+    <string name="unit_area_square_mile">বর্গ মাইল</string>
+    <string name="unit_area_square_yard">বর্গ ইয়ার্ড</string>
+    <string name="unit_area_square_foot">বর্গ ফুট</string>
+    <string name="unit_area_square_inch">বর্গ ইঞ্চ</string>
+    <string name="unit_area_acre">একর</string>
+    <string name="unit_area_hectare">হেক্টর</string>
+    <string name="unit_volume">ভলিউম</string>
+    <string name="unit_volume_cubic_meter">ঘন মিটার</string>
+    <string name="unit_volume_cubic_decimeter">ঘন ডেসিমি</string>
+    <string name="unit_volume_cubic_centimeter">ঘন সেমি</string>
+    <string name="unit_volume_cubic_millimeter">ঘন মিমি</string>
+    <string name="unit_volume_liter">লিটার</string>
+    <string name="unit_volume_centiliter">সেন্টিলিটার</string>
+    <string name="unit_volume_deciliter">ডেসিলিটার</string>
+</resources>
