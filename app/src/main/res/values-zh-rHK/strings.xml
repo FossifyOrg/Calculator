@@ -4,12 +4,12 @@
     <string name="app_launcher_name">計算機</string>
     <string name="scientific_calculator">科學計算機</string>
     <string name="unit_converter">單位轉換器</string>
-    <string name="swap_units">交換單位</string>
+    <string name="swap_units">對調單位</string>
     <string name="formula_divide_by_zero_error">錯誤：除以零</string>
-    <string name="history">歷史紀錄</string>
-    <string name="history_empty">沒有歷史紀錄</string>
+    <string name="history">歷史記錄</string>
+    <string name="history_empty">沒有歷史記錄</string>
     <string name="clear_history">清除</string>
-    <string name="history_cleared">歷史紀錄已被清除</string>
+    <string name="history_cleared">已清除歷史記錄</string>
     <string name="unit_length">長度</string>
     <string name="unit_length_kilometer">公里</string>
     <string name="unit_length_meter">米</string>
@@ -93,7 +93,7 @@
     <string name="unit_time_week">星期</string>
     <string name="unit_time_year">年</string>
     <string name="faq_1_title">C（清除）按鈕如何使用？</string>
-    <string name="faq_1_text">按一次會刪除一個字元。長按會馬上重設全部欄位。</string>
+    <string name="faq_1_text">點選一次會刪除一個字元；長按則會一次重設所有欄位。</string>
     <string name="unit_speed">速度</string>
     <string name="unit_speed_meter_per_second">米每秒</string>
     <string name="unit_speed_kilometer_per_second">公里每秒</string>
