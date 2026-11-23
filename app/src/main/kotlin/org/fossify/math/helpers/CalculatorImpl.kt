@@ -184,9 +184,12 @@ class CalculatorImpl(
             BigDecimal.ZERO
         }
 
-        showNewFormula("${baseValue.format()}${getSign(lastOperation)}${getSecondValue().format()}%")
-        inputDisplayedFormula = result.format()
-        showNewResult(result.format())
+        val formula = "${baseValue.format()}${getSign(lastOperation)}${getSecondValue().format()}%"
+        val formattedResult = result.format()
+        addToHistory(formula, formattedResult)
+        showNewFormula(formula)
+        inputDisplayedFormula = formattedResult
+        showNewResult(formattedResult)
         baseValue = result
     }
 
@@ -297,14 +300,7 @@ class CalculatorImpl(
 
                 showNewResult(result.format())
                 val newFormula = "${baseValue.format()}$sign${secondValue.format()}"
-                HistoryHelper(context).insertOrUpdateHistoryEntry(
-                    History(
-                        id = null,
-                        formula = newFormula,
-                        result = result.format(),
-                        timestamp = System.currentTimeMillis()
-                    )
-                )
+                addToHistory(newFormula, result.format())
                 showNewFormula(newFormula)
                 inputDisplayedFormula = result.format()
                 baseValue = result
@@ -312,6 +308,17 @@ class CalculatorImpl(
                 context.toast(org.fossify.commons.R.string.unknown_error_occurred)
             }
         }
+    }
+
+    private fun addToHistory(formula: String, result: String) {
+        HistoryHelper(context).insertOrUpdateHistoryEntry(
+            History(
+                id = null,
+                formula = formula,
+                result = result,
+                timestamp = System.currentTimeMillis()
+            )
+        )
     }
 
     private fun calculatePercentage(
